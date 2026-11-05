@@ -18,6 +18,8 @@ What changed in Sparewatt, newest first, in plain words. Dates are when the chan
     Saver is still on).
   - Trash in the Shelf card needs a second click, like the floating Shelf.
   - Downloads tidy-up: *Select all* ticks only the 30 listed findings, and moving to the Trash asks first.
+  - Downloads tidy-up finds downloads again. It searched through Spotlight, which macOS doesn't let see Downloads for an
+    app without access, so it always came back empty. *Look* now reads the folder itself; the first time, macOS asks.
   - A cache that takes over 15 seconds to count shows what was counted instead of dropping off the list.
   - Watchlist: energy alerts read "energy score of 25" (not "25 energy energy"); the Network limit steps by 0.5 MB/s.
   - The floating Shelf's *Quick Look* opens the system preview, not the file's app.

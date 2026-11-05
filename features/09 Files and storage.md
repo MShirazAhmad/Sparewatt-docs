@@ -115,7 +115,8 @@ in 15 s* if nothing finished); size limits act only on caches counted in full.
 
 **Purpose.** Clear out what piles up in Downloads: old installers and duplicate downloads.
 
-**What it does.** Click **Look**: Spotlight finds, in `~/Downloads` and its sub-folders,
+**What it does.** Click **Look**: Sparewatt reads `~/Downloads` and its sub-folders (the first time, macOS asks whether
+it may) and finds
 - **old installers** — `.dmg`, `.pkg`, `.iso` over a week old;
 - **duplicates** — "report (2).pdf" / "report-1.pdf" next to a file with the same name and size (the original is never
   flagged).
@@ -126,10 +127,10 @@ move up as you clear these). Tick and **Move N to Trash** — Sparewatt asks fir
 
 **Use cases.** Free several GB of installers you already installed months ago.
 
-**Benefits.** Never opens Downloads directly, so no permission prompt; everything goes to the Trash.
+**Benefits.** Everything goes to the Trash, so it can be put back.
 
-**Limits.** Only the first 20,000 Spotlight results for the whole home folder are read, so on a large home folder
-*Look* can miss Downloads entirely; files Spotlight hasn't indexed are missed too.
+**Limits.** Needs Downloads access. If it was refused, the card says so, with a button to Privacy & Security; a newly
+built copy of the app may be asked again.
 
 ---
 

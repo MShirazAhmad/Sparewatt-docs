@@ -45,7 +45,8 @@ by then ("> 2.1 GB").
 ## Downloads tidy-up
 
 **Look** finds old installers (`.dmg`, `.pkg`, `.iso` over a week old) and duplicate downloads ("report (2).pdf" next to
-"report.pdf" of the same size). The 30 largest are listed; tick the ones to remove (*Select all* ticks only those) and
+"report.pdf" of the same size). The first time, macOS asks whether Sparewatt may see your Downloads folder. The 30
+largest are listed; tick the ones to remove (*Select all* ticks only those) and
 move them to the Trash — Sparewatt asks first.
 
 ## Clipboard

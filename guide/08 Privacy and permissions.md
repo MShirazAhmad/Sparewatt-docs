@@ -19,13 +19,16 @@ Sparewatt's settings so they survive a restart — don't pin secrets.
 | "macOS cannot verify the developer" | first launch | the app is not signed with an Apple Developer ID ([Getting started](01%20Getting%20started.md)) |
 | Administrator password | changing an energy mode, On Battery settings, Extreme Saver | these use macOS's own `pmset`, which needs an administrator each time |
 | "Sparewatt wants to control System Events" | turning *Start Sparewatt when you log in* on or off, or opening that setting | login items are read and set through System Events |
+| "Sparewatt would like to access files in your Downloads folder" | the first *Look* in Downloads tidy-up | it reads the folder to find old installers and duplicate downloads |
 
 Reading the numbers needs no permission.
 
 ## Folders
 
 The storage list skips folders macOS protects (Desktop, Documents, Downloads, Library, Pictures, Movies, Music).
-Latest File and Downloads tidy-up find files through Spotlight, so Sparewatt never opens those folders itself.
+Latest File finds files through Spotlight, so it never opens those folders itself. Downloads tidy-up is the exception:
+it reads your Downloads folder when you click *Look*, after macOS has asked you once. Change that answer in System
+Settings → Privacy & Security → Files and Folders → Sparewatt.
 
 ## Deleting things
 

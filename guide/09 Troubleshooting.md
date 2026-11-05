@@ -55,8 +55,12 @@ If `switches.json` can't be read in full, the Switches page says so at the top, 
 it as `switches.json.bak` before anything is saved over it. A field left out of an entry is not a problem: it takes its
 usual default. Fix the file (or copy the `.bak` back), then *Reload from file*.
 
+## Downloads tidy-up says it can't see Downloads
+
+macOS was told not to let Sparewatt read your Downloads folder. Allow it in System Settings → Privacy & Security →
+Files and Folders → Sparewatt → *Downloads Folder* (the card's *Open Privacy & Security* button goes there), then click
+*Look* again. Sparewatt isn't signed with a developer certificate, so a newly built copy may be asked again.
+
 ## Known issues
 
-- Downloads tidy-up can find nothing on a large home folder: it reads only the first 20,000 Spotlight results for the
-  whole home folder, so files in Downloads may never be reached.
 - Safari's cost is counted partly under macOS (see [How the estimates work](07%20How%20the%20estimates%20work.md#limits-of-the-method)).
