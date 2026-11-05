@@ -63,3 +63,9 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | <img src="images/screenshots/dashboard-history.png" width="440"> | <img src="images/screenshots/dashboard-on-battery.png" width="440"> |
 
 Screenshots were taken before the rename; apart from the name, the app looks the same.
+
+## License
+
+Sparewatt is **free to download and use**. It is not open source: its code is private, and all rights are reserved.
+You may share the official download unchanged and free of charge; you may not sell it, distribute changed copies, or
+reverse engineer it. It comes as is, without warranty. These pages are © 2026 Shiraz Ahmad.
