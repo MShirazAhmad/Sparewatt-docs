@@ -1,6 +1,6 @@
 # Research
 
-Notes written while designing Sparewatt (then called ResourceWarden), kept as they were written: which Mac apps do
+Notes written while designing Sparewatt, kept as they were written: which Mac apps do
 similar things, what their users complain about, and which gaps Sparewatt set out to fill.
 
 | Note | About |

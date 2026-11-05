@@ -1,4 +1,4 @@
-# Mac drop-zone / shelf apps — what reviewers say, and what fits ResourceWarden
+# Mac drop-zone / shelf apps — what reviewers say, and what fits Sparewatt
 
 Researched 2026-11-04 (web search; few direct complaint threads exist, so this leans on reviews, App Store listings and forums).
 
@@ -20,7 +20,7 @@ Researched 2026-11-04 (web search; few direct complaint threads exist, so this l
 5. One-drop actions: move to a set folder, AirDrop, zip, copy path, open with.
 6. Works in full screen, across Spaces and on every monitor.
 
-## What ResourceWarden already has
+## What Sparewatt already has
 Latest File (drag the newest file out, plus 4 more), clipboard history with pins and plain-text paste — free, no nag, in the menu bar.
 
 ## What to add (best value first)

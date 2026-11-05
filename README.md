@@ -7,7 +7,6 @@
 <p align="center"><img src="images/screenshots/dashboard-overview.png" width="900" alt="Sparewatt dashboard"></p>
 
 This repository holds **documentation only** — no app code. The app itself lives in its own repository.
-Sparewatt was called **ResourceWarden** until November 2026.
 
 ## Features
 
@@ -32,7 +31,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 
 | Page | What it covers |
 |---|---|
-| [Getting started](guide/01%20Getting%20started.md) | install, first launch, the unsigned-app warning, moving from ResourceWarden |
+| [Getting started](guide/01%20Getting%20started.md) | install, first launch, the unsigned-app warning, updating from 1.4 |
 | [Menu bar and panels](guide/02%20Menu%20bar%20and%20panels.md) | the menu bar item, hover panels, what each part shows |
 | [Battery and power](guide/03%20Battery%20and%20power.md) | power per app, idle-app suggestions, charge plan, wear, charger and sleep checks |
 | [Controls](guide/04%20Controls.md) | energy modes, On Battery settings, Extreme Saver, profiles, Watchlist, Switches, alerts |

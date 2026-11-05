@@ -4,14 +4,14 @@ Everything is local. Deleting these resets the matching feature; Sparewatt recre
 
 ## Settings
 
-macOS's preferences store, domain `app.sparewatt.Sparewatt`:
+macOS's preferences store, domain `local.ahmad.Sparewatt`:
 
 ```bash
-defaults read app.sparewatt.Sparewatt
+defaults read local.ahmad.Sparewatt
 ```
 
-(ResourceWarden used `local.shiraz.ResourceWarden`; Sparewatt copies it once on first launch and leaves the old domain
-in place.)
+(Sparewatt 1.4 used `app.sparewatt.Sparewatt`; a later version copies those settings once on its first launch and leaves
+the old domain in place.)
 
 ## `~/Library/Application Support/Sparewatt/`
 

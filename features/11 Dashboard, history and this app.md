@@ -101,7 +101,7 @@ release exists, the dashboard sidebar and the right-click menu say so; nothing i
 
 ---
 
-## Moving from ResourceWarden
+## Updating from Sparewatt 1.4
 
-Sparewatt was called ResourceWarden until November 2026. The first launch copies its settings and moves its data and
-logs; switch *Start Sparewatt when you log in* on again. See [Getting started](../guide/01%20Getting%20started.md#coming-from-resourcewarden).
+The first launch of a later version copies your 1.4 settings once; history, switches and logs stay where they are.
+See [Getting started](../guide/01%20Getting%20started.md#updating-from-sparewatt-14).

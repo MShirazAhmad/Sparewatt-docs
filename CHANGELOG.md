@@ -4,6 +4,10 @@ What changed in Sparewatt, newest first, in plain words. Dates are when the chan
 
 ## 2026-11-05
 
+- New bundle ID **`local.ahmad.Sparewatt`** (1.4 used `app.sparewatt.Sparewatt`): the first launch copies your 1.4
+  settings once; history, switches and logs stay where they are.
+- The update check (off by default) reads the public releases here, and reads a dated tag like `v1.4-2026-11-05` as 1.4.
+- Each panel's window button opens the dashboard on that panel's own page.
 - The grouped menu bar item has a thin outline and a soft shade behind it (*Outline and shade behind the grouped item*,
   on by default).
 - **Power going out to USB devices**: the power-flow diagram shows a device charging from the Mac's ports, with the
@@ -38,9 +42,8 @@ What changed in Sparewatt, newest first, in plain words. Dates are when the chan
 
 ## 2026-11-04
 
-- **Renamed to Sparewatt** (was ResourceWarden). New app name, bundle ID `app.sparewatt.Sparewatt`, data folder
-  `~/Library/Application Support/Sparewatt`. The first launch copies settings and moves data over; switch *Start at
-  login* on again.
+- **Named Sparewatt**: the app, its data folder `~/Library/Application Support/Sparewatt` and its logs
+  `~/Library/Logs/Sparewatt`.
 - **Idle apps on battery**: suggests quitting apps you haven't used for a while (10 min) when quitting would add enough
   battery time (30 min). Card with Quit / Not now / Never, one notification per app per unplug, limits on the On Battery
   page.

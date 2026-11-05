@@ -35,17 +35,11 @@ You only do this once.
 Dashboard → **Menu Bar** → **Start Sparewatt when you log in**. macOS may ask once whether Sparewatt may control
 *System Events*; that is how the login item is added.
 
-## Coming from ResourceWarden
+## Updating from Sparewatt 1.4
 
-Sparewatt is the same app under a new name. On its first launch it:
-
-- copies your ResourceWarden settings,
-- moves your history, battery calibration and other data from `~/Library/Application Support/ResourceWarden`
-  to `~/Library/Application Support/Sparewatt`, and the switch logs from `~/Library/Logs/ResourceWarden` to
-  `~/Library/Logs/Sparewatt`.
-
-It does **not** move the login item. If ResourceWarden started at login, switch **Start Sparewatt when you log in** on
-again, and delete the old ResourceWarden app.
+Later versions use the bundle ID `local.ahmad.Sparewatt` (1.4 used `app.sparewatt.Sparewatt`). The first launch
+copies your 1.4 settings once; history, switches and logs stay where they are, in folders named Sparewatt. macOS
+asks again, once each, for Downloads access and for control of *System Events* (the login item).
 
 ## Updates
 
