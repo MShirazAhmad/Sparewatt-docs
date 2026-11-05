@@ -59,7 +59,7 @@ holding, a weak charger, a bad cable.
 - charging should be *on hold*, yet the battery gained at least 1% in 5 minutes or more.
 
 **Where.** An orange card at the top of the Battery panel; a *Needs action* item on the dashboard's Overview; the
-battery part turns red; and one notification per episode: *Battery state doesn't add up*.
+battery part glows red; and one notification per episode: *Battery state doesn't add up*.
 
 **Benefits.** Problems that otherwise go unnoticed for weeks (a battery kept at 100% against your limit, a laptop
 draining on a too-small charger) are caught in a minute.

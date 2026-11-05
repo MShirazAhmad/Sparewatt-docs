@@ -18,7 +18,7 @@ normal. Every notification it sends is listed here.
 
 | Warning | Where |
 |---|---|
-| An item turns **red** (processor, memory, storage, temperature, battery, a failed Switch) | menu bar ([Menu bar](01%20Menu%20bar.md#red-warnings)) |
+| An item **glows red** (processor, memory, storage, temperature, battery, a failed Switch) | menu bar ([Menu bar](01%20Menu%20bar.md#red-warnings)) |
 | *Sparewatt is running, but hidden* | an alert, once per run ([Menu bar](01%20Menu%20bar.md#hidden-item-check)) |
 | Charger too small / near its limit | Power panel |
 | Memory forecast (swap growing fast) | Memory panel |

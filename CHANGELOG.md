@@ -9,6 +9,10 @@ What changed in Sparewatt, newest first, in plain words. Dates are when the chan
 - **Power going out to USB devices**: the power-flow diagram shows a device charging from the Mac's ports, with the
   measured watts ("iPhone 5.6 W"), and the Power card adds *iPhone gets 5.6 W*.
 - Idle-app notifications held back by quiet hours are sent once quiet hours end, instead of being skipped.
+- A warning in the menu bar (processor, memory, storage or temperature over its limit, low battery, a failed switch)
+  shows as a soft red glow behind the item, with the text in the menu bar's own colour, instead of red text.
+  The drain colours on battery glow the same way (red, orange, yellow, lime or green behind the battery and power
+  parts), with white or black text, whichever reads better on that colour.
 - **Fixes:**
   - The *Shelf, Profiles & Alerts* page is on the dashboard (Control), so quiet hours, the low-storage and "busy with no
     window" alerts, profile editing and the Shelf options can be changed.

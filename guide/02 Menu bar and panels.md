@@ -18,7 +18,7 @@ Prefer separate items you can ⌘-drag? Dashboard → **Menu Bar** → *Look* �
 | NET (off by default) | download / upload speed | speed graph, the apps using the network most |
 | BATT | real fill to 0.1% and the true charge state | health, capacity, recharges, charge plan, energy mode, Extreme Saver |
 | Power (ON BATT / CHARGING) | the Mac's draw, with battery watts in or out | live flow diagram, power per app, idle-app suggestions |
-| SWITCH | how many of your Switches are on (n/total; red when one failed) | toggles for each switch |
+| SWITCH | how many of your Switches are on (n/total; glows red when one failed) | toggles for each switch |
 
 ## Charge states, in plain words
 
@@ -34,11 +34,11 @@ Every list says what a row is: an app (with its icon), an Apple app, a part of m
 
 ## Colours and warnings
 
-- **Turn an item red when it needs attention** — processor, memory, storage, battery and temperature limits you choose
+- **Glow red behind an item when it needs attention** — processor, memory, storage, battery and temperature limits you choose
   (Dashboard → Menu Bar → *Warnings*).
 - **Colours by value** — optional green → red bands per item, each with its own four limits.
-- **On battery, colour by drain rate** — the battery part takes a colour from how many hours a full battery would last
-  at the current draw.
+- **On battery, glow by drain rate** — the battery and power parts glow in a colour from how many hours a full battery
+  would last at the current draw.
 
 ## Look and speed
 

@@ -130,9 +130,9 @@ four limits. Colours are adjusted so they stay readable on both light and dark m
 
 **Purpose.** Make an item impossible to miss when it needs attention.
 
-**What it does.** Turns an item's text red when:
+**What it does.** Puts a soft red glow behind an item's text when:
 
-| Item | Red when | Default |
+| Item | Glows red when | Default |
 |---|---|---|
 | Processor | above a limit | 85% |
 | Memory | above a limit | 85% |
@@ -141,9 +141,9 @@ four limits. Colours are adjusted so they stay readable on both light and dark m
 | Battery | below a limit while on battery, or when the battery state doesn't add up | 20% |
 | SWITCH | a switch failed | |
 
-Red wins over any colour band.
+The text keeps the menu bar's own colour on the glow, so it stays readable; a warning wins over any colour band.
 
-**Settings.** Dashboard → Menu Bar → *Warnings*: *Turn an item red when it needs attention* (on), and each limit.
+**Settings.** Dashboard → Menu Bar → *Warnings*: *Glow red behind an item when it needs attention* (on), and each limit.
 
 ---
 
@@ -151,13 +151,14 @@ Red wins over any colour band.
 
 **Purpose.** On battery, show how fast the battery is being used, in a way that means something: hours.
 
-**What it does.** Works out how long a **full** battery would last at the current drain and colours the battery and
-power parts: red under 1 h, orange under 2 h, yellow under 3.5 h, lime under 5 h, green from 5 h. Only on battery and
-only while draining at least 0.5 W.
+**What it does.** Works out how long a **full** battery would last at the current drain and puts a soft glow of that
+colour behind the battery and power parts (the text turns white or black, whichever reads better): red under 1 h,
+orange under 2 h, yellow under 3.5 h, lime under 5 h, green from 5 h. Only on battery and only while draining at least
+0.5 W.
 
 **Use cases.** You want to know whether what you are doing right now is "a 10-hour workload" or "a 2-hour workload".
 
-**Settings.** *On battery, colour by drain rate* — **off** by default; the four limits are adjustable (0.1–24 h).
+**Settings.** *On battery, glow by drain rate* — **off** by default; the four limits are adjustable (0.1–24 h).
 
 ---
 
