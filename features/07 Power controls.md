@@ -7,6 +7,8 @@ each time — Sparewatt never stores it.
 
 ## Energy mode
 
+<p align="center"><img src="../images/features/energy-mode.png" width="354" alt="Energy mode"><br><em>Energy mode: Automatic, Low Power or High Power, separately on battery and on charger, plus the Extreme Saver switch.</em></p>
+
 **Purpose.** Switch between saving battery and full speed without digging through System Settings.
 
 **What it does.** Three modes, set **separately for battery and charger**:
@@ -26,6 +28,8 @@ The row for the power source you're on now is marked *now*.
 ---
 
 ## On Battery settings
+
+<p align="center"><img src="../images/features/dashboard-on-battery.png" width="800" alt="On Battery settings"><br><em>Dashboard → On Battery: what the Mac may do unplugged.</em></p>
 
 **Purpose.** Decide what the Mac may do when unplugged — the settings that matter most for battery life and overnight
 drain, in one place.
@@ -61,6 +65,8 @@ If the Mac would sleep before its screen turns off, the page warns you.
 ---
 
 ## Extreme Saver
+
+<p align="center"><img src="../images/features/dashboard-extreme-saver.png" width="800" alt="Extreme Saver"><br><em>Dashboard → Extreme Saver: the settings it applies and the apps it pauses.</em></p>
 
 **Purpose.** One switch for when every minute of battery counts.
 
@@ -105,6 +111,8 @@ longer paused; turn it off and on to pause them again.
 ---
 
 ## Profiles
+
+<p align="center"><img src="../images/features/profiles.png" width="480" alt="Profiles"><br><em>Profiles: Lecture, Lab, Travel — energy mode on battery and on charger, and Extreme Saver, per profile.</em></p>
 
 **Purpose.** Set the energy modes and Extreme Saver for a situation in one click.
 

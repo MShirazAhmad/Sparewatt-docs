@@ -4,6 +4,8 @@
 
 ## Time left at this rate
 
+<p align="center"><img src="../images/features/time-left.png" width="354" alt="Time left at this rate"><br><em>Time left at this rate: on adapter it shows how long a full battery would last if you unplugged now.</em></p>
+
 **Purpose.** Answer "how long will the battery last if I keep doing this?" from the actual draw right now.
 
 **What it does.** Battery energy (Wh) ÷ the Mac's current draw. On battery it reads *left at this rate*; on the charger,
@@ -17,6 +19,8 @@ session.
 ---
 
 ## Power flow
+
+<p align="center"><img src="../images/features/power-flow.png" width="354" alt="Power flow"><br><em>Power flow: charger (41 of 140 W) → Mac (uses 41 W), the battery resting, and 1.5 W out to a USB device.</em></p>
 
 **Purpose.** See where the energy goes: charger → Mac, charger → battery, battery → Mac.
 
@@ -56,6 +60,8 @@ then passes it on. On battery, it comes out of your battery.
 
 ## Charger check
 
+<p align="center"><img src="../images/features/charger-check.png" width="354" alt="Charger check"><br><em>Charger check: says when the charger is too small and the battery drains while plugged in. (Sample values.)</em></p>
+
 **Purpose.** Catch a charger that can't keep up.
 
 **What it does.** Plugged in and the battery still drains → red: "The 30 W charger isn't enough: the Mac uses 41 W, so the
@@ -69,6 +75,8 @@ limit → orange: charging will be slow while the Mac is busy.
 ---
 
 ## Power per app (share of battery drain)
+
+<p align="center"><img src="../images/features/power-per-app.png" width="354" alt="Power per app (share of battery drain)"><br><em>Share of power use: a pie of watts per app, the biggest users named in a tip; click a slice to see its processes.</em></p>
 
 **Purpose.** Know which apps cost the most power right now — and how much battery time each takes.
 
@@ -93,6 +101,8 @@ Click a slice or a name to see its processes and quit or force quit them (with c
 ---
 
 ## Idle apps on battery
+
+<p align="center"><img src="../images/features/idle-apps.png" width="354" alt="Idle apps on battery"><br><em>Not in use, still costing battery: idle apps, minutes unused, their watts and the battery time quitting each would give.</em></p>
 
 **Purpose.** Apps you left open and forgot can quietly cost you battery time. Sparewatt notices and suggests quitting
 them — only when it is worth it.

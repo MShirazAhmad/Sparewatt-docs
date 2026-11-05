@@ -4,6 +4,8 @@
 
 ## Real battery readings and charge state
 
+<p align="center"><img src="../images/features/battery-readings.png" width="354" alt="Real battery readings and charge state"><br><em>Battery readings: real fill to 0.1% and state · health · charge now, holds at most and held when new (mAh) · recharges · temperature.</em></p>
+
 **Purpose.** Know exactly how much charge is in the battery and what it is really doing — not a rounded percentage and
 an icon that can be wrong.
 
@@ -39,6 +41,8 @@ state, not a guess.
 
 ## Battery card
 
+<p align="center"><img src="../images/features/panel-battery.png" width="320" alt="Battery card"><br><em>Battery panel: header · idle apps still costing battery · if you unplug now · readings · energy mode and Extreme Saver.</em></p>
+
 **What it shows.** A battery picture (green while charging, teal while resting on the charger, red at 20% and below),
 the fill, macOS's time estimate, **health** (what it holds now vs when new — green from 80%), *Charge now*, *Holds at
 most*, *Held when new* (mAh), *Full recharges*, *Battery temp*, and *Health means* Good or Worn.
@@ -68,6 +72,8 @@ draining on a too-small charger) are caught in a minute.
 
 ## Charge plan
 
+<p align="center"><img src="../images/features/charge-plan.png" width="354" alt="Charge plan"><br><em>Charge plan (If you unplug now): when you'd reach 20% and empty, at your usual drain.</em></p>
+
 **Purpose.** Plan the day: when will the battery reach 20%, and when will it run out?
 
 **What it does.** "At your usual 14 W you reach 20% around **4:40 PM** (2h 10m), empty around 6:05 PM."
@@ -93,6 +99,8 @@ software. Sparewatt itself never sets a limit.
 
 ## Battery wear
 
+<p align="center"><img src="../images/features/battery-wear.png" width="354" alt="Battery wear"><br><em>Battery wear: health over months, loss per month, recharges per month, and when it reaches 80%. (Sample values.)</em></p>
+
 **Purpose.** See how fast the battery is aging and when it will count as worn.
 
 **What it does.** Records health and recharge count once a day, keeps a year, and shows the line, **health now**,
@@ -107,6 +115,8 @@ software. Sparewatt itself never sets a limit.
 ---
 
 ## While asleep (last 24 hours)
+
+<p align="center"><img src="../images/features/while-asleep.png" width="354" alt="While asleep (last 24 hours)"><br><em>While asleep: the longest sleep and what it lost, and why the Mac woke. (Sample values.)</em></p>
 
 **Purpose.** Find out why the battery dropped overnight.
 
@@ -123,6 +133,8 @@ cause, then switch them off on the **On Battery** page.
 ---
 
 ## Battery history and stretches on battery
+
+<p align="center"><img src="../images/features/time-on-battery.png" width="354" alt="Battery history and stretches on battery"><br><em>Recent time on battery: when, how long, charge from → to, and average watts.</em></p>
 
 **Purpose.** Look back at how the battery was used.
 

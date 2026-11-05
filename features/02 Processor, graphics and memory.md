@@ -4,6 +4,8 @@
 
 ## Processor panel
 
+<p align="center"><img src="../images/features/panel-processor.png" width="320" alt="Processor panel"><br><em>Processor panel, top to bottom: load and temperature · 2-minute graph (now, average, peak) · one bar per core (E efficiency, P performance) · the chip · who is using it · background activity · apps using the processor most.</em></p>
+
 **Purpose.** Tell whether the processor is the reason the Mac feels slow or warm, and who is using it.
 
 **What it does.**
@@ -34,6 +36,8 @@
 
 ## Graphics panel
 
+<p align="center"><img src="../images/features/panel-graphics.png" width="320" alt="Graphics panel"><br><em>Graphics panel: load and temperature · 2-minute graph · the graphics chip · apps using it most.</em></p>
+
 **Purpose.** See how busy the graphics chip is and which app is drawing with it.
 
 **What it does.** The same layout as the processor: header, load card, chip card ("32-core GPU · macOS reports one load
@@ -54,6 +58,8 @@ only.
 ---
 
 ## Memory panel
+
+<p align="center"><img src="../images/features/panel-memory.png" width="320" alt="Memory panel"><br><em>Memory panel: used of total · bar of apps, system, compressed, cached and free · memory pressure and swap · swap forecast · apps using the most memory.</em></p>
 
 **Purpose.** Understand whether memory is the bottleneck — and what to close if it is.
 

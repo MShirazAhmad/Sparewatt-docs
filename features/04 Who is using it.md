@@ -7,6 +7,8 @@ plain words, learn what is normal, and let you stop what you don't need.
 
 ## "Using the most" lists
 
+<p align="center"><img src="../images/features/using-the-most.png" width="354" alt=""Using the most" lists"><br><em>Using the most: each row names the app or macOS part in plain words, says what kind it is (app, macOS system, command-line tool) and its share; › opens a closer look.</em></p>
+
 **Purpose.** Answer "which app?" for each resource.
 
 **What it does.** Every panel ends with the top 8 users of that resource: processor (share of the whole processor),
@@ -57,6 +59,8 @@ processor and memory, up to 12 rows.
 
 ## Who is using … (by kind)
 
+<p align="center"><img src="../images/features/background-by-kind.png" width="800" alt="Who is using … (by kind)"><br><em>Who is using … by kind: macOS, Apple Intelligence & Siri, indexing and sync, your apps, other tools — with each process's usual level.</em></p>
+
 **Purpose.** See, at a glance, whether macOS, AI features, background sync or your own apps are using the Mac.
 
 **What it does.** A stacked bar for processor, graphics, memory and energy, split into **macOS**, **Apple Intelligence
@@ -72,6 +76,8 @@ tools**. Updated every 30 seconds (graphics and energy about every 5 minutes).
 ---
 
 ## Background activity and what is normal
+
+<p align="center"><img src="../images/features/background-activity.png" width="354" alt="Background activity and what is normal"><br><em>Background activity: "Nothing unusual right now", or what is above its normal; *Now and then* lists processes that come and go, with how often.</em></p>
 
 **Purpose.** Background processes come and go; a number only means something against what is **usual for this Mac**.
 
@@ -101,6 +107,8 @@ usually does* (on); *…also when plugged in* (off).
 
 ## Busy with no window on screen
 
+<p align="center"><img src="../images/features/busy-no-window.png" width="354" alt="Busy with no window on screen"><br><em>Busy with no window on screen: apps working hard while hidden, with their load and for how long.</em></p>
+
 **Purpose.** Catch apps that work hard while hidden — no window, so you'd never notice.
 
 **What it does.** Every minute, apps that are hidden or have no window on screen and use 10% or more of the processor are
@@ -119,6 +127,8 @@ about 18% of the processor for 10 minutes with no window on screen."
 ---
 
 ## Watchlist
+
+<p align="center"><img src="../images/features/dashboard-watchlist.png" width="800" alt="Watchlist"><br><em>Dashboard → Watchlist: your rules (app, resource, limit, on battery only) and the latest alerts.</em></p>
 
 **Purpose.** Be told when a particular app uses too much — instead of watching for it.
 

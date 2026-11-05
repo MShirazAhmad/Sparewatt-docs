@@ -7,6 +7,8 @@ any command — on and off with one switch, see at a glance which are running, a
 
 ## What a switch is
 
+<p align="center"><img src="../images/features/panel-switches.png" width="320" alt="What a switch is"><br><em>Switches panel: services on of total, grouped (AI models, Servers, Jobs, Backups…), one switch each.</em></p>
+
 Each switch has:
 
 | Field | Meaning |
@@ -35,6 +37,8 @@ Output of every start and stop goes to a log, `~/Library/Logs/Sparewatt/<name>.l
 ---
 
 ## Presets
+
+<p align="center"><img src="../images/features/dashboard-switches.png" width="800" alt="Presets"><br><em>Dashboard → Switches: add from a preset or edit each switch's start, stop and running check.</em></p>
 
 *Add switch* offers ready-made switches; fill in your own paths:
 

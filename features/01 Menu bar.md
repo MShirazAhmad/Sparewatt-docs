@@ -6,6 +6,8 @@ The menu bar is where Sparewatt lives. Everything else — panels, dashboard, al
 
 ## Live readings
 
+<p align="center"><img src="../images/features/menu-bar-item.png" width="700" alt="Live readings"><br><em>The menu bar item. SWITCH — services on / your switches · CPU · GPU · RAM · STORAGE FREE · TEMP · NET ↓ download ↑ upload · battery state and real fill · ADAPTER — watts the Mac draws.</em></p>
+
 **Purpose.** See how hard the Mac is working without opening anything.
 
 **What it does.** Shows up to nine readings, each as a small caption over a value:
@@ -83,6 +85,8 @@ sensor group, a folder) is remembered while Sparewatt runs. Each panel header ha
 ---
 
 ## Words or icons, size and speed
+
+<p align="center"><img src="../images/features/dashboard-menu-bar.png" width="800" alt="Words or icons, size and speed"><br><em>Dashboard → Menu Bar. Which items show, words or icons, grouping, colours, warnings and refresh speed.</em></p>
 
 **Purpose.** Make the readings fit your menu bar and your battery.
 

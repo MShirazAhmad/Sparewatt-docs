@@ -6,6 +6,8 @@ These live in the **Storage** panel — hover the STORAGE part of the menu bar, 
 
 ## Latest File
 
+<p align="center"><img src="../images/features/latest-file.png" width="354" alt="Latest File"><br><em>Latest File: the newest file, ready to drag; buttons to share, show in Finder or open.</em></p>
+
 **Purpose.** The file you just saved or downloaded, ready to drag into a mail, a chat, an upload box or another app —
 without hunting for it in Finder.
 
@@ -36,6 +38,8 @@ allowing Downloads alone doesn't bring it back into Spotlight results. The card 
 
 ## The Shelf
 
+<p align="center"><img src="../images/features/shelf.png" width="354" alt="The Shelf"><br><em>Shelf: collected files, tick to act on some; move, AirDrop, zip, copy path, open or Trash; drop into Downloads or Desktop.</em></p>
+
 **Purpose.** A holding place for files on their way somewhere else — collect from several folders, then move, send or
 drag them together.
 
@@ -64,6 +68,8 @@ drag them together.
 
 ## Floating Shelf and the trailing drop zone
 
+<p align="center"><img src="../images/features/floating-shelf.png" width="354" alt="Floating Shelf and the trailing drop zone"><br><em>Floating Shelf: opened by shaking the pointer while dragging; the same actions in a small window.</em></p>
+
 **Purpose.** Park files without dragging all the way to the menu bar.
 
 **What it does.**
@@ -86,6 +92,8 @@ files off once dragged out (on), and the folder chips, one folder per line (Down
 ---
 
 ## Where the space went
+
+<p align="center"><img src="../images/features/where-space-is.png" width="354" alt="Where the space went"><br><em>Where the used space is: the biggest home folders (at least).</em></p>
 
 See [Storage space](03%20Temperature%2C%20network%20and%20storage%20space.md#storage-space): biggest home folders with
 growth, purgeable space, System Data, local Time Machine snapshots, and a click-through folder browser.
@@ -140,6 +148,8 @@ built copy of the app may be asked again.
 ---
 
 ## Clipboard
+
+<p align="center"><img src="../images/features/clipboard.png" width="354" alt="Clipboard"><br><em>Clipboard: recent copies (pinned ones kept), Make plain, Clear history; click to copy as plain text.</em></p>
 
 **Purpose.** Get back something you copied a few minutes ago, and paste it without stray fonts and colours.
 

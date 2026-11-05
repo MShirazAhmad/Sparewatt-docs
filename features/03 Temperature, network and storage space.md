@@ -4,6 +4,8 @@
 
 ## Temperature and fans
 
+<p align="center"><img src="../images/features/panel-temperature.png" width="320" alt="Temperature and fans"><br><em>Temperature panel: overall state · temperature graph · each fan's speed · processor, graphics, chip, SSD and battery tiles · every sensor, grouped.</em></p>
+
 **Purpose.** Know whether the Mac is hot, how hot each part is, and how hard the fans are working.
 
 **What it does.**
@@ -33,6 +35,8 @@
 
 ## Network
 
+<p align="center"><img src="../images/features/panel-network.png" width="320" alt="Network"><br><em>Network panel: total speed · download and upload flow · 2-minute peak · apps using the network most.</em></p>
+
 **Purpose.** See how much the Mac is downloading and uploading, and which app is doing it.
 
 **What it does.** Total download + upload speed, a moving diagram, a sparkline, the two-minute peak, and *Using the
@@ -49,6 +53,8 @@ bar*); Dashboard → **Network**.
 ---
 
 ## Storage space
+
+<p align="center"><img src="../images/features/storage-space.png" width="354" alt="Storage space"><br><em>Storage space: used, free and total, with the SSD temperature.</em></p>
 
 **Purpose.** Know how full the disk is and where the space went — including the parts Finder doesn't explain.
 
