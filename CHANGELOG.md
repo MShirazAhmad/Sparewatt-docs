@@ -4,6 +4,11 @@ What changed in Sparewatt, newest first, in plain words. Dates are when the chan
 
 ## 2026-11-05
 
+- **AI Assistant** (dashboard → Control): an MCP server, off by default, lets Claude Code, Codex, Cursor, LM Studio or
+  any MCP app read Sparewatt's readings, top apps, battery history, insights and Switches. *Show Instructions* gives a
+  sentence to paste into your assistant. With *Allow changes* on, it can also turn Switches on or off, quit an app and
+  set Extreme Saver or energy modes (with your password). This Mac only (127.0.0.1); web pages are refused.
+  [AI Assistant](features/12%20AI%20Assistant.md)
 - New bundle ID **`local.ahmad.Sparewatt`** (1.4 used `app.sparewatt.Sparewatt`): the first launch copies your 1.4
   settings once; history, switches and logs stay where they are.
 - The update check (off by default) reads the public releases here, and reads a dated tag like `v1.4-2026-11-05` as 1.4.

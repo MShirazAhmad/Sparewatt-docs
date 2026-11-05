@@ -61,6 +61,7 @@ answers three questions from the menu bar:
 | History and CSV export | look back 30 days | every battery stretch with its top apps | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#history) |
 | Startup Items | what starts on its own | spot background helpers | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#startup-items) |
 | This App | Sparewatt's own cost | a monitor that watches itself | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#this-app) |
+| AI Assistant (MCP server) | let Claude Code, Codex, Cursor or any MCP app read the readings | ask "why?" in plain words, answered from live data | [AI Assistant](12%20AI%20Assistant.md) |
 
 ## Use cases: which features help when
 
@@ -79,5 +80,7 @@ answers three questions from the menu bar:
 **Writing and sending files all day.** Use [Latest File](09%20Files%20and%20storage.md#latest-file) to drag what you just exported, the [Shelf](09%20Files%20and%20storage.md#the-shelf) to collect attachments from several folders, and the [clipboard](09%20Files%20and%20storage.md#clipboard) to paste references as plain text.
 
 **Charging problems.** The [charger check](06%20Power.md#charger-check) catches a charger that's too small. ["Battery state doesn't add up"](05%20Battery.md#battery-state-doesnt-add-up) catches a charge limiter that isn't holding. [Power flow](06%20Power.md#power-flow) shows how fast it really charges.
+
+**Asking an AI assistant instead of reading panels.** Turn on the [MCP server](12%20AI%20Assistant.md) and ask Claude Code, Codex or another assistant "what is draining my battery?" or "which app used the most memory today?". It reads the same lists and history you see. Turn on *Allow changes* only if you want it to switch services or quit apps for you.
 
 **A new or second-hand Mac.** Look at [battery health and wear](05%20Battery.md#battery-card), [Startup Items](11%20Dashboard%2C%20history%20and%20this%20app.md#startup-items) for what installs left behind, and [Mac health](11%20Dashboard%2C%20history%20and%20this%20app.md#overview-and-mac-health) for anything that needs action.

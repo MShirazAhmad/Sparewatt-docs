@@ -26,6 +26,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | Latest File, Shelf, caches, Downloads tidy-up, clipboard | [Files and storage](features/09%20Files%20and%20storage.md) |
 | Local services on/off | [Switches](features/10%20Switches.md) |
 | Dashboard, Mac health, history, Startup Items, This App | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
+| AI Assistant: an MCP server for Claude Code, Codex and other assistants | [AI Assistant](features/12%20AI%20Assistant.md) |
 
 ## Guide
 

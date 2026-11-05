@@ -9,6 +9,11 @@ your choice:
 - a [Switch](../features/10%20Switches.md) whose running check is *a web address answers* asks that address (usually a
   server on your own Mac) every 10 seconds.
 
+If you turn on the [AI Assistant](../features/12%20AI%20Assistant.md)'s MCP server (off by default), Sparewatt also
+**answers** requests, from programs on this Mac only (127.0.0.1; web pages are refused). While it is on, any program
+running as you can read the readings, lists and history it offers. The clipboard, the Shelf and Latest File are never
+offered. What an AI assistant does with what it reads is up to that assistant.
+
 The clipboard history is kept in memory only and skips passwords. Entries you **pin** are saved, as plain text, in
 Sparewatt's settings so they survive a restart — don't pin secrets.
 

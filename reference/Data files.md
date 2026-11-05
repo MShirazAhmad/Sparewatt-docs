@@ -26,8 +26,8 @@ the old domain in place.)
 | `switches.json.bak` | `switches.json` as it was, kept when it could not be read in full | until you delete it |
 
 Also in the settings: Watchlist rules, cache size limits, the Shelf's file **paths** (not copies — so the Shelf survives
-a restart), pinned clipboard entries (plain text), profiles, the idle-app never-suggest list and the old-settings
-migration marker.
+a restart), pinned clipboard entries (plain text), profiles, the idle-app never-suggest list, the AI Assistant's on/off, port and
+*Allow changes* (`mcpEnabled`, `mcpPort`, `mcpAllowChanges`) and the old-settings migration marker.
 
 ## `~/Library/Logs/Sparewatt/`
 
@@ -35,4 +35,4 @@ Each switch's output when it runs, one file per switch, appended to (never trimm
 
 ## Not stored
 
-The clipboard history (memory only).
+The clipboard history and the AI Assistant's activity list (memory only).

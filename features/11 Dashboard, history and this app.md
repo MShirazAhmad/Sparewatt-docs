@@ -10,8 +10,8 @@
 
 - **Monitor:** Overview, Processor, Graphics, Memory, Storage, Temperature, Network, Battery, Power flow, History — each
   with its current value beside it.
-- **Control:** Switches, On Battery, Extreme Saver, Watchlist, Shelf, Profiles & Alerts, Menu Bar, Startup Items, This
-  App.
+- **Control:** Switches, On Battery, Extreme Saver, Watchlist, Shelf, Profiles & Alerts, Menu Bar, Startup Items,
+  [AI Assistant](12%20AI%20Assistant.md), This App.
 
 At the bottom: the Extreme Saver switch and, when there is one, *Version X is available*. While the window is open,
 Sparewatt appears in the Dock and ⌘-Tab.
