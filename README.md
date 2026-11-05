@@ -3,7 +3,7 @@
 <h1 align="center">Sparewatt documentation</h1>
 
 <p align="center">
-<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/github/downloads/MShirazAhmad/Sparewatt-docs/total?label=downloads&color=2ea44f" alt="Total downloads"></a>
+<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/github/downloads/MShirazAhmad/Sparewatt-docs/total?label=downloads&color=2ea44f&style=for-the-badge" alt="Total downloads"></a>
 <a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/github/v/release/MShirazAhmad/Sparewatt-docs?label=latest" alt="Latest release"></a>
 <img src="https://img.shields.io/badge/macOS-14%2B-blue" alt="macOS 14 or later">
 <img src="https://img.shields.io/badge/price-free-brightgreen" alt="Free">
