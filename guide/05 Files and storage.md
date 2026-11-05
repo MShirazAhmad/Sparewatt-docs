@@ -5,7 +5,9 @@ Everything here is in the **Storage** panel (hover the STORAGE part, or press �
 ## Latest File
 
 The newest file you saved or downloaded, ready to drag into a mail, a chat or an upload box, plus the next 4 newest.
-Sparewatt finds them through Spotlight, so it never opens protected folders itself.
+Sparewatt finds them through Spotlight. macOS leaves Desktop, Documents and Downloads out of those results, so new files
+there don't show, and the card says which of your folders it can't see. Downloads joins in once you have clicked *Look*
+in Downloads tidy-up and macOS has let Sparewatt read it.
 
 Narrow it down on Dashboard → Menu Bar → *Latest File — where to look*: pick folders (everything inside them counts)
 and file types (for example `pdf docx png`). With no folders chosen, the whole home folder is searched.

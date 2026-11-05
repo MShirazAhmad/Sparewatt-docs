@@ -61,6 +61,12 @@ macOS was told not to let Sparewatt read your Downloads folder. Allow it in Syst
 Files and Folders → Sparewatt → *Downloads Folder* (the card's *Open Privacy & Security* button goes there), then click
 *Look* again. Sparewatt isn't signed with a developer certificate, so a newly built copy may be asked again.
 
+## Latest File doesn't show a file I just saved on the Desktop or in Documents
+
+macOS leaves Desktop and Documents out of Spotlight results for Sparewatt, and Sparewatt doesn't ask for those folders,
+so Latest File can't see them; the card says so. For Downloads, click *Look* in Downloads tidy-up once (in each newly
+built copy); from then on Latest File reads Downloads too.
+
 ## Known issues
 
 - Safari's cost is counted partly under macOS (see [How the estimates work](07%20How%20the%20estimates%20work.md#limits-of-the-method)).

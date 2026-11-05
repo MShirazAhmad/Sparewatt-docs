@@ -10,7 +10,8 @@ These live in the **Storage** panel — hover the STORAGE part of the menu bar, 
 without hunting for it in Finder.
 
 **What it does.** Finds, through Spotlight, the newest files you created or changed — in the last hour, else the last
-day, else the last 7 days — skipping `~/Library` and hidden folders. Shows the newest one (name, when, folder) with
+day, else the last 7 days — skipping `~/Library` and hidden folders. Downloads is read directly instead, once Downloads
+tidy-up has been allowed to read it (see Limits). Shows the newest one (name, when, folder) with
 **Put on the Shelf**, **Show in Finder** and **Open**; the whole row can be dragged. *N more recent files* lists the next
 four, each draggable.
 
@@ -19,13 +20,17 @@ four, each draggable.
 - Download a form, then drag it into an upload page.
 - Collect several recent files on the Shelf and send them together.
 
-**Benefits.** No Finder window, no Downloads digging. It never opens protected folders itself, so no permission prompts.
+**Benefits.** No Finder window, no Downloads digging. It never makes macOS ask for a folder: it reads Downloads only
+after you have allowed that for Downloads tidy-up.
 
 **Settings** (Dashboard → Menu Bar): *Latest File* on/off (on); **where to look** — chosen folders (everything inside
 them counts) and file types (`pdf docx png`…); *Use suggested* fills in Desktop, Downloads, Documents and Vault, and
 the types pdf, docx, xlsx, pptx, png, jpg, heic, md, csv and tex. With no folders chosen, the whole home folder is searched.
 
-**Limits.** Nothing older than 7 days; files Spotlight hasn't indexed are missed.
+**Limits.** Nothing older than 7 days; files Spotlight hasn't indexed are missed. **Desktop and Documents are not
+seen:** macOS leaves them out of Spotlight results for Sparewatt, and Sparewatt doesn't ask for them. Downloads is seen
+only after a *Look* in Downloads tidy-up has read it in this copy of the app (a newly built copy needs a new *Look*);
+allowing Downloads alone doesn't bring it back into Spotlight results. The card names the chosen folders it can't see.
 
 ---
 

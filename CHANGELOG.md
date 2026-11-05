@@ -20,6 +20,10 @@ What changed in Sparewatt, newest first, in plain words. Dates are when the chan
   - Downloads tidy-up: *Select all* ticks only the 30 listed findings, and moving to the Trash asks first.
   - Downloads tidy-up finds downloads again. It searched through Spotlight, which macOS doesn't let see Downloads for an
     app without access, so it always came back empty. *Look* now reads the folder itself; the first time, macOS asks.
+  - Latest File shows new downloads (once *Look* in Downloads tidy-up has read Downloads) and says which chosen folders
+    it can't see: macOS keeps Desktop and Documents out of its search, and Sparewatt doesn't ask for them.
+  - Latest File looks again each time the Storage panel opens, and looks back a day, then a week, when the last hour has
+    nothing. Before, it searched only once per launch.
   - A cache that takes over 15 seconds to count shows what was counted instead of dropping off the list.
   - Watchlist: energy alerts read "energy score of 25" (not "25 energy energy"); the Network limit steps by 0.5 MB/s.
   - The floating Shelf's *Quick Look* opens the system preview, not the file's app.

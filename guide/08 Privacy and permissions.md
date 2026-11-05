@@ -26,9 +26,10 @@ Reading the numbers needs no permission.
 ## Folders
 
 The storage list skips folders macOS protects (Desktop, Documents, Downloads, Library, Pictures, Movies, Music).
-Latest File finds files through Spotlight, so it never opens those folders itself. Downloads tidy-up is the exception:
-it reads your Downloads folder when you click *Look*, after macOS has asked you once. Change that answer in System
-Settings → Privacy & Security → Files and Folders → Sparewatt.
+Latest File finds files through Spotlight, so it never opens Desktop or Documents itself; macOS also leaves those
+folders out of Sparewatt's Spotlight results, so Latest File doesn't see new files there. Downloads is the exception:
+Downloads tidy-up reads the folder when you click *Look*, after macOS has asked you once, and from then on Latest File
+reads it too. Change that answer in System Settings → Privacy & Security → Files and Folders → Sparewatt.
 
 ## Deleting things
 
