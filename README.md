@@ -2,6 +2,13 @@
 
 <h1 align="center">Sparewatt documentation</h1>
 
+<p align="center">
+<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/github/downloads/MShirazAhmad/Sparewatt-docs/total?label=downloads&color=2ea44f" alt="Total downloads"></a>
+<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/github/v/release/MShirazAhmad/Sparewatt-docs?label=latest" alt="Latest release"></a>
+<img src="https://img.shields.io/badge/macOS-14%2B-blue" alt="macOS 14 or later">
+<img src="https://img.shields.io/badge/price-free-brightgreen" alt="Free">
+</p>
+
 <p align="center">How to use Sparewatt, the macOS menu bar app that shows what your Mac's processor, graphics, memory, storage, battery and power are doing — and helps you keep battery time for the things you actually use.</p>
 
 <p align="center"><img src="images/linkedin-cover.jpg" width="900" alt="Sparewatt: a free menu bar monitor and power saver for macOS"></p>
