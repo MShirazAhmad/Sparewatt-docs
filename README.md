@@ -13,6 +13,8 @@
 
 <p align="center"><img src="images/linkedin-cover.jpg" width="900" alt="Sparewatt: a free menu bar monitor and power saver for macOS"></p>
 
+<p align="center"><img src="images/sparewatt-demo.gif" width="900" alt="Sparewatt in 30 seconds"></p>
+
 This repository holds **documentation only** — no app code. The app itself lives in its own repository.
 
 ## Why I built Sparewatt
