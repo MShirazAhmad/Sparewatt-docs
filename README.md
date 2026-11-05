@@ -14,6 +14,19 @@ I used to pay for several small Mac apps, each for a feature or two: one for cli
 drop, another for power management. My 16-inch MacBook Pro (2021) has an M1 Max chip and 64 GB of memory, and I work it hard.
 As soon as I unplugged it, the battery ran out in about an hour — even though its battery health was above 90%.
 
+My hobby is playing with offline AI models (LLMs) and MCP connections, so whenever my Mac is idle I keep its graphics
+chip running at 100%. Over time I found that many of these services stay running in the background, keeping ports
+busy. When I wanted to use the laptop on battery for a long stretch, it still drained very fast, and I had no way of
+finding out why. So I put everything I needed into the menu bar:
+
+- **Switch** — turn any background service on or off with one click, to save battery when I need to. ([Switches](features/10%20Switches.md))
+- **GPU / CPU** — see and track whether some unknown service is wasting the graphics chip or processor.
+- **RAM** — quickly check whether an LLM model is loaded in memory.
+- **Storage free** — the free space itself, not the percentage full.
+- **Net** — internet traffic, up and down.
+- **Battery status** — true tracking from the battery's measured charge (mAh), not just a rounded percentage.
+- **Adapter** — clearly shows where the power comes from and which part is taking it. ([Power](features/06%20Power.md))
+
 So I started listing what I actually needed. When I need the battery to last, which app should I close? Which apps
 can keep running without costing much? What is quietly draining it right now? I kept asking an AI coding assistant to
 add one more feature, then another, and along the way those small requests became an app of my own.
