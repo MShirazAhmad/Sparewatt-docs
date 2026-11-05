@@ -23,6 +23,8 @@ What changed in Sparewatt, newest first, in plain words. Dates are when the chan
   The drain colours on battery glow the same way (red, orange, yellow, lime or green behind the battery and power
   parts), with white or black text, whichever reads better on that colour.
 - **Fixes:**
+  - A charger that gives less than 1 W while the battery drains (switched off at the wall, an unpowered hub) shows as
+    *On battery* with the battery's real draw, instead of *On adapter, uses 0 W*.
   - The *Shelf, Profiles & Alerts* page is on the dashboard (Control), so quiet hours, the low-storage and "busy with no
     window" alerts, profile editing and the Shelf options can be changed.
   - `switches.json` can no longer be wiped: missing fields take their defaults, and a file that can't be read in full is
