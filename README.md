@@ -8,6 +8,22 @@
 
 This repository holds **documentation only** — no app code. The app itself lives in its own repository.
 
+## Why I built Sparewatt
+
+I used to pay for several small Mac apps, each for a feature or two: one for clipboard history, one for drag and
+drop, another for power management. My MacBook Pro has an M1 Max chip and I work it hard. As soon as I unplugged it,
+the battery ran out in about an hour — even though its battery health was above 90%.
+
+So I started listing what I actually needed. When I need the battery to last, which app should I close? Which apps
+can keep running without costing much? What is quietly draining it right now? I kept asking an AI coding assistant to
+add one more feature, then another, and along the way those small requests became an app of my own.
+
+Today Sparewatt helps the same Mac last **more than five hours on battery**. It also lets me run heavy work safely:
+offline AI models that keep the graphics chip at 100%, and MCP servers (the small services AI assistants connect to)
+that I turn on and off with **[Switches](features/10%20Switches.md)** — and that can switch themselves off when I unplug. When
+something power-hungry is running, Sparewatt [shows me which app or service it is](features/06%20Power.md#power-per-app-share-of-battery-drain), and I can
+[hunt it down and stop it](features/04%20Who%20is%20using%20it.md#look-closer-then-quit-or-force-quit).
+
 ## Features
 
 **[Every feature in detail](features/README.md)** — purpose, what it does, use cases, benefits, settings and limits, with a
