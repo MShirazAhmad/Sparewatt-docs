@@ -1,0 +1,50 @@
+# Troubleshooting
+
+## I can't see the menu bar item
+
+macOS can hide menu bar items: in System Settings → Menu Bar (newer macOS asks per app), or under the camera notch when
+the bar is full. Sparewatt notices once and tells you. Fixes: allow Sparewatt in System Settings → Menu Bar, keep
+**Group all items into one** on, choose **Compact** text or small icons, or hide parts you don't need (Dashboard → Menu
+Bar → *Show in the menu bar*). ⌥⌘R still opens the dashboard.
+
+## A reading says n/a
+
+This Mac has no such sensor or reading (for example fans on a fanless Mac). Sparewatt shows n/a instead of a made-up
+zero.
+
+## macOS asks for my password every time I change a power setting
+
+Expected: energy modes, On Battery settings and Extreme Saver change system settings through `pmset`, which needs an
+administrator each time.
+
+## Clicking a notification doesn't open Sparewatt
+
+Sparewatt sends notifications through macOS's scripting tool, so clicking one does not open the app. Open the panel
+from the menu bar instead (the idle-app Quit buttons are in the Battery and Power panels). If notifications don't show
+at all, check quiet hours and macOS's Focus settings.
+
+## I never get idle-app suggestions
+
+- They appear on battery only.
+- The app must be unused for your idle limit **and** be worth your gain limit. At a high draw, idle apps rarely reach
+  30 minutes — try a lower gain limit on Dashboard → On Battery.
+- Apps playing sound or video, apps on your never-suggest list and apps you chose *Not now* for (until you plug in) are
+  left out.
+- Right after unplugging, Sparewatt needs a few minutes of readings first.
+
+## "Battery state doesn't add up"
+
+The charge state macOS reports and the current actually flowing disagreed for a minute (for example "charging" while
+the battery drains). Often a weak charger or cable; see the Power panel's charger check.
+
+## Sparewatt itself uses too much
+
+Dashboard → **This App** shows what each feature costs. Slower update speed, fewer live diagrams, and closing panels you
+don't need all help.
+
+## Known issues
+
+- The *Shelf, Profiles & Alerts* settings page (profile editing, quiet hours, the low-storage limit, the
+  "busy with no window" threshold and the Shelf options) has no entry in the dashboard yet, so those settings keep their
+  defaults for now.
+- Safari's cost is counted partly under macOS (see [How the estimates work](07%20How%20the%20estimates%20work.md#limits-of-the-method)).

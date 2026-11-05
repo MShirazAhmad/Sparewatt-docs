@@ -1,0 +1,56 @@
+# Files and storage
+
+Everything here is in the **Storage** panel (hover the STORAGE part, or press ⌥⌘V from anywhere).
+
+## Latest File
+
+The newest file you saved or downloaded, ready to drag into a mail, a chat or an upload box, plus the next 4 newest.
+Sparewatt finds them through Spotlight, so it never opens protected folders itself.
+
+Narrow it down on Dashboard → Menu Bar → *Latest File — where to look*: pick folders (everything inside them counts)
+and file types (for example `pdf docx png`). With no folders chosen, the whole home folder is searched.
+
+## The Shelf
+
+A holding place for files on the way somewhere else.
+
+- **Drop files on the menu bar item** (or the Storage panel's Shelf) to keep them there.
+- Drag them out again — all at once or one by one — into any app or folder.
+- From the Shelf: Move to, AirDrop, Zip, Copy path, Open with, Trash.
+- **Folder chips**: drop on one to move files there. Moves stay moves on the same disk, become copies to another disk;
+  hold ⌥ while dropping to copy.
+- While you drag files anywhere, a **drop zone follows a little behind the pointer**; optionally, **shaking** the pointer
+  opens a floating Shelf.
+- Files leave the Shelf once dragged out.
+
+The Shelf's options (the trailing drop zone, shake to open, taking files off once dragged out, the folder chips) are on
+the *Shelf, Profiles & Alerts* settings page, which no dashboard entry opens yet; until it does, they keep their
+defaults (trailing zone on, shake off, take off after dragging on, folder chips for Downloads and Desktop).
+
+The Shelf holds references to your files, not copies, and remembers them across restarts.
+
+## Where the space went
+
+The biggest folders in your home folder, with sizes kept between counts and growth since the last count. Click a folder
+to look inside it. Folders macOS protects (Desktop, Documents, Downloads, Library, Pictures, Movies, Music) are skipped
+so no "access blocked" warning appears.
+
+## App caches
+
+Each app's cache with its size, a button to clear it (files go to the Trash), and optional size limits that clear
+automatically — only ever inside `~/Library/Caches`.
+
+## Downloads tidy-up
+
+**Look** finds old installers (`.dmg`, `.pkg`, `.iso` over a week old) and duplicate downloads ("report (2).pdf" next to
+"report.pdf" of the same size). Tick the ones to remove and move them to the Trash.
+
+## Clipboard
+
+Recent copied text, kept **in memory only** (passwords are skipped). Click an entry to copy it back as plain text, drag
+it anywhere, or pin the ones you reuse. How many to keep: Dashboard → Menu Bar → *Details*.
+
+## Storage alerts
+
+Optional: the storage part turns orange when memory spills to the disk (swap) above a size you choose, and shows
+read/write speed during big copies.
