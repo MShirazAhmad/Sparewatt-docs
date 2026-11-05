@@ -10,7 +10,8 @@
 
 - **Monitor:** Overview, Processor, Graphics, Memory, Storage, Temperature, Network, Battery, Power flow, History — each
   with its current value beside it.
-- **Control:** Switches, On Battery, Extreme Saver, Watchlist, Menu Bar, Startup Items, This App.
+- **Control:** Switches, On Battery, Extreme Saver, Watchlist, Shelf, Profiles & Alerts, Menu Bar, Startup Items, This
+  App.
 
 At the bottom: the Extreme Saver switch and, when there is one, *Version X is available*. While the window is open,
 Sparewatt appears in the Dock and ⌘-Tab.
@@ -86,8 +87,8 @@ Read-only; *Open Login Items settings* takes you to where macOS lets you turn th
 
 **What it does.** *Right now* (% of one core, memory), *average since launch*, macOS's energy impact for Sparewatt, the
 update-speed setting, and a breakdown **by feature** (processor & memory readings, graphics, temperature sensors, fans,
-network & disk speed, battery & power, top-apps lists, folder sizes, Latest File, background watch, drawing the menu
-bar).
+network & disk speed, battery & power, top-apps lists, folder sizes, Latest File, background watch, insights (the
+once-a-minute battery and per-app readings), Switches, drawing the menu bar).
 
 **Use cases.** Choose a slower update speed or turn off live diagrams if Sparewatt's own cost matters on battery.
 

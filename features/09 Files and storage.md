@@ -41,7 +41,7 @@ drag them together.
   Shelf.
 - **Actions** (on ticked files, or all): **Move to…** (moves on the same disk, copies to another; name clashes become
   "name 2"), **AirDrop**, **Zip** (one zip next to the files, added to the Shelf), **Copy path**, **Open with…**,
-  **Move to Trash**.
+  **Move to Trash** (red; a second click within 3 seconds confirms, as in the floating Shelf).
 - **Folder chips** (Downloads and Desktop by default): drop files on a chip to move them there; hold ⌥ to copy.
 - **×** takes a file off the Shelf (the file stays where it is); **Clear** empties the Shelf.
 - The Shelf remembers its files across restarts and drops ones that no longer exist.
@@ -53,8 +53,7 @@ drag them together.
 
 **Benefits.** No juggling of Finder windows; drag once instead of three times.
 
-**Limits.** In the Shelf card, *Move to Trash* acts at once (the files go to the Trash, so they can be put back). The card
-lists up to 50 files; actions still cover all of them.
+**Limits.** The card lists up to 50 files; actions still cover all of them.
 
 ---
 
@@ -71,12 +70,13 @@ lists up to 50 files; actions still cover all of them.
   Trash needs **two clicks** within 3 seconds. Folder chips need two clicks too, so a stray click never moves files. It
   hides itself when empty.
 - **Shake to open:** shaking the pointer while dragging files opens the floating Shelf at the pointer. Off by default.
+- **Right-click the stack** for *Show in Finder*, *Quick Look* (the system preview; ← → step through the files) and
+  *Empty the Shelf*.
 
 **Use cases.** Dragging a file from one full-screen app to another, or across Spaces.
 
-**Limits.** The on/off switches for the trailing zone and shake, *take files off once dragged out*, and the folder chips
-are on the settings page that no dashboard entry opens yet, so the defaults apply. *Quick Look* in the stack's menu opens
-the file in its app.
+**Settings** (Dashboard → **Shelf, Profiles & Alerts** → *Shelf*): the trailing drop zone (on), shake to open (off), take
+files off once dragged out (on), and the folder chips, one folder per line (Downloads and Desktop).
 
 ---
 
@@ -106,7 +106,8 @@ rebuild their caches; quit an app before clearing its cache.
 
 **Where.** Storage panel → *App caches* (collapsed in the menu bar panel, open on the dashboard).
 
-**Limits.** A cache too big to count within 15 seconds may not appear.
+**Limits.** A cache that takes over 15 seconds to count shows what was counted by then, marked ">" (or *too big to count
+in 15 s* if nothing finished); size limits act only on caches counted in full.
 
 ---
 
@@ -119,14 +120,16 @@ rebuild their caches; quit an app before clearing its cache.
 - **duplicates** — "report (2).pdf" / "report-1.pdf" next to a file with the same name and size (the original is never
   flagged).
 
-Listed biggest first with the reason and date. Tick and **Move N to Trash**.
+Listed biggest first with the reason and date, up to 30 ("Showing the 30 largest of N" when there are more; the rest
+move up as you clear these). Tick and **Move N to Trash** — Sparewatt asks first, naming the files and the total.
+*Select all* ticks only the listed findings.
 
 **Use cases.** Free several GB of installers you already installed months ago.
 
 **Benefits.** Never opens Downloads directly, so no permission prompt; everything goes to the Trash.
 
-**Limits.** *Select all* also ticks findings beyond the 30 listed; there is no extra confirmation before moving to the
-Trash.
+**Limits.** Only the first 20,000 Spotlight results for the whole home folder are read, so on a large home folder
+*Look* can miss Downloads entirely; files Spotlight hasn't indexed are missed too.
 
 ---
 

@@ -111,8 +111,10 @@ about 18% of the processor for 10 minutes with no window on screen."
 
 **Where.** Power panel (shown only when something qualifies).
 
-**Limits.** Counts the app's main process only, not its helpers. The 10% threshold and the on/off switch are on the
-settings page no dashboard entry opens yet, so the defaults apply.
+**Settings** (Dashboard → **Shelf, Profiles & Alerts** → *More alerts*): the notification — on; *busy means above* —
+10% of the processor (2–80%).
+
+**Limits.** Counts the app's main process only, not its helpers.
 
 ---
 
@@ -141,6 +143,9 @@ seconds; the same alert doesn't repeat within a quiet period.
 
 **Where.** Click the 🔔 on any list row, or Dashboard → **Watchlist** (rules, limits, *Battery only*, on/off, delete,
 *Recent alerts*).
+
+The arrows beside a rule change its limit by 5% (processor, graphics), 500 MB (memory), 5 points (energy) or 0.5 MB/s
+(network). An energy alert reads "Safari has an energy score of 25 (limit 20)".
 
 **Settings.** *Don't repeat the same alert for* 5 / **10** / 30 / 60 minutes.
 

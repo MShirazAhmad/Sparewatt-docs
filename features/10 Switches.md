@@ -89,5 +89,7 @@ check the stop command".
 - Commands run as you, exactly as typed.
 - *Delete* in the editor removes the switch at once (no confirmation).
 - Switches are saved in `~/Library/Application Support/Sparewatt/switches.json`; you can edit it by hand and use
-  *Reload from file*. Keep every field when editing by hand — an entry with a missing field makes the file unreadable.
+  *Reload from file*. A field you leave out takes its usual default; an entry that isn't a switch at all is left out.
+  If the file can't be read in full, the Switches page says so, and the file as it was is kept as `switches.json.bak`
+  before anything is saved over it.
 - A switch that checks a web address makes a request to that address — the only network use besides the update check.

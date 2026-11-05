@@ -27,18 +27,24 @@ One switch for the times battery matters most:
 - can **turn on by itself** at a battery level, and **off when you plug in**,
 - can make Sparewatt itself check only every 30 seconds.
 
-Don't pause apps you are working in: they freeze until the switch is off. ⌥⌘E toggles Extreme Saver from anywhere.
+Don't pause apps you are working in: they freeze until the switch is off. Quitting Sparewatt wakes them too, so
+nothing stays frozen once it is gone. ⌥⌘E toggles Extreme Saver from anywhere.
 
 ## Profiles
 
 **Lecture**, **Lab** and **Travel**: energy modes for battery and charger plus Extreme Saver, applied in one click from
-the top of the Battery panel. Their names and choices are editable on the *Shelf, Profiles & Alerts* settings page —
-which, as of November 2026, no dashboard entry opens yet (see [Troubleshooting](09%20Troubleshooting.md#known-issues)).
+the top of the Battery panel. Each change asks for your password; a profile is marked as the current one only when every
+change went through. Edit their names and choices on Dashboard → **Shelf, Profiles & Alerts**.
 
 ## Watchlist
 
 Click the bell next to an app in a list to be told when it uses more than a limit of processor, graphics, memory or
 energy — by default only on battery.
+
+## Shelf, Profiles & Alerts
+
+One page for the profiles' names and choices, the Shelf's options, quiet hours, the low-storage and "busy with no
+window" alerts, and the list of keyboard shortcuts.
 
 ## Switches
 
@@ -57,8 +63,7 @@ menu bar, its right-click menu, or the Switches page (with an editor and each sw
 **Quiet hours** (off by default, 22:00–07:00) silence every notification.
 
 The first and second alerts are set on Dashboard → Menu Bar → *Warnings*. The storage limit, quiet hours and the
-"busy with no window" threshold are on the *Shelf, Profiles & Alerts* page, which no dashboard entry opens yet; until it
-does, they keep their defaults.
+"busy with no window" alert are on Dashboard → **Shelf, Profiles & Alerts**.
 
 ## Startup items
 

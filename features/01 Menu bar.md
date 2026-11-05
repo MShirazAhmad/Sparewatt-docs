@@ -170,7 +170,8 @@ named in the menu bar item's tooltip: "CPU busy: Xcode · GPU busy: Safari".
 
 **Settings.** *Name the app behind a busy CPU (80%+) or GPU (50%+) in the item's tooltip* — off by default.
 
-**Limits.** Only shown on the grouped item.
+**Limits.** Only in the tooltip — of the grouped item, or of the CPU and GPU items when grouping is off; the labels
+themselves stay CPU and GPU.
 
 ---
 

@@ -23,6 +23,7 @@ in place.)
 | `process-baseline.json` | each background process's usual level, for "far more than usual" | grows; never trimmed |
 | `folder-sizes.json` | the last count of each home folder's size | until the folder changes |
 | `switches.json` | your Switches (commands, checks, options) | until you change them |
+| `switches.json.bak` | `switches.json` as it was, kept when it could not be read in full | until you delete it |
 
 Also in the settings: Watchlist rules, cache size limits, the Shelf's file **paths** (not copies — so the Shelf survives
 a restart), pinned clipboard entries (plain text), profiles, the idle-app never-suggest list and the old-settings

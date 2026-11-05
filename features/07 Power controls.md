@@ -70,6 +70,8 @@ If the Mac would sleep before its screen turns off, the page warns you.
   you switch off. Optionally it also pauses **any background app above an energy score** (20 points by default). The app
   you're using is never paused, nor is Sparewatt.
 - **Turning off:** unfreezes the apps and restores your saved settings.
+- **Sparewatt quitting** (the Quit button, or being stopped with `kill`) unfreezes the apps too, and a launch after a
+  crash unfreezes any still frozen — unless Extreme Saver is still on then; turning it off does.
 - **Automatic:** turn on by itself at a battery level (never / 10 / 15 / 20 / 30 / 40 / 50%), once per unplug; turn off
   when plugged in (on by default).
 - **Slower checks:** Sparewatt itself updates only every 30 seconds while it's on (on by default).
@@ -97,7 +99,8 @@ menu, and **⌥⌘E** from anywhere.
 | This app checks only every 30 s | on |
 
 **Limits.** Don't pause apps you're working in — they freeze until Extreme Saver is off. Turning on by itself still asks
-for your password once.
+for your password once. If Sparewatt quits while Extreme Saver is on, it stays on at the next launch but the apps are no
+longer paused; turn it off and on to pause them again.
 
 ---
 
@@ -113,11 +116,12 @@ for your password once.
 | Lab | Automatic | Automatic | off |
 | Travel | Low Power | Automatic | on |
 
-The current profile is highlighted; hovering a button shows what it sets.
+Clicking a profile turns Extreme Saver on or off first, then sets the two energy modes, one change at a time and only
+where needed. The current profile is highlighted — only once every change went through: cancelling a password prompt
+stops there, and if something had already changed, no profile is highlighted. Hovering a button shows what it sets.
 
 **Use cases.** Walking into a lecture, back to the lab bench, off to the airport.
 
-**Where.** The top of the Battery panel.
+**Where.** The top of the Battery panel; edit names and choices on Dashboard → **Shelf, Profiles & Alerts**.
 
-**Limits.** Each changed mode asks for the password. Editing profile names and choices is on the settings page that no
-dashboard entry opens yet, so the three built-in profiles apply for now.
+**Limits.** Each change (energy mode or Extreme Saver) asks for the password.

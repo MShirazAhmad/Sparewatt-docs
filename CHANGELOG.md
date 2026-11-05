@@ -9,6 +9,22 @@ What changed in Sparewatt, newest first, in plain words. Dates are when the chan
 - **Power going out to USB devices**: the power-flow diagram shows a device charging from the Mac's ports, with the
   measured watts ("iPhone 5.6 W"), and the Power card adds *iPhone gets 5.6 W*.
 - Idle-app notifications held back by quiet hours are sent once quiet hours end, instead of being skipped.
+- **Fixes:**
+  - The *Shelf, Profiles & Alerts* page is on the dashboard (Control), so quiet hours, the low-storage and "busy with no
+    window" alerts, profile editing and the Shelf options can be changed.
+  - `switches.json` can no longer be wiped: missing fields take their defaults, and a file that can't be read in full is
+    kept as `switches.json.bak` before anything is saved over it; the Switches page says so.
+  - Apps paused by Extreme Saver wake up when Sparewatt quits, and at the next launch after a crash (unless Extreme
+    Saver is still on).
+  - Trash in the Shelf card needs a second click, like the floating Shelf.
+  - Downloads tidy-up: *Select all* ticks only the 30 listed findings, and moving to the Trash asks first.
+  - A cache that takes over 15 seconds to count shows what was counted instead of dropping off the list.
+  - Watchlist: energy alerts read "energy score of 25" (not "25 energy energy"); the Network limit steps by 0.5 MB/s.
+  - The floating Shelf's *Quick Look* opens the system preview, not the file's app.
+  - Processor page: with live diagrams off, the "Each core" bars show once.
+  - The busy-app tooltip also works on the separate CPU and GPU items.
+  - This App lists Switches and insights in the by-feature breakdown.
+  - A profile is marked current only when every change went through (not when a password prompt was cancelled).
 
 ## 2026-11-04
 

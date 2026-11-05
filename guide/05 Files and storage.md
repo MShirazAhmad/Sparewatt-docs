@@ -16,8 +16,8 @@ A holding place for files on the way somewhere else.
 
 - **Drop files on the menu bar item** (or the Storage panel's Shelf) to keep them there.
 - Drag them out again — all at once or one by one — into any app or folder.
-- From the Shelf: Move to, AirDrop, Zip, Copy path, Open with, Trash. In the Shelf card, Trash acts at once (the files
-  go to the Trash and can be put back); the floating Shelf asks for a second click.
+- From the Shelf: Move to, AirDrop, Zip, Copy path, Open with, Trash. Trash asks for a second click within 3 seconds,
+  in the Shelf card and the floating Shelf alike (the files go to the Trash and can be put back).
 - **Folder chips**: drop on one to move files there. Moves stay moves on the same disk, become copies to another disk;
   hold ⌥ while dropping to copy.
 - While you drag files anywhere, a **drop zone follows a little behind the pointer**; optionally, **shaking** the pointer
@@ -25,8 +25,8 @@ A holding place for files on the way somewhere else.
 - Files leave the Shelf once dragged out.
 
 The Shelf's options (the trailing drop zone, shake to open, taking files off once dragged out, the folder chips) are on
-the *Shelf, Profiles & Alerts* settings page, which no dashboard entry opens yet; until it does, they keep their
-defaults (trailing zone on, shake off, take off after dragging on, folder chips for Downloads and Desktop).
+Dashboard → **Shelf, Profiles & Alerts** (by default: trailing zone on, shake off, take off after dragging on, folder
+chips for Downloads and Desktop).
 
 The Shelf holds references to your files, not copies, and remembers them across restarts.
 
@@ -39,12 +39,14 @@ so no "access blocked" warning appears.
 ## App caches
 
 Each app's cache with its size, a button to clear it (files go to the Trash), and optional size limits that clear
-automatically — only ever inside `~/Library/Caches`.
+automatically — only ever inside `~/Library/Caches`. A cache that takes over 15 seconds to count shows what was counted
+by then ("> 2.1 GB").
 
 ## Downloads tidy-up
 
 **Look** finds old installers (`.dmg`, `.pkg`, `.iso` over a week old) and duplicate downloads ("report (2).pdf" next to
-"report.pdf" of the same size). Tick the ones to remove and move them to the Trash.
+"report.pdf" of the same size). The 30 largest are listed; tick the ones to remove (*Select all* ticks only those) and
+move them to the Trash — Sparewatt asks first.
 
 ## Clipboard
 

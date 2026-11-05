@@ -21,8 +21,8 @@ administrator each time.
 
 Sparewatt sends notifications through macOS's scripting tool, so clicking one does not open the app. Open the panel
 from the menu bar instead (the idle-app Quit buttons are in the Battery and Power panels). If notifications don't show
-at all, check macOS's Focus and notification settings (Sparewatt's own quiet hours can't be switched on yet; see Known
-issues).
+at all, check macOS's Focus and notification settings, and Sparewatt's own quiet hours (Dashboard → **Shelf, Profiles &
+Alerts**).
 
 ## I never get idle-app suggestions
 
@@ -43,9 +43,20 @@ the battery drains). Often a weak charger or cable; see the Power panel's charge
 Dashboard → **This App** shows what each feature costs. Slower update speed, fewer live diagrams, and closing panels you
 don't need all help.
 
+## An app is still frozen after Extreme Saver
+
+Apps Extreme Saver paused wake up when you turn it off, when Sparewatt quits (also when it is stopped with `kill`), and
+at the next launch if Sparewatt crashed while they were paused. If Extreme Saver is still on at that launch, the apps
+stay paused until you turn it off.
+
+## My switches are gone, or one is missing
+
+If `switches.json` can't be read in full, the Switches page says so at the top, and the file as it was is kept beside
+it as `switches.json.bak` before anything is saved over it. A field left out of an entry is not a problem: it takes its
+usual default. Fix the file (or copy the `.bak` back), then *Reload from file*.
+
 ## Known issues
 
-- The *Shelf, Profiles & Alerts* settings page (profile editing, quiet hours, the low-storage limit, the
-  "busy with no window" threshold and the Shelf options) has no entry in the dashboard yet, so those settings keep their
-  defaults for now.
+- Downloads tidy-up can find nothing on a large home folder: it reads only the first 20,000 Spotlight results for the
+  whole home folder, so files in Downloads may never be reached.
 - Safari's cost is counted partly under macOS (see [How the estimates work](07%20How%20the%20estimates%20work.md#limits-of-the-method)).

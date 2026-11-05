@@ -3,7 +3,8 @@
 **⌥⌘R** opens the dashboard from anywhere. While it is open, Sparewatt shows in the Dock and in ⌘-Tab.
 
 - **Monitor**: Overview, Processor, Graphics, Memory, Storage, Temperature, Network, Battery, Power flow, History.
-- **Control**: Switches, On Battery, Extreme Saver, Watchlist, Menu Bar, Startup Items, This App.
+- **Control**: Switches, On Battery, Extreme Saver, Watchlist, Shelf, Profiles & Alerts, Menu Bar, Startup Items, This
+  App.
 
 Monitor pages show the same cards as the menu bar panels, with more detail and 24-hour trends.
 
@@ -26,5 +27,6 @@ and a log of **every stretch on battery**: how long, how much charge it used, an
 
 ## This App
 
-What Sparewatt itself uses — processor time and memory — split by feature, with the settings that change it. Slower
+What Sparewatt itself uses — processor time and memory — split by feature (Switches and the once-a-minute insights
+included), with the settings that change it. Slower
 update speed (Dashboard → Menu Bar → *Look*) costs less.
