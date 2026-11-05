@@ -4,7 +4,7 @@
 
 <p align="center">How to use Sparewatt, the macOS menu bar app that shows what your Mac's processor, graphics, memory, storage, battery and power are doing — and helps you keep battery time for the things you actually use.</p>
 
-<p align="center"><img src="images/screenshots/dashboard-overview.png" width="900" alt="Sparewatt dashboard"></p>
+<p align="center"><img src="images/linkedin-cover.jpg" width="900" alt="Sparewatt: a free menu bar monitor and power saver for macOS"></p>
 
 This repository holds **documentation only** — no app code. The app itself lives in its own repository.
 
