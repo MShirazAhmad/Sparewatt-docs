@@ -16,7 +16,8 @@ A holding place for files on the way somewhere else.
 
 - **Drop files on the menu bar item** (or the Storage panel's Shelf) to keep them there.
 - Drag them out again — all at once or one by one — into any app or folder.
-- From the Shelf: Move to, AirDrop, Zip, Copy path, Open with, Trash.
+- From the Shelf: Move to, AirDrop, Zip, Copy path, Open with, Trash. In the Shelf card, Trash acts at once (the files
+  go to the Trash and can be put back); the floating Shelf asks for a second click.
 - **Folder chips**: drop on one to move files there. Moves stay moves on the same disk, become copies to another disk;
   hold ⌥ while dropping to copy.
 - While you drag files anywhere, a **drop zone follows a little behind the pointer**; optionally, **shaking** the pointer

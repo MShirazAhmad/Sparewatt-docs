@@ -21,7 +21,8 @@ administrator each time.
 
 Sparewatt sends notifications through macOS's scripting tool, so clicking one does not open the app. Open the panel
 from the menu bar instead (the idle-app Quit buttons are in the Battery and Power panels). If notifications don't show
-at all, check quiet hours and macOS's Focus settings.
+at all, check macOS's Focus and notification settings (Sparewatt's own quiet hours can't be switched on yet; see Known
+issues).
 
 ## I never get idle-app suggestions
 

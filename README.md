@@ -9,6 +9,25 @@
 This repository holds **documentation only** — no app code. The app itself lives in its own repository.
 Sparewatt was called **ResourceWarden** until November 2026.
 
+## Features
+
+**[Every feature in detail](features/README.md)** — purpose, what it does, use cases, benefits, settings and limits, with a
+catalogue and everyday scenarios ("a full day on battery", "the battery drops overnight", "running local AI models").
+
+| Area | Page |
+|---|---|
+| Menu bar: readings, grouped item with outline, hover panels, colours, warnings | [Menu bar](features/01%20Menu%20bar.md) |
+| Processor, graphics, memory | [Processor, graphics and memory](features/02%20Processor%2C%20graphics%20and%20memory.md) |
+| Temperature and fans, network, storage space | [Temperature, network and storage space](features/03%20Temperature%2C%20network%20and%20storage%20space.md) |
+| Named processes, quitting, background normals, Watchlist | [Who is using it](features/04%20Who%20is%20using%20it.md) |
+| Battery state, charge plan, wear, overnight drain | [Battery](features/05%20Battery.md) |
+| Power flow, USB power out, power per app, idle apps | [Power](features/06%20Power.md) |
+| Energy modes, On Battery settings, Extreme Saver, profiles | [Power controls](features/07%20Power%20controls.md) |
+| Every notification | [Alerts and notifications](features/08%20Alerts%20and%20notifications.md) |
+| Latest File, Shelf, caches, Downloads tidy-up, clipboard | [Files and storage](features/09%20Files%20and%20storage.md) |
+| Local services on/off | [Switches](features/10%20Switches.md) |
+| Dashboard, Mac health, history, Startup Items, This App | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
+
 ## Guide
 
 | Page | What it covers |

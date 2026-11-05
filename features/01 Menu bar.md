@@ -1,0 +1,207 @@
+# Menu bar
+
+The menu bar is where Sparewatt lives. Everything else — panels, dashboard, alerts — starts from here.
+
+---
+
+## Live readings
+
+**Purpose.** See how hard the Mac is working without opening anything.
+
+**What it does.** Shows up to nine readings, each as a small caption over a value:
+
+| Part | Shows | Notes |
+|---|---|---|
+| SWITCH | how many of your Switches are on, e.g. `2/5` | only when you have Switches; `…` while one is changing |
+| CPU | processor load | a 10-second average by default, so short spikes don't make it jump |
+| GPU | graphics load | optionally the memory the graphics chip holds (100 MB and up) |
+| RAM | memory used (apps + system + compressed) | |
+| STORAGE | storage used, or free space, or read/write speed during big copies | read/write appears after 3 s above 20 MB/s, returns after 10 s below 5 MB/s |
+| TEMP | processor temperature | `n/a` when the Mac has no such sensor |
+| NET | download and upload speed | **hidden by default** |
+| BATT | time left on battery, or the charge state, over the battery's real fill to 0.1% | a leaf while Extreme Saver is on |
+| Power | ON BATT ↓ watts, CHARGING ↑ watts, or the Mac's draw on the charger | |
+
+**Use cases.**
+- Glance up during a video call to see whether the processor or memory is why things feel slow.
+- Watch the battery part while unplugged to see the time left move as you open and close apps.
+- Notice a big file copy running (STORAGE switches to read/write speed).
+
+**Benefits.**
+- One glance answers "is my Mac busy, and with what kind of work?".
+- Battery readings are the battery's own numbers (real fill to 0.1%, true charge state), not the rounded percentage macOS shows.
+- Items keep a steady width for 30 seconds, so neighbouring menu bar icons don't jump around.
+
+**Where.** The menu bar. Choose which parts appear on Dashboard → **Menu Bar** → *Show in the menu bar*.
+
+---
+
+## One grouped item
+
+**Purpose.** Save menu bar space, especially on MacBooks with a camera notch.
+
+**What it does.** Draws every reading inside **one** menu bar item, side by side with small gaps, instead of one item per
+reading. Hovering still opens the right panel for the part under the pointer. VoiceOver reads it as one sentence
+("cpu 12%, ram 54%…").
+
+**Use cases.** A crowded menu bar where macOS hides items behind the notch.
+
+**Benefits.** Takes less room than separate items; nothing gets pushed off-screen.
+
+**Outline and shade.** The grouped item sits inside a thin rounded outline with a soft shade behind it, so it reads as one
+unit and stands apart from other menu bar icons. The letters are centred about 2 pt clear of the line, and the colours
+follow a light or dark menu bar.
+
+**Settings.** *Group all items into one (saves space)* — **on** by default. Turn it off to get separate items you can
+⌘-drag. *Outline and shade behind the grouped item* — **on** by default.
+
+---
+
+## Hover panels
+
+**Purpose.** Details for one reading without opening a window.
+
+**What it does.** Pointing at a part opens its panel (330 pt wide); moving away closes it. Clicking opens it too and
+keeps it until you click again. Panels taller than the screen scroll inside. What you open or tick in a panel (a row, a
+sensor group, a folder) is remembered while Sparewatt runs. Each panel header has a button to open the dashboard.
+
+| Part | Opens |
+|---|---|
+| CPU / GPU | Processor / Graphics |
+| RAM | Memory |
+| STORAGE | Storage |
+| TEMP | Temperature |
+| NET | Network |
+| BATT | Battery |
+| Power | Power |
+| SWITCH | Switches |
+
+**Benefits.** Answers the follow-up question ("which app?") in one move of the mouse.
+
+**Settings.** *Pop up an item's panel when the mouse is over it* — on by default.
+
+---
+
+## Words or icons, size and speed
+
+**Purpose.** Make the readings fit your menu bar and your battery.
+
+**Settings** (Dashboard → Menu Bar → *Look* and *Details*):
+
+| Setting | Default | Options |
+|---|---|---|
+| Small icons instead of words (CPU, RAM…) | off | |
+| Text size | Normal | Compact, Normal, Large |
+| Update speed | every 2 seconds | 1, 2, 5, 10 seconds (Extreme Saver can slow it to 30 s) |
+| CPU: 10-second average instead of every spike | on | |
+| CPU: two tiny bars — performance and efficiency cores | off | Apple silicon only |
+| GPU: memory it holds | off | |
+| Storage: show free space instead of % used | off | |
+| Storage: show read/write speed during big copies | off | |
+| Last-minute trend line on | none | Processor, Graphics, Temperature, Network, Power flow |
+
+**Benefits.** Slower updates use a little less battery; the page shows what Sparewatt itself uses right now.
+
+---
+
+## Colours by value
+
+**Purpose.** See at a glance how heavy the load is, without reading numbers.
+
+**What it does.** Colours an item in five bands — green, lime, yellow, orange, red — by its value. Each item has its own
+four limits. Colours are adjusted so they stay readable on both light and dark menu bars.
+
+| Item | Default limits (green ends → red starts) |
+|---|---|
+| Processor | 30 / 50 / 70 / 85 % |
+| Graphics | 30 / 50 / 70 / 85 % |
+| Memory | 50 / 65 / 80 / 90 % |
+| Storage | 50 / 70 / 85 / 95 % |
+| Temperature | 50 / 65 / 80 / 90 °C |
+
+**Use cases.** You want a calm green bar most of the time and a colour change only when something is unusual.
+
+**Settings.** Dashboard → Menu Bar → *Colours by value*: one switch per item (off by default), its four limits, and
+*Reset to defaults*.
+
+---
+
+## Red warnings
+
+**Purpose.** Make an item impossible to miss when it needs attention.
+
+**What it does.** Turns an item's text red when:
+
+| Item | Red when | Default |
+|---|---|---|
+| Processor | above a limit | 85% |
+| Memory | above a limit | 85% |
+| Storage | above a limit | 90% used |
+| Temperature | above a limit | 90 °C |
+| Battery | below a limit while on battery, or when the battery state doesn't add up | 20% |
+| SWITCH | a switch failed | |
+
+Red wins over any colour band.
+
+**Settings.** Dashboard → Menu Bar → *Warnings*: *Turn an item red when it needs attention* (on), and each limit.
+
+---
+
+## Drain colours
+
+**Purpose.** On battery, show how fast the battery is being used, in a way that means something: hours.
+
+**What it does.** Works out how long a **full** battery would last at the current drain and colours the battery and
+power parts: red under 1 h, orange under 2 h, yellow under 3.5 h, lime under 5 h, green from 5 h. Only on battery and
+only while draining at least 0.5 W.
+
+**Use cases.** You want to know whether what you are doing right now is "a 10-hour workload" or "a 2-hour workload".
+
+**Settings.** *On battery, colour by drain rate* — **off** by default; the four limits are adjustable (0.1–24 h).
+
+---
+
+## Busy-app name
+
+**Purpose.** Know who is behind a busy processor or graphics chip without opening a panel.
+
+**What it does.** When the processor stays above 80% (or graphics above 50%) for 30 seconds, the app using it most is
+named in the menu bar item's tooltip: "CPU busy: Xcode · GPU busy: Safari".
+
+**Settings.** *Name the app behind a busy CPU (80%+) or GPU (50%+) in the item's tooltip* — off by default.
+
+**Limits.** Only shown on the grouped item.
+
+---
+
+## Hidden-item check
+
+**Purpose.** macOS can hide menu bar items silently — behind the notch, off-screen, or switched off in System Settings.
+Then the app seems to have vanished.
+
+**What it does.** Ten seconds after launch and every minute after, Sparewatt checks that its item is really visible. If
+not, it shows one alert per run: *Sparewatt is running, but hidden*, with the reason (behind the camera notch, off every
+screen, or not shown by macOS) and a button that opens System Settings → Menu Bar.
+
+**Benefits.** You find out why, instead of reinstalling.
+
+**Settings.** The alert has a *Don't show again* box.
+
+---
+
+## Right-click menu
+
+**What it has.**
+- *Update available…* (only when an update was found)
+- *Open Dashboard (⌥⌘R)*
+- *Settings…* (opens the dashboard on **On Battery**)
+- *Turn Extreme Saver On / Off*
+- your **Switches** with a tick when on, and *Manage switches…*
+- *Quit Sparewatt*
+
+---
+
+## Drop files on the menu bar
+
+Drop files on any part of the menu bar item: they go onto the **Shelf** and the Storage panel opens. See
+[Files and storage](09%20Files%20and%20storage.md).

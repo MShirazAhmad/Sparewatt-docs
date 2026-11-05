@@ -2,10 +2,15 @@
 
 ## What stays on your Mac
 
-Everything. Sparewatt collects nothing and sends nothing. The only network request it can make is the once-a-day
-update check against GitHub, which is **off** by default.
+Everything. Sparewatt collects nothing and sends nothing about you. It makes only two kinds of network request, both
+your choice:
 
-The clipboard history is kept in memory only (never written to disk) and skips passwords.
+- the once-a-day update check against GitHub, **off** by default;
+- a [Switch](../features/10%20Switches.md) whose running check is *a web address answers* asks that address (usually a
+  server on your own Mac) every 10 seconds.
+
+The clipboard history is kept in memory only and skips passwords. Entries you **pin** are saved, as plain text, in
+Sparewatt's settings so they survive a restart — don't pin secrets.
 
 ## Prompts you may see
 
@@ -24,6 +29,8 @@ Latest File and Downloads tidy-up find files through Spotlight, so Sparewatt nev
 
 ## Deleting things
 
-- Clearing a cache and Downloads tidy-up **move files to the Trash** — nothing is deleted outright.
-- Automatic cache size limits delete only inside `~/Library/Caches`.
+- Clearing a cache (after a confirmation), Downloads tidy-up and the Shelf's Trash button **move files to the Trash**,
+  so they can be put back.
+- The one thing that deletes outright: a cache **size limit** you set empties that cache when it grows past the limit —
+  only ever inside `~/Library/Caches`.
 - Quitting an app from Sparewatt is a normal quit (the app can ask to save). Force Quit asks you first.

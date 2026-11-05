@@ -2,6 +2,14 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-05
+
+- The grouped menu bar item has a thin outline and a soft shade behind it (*Outline and shade behind the grouped item*,
+  on by default).
+- **Power going out to USB devices**: the power-flow diagram shows a device charging from the Mac's ports, with the
+  measured watts ("iPhone 5.6 W"), and the Power card adds *iPhone gets 5.6 W*.
+- Idle-app notifications held back by quiet hours are sent once quiet hours end, instead of being skipped.
+
 ## 2026-11-04
 
 - **Renamed to Sparewatt** (was ResourceWarden). New app name, bundle ID `app.sparewatt.Sparewatt`, data folder

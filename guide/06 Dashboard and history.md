@@ -3,7 +3,7 @@
 **⌥⌘R** opens the dashboard from anywhere. While it is open, Sparewatt shows in the Dock and in ⌘-Tab.
 
 - **Monitor**: Overview, Processor, Graphics, Memory, Storage, Temperature, Network, Battery, Power flow, History.
-- **Control**: On Battery, Extreme Saver, Watchlist, Menu Bar, Startup Items, This App, Switches.
+- **Control**: Switches, On Battery, Extreme Saver, Watchlist, Menu Bar, Startup Items, This App.
 
 Monitor pages show the same cards as the menu bar panels, with more detail and 24-hour trends.
 
