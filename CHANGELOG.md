@@ -2,6 +2,22 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-06 — Sparewatt 1.5
+
+Released as [Sparewatt 1.5](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.5-2026-11-06), with
+everything from 5 November below.
+
+- **Icon picker**: a switch's icon, and each profile's, is picked from a searchable grid of symbols instead of typing an
+  SF Symbol name. Search by name or by a word like "database" or "AI"; any other SF Symbol name can still be typed in.
+- **Fixes:**
+  - A switch that comes up after Sparewatt stopped waiting no longer shows ON next to "Didn't come up — see its log":
+    the message goes away as soon as the switch is on (and "Still running" as soon as it is off). A start command that
+    is still running, such as a slow server loading, gets 60 seconds instead of 30 before that message.
+  - A switch's log keeps every start and stop instead of being emptied at each start, and stops without a stop command
+    are logged too. A log over 5 MB is set aside as `<name>.old.log`.
+  - Just after unplugging, the menu bar shows *ON BATTERY* with the battery's draw instead of *NOT CHARGING* /
+    *POWER 0W* while the battery gauge catches up.
+
 ## 2026-11-05
 
 - **AI Assistant** (dashboard → Control): an MCP server, off by default, lets Claude Code, Codex, Cursor, LM Studio or

@@ -127,6 +127,7 @@ longer paused; turn it off and on to pause them again.
 Clicking a profile turns Extreme Saver on or off first, then sets the two energy modes, one change at a time and only
 where needed. The current profile is highlighted — only once every change went through: cancelling a password prompt
 stops there, and if something had already changed, no profile is highlighted. Hovering a button shows what it sets.
+Names, icons (picked from a searchable grid) and choices are edited on Dashboard → Shelf, Profiles & Alerts.
 
 **Use cases.** Walking into a lecture, back to the lab bench, off to the airport.
 

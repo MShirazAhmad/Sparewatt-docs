@@ -34,7 +34,8 @@ nothing stays frozen once it is gone. ⌥⌘E toggles Extreme Saver from anywher
 
 **Lecture**, **Lab** and **Travel**: energy modes for battery and charger plus Extreme Saver, applied in one click from
 the top of the Battery panel. Each change asks for your password; a profile is marked as the current one only when every
-change went through. Edit their names and choices on Dashboard → **Shelf, Profiles & Alerts**.
+change went through. Edit their names, icons and choices on Dashboard → **Shelf, Profiles & Alerts** (click a
+profile's icon to pick another).
 
 ## Watchlist
 
@@ -43,7 +44,7 @@ energy — by default only on battery.
 
 ## Shelf, Profiles & Alerts
 
-One page for the profiles' names and choices, the Shelf's options, quiet hours, the low-storage and "busy with no
+One page for the profiles' names, icons and choices, the Shelf's options, quiet hours, the low-storage and "busy with no
 window" alerts, and the list of keyboard shortcuts.
 
 ## Switches

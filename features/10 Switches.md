@@ -13,7 +13,7 @@ Each switch has:
 
 | Field | Meaning |
 |---|---|
-| Name, group, icon | how it is shown; switches are grouped under headings (Web, AI models, Databases…) |
+| Name, group, icon | how it is shown; switches are grouped under headings (Web, AI models, Databases…); the icon is picked from a searchable grid of symbols |
 | Start command | run in your login shell (`zsh -l`), so Homebrew, pyenv and nvm paths work |
 | Stop command | optional; empty = stop what the start command launched |
 | Run in folder | where the commands run (home if empty) |
@@ -32,7 +32,8 @@ Each switch has:
 | A command succeeds | the command exits with 0 within 4 seconds |
 | Started by this app | the process Sparewatt started is still running |
 
-Output of every start and stop goes to a log, `~/Library/Logs/Sparewatt/<name>.log`.
+Output of every start and stop is added to a log, `~/Library/Logs/Sparewatt/<name>.log`; earlier starts and stops stay
+in it. A log that grows past 5 MB is set aside as `<name>.old.log` and a new one begins.
 
 ---
 
@@ -67,8 +68,9 @@ Output of every start and stop goes to a log, `~/Library/Logs/Sparewatt/<name>.l
 - **Dashboard → Switches** — the full list with errors, *Open its log*, *Edit*, *Add switch*, and the editor: *Test* tells
   you whether the running check sees it on right now.
 
-When a switch doesn't come up within 30 seconds: "Didn't come up — see its log". When it doesn't stop: "Still running —
-check the stop command".
+When a switch doesn't come up within 30 seconds: "Didn't come up — see its log" (a start command that is still running,
+such as a slow server loading, gets 60 seconds). When it doesn't stop: "Still running — check the stop command".
+Sparewatt keeps checking every 10 seconds, so a switch that gets there later turns on (or off) and the message goes away.
 
 ---
 
