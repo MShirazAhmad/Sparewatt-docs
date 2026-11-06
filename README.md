@@ -36,6 +36,12 @@ finding out why. So I put everything I needed into the menu bar:
 - **Battery status** — true tracking from the battery's measured charge (mAh), not just a rounded percentage.
 - **Adapter** — clearly shows where the power comes from and which part is taking it. ([Power](features/06%20Power.md))
 
+**The result.** Here is my menu bar on battery with Sparewatt doing its job: only 2 of my 12 background services
+switched on, the processor at 26% and the graphics chip at 4%. The Mac draws about 13 W, and with 85.7% left macOS
+estimates **6 hours 26 minutes** — where the same Mac used to be empty in about an hour.
+
+<p align="center"><img src="images/battery-proof.png" width="760" alt="Sparewatt menu bar on battery: 2 of 12 switches on, CPU 26%, GPU 4%, 85.7% with 6:26 left, drawing 13 W"></p>
+
 So I started listing what I actually needed. When I need the battery to last, which app should I close? Which apps
 can keep running without costing much? What is quietly draining it right now? I kept asking an AI coding assistant to
 add one more feature, then another, and along the way those small requests became an app of my own.
