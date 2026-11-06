@@ -36,7 +36,12 @@ finding out why. So I put everything I needed into the menu bar:
 - **Battery status** — true tracking from the battery's measured charge (mAh), not just a rounded percentage.
 - **Adapter** — clearly shows where the power comes from and which part is taking it. ([Power](features/06%20Power.md))
 
-**The result.** Here is my menu bar on battery with Sparewatt doing its job: only 2 of my 12 background services
+**Before.** The same Mac with more services on (4 of 12 switched on) and something keeping the processor at 100%:
+it draws about 40 W, and even at 93.2% macOS estimates only **2 hours 13 minutes**.
+
+<p align="center"><img src="images/battery-heavy.png" width="760" alt="Sparewatt menu bar on battery: 4 of 12 switches on, CPU 100%, GPU 41%, 93.2% with 2:13 left, drawing 40 W"></p>
+
+**After.** Here is my menu bar on battery with Sparewatt doing its job: only 2 of my 12 background services
 switched on, the processor at 26% and the graphics chip at 4%. The Mac draws about 13 W, and with 85.7% left macOS
 estimates **6 hours 26 minutes** — where the same Mac used to be empty in about an hour.
 
