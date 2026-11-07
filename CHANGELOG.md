@@ -2,6 +2,55 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-06 — Sparewatt 1.6
+
+Released as [Sparewatt 1.6](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.6-2026-11-06).
+
+- **Uses much less power itself.** The power-per-app list no longer runs a one-second `top` over every process (about a
+  second of processor time each time); one quick `ps` reading does it, measured from the previous reading. Closed panels
+  and a closed dashboard stop redrawing in the background. Live diagrams draw at 15 frames a second and only while you
+  can see them. Switch checks run every 10 seconds while a panel or the dashboard is open, otherwise once a minute, and
+  "a process is running" checks look through the process list once for all switches. Menu bar labels already drawn
+  are reused instead of drawn again. Temperatures are read in the background (the menu bar and panels no longer wait
+  for them) and, with nothing open, only the sensors the menu bar uses, every third update. Free space is read every
+  30 seconds.
+  - What woke the Mac comes from macOS's power log (`pmset -g log`), now read only while the *While asleep* card is
+    shown (Dashboard → Battery) and at most once an hour, at background priority on the efficiency cores. Before, it
+    was read at every launch and every 30 minutes, and one read costs about 10 seconds of processor time because macOS
+    prints its whole power log. The AI Assistant's insights also ask for a read; it is ready on the next call.
+- **New Files panel and FILES part in the menu bar** (shows how many files are on the Shelf): Latest File, the Shelf and
+  the clipboard moved out of the Storage panel, which now shows storage only. ⌥⌘V and files dropped on the menu bar
+  open the Files panel. Hide the FILES part (Menu Bar settings) to have the three back in the Storage panel.
+- **One time left.** On battery, the menu bar, the Battery and Power panels, the charge plan, Mac health and the AI
+  Assistant all show the same figure: macOS's estimate from the battery's averaged draw. On the charger, *if you unplug
+  now* uses your usual draw on battery in both panels.
+- **Charger details** in the Power panel while plugged in: the most it can give (65 W max), its kind and port (USB
+  Power Delivery 3.x · on the USB-C port 1; also plain USB-C, USB charging ports, MagSafe 3, wireless), the voltage and
+  current agreed with the Mac (20 V × 3.25 A), what comes in now (63.5 W at 20.1 V · 3.16 A), every voltage level it
+  offers with the one in use highlighted, and — for Apple chargers — name, maker, serial and firmware. Also in the AI
+  Assistant's `get_battery`. The rating, kind, voltage levels, name and serial, the port and the Power Delivery version
+  are read once, in the background, when macOS says a charger was plugged in, pulled out or swapped, or agreed a new
+  voltage (and once more 5 seconds later, in case they were still agreeing); the battery's drain average then starts
+  afresh. The regular update every 2 seconds reads only what comes in (watts, volts, amps). The version shows as 3.x
+  because macOS doesn't tell 3.0, 3.1 and 3.2 apart.
+- **Charger too small for the load** (say a 30 W charger while the Mac uses 57 W): the Mac's draw now counts the
+  watts the battery adds, so the Power panel, the flow diagram and power per app show 57 W, not the charger's 29 W.
+  The menu bar reads **CHARGER LOW 42.1% · 4:27 LEFT ↓8W** with a red glow instead of "ON BATT", the Power panel shows
+  how long the battery lasts at that drain ("left, draining"), and the charge plan says "— even plugged in". That time left comes from the battery's average drain over the last minute, counted only since the
+  charger went in, not from macOS's own estimate, which lagged behind: it showed 3 h left at an 8 W drain from 37 Wh,
+  where 37 Wh ÷ 8 W is about 4 h 37 min.
+- **Time to full while charging**: the Battery and Power panels say "full in 1h 10m" — macOS's own estimate when it has
+  one (it knows charging slows near the top), otherwise the energy still needed ÷ the last minute's charging power.
+- **The battery and power parts of the menu bar read as one pair**, nothing said twice: the battery part gives the state
+  and the fill, the power part the time and which way the power flows — **⚡︎ CHARGING 43.0% · 5:02 TO FULL ↑13W**,
+  **ON BATTERY 42.1% · 3:01 LEFT ↓8W**, **⏸︎ ON HOLD 80.0% · MAC USES 37W**. With one of them hidden, the other carries
+  everything as before.
+- Power per app: in a menu bar panel the list sits under the chart, so names read in full ("Draws everything on screen",
+  not "Draws eve…").
+- Sizes show the decimals that matter: 164 GB, 12.4 GB, 1.25 GB.
+- Mac health: "Storage is getting full" only under 15% free **and** under 50 GB free (164 GB free on a 1 TB disk is fine).
+- Dashboard overview: each tile's *Open* link has its own row instead of covering the tile's last line.
+
 ## 2026-11-06 — Sparewatt 1.5.1
 
 Released as [Sparewatt 1.5.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.5.1-2026-11-06).

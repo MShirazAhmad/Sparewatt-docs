@@ -2,14 +2,20 @@
 
 ---
 
-## Time left at this rate
+## Time left
 
-<p align="center"><img src="../images/features/time-left.png" width="354" alt="Time left at this rate"><br><em>Time left at this rate: on adapter it shows how long a full battery would last if you unplugged now.</em></p>
+<p align="center"><img src="../images/features/time-left.png" width="354" alt="Time left"><br><em>Time left: on the charger it shows how long the battery would last if you unplugged now.</em></p>
 
-**Purpose.** Answer "how long will the battery last if I keep doing this?" from the actual draw right now.
+**Purpose.** Answer "how long will the battery last if I keep doing this?" — with one figure, the same everywhere.
 
-**What it does.** Battery energy (Wh) ÷ the Mac's current draw. On battery it reads *left at this rate*; on the charger,
-*if unplugged now*. It changes as you use the Mac more or less — that is the point: open a heavy app and watch it drop.
+**What it does.** On battery it reads *left*: macOS's own estimate, worked out from the battery's averaged draw, so it
+follows what you do within a minute or two without jumping at every spike (just after unplugging, while macOS is still
+working it out, it is battery energy ÷ the current draw). The menu bar, the Battery panel, the charge plan, Mac health
+and the AI Assistant all show this same figure. On the charger it reads *if unplugged now*: battery energy ÷ your usual
+draw on battery (your last 30 minutes on battery, or your last few battery stretches). On a charger too small for the
+load, where the battery drains even while plugged in, it reads *left, draining*: battery energy ÷ the battery's average
+drain over the last minute, counted only since the charger went in. macOS's own estimate lags behind there: it showed
+3 h left at an 8 W drain from 37 Wh, where 37 Wh ÷ 8 W is about 4 h 37 min.
 
 **Use cases.** Decide whether to close the video call's camera, or the second monitor, to make it to the end of the
 session.
@@ -71,6 +77,39 @@ limit → orange: charging will be slow while the Mac is busy.
 **Use cases.** A hotel USB-C port, a phone charger, or a long thin cable on a 16" MacBook Pro.
 
 **Where.** Power panel, only when there is something to say.
+
+---
+
+## Charger details
+
+**Purpose.** Know exactly what is plugged in: how much it can give, how it talks to the Mac, and what it is giving now.
+
+**What it does.** While a charger is connected, the Power panel shows:
+
+| Row | Example | Where it comes from |
+|---|---|---|
+| Most it can give | 65 W max | the charger's rating, as macOS reads it |
+| Kind and port | USB Power Delivery 3.x · on the USB-C port 1 | macOS's charger family and the USB-C port's Power Delivery partner; also *USB-C, no Power Delivery*, *USB charging port*, *MagSafe 3*, *wireless* |
+| Agreed | 20 V × 3.25 A = 65 W | the voltage and current the charger and the Mac settled on |
+| Coming in now | 63.5 W at 20.1 V · 3.16 A | measured at the Mac's power input |
+| Voltage levels it offers | 5 V × 3 A, 9 V × 3 A, 12 V × 3 A, 15 V × 3 A, **20 V × 3.25 A** | every level a Power Delivery charger advertises; the one in use is highlighted |
+| Name, maker, serial, firmware | Apple 96W USB-C Power Adapter · serial … · firmware … | only Apple chargers report these; others show "not reported" |
+
+**Use cases.** Check that a "100 W" charger really offers 20 V × 5 A; see that a hotel charger only gives 5 V (no Power
+Delivery); find which port the charger is on.
+
+**When it updates.** When a charger is plugged in, pulled out or swapped, or agrees a new voltage with the Mac, macOS
+tells Sparewatt. It then reads the charger's fixed details (rating, kind, voltage levels, name and serial) and looks up
+its port and Power Delivery version once, in the background, and once more 5 seconds later in case the two were still
+agreeing. The battery's drain average also starts afresh. The regular update every 2 seconds reads only what comes in
+now (watts, volts, amps).
+
+**Limits.** A port is named only when it is clear which one brings power in (with a display on another USB-C port that
+also speaks Power Delivery, the port is left out). The cable's own rating isn't shown: macOS doesn't report it. The
+Power Delivery version shows as *3.x*: macOS reports revision 3 without telling 3.0, 3.1 and 3.2 apart (revisions 1 and
+2 show as 1.0 and 2.0).
+
+**Where.** Power panel and Dashboard → **Power flow**, while plugged in. The AI Assistant's `get_battery` includes it.
 
 ---
 

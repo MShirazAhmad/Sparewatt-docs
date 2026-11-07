@@ -76,9 +76,10 @@ draining on a too-small charger) are caught in a minute.
 
 **Purpose.** Plan the day: when will the battery reach 20%, and when will it run out?
 
-**What it does.** "At your usual 14 W you reach 20% around **4:40 PM** (2h 10m), empty around 6:05 PM."
-*Usual* is the average of your last 30 minutes on battery, or of your last few battery stretches when you have just
-unplugged. Below 20%: "about 35 min left at your usual use". On the charger, the card reads **If you unplug now**.
+**What it does.** "You reach 20% around **4:40 PM** (2h 10m) and run out around 6:05 PM." On battery it uses the same
+[time left](06%20Power.md#time-left) as the menu bar and the panels, so the times always agree with them. Below 20%:
+"about 35 min left". On the charger, the card reads **If you unplug now** and uses your usual draw on battery (your last
+30 minutes on battery, or your last few battery stretches): "…, at your usual 14 W".
 
 **Use cases.**
 - A long lab day: know whether you need the charger before the afternoon session.
@@ -127,6 +128,11 @@ the **longest sleep** and how much charge it cost, flagged when it lost more tha
 
 **Use cases.** The MacBook loses 15% in a night with the lid closed: see whether Power Nap or network wakes are the
 cause, then switch them off on the **On Battery** page.
+
+**Limits.** The list can be up to an hour old. Sparewatt reads the power log (`pmset -g log`) only while this card is
+shown, at most once an hour, at background priority on the efficiency cores: one read costs about 10 seconds of
+processor time, because macOS prints its whole power log. The AI Assistant's insights also ask for a read; it is ready
+on the next call.
 
 **Where.** Dashboard → **Battery**.
 

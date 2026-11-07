@@ -10,10 +10,11 @@ The menu bar is where Sparewatt lives. Everything else — panels, dashboard, al
 
 **Purpose.** See how hard the Mac is working without opening anything.
 
-**What it does.** Shows up to nine readings, each as a small caption over a value:
+**What it does.** Shows up to ten readings, each as a small caption over a value:
 
 | Part | Shows | Notes |
 |---|---|---|
+| FILES | how many files are on the Shelf | opens Latest File, the Shelf and the clipboard; hide it to have them in the Storage panel |
 | SWITCH | how many of your Switches are on, e.g. `2/5` | only when you have Switches; `…` while one is changing |
 | CPU | processor load | a 10-second average by default, so short spikes don't make it jump |
 | GPU | graphics load | optionally the memory the graphics chip holds (100 MB and up) |
@@ -21,8 +22,8 @@ The menu bar is where Sparewatt lives. Everything else — panels, dashboard, al
 | STORAGE | storage used, or free space, or read/write speed during big copies | read/write appears after 3 s above 20 MB/s, returns after 10 s below 5 MB/s |
 | TEMP | processor temperature | `n/a` when the Mac has no such sensor |
 | NET | download and upload speed | **hidden by default** |
-| BATT | time left on battery, or the charge state, over the battery's real fill to 0.1% | a leaf while Extreme Saver is on |
-| Power | ON BATT ↓ watts, CHARGING ↑ watts, or the Mac's draw on the charger | |
+| BATT | the battery's state (ON BATTERY, ⚡︎ CHARGING, ⏸︎ ON HOLD, ⇥ AT LIMIT, ✓ FULL, CHARGER LOW) over its real fill to 0.1% | a leaf while Extreme Saver is on; with the Power part hidden it also shows the time left or to full, and the battery's watts |
+| Power | the time and the flow that go with it: `3:01 LEFT ↓8W` on battery, `5:02 TO FULL ↑13W` while charging, `MAC USES 37W` when the battery rests | glows red when plugged in but the battery still drains (the charger is too small); the two parts read as one pair, nothing said twice |
 
 **Use cases.**
 - Glance up during a video call to see whether the processor or memory is why things feel slow.
@@ -77,6 +78,7 @@ sensor group, a folder) is remembered while Sparewatt runs. Each panel header ha
 | BATT | Battery |
 | Power | Power |
 | SWITCH | Switches |
+| FILES | Files (Latest File, Shelf, clipboard) |
 
 **Benefits.** Answers the follow-up question ("which app?") in one move of the mouse.
 
@@ -209,5 +211,5 @@ screen, or not shown by macOS) and a button that opens System Settings → Menu 
 
 ## Drop files on the menu bar
 
-Drop files on any part of the menu bar item: they go onto the **Shelf** and the Storage panel opens. See
+Drop files on any part of the menu bar item: they go onto the **Shelf** and the Files panel opens. See
 [Files and storage](09%20Files%20and%20storage.md).

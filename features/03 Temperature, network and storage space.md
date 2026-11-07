@@ -78,8 +78,9 @@ bar*); Dashboard → **Network**.
 - Never opens the folders macOS protects (Library, Desktop, Documents, Downloads, Pictures, Movies, Music), so no
   permission prompts appear.
 
-**Where.** STORAGE part of the menu bar, ⌥⌘V; Dashboard → **Storage**. The rest of the Storage panel — Latest File, the
-Shelf, the clipboard, caches, Downloads tidy-up — is described in [Files and storage](09%20Files%20and%20storage.md).
+**Where.** STORAGE part of the menu bar; Dashboard → **Storage**. The rest of the Storage panel — app caches and Downloads
+tidy-up — and the Files panel (Latest File, the Shelf, the clipboard) are described in
+[Files and storage](09%20Files%20and%20storage.md).
 
 **Settings.** Red above 90% used; *Storage: show free space instead of % used*; *show read/write speed during big
 copies* (Dashboard → Menu Bar).

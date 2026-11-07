@@ -22,7 +22,8 @@ Each switch has:
 | Stop on battery | stopped when you unplug, started again on the charger |
 | Start when Sparewatt starts | turned on at launch |
 
-**Running checks** (every 10 seconds):
+**Running checks** (every 10 seconds while a panel or the dashboard is open, otherwise once a minute; opening the
+Switches panel checks at once):
 
 | Check | On when |
 |---|---|
@@ -70,7 +71,7 @@ in it. A log that grows past 5 MB is set aside as `<name>.old.log` and a new one
 
 When a switch doesn't come up within 30 seconds: "Didn't come up — see its log" (a start command that is still running,
 such as a slow server loading, gets 60 seconds). When it doesn't stop: "Still running — check the stop command".
-Sparewatt keeps checking every 10 seconds, so a switch that gets there later turns on (or off) and the message goes away.
+Sparewatt keeps checking, so a switch that gets there later turns on (or off) and the message goes away.
 
 ---
 

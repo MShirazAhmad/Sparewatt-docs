@@ -42,7 +42,7 @@ tiles (Processor, Graphics, Memory, Storage, Battery, Power flow, Temperature, N
 | More than 4 GB spilled to disk (swap) | worth a look |
 | Processor above 95 °C / above 85 °C | needs action / worth a look |
 | Battery health under 80% | worth a look |
-| On battery with under an hour left at this rate | needs action |
+| On battery with under an hour left | needs action |
 
 Click a finding to open its page.
 
@@ -102,8 +102,8 @@ Read-only; *Open Login Items settings* takes you to where macOS lets you turn th
 | Row | What it tells you |
 |---|---|
 | Right now | Sparewatt's processor use this moment, as % of **one** core, and its memory (e.g. *3.1% of one core · 102 MB*) |
-| Average since launch | processor time used since Sparewatt started, as % of one core; it counts the helper tools features start (`ps`, `top`, `du`, `pmset`), so it can sit far above *Right now* after a panel or a folder count has been busy |
-| macOS energy impact | the same score Activity Monitor shows for Sparewatt |
+| Average since launch | processor time used since Sparewatt started, as % of one core; it counts the helper tools features start (`ps`, `du`, `pmset`), so it can sit far above *Right now* after a panel or a folder count has been busy |
+| macOS energy impact | the same score Activity Monitor shows for Sparewatt (on current macOS, its processor use as % of one core) |
 | Update speed | how often readings refresh (every 1–30 s). Energy follows processor time: the slower the update speed, the less Sparewatt uses |
 
 **By feature (since launch)** — each feature's share of Sparewatt's processor time, the bar, the time as % of one core,
@@ -112,7 +112,7 @@ and **when it runs**:
 | Feature | When it runs |
 |---|---|
 | Top apps lists | only while a panel or dashboard page with a "using the most" list is open |
-| Temperature sensors | every update — slow the update speed to cut it |
+| Temperature sensors | read in the background: every sensor at each update while a panel or the dashboard is open, otherwise the ~16 the menu bar uses, every third update |
 | Folder sizes | the Storage panel's folder list; results are cached between runs |
 | Processor & memory | every update |
 | Background watch | every 30 s; its alerts are set in Warnings |
@@ -121,8 +121,8 @@ and **when it runs**:
 | Network & disk speed | every update |
 | Fans | every update — slow the update speed to cut it |
 | Graphics | every update |
-| Switches | every 10 s, and only if you have switches |
-| Latest File | only while the Storage panel is open |
+| Switches | every 10 s while a panel or the dashboard is open, otherwise once a minute; only if you have switches |
+| Latest File | only while the Files panel is open |
 | Insights | once a minute (battery and per-app readings) |
 
 The list is sorted by cost, so the top rows are what to change first. Features are turned off in **Menu Bar** settings.

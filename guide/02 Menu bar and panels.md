@@ -13,12 +13,13 @@ Prefer separate items you can ⌘-drag? Dashboard → **Menu Bar** → *Look* �
 | CPU | processor load | 2-minute graph, average and peak, the apps using the processor most, each core (performance and efficiency) |
 | GPU | graphics load | the same for the graphics chip; optionally the memory it holds |
 | RAM | memory used | apps / system / compressed / cached / free, swap, memory pressure, the apps using the most memory |
-| STORAGE | storage used (or free, or read/write speed during big copies) | Latest File, where the space went, app caches with size limits, biggest folders |
+| STORAGE | storage used (or free, or read/write speed during big copies) | where the space went, app caches with size limits, Downloads tidy-up, biggest folders |
 | TEMP | processor temperature | processor, graphics, battery and storage temperatures, fan speeds, every sensor |
 | NET (off by default) | download / upload speed | speed graph, the apps using the network most |
 | BATT | real fill to 0.1% and the true charge state | health, capacity, recharges, charge plan, energy mode, Extreme Saver |
-| Power (ON BATT / CHARGING) | the Mac's draw, with battery watts in or out | live flow diagram, power per app, idle-app suggestions |
+| Power (3:01 LEFT / 5:02 TO FULL / MAC USES) | time left or to full, with battery watts in or out (the Mac's draw when the battery rests) | live flow diagram, power per app, idle-app suggestions |
 | SWITCH | how many of your Switches are on (n/total; glows red when one failed) | toggles for each switch |
+| FILES | how many files are on the Shelf | Latest File, the Shelf, the clipboard |
 
 ## Charge states, in plain words
 

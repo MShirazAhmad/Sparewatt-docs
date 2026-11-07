@@ -1,6 +1,7 @@
 # Files and storage
 
-Everything here is in the **Storage** panel (hover the STORAGE part, or press ⌥⌘V from anywhere).
+Latest File, the Shelf and the clipboard are in the **Files** panel (hover the FILES part, or press ⌥⌘V from anywhere);
+hide the FILES part and they move into the Storage panel. App caches and Downloads tidy-up are in the **Storage** panel.
 
 ## Latest File
 
@@ -16,7 +17,7 @@ and file types (for example `pdf docx png`). With no folders chosen, the whole h
 
 A holding place for files on the way somewhere else.
 
-- **Drop files on the menu bar item** (or the Storage panel's Shelf) to keep them there.
+- **Drop files on the menu bar item** (or the Files panel's Shelf) to keep them there.
 - Drag them out again — all at once or one by one — into any app or folder.
 - From the Shelf: Move to, AirDrop, Zip, Copy path, Open with, Trash. Trash asks for a second click within 3 seconds,
   in the Shelf card and the floating Shelf alike (the files go to the Trash and can be put back).

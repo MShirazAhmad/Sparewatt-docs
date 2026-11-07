@@ -5,7 +5,7 @@ These work from any app.
 | Keys | Does |
 |---|---|
 | ⌥⌘R | open the dashboard |
-| ⌥⌘V | open the Storage panel (Latest File, Shelf, clipboard) |
+| ⌥⌘V | open the Files panel (Latest File, Shelf, clipboard) |
 | ⌥⌘E | turn Extreme Saver on or off |
 
 The same list is on Dashboard → **Shelf, Profiles & Alerts**.

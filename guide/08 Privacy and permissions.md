@@ -7,7 +7,7 @@ your choice:
 
 - the once-a-day update check against GitHub, **off** by default;
 - a [Switch](../features/10%20Switches.md) whose running check is *a web address answers* asks that address (usually a
-  server on your own Mac) every 10 seconds.
+  server on your own Mac) every 10 seconds while a panel or the dashboard is open, otherwise once a minute.
 
 If you turn on the [AI Assistant](../features/12%20AI%20Assistant.md)'s MCP server (off by default), Sparewatt also
 **answers** requests, from programs on this Mac only (127.0.0.1; web pages are refused). While it is on, any program

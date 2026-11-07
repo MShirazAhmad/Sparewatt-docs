@@ -40,7 +40,7 @@ answers three questions from the menu bar:
 | Charge plan | when will I reach 20%? | based on your usual use | [Battery](05%20Battery.md#charge-plan) |
 | Battery wear | how fast the battery ages | months until 80% | [Battery](05%20Battery.md#battery-wear) |
 | While asleep | why the battery dropped overnight | names the wake reasons | [Battery](05%20Battery.md#while-asleep-last-24-hours) |
-| Time left at this rate, power flow | where the energy goes now | instant feedback as you work | [Power](06%20Power.md) |
+| Time left, power flow | where the energy goes now | one time-left figure everywhere | [Power](06%20Power.md) |
 | Power going out to USB devices | what charging a phone or powering a drive costs | measured per port, not the allowance | [Power](06%20Power.md#power-going-out-to-usb-devices) |
 | Charger check | catch a charger that can't keep up | explains a draining "plugged-in" Mac | [Power](06%20Power.md#charger-check) |
 | Power per app | which app costs battery time | watts and minutes per app | [Power](06%20Power.md#power-per-app-share-of-battery-drain) |
@@ -67,7 +67,7 @@ answers three questions from the menu bar:
 
 **A full day on battery (lectures, conference, travel).** In the morning, check the [charge plan](05%20Battery.md#charge-plan). Pick the *Lecture* or *Travel* [profile](07%20Power%20controls.md#profiles). Let [idle-app suggestions](06%20Power.md#idle-apps-on-battery) close what you forgot. Set [Extreme Saver](07%20Power%20controls.md#extreme-saver) to turn on by itself at 20%. Afterwards, [History](11%20Dashboard%2C%20history%20and%20this%20app.md#history) shows what the day cost.
 
-**"My battery drains fast and I don't know why."** Open [power per app](06%20Power.md#power-per-app-share-of-battery-drain) and the [time left at this rate](06%20Power.md#time-left-at-this-rate). Check [background activity](04%20Who%20is%20using%20it.md#background-activity-and-what-is-normal) for anything unusual and [busy with no window](04%20Who%20is%20using%20it.md#busy-with-no-window-on-screen) for hidden apps. Then add a [Watchlist](04%20Who%20is%20using%20it.md#watchlist) rule for the offender.
+**"My battery drains fast and I don't know why."** Open [power per app](06%20Power.md#power-per-app-share-of-battery-drain) and the [time left](06%20Power.md#time-left). Check [background activity](04%20Who%20is%20using%20it.md#background-activity-and-what-is-normal) for anything unusual and [busy with no window](04%20Who%20is%20using%20it.md#busy-with-no-window-on-screen) for hidden apps. Then add a [Watchlist](04%20Who%20is%20using%20it.md#watchlist) rule for the offender.
 
 **The battery drops overnight.** [While asleep](05%20Battery.md#while-asleep-last-24-hours) names the wake reasons. Turn off Power Nap and network wakes in [On Battery settings](07%20Power%20controls.md#on-battery-settings).
 
