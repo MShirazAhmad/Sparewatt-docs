@@ -4,7 +4,7 @@
 
 ## Processor panel
 
-<p align="center"><img src="../images/features/panel-processor.png" width="320" alt="Processor panel"><br><em>Processor panel, top to bottom: load and temperature · 2-minute graph (now, average, peak) · one bar per core (E efficiency, P performance) · the chip · who is using it · background activity · apps using the processor most.</em></p>
+<p align="center"><img src="../images/features/panel-processor.png" width="320" alt="Processor panel"><br><em>Processor panel, top to bottom: load, chip and temperature · 2-minute graph (average, peak, cores) · one tile per core (E efficiency, P performance) · apps using the processor most · background activity (folded to one line).</em></p>
 
 **Purpose.** Tell whether the processor is the reason the Mac feels slow or warm, and who is using it.
 

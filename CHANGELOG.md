@@ -2,6 +2,14 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-07 — Sparewatt 1.8.1
+
+Released as [Sparewatt 1.8.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.8.1-2026-11-07).
+
+- Finishing touches: the app builds with no warnings (twelve thread-safety checks that a future Swift would refuse are
+  fixed, in the background watch, app caches, power settings, charger lookup and screen-sleep code), and the
+  Temperature and Network strips read "Last 2 min" again (1.8 wrote "Last 2m").
+
 ## 2026-11-07 — Sparewatt 1.8
 
 Released as [Sparewatt 1.8](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.8-2026-11-07).

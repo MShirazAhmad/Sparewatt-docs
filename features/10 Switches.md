@@ -7,7 +7,7 @@ any command — on and off with one switch, see at a glance which are running, a
 
 ## What a switch is
 
-<p align="center"><img src="../images/features/panel-switches.png" width="320" alt="What a switch is"><br><em>Switches panel: services on of total, grouped (AI models, Servers, Jobs, Backups…), one switch each.</em></p>
+<p align="center"><img src="../images/features/panel-switches.png" width="320" alt="What a switch is"><br><em>Switches panel: one row per group with how many are on (Web, AI models, Databases…); switches that are on, starting or failing always show.</em></p>
 
 Each switch has:
 
