@@ -2,6 +2,54 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-07 — Sparewatt 1.8
+
+Released as [Sparewatt 1.8](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.8-2026-11-07).
+
+- **Lighter still.** With no panel open, Sparewatt now uses about 0.84% of one core (1.7: about 2.1%), measured with
+  Instruments' Time Profiler over 30 seconds. The menu bar is redrawn only for real changes: CPU, GPU and memory move
+  their shown figure on a 2-point change, temperature on 2°, watts on 2 W and network speed on 30%, or after 10
+  seconds. Red warnings still look at the exact readings. The grouped item is drawn once per change, from the parts
+  already drawn. While the screen is asleep or locked, readings drop to every 30 seconds and the menu bar isn't drawn;
+  waking or unlocking refreshes it at once. Free space is read every minute.
+- **FILES and SWITCH step aside while they'd show only 0:** an empty Shelf; no switch on, changing or failed. Menu Bar
+  settings has *Files: show even when the Shelf is empty* and *Switches: show even when none is on*. Dropping files on
+  the menu bar, or ⌥⌘V, still opens the Files panel.
+- **"My Mac today" share card.** A 1200 × 630 picture of your Mac's day, dark or light: time on battery and how much of
+  a charge it used, a curve of today's charge, the app that used most battery, battery health and recharges, and the
+  charger. No file paths, names or serial numbers. *Share my day* is on the dashboard's Overview, and an icon next to
+  *Export CSV…* on History; the preview has *Share…*, *Copy image* and *Save…*.
+- **Charger history.** Every charger you plug in is remembered: its rating, kind and Power Delivery version, the port,
+  the voltage levels it offers, the most it has actually delivered, how many times it was connected, when it was first
+  and last seen, and a nickname you give it. The Power panel's charger card says, for example, "Seen 4 times · best
+  63.5 W delivered". Dashboard → Power flow lists every charger. One is tagged *slow* when it couldn't keep up (the
+  battery drained for a minute while it was plugged in), or when the most it has delivered is under 60% of what it
+  should manage: its rating, capped at the most this Mac has drawn from any charger, so a 96 W charger on a Mac that
+  never takes more than 40 W isn't slow. Kept only on this Mac.
+- **An honest battery wear trend.** No projection until there are at least 14 daily readings spread over three weeks;
+  until then the card says "Needs about N more days of readings for a wear trend". The trend is the straight line that
+  best fits every reading, so one odd day can't swing it. After that it reads, for example, "−0.6%/month · At this
+  rate, 80% around mid-2028", or *steady* when the change is within the day-to-day wobble. No more "about 0 months".
+- **Notifications with buttons.** Notifications come from macOS's own notification center, under Sparewatt's name and
+  icon, instead of a script. A suggestion to quit an idle app, and "Busy in the background", offer **Quit ‹app›** (a
+  normal quit, never a force quit) and **Not now**; Watchlist alerts offer **Show**. Clicking any notification opens its
+  panel. Quiet hours still silence everything. They start out delivered quietly, to Notification Center only, until you
+  choose banners in System Settings → Notifications → Sparewatt.
+- **`sparewatt://` links for Shortcuts and scripts:** `extreme-saver/on`, `/off` or `/toggle`;
+  `energy-mode/battery/…` and `energy-mode/charger/…` with `low`, `automatic` or `high`; `panel/<name>`; `dashboard`
+  or `dashboard/<page>`; `switch/<name>/on`, `/off` or `/toggle`. Use Shortcuts' *Open URLs* action, or
+  `open "sparewatt://extreme-saver/toggle"` in Terminal. Every link is in
+  [Links for Shortcuts and scripts](reference/Links%20for%20Shortcuts%20and%20scripts.md).
+- **Crash log and Report a problem.** If Sparewatt ever crashes, it keeps a log on this Mac, and the next launch shows a
+  card on Dashboard → This App with *Report…* (opens a GitHub issue you read before sending, with paths and names
+  removed), *Show log* and *Dismiss*. A *Report a problem…* button is always there. Nothing is sent by itself.
+- **VoiceOver.** Every panel, chart, diagram, meter and icon button reads as words. The power flow says "the 65-watt
+  charger gives 44 watts to the Mac and 17 watts to the battery"; list rows read like "Xcode, App, 4.2%, button", with
+  Notify and Quit as actions.
+- **One time style everywhere:** "46m", "1h 05m". The idle-apps card and the notifications used "52 min" and
+  "1 h 30 min".
+- **New screenshots** in these docs, from a made-up demo dataset (no real names or folders).
+
 ## 2026-11-06 — Sparewatt 1.7
 
 Released as [Sparewatt 1.7](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.7-2026-11-06).

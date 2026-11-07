@@ -31,7 +31,7 @@ The suggestion appears as a card, *Not in use, still costing battery*, in the Ba
 - **Never suggest** this app (in the ⋯ menu).
 
 You also get **one notification per app each time you unplug**, only while you are at the Mac and outside quiet hours.
-Clicking the notification does not open Sparewatt; the Quit button is in the panel.
+It has **Quit ‹app›** (a normal quit) and **Not now** buttons; clicking it opens the Battery panel.
 
 Never suggested: apps playing sound or video, Finder, and Sparewatt itself.
 
@@ -50,13 +50,19 @@ battery when you have just unplugged.
 ## Battery wear
 
 One reading a day, kept a year: health (how much the battery holds now compared with new), recharges per month, health
-lost per month, and when it would reach 80% at that rate. Above 80% health is good.
+lost per month, and when it would reach 80% at that rate ("80% around mid-2028"). Above 80% health is good. Health
+wobbles by about a point from day to day, so the trend waits for at least 14 daily readings over three weeks ("Needs
+about N more days of readings") and says *steady* when the change is within that wobble.
 
 ## Charger check
 
 Plugged in, but the battery still draining? A line in the Power panel's charger card says the charger can't keep up
 with what the Mac is using (or the cable is poor), and warns when a small charger is close to its limit. Hover it for
 the watts.
+
+Every charger you plug in is remembered ("Seen 4 times · best 63.5 W delivered"); Dashboard → **Power flow** lists
+them all, with a nickname you can give each and a *slow* tag on one that charges slowly
+([how it decides](../features/06%20Power.md#charger-history)).
 
 ## While asleep
 

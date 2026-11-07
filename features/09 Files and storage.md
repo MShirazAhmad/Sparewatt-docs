@@ -1,7 +1,8 @@
 # Files and storage
 
 Latest File, the Shelf and the clipboard live in the **Files** panel — hover the FILES part of the menu bar, or press
-**⌥⌘V** from any app (if you hide the FILES part, they move back into the Storage panel). App caches and Downloads
+**⌥⌘V** from any app (if you hide the FILES part, they move back into the Storage panel). While the Shelf is empty the
+FILES part steps aside; ⌥⌘V or dropping files on the menu bar still opens the panel. App caches and Downloads
 tidy-up are in the **Storage** panel — hover the STORAGE part.
 
 ---

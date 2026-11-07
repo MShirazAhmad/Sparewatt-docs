@@ -14,8 +14,8 @@ The menu bar is where Sparewatt lives. Everything else — panels, dashboard, al
 
 | Part | Shows | Notes |
 |---|---|---|
-| FILES | how many files are on the Shelf | opens Latest File, the Shelf and the clipboard; hide it to have them in the Storage panel |
-| SWITCH | how many of your Switches are on, e.g. `2/5` | only when you have Switches; `…` while one is changing |
+| FILES | how many files are on the Shelf | opens Latest File, the Shelf and the clipboard; hide it to have them in the Storage panel; steps aside while the Shelf is empty |
+| SWITCH | how many of your Switches are on, e.g. `2/5` | only when you have Switches; `…` while one is changing; steps aside while none is on, changing or failed |
 | CPU | processor load | a 10-second average by default, so short spikes don't make it jump |
 | GPU | graphics load | optionally the memory the graphics chip holds (100 MB and up) |
 | RAM | memory used (apps + system + compressed) | |
@@ -37,6 +37,40 @@ The menu bar is where Sparewatt lives. Everything else — panels, dashboard, al
   don't jump around; a short burst of a wide value (say during a big copy) doesn't leave a wide gap behind.
 
 **Where.** The menu bar. Choose which parts appear on Dashboard → **Menu Bar** → *Show in the menu bar*.
+
+---
+
+## FILES and SWITCH step aside
+
+**Purpose.** Don't spend menu bar room on a part that would only say 0.
+
+**What it does.** FILES hides while the Shelf is empty, and SWITCH while no switch is on, changing or failed. Each comes
+back by itself as soon as there is something to show: a file on the Shelf, a switch turned on, starting or failing.
+Dropping files on the menu bar, or ⌥⌘V, still opens the Files panel while FILES is hidden.
+
+**Settings.** Dashboard → **Menu Bar** → *Show in the menu bar*: *Files: show even when the Shelf is empty* and
+*Switches: show even when none is on* (both off).
+
+---
+
+## Steadier figures
+
+**Purpose.** A menu bar that changes only when something really changes, and costs less to draw.
+
+**What it does.** A shown figure moves only when the reading changes by enough, or after 10 seconds:
+
+| Part | Moves on |
+|---|---|
+| CPU, GPU, RAM | 2 points |
+| TEMP | 2° |
+| Watts (Mac and battery) | 2 W; a switch between charging and draining shows at once |
+| NET | 30% of the speed |
+
+Red warnings still look at the exact readings. The grouped item is drawn once per change, from the parts already drawn.
+While the screen is asleep or locked, readings drop to every 30 seconds and the menu bar isn't drawn at all; waking or
+unlocking refreshes it at once.
+
+**Benefits.** Fewer redraws mean less processor time: with no panel open, Sparewatt uses about 0.84% of one core.
 
 ---
 
@@ -99,7 +133,7 @@ sensor group, a folder) is remembered while Sparewatt runs. Each panel header ha
 |---|---|---|
 | Small icons instead of words (CPU, RAM…) | off | |
 | Text size | Normal | Compact, Normal, Large |
-| Update speed | every 2 seconds | 1, 2, 5, 10 seconds (Extreme Saver can slow it to 30 s) |
+| Update speed | every 2 seconds | 1, 2, 5, 10 seconds (Extreme Saver can slow it to 30 s; always 30 s while the screen is asleep or locked) |
 | CPU: 10-second average instead of every spike | on | |
 | CPU: two tiny bars — performance and efficiency cores | off | Apple silicon only |
 | GPU: memory it holds | off | |

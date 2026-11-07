@@ -63,7 +63,8 @@ in it. A log that grows past 5 MB is set aside as `<name>.old.log` and a new one
 
 ## Where to use them
 
-- **Menu bar SWITCH part** — "2/5" (how many are on), "…" while one is changing, red when one failed. Hover or click for
+- **Menu bar SWITCH part** — "2/5" (how many are on), "…" while one is changing, red when one failed; it steps aside
+  while none is on, changing or failed (Menu Bar settings: *Switches: show even when none is on*). Hover or click for
   a panel with one card: a row per group with its count ("Servers 0/7"). Switches that are on, starting or failing
   always show under their group; click a group to see all its switches (it stays open until you click it again). A
   switch that is on shows *since 09:12* and an *open in browser* button; *Add or edit switches…* is at the bottom.

@@ -17,12 +17,14 @@ zero.
 Expected: energy modes, On Battery settings and Extreme Saver change system settings through `pmset`, which needs an
 administrator each time.
 
-## Clicking a notification doesn't open Sparewatt
+## Notifications don't pop up as banners
 
-Sparewatt sends notifications through macOS's scripting tool, so clicking one does not open the app. Open the panel
-from the menu bar instead (the idle-app Quit buttons are in the Battery and Power panels). If notifications don't show
-at all, check macOS's Focus and notification settings, and Sparewatt's own quiet hours (Dashboard → **Shelf, Profiles &
-Alerts**).
+Sparewatt's notifications start out *delivered quietly*: they go to Notification Center (click the date and time in the
+menu bar) with no banner or sound, until you choose otherwise. To get banners, choose to keep them prominent in one of
+its notifications, or turn banners on in System Settings → Notifications → Sparewatt. If they don't arrive at all,
+check that Sparewatt is allowed there, macOS's Focus settings, and Sparewatt's own quiet hours (Dashboard → **Shelf,
+Profiles & Alerts**). Clicking a notification opens the panel it is about; see
+[Alerts and notifications](../features/08%20Alerts%20and%20notifications.md#notifications-with-buttons).
 
 ## I never get idle-app suggestions
 
@@ -66,6 +68,19 @@ Files and Folders → Sparewatt → *Downloads Folder* (the card's *Open Privacy
 macOS leaves Desktop and Documents out of Spotlight results for Sparewatt, and Sparewatt doesn't ask for those folders,
 so Latest File can't see them; the card says so. For Downloads, click *Look* in Downloads tidy-up once (in each newly
 built copy); from then on Latest File reads Downloads too.
+
+## My chargers are gone, or one is missing
+
+If `chargers.json` can't be read in full, the *Chargers* card (Dashboard → **Power flow**) says so, and the file as it
+was is kept beside it as `chargers.json.bak` before anything is saved over it. Two identical chargers that don't report
+a serial number show as one.
+
+## Sparewatt crashed, or something is wrong
+
+After a crash, Dashboard → **This App** shows *Sparewatt crashed on …*. **Report…** opens a new GitHub issue in your
+browser with the start of the crash log, your name and file paths removed; read it, add what you were doing, and send
+it if you want to. **Show log** shows the full log in Finder (`~/Library/Logs/Sparewatt/`). For anything else, **Report
+a problem…** on the same page opens an issue with the app and macOS versions filled in. Nothing is sent by itself.
 
 ## Known issues
 

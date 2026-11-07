@@ -117,6 +117,32 @@ Power Delivery version shows as *3.x*: macOS reports revision 3 without telling 
 
 **Where.** Power panel and Dashboard → **Power flow**, while plugged in. The AI Assistant's `get_battery` includes it.
 
+### Charger history
+
+**Purpose.** Know your chargers apart, and find the one that charges slowly.
+
+**What it does.** Every charger you plug in is remembered: its rating, kind and Power Delivery version, the port it was
+last on, the voltage levels it offers, the most it has actually delivered (measured at the Mac's input), how many times
+it was connected, when it was first and last seen, and a nickname you give it (*Desk*, *Travel*). The Power panel's
+charger card has one line for the charger plugged in now: "Seen 4 times · best 63.5 W delivered" (first and last seen
+in its tooltip). Dashboard → **Power flow** → *Chargers* lists every charger, newest first, with its nickname field.
+
+A charger is tagged **slow** when:
+- it couldn't keep up: the battery drained for a minute or more while it was plugged in; or
+- the most it has delivered is under 60% of what it should manage. *Should manage* is its rating, capped at the most
+  this Mac has drawn from any charger: a Mac only takes what it needs, so a 96 W charger on a Mac that never draws more
+  than 40 W isn't slow for giving 40 W. With only one charger known, only *couldn't keep up* counts.
+
+The tag's tooltip says which, and that a worn or thin cable, or a hub in between, can hold a charger back.
+
+**Use cases.** Find out which of the chargers around the house is the slow one; tell two identical-looking chargers
+apart by nickname.
+
+**Limits.** A charger is recognised by its serial when it reports one, otherwise by its rating, kind, levels and name;
+two identical chargers without a serial count as one. A multi-port charger that offers less while it shares power with
+another device shows as a second entry. Kept only on this Mac (`chargers.json`, see
+[Where Sparewatt keeps its data](../reference/Data%20files.md)).
+
 ---
 
 ## Power per app (share of battery drain)
@@ -163,12 +189,14 @@ them — only when it is worth it.
 3. it isn't playing sound or video, isn't Finder, isn't on your never list, and you didn't say *Not now* this battery
    stretch.
 
-The card **Not in use, still costing battery** lists each such app — "unused 34 min · 1.6 W", **+52 min** — with
+The card **Not in use, still costing battery** lists each such app — "unused 34m · 1.6 W", **+52m** — with
 **Quit** (a normal quit; the app can ask to save) and, in its ⋯ menu, **Not now** (until you plug in) and **Never
-suggest**. With several apps, it adds "Quitting all 2 adds about 1 h 30 min."
+suggest**. With several apps, it adds "Quitting all 2 adds about 1h 30m."
 
 **Notification.** Once per app each time you unplug, only while you are at the Mac:
-*Quit Zotero? About +35 min of battery* — "Not used for 23 min, but it still takes about 1.4 W."
+*Quit Zotero? About +35m of battery* — "Not used for 23m, but it still takes about 1.4 W." It has **Quit Zotero** (a
+normal quit) and **Not now** buttons, and clicking it opens the Battery panel. Several new apps at once come as one
+notification without buttons. See [Alerts and notifications](08%20Alerts%20and%20notifications.md).
 
 **Use cases.**
 - Writing in one app all afternoon while a chat app, a PDF reader and a reference manager sit open in the background.

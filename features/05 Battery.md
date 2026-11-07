@@ -107,13 +107,24 @@ which protects the battery without extra software. Sparewatt itself never sets a
 **Purpose.** See how fast the battery is aging and when it will count as worn.
 
 **What it does.** Records health and recharge count once a day, keeps a year, and shows the line, **health now**,
-**points lost per month**, **recharges per month**, and "At this rate it reaches 80% in about N months."
+**points lost per month** and **recharges per month**, with a line like "At this rate, 80% around mid-2028" (a month
+and year when it is under a year away).
+
+**An honest trend.** macOS's health figure wobbles by about a point from one day to the next, while real wear is a few
+tenths of a point a month, so two readings close together say nothing. Sparewatt waits:
+
+- **Enough readings first:** at least 14 daily readings spread over at least three weeks (21 days). Until then the card
+  says "Needs about N more days of readings for a wear trend". A Mac that is off some days gets there a little later.
+- **The best-fit line through every reading**, not the first and the last, so one odd day can't swing it.
+- **Steady** when health moves less than its own wobble: a loss shows only when it is at least 0.05 points a month and
+  more than twice its uncertainty. A rising line counts as steady too.
+- At or below 80% it says so; more than 15 years away is "more than 15 years away".
 
 **Use cases.** Decide whether charging habits (always at 100%, hot desk) are wearing the battery; plan a battery service.
 
 **Where.** Dashboard → **Battery**.
 
-**Limits.** The trend appears after a few days of readings.
+**Limits.** No trend in the first three weeks; a projection is only as good as the habits behind it staying the same.
 
 ---
 

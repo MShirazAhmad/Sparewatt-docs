@@ -24,6 +24,7 @@ answers three questions from the menu bar:
 | Hover panels | details without opening a window | "which app?" in one mouse move | [Menu bar](01%20Menu%20bar.md#hover-panels) |
 | Colours by value, red warnings, drain colours | spot trouble without reading numbers | calm until something is unusual | [Menu bar](01%20Menu%20bar.md#colours-by-value) |
 | Hidden-item check | know when macOS hides the menu bar item | no "the app vanished" | [Menu bar](01%20Menu%20bar.md#hidden-item-check) |
+| FILES and SWITCH step aside, steadier figures | no room spent on a 0, no redraw for a wobble | a calmer, cheaper menu bar | [Menu bar](01%20Menu%20bar.md#files-and-switch-step-aside) |
 | Processor and graphics panels | find out who uses the chip | per-app graphics, cores, 2-min peaks | [Processor, graphics and memory](02%20Processor%2C%20graphics%20and%20memory.md) |
 | Memory panel and forecast | know whether memory is the bottleneck | pressure and swap, warned before slowdowns | [Processor, graphics and memory](02%20Processor%2C%20graphics%20and%20memory.md#memory-panel) |
 | Temperature and fans | how hot each part is | plain verdicts, no made-up zeros | [Temperature, network and storage space](03%20Temperature%2C%20network%20and%20storage%20space.md) |
@@ -38,11 +39,12 @@ answers three questions from the menu bar:
 | Battery readings and charge state | the true state, not a guess | real fill to 0.1%, measured current | [Battery](05%20Battery.md) |
 | "Battery state doesn't add up" | catch failing limiters and weak chargers | found in a minute, not weeks | [Battery](05%20Battery.md#battery-state-doesnt-add-up) |
 | Charge plan | when will I reach 20%? | based on your usual use | [Battery](05%20Battery.md#charge-plan) |
-| Battery wear | how fast the battery ages | months until 80% | [Battery](05%20Battery.md#battery-wear) |
+| Battery wear | how fast the battery ages | an honest trend and when it reaches 80% | [Battery](05%20Battery.md#battery-wear) |
 | While asleep | why the battery dropped overnight | names the wake reasons | [Battery](05%20Battery.md#while-asleep-last-24-hours) |
 | Time left, power flow | where the energy goes now | one time-left figure everywhere | [Power](06%20Power.md) |
 | Power going out to USB devices | what charging a phone or powering a drive costs | measured per port, not the allowance | [Power](06%20Power.md#power-going-out-to-usb-devices) |
 | Charger check | catch a charger that can't keep up | explains a draining "plugged-in" Mac | [Power](06%20Power.md#charger-check) |
+| Charger history | every charger you plug in, remembered | find the slow one, nickname each | [Power](06%20Power.md#charger-history) |
 | Power per app | which app costs battery time | watts and minutes per app | [Power](06%20Power.md#power-per-app-share-of-battery-drain) |
 | Idle apps on battery | quit forgotten apps that cost real time | speaks only when worth it | [Power](06%20Power.md#idle-apps-on-battery) |
 | Battery used per app, 7 days | the week's biggest battery users | decisions from real use | [Power](06%20Power.md#battery-used-per-app-last-7-days) |
@@ -50,7 +52,7 @@ answers three questions from the menu bar:
 | On Battery settings | what the Mac may do unplugged | overnight drain fixed in one page | [Power controls](07%20Power%20controls.md#on-battery-settings) |
 | Extreme Saver | every saving in one switch | freezes apps without losing work | [Power controls](07%20Power%20controls.md#extreme-saver) |
 | Profiles | situation presets | one click per situation | [Power controls](07%20Power%20controls.md#profiles) |
-| Alerts and notifications | told once, when it matters | no repeated nagging | [Alerts and notifications](08%20Alerts%20and%20notifications.md) |
+| Alerts and notifications | told once, when it matters | no repeated nagging; Quit and Show buttons | [Alerts and notifications](08%20Alerts%20and%20notifications.md) |
 | Latest File | the newest file, ready to drag | no Finder hunting | [Files and storage](09%20Files%20and%20storage.md) |
 | The Shelf, floating Shelf, drop zone | collect files, then move or send together | fewer drags, fewer windows | [Files and storage](09%20Files%20and%20storage.md#the-shelf) |
 | App caches | find and clear big caches | to the Trash, or kept under a limit | [Files and storage](09%20Files%20and%20storage.md#app-caches) |
@@ -59,8 +61,11 @@ answers three questions from the menu bar:
 | Switches | local services on/off | see and stop background servers | [Switches](10%20Switches.md) |
 | Dashboard, Overview, Mac health | everything in one window | "All good" or exactly what to look at | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md) |
 | History and CSV export | look back 30 days | every battery stretch with its top apps | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#history) |
+| "My Mac today" share card | share your Mac's day as one picture | nothing personal on it | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-today-share-card) |
 | Startup Items | what starts on its own | spot background helpers | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#startup-items) |
 | This App | Sparewatt's own cost | a monitor that watches itself | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#this-app) |
+| Crash log, Report a problem | report a problem with the details a fix needs | you read it before anything is sent | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#crash-log-and-report-a-problem) |
+| `sparewatt://` links | drive Sparewatt from Shortcuts and scripts | Extreme Saver, energy modes, panels, Switches in one step | [Links for Shortcuts and scripts](../reference/Links%20for%20Shortcuts%20and%20scripts.md) |
 | AI Assistant (MCP server) | let Claude Code, Codex, Cursor or any MCP app read the readings | ask "why?" in plain words, answered from live data | [AI Assistant](12%20AI%20Assistant.md) |
 
 ## Use cases: which features help when

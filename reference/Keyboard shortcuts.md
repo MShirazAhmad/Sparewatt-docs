@@ -12,3 +12,6 @@ The same list is on Dashboard → **Shelf, Profiles & Alerts**.
 
 In the menu bar: hover a part to open its panel, right-click for the dashboard, settings, Extreme Saver and Quit.
 With grouping off, hold ⌘ and drag an item to move it.
+
+To run these from Shortcuts, a script or your own key combination, use
+[links for Shortcuts and scripts](Links%20for%20Shortcuts%20and%20scripts.md) (`sparewatt://…`).

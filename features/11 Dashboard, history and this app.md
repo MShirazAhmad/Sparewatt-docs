@@ -75,6 +75,31 @@ with their top apps.
 
 ---
 
+## "My Mac today" share card
+
+**Purpose.** Show someone how your Mac's day went in one picture, without giving away anything personal.
+
+**What it does.** Makes a 1200 × 630 picture (the shape social sites use for link cards), dark or light as your Mac is
+set:
+
+- **time on battery today** and how much of a charge it used ("3h 42m on battery · used 58% of a charge"), or
+  *Plugged in* when the battery wasn't used;
+- a **curve of today's charge** from midnight to now, green on battery and yellow plugged in;
+- up to three tiles: the **app that used most battery** (watt-hours and share of a charge), **battery health** with
+  recharges, and the **charger** in use (or the Mac's average draw).
+
+It holds only today's figures, app names and the charger type: no file paths, user or folder names, Mac name or serial
+numbers. An app name is cut to its last part if it looks like a path.
+
+**Where.** *Share my day* at the top of the dashboard's **Overview**, and the icon next to *Export CSV…* on
+**History**. A preview opens with *Share…* (the macOS share menu), *Copy image* and *Save…* (a PNG named
+"My Mac today" with the date).
+
+**Limits.** Figures come from what Sparewatt keeps (the minute history and stretches on battery), so the card fills in
+over the day; a Mac just set up has little to show.
+
+---
+
 ## Startup Items
 
 <p align="center"><img src="../images/features/dashboard-startup-items.png" width="800" alt="Startup Items"><br><em>Startup Items: everything set to start by itself and whether it runs now.</em></p>
@@ -128,6 +153,26 @@ and **when it runs**:
 The list is sorted by cost, so the top rows are what to change first. Features are turned off in **Menu Bar** settings.
 
 **Use cases.** Choose a slower update speed or turn off live diagrams if Sparewatt's own cost matters on battery.
+
+### Crash log and Report a problem
+
+**Purpose.** Report a problem with the details a fix needs, while you decide what is sent.
+
+**What it does.** If Sparewatt ever crashes, it keeps a plain-text log on this Mac (app and macOS version, what went
+wrong, the call stack). The next launch shows a card at the top of **This App**: *Sparewatt crashed on …*, with:
+
+- **Report…** — opens a new GitHub issue in your browser with the start of that log, your name, the Mac's name and
+  file paths removed. You read it there and send it, or not.
+- **Show log** — shows the log file in Finder.
+- **Dismiss** — hides the card until the next crash.
+
+A **Report a problem…** button is always on the page: it opens a new issue with only the app and macOS versions filled
+in, and you write the rest.
+
+**Benefits.** Nothing is sent automatically; nothing is sent at all unless you press *Submit* on GitHub.
+
+**Where.** Dashboard → **This App**. The logs are in `~/Library/Logs/Sparewatt/` (see
+[Where Sparewatt keeps its data](../reference/Data%20files.md)).
 
 ---
 

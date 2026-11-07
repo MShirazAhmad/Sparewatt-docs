@@ -29,7 +29,25 @@ normal. Every notification it sends is listed here.
 All notifications can be silenced between two hours of the day (off by default, 22:00–07:00). The switch and the hours
 are on Dashboard → **Shelf, Profiles & Alerts**.
 
-## Clicking a notification
+## Notifications with buttons
 
-Notifications are sent through macOS's scripting tool, so clicking one does not open Sparewatt. Open the panel from the
-menu bar instead.
+**Purpose.** Act on a notification where it appears, instead of hunting for the panel.
+
+**What it does.** Notifications come from macOS's own notification center, under Sparewatt's name and icon.
+
+| Notification | Buttons | Clicking it opens |
+|---|---|---|
+| **Quit *app*? About +N of battery** (one app) | **Quit *app*** · **Not now** (not again until you plug in) | Battery panel |
+| **Busy in the background** | **Quit *app*** · **Not now** | Processor panel |
+| **On battery: *app*** (Watchlist) | **Show** | the panel for that resource |
+| every other notification | none | the panel it is about |
+
+**Quit *app*** is the app's normal quit: it can ask to save first. It is never a force quit. When a menu bar part is
+hidden, a click opens the matching dashboard page instead of its panel.
+
+**Banners.** Sparewatt doesn't ask for permission at launch: its notifications start out *delivered quietly*, to
+Notification Center only, with no banner or sound. To see banners, choose to keep them prominent in a notification's
+menu, or turn banners on in System Settings → Notifications → Sparewatt. Turning Sparewatt off there silences them all.
+
+**Limits.** When macOS won't let Sparewatt use the notification center (for example a copy run outside the app), it
+falls back to a plain banner from macOS's scripting tool: no buttons, and a click doesn't open Sparewatt.

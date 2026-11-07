@@ -30,6 +30,13 @@ You only do this once.
 - **⌥⌘R** opens the dashboard window from anywhere: every monitor on the left under *Monitor*, every setting under *Control*.
 - Right-click the menu bar item for the dashboard, settings, Extreme Saver and Quit.
 
+## VoiceOver
+
+Every panel, chart, diagram, meter and icon button reads as words, with units spelt out. The menu bar item reads as one
+sentence ("cpu 12%, ram 54%…"); the power flow says "the 65-watt charger gives 44 watts to the Mac and 17 watts to the
+battery"; a graph says its latest reading, average and peak; list rows read like "Xcode, App, 4.2%, button", with
+Notify and Quit as actions.
+
 ## Start at login
 
 Dashboard → **Menu Bar** → **Start Sparewatt when you log in**. macOS may ask once whether Sparewatt may control

@@ -19,8 +19,12 @@ Prefer separate items you can ⌘-drag? Dashboard → **Menu Bar** → *Look* �
 | NET (off by default) | download / upload speed | live diagram, a 2-minute strip with the peak, the apps using the network most |
 | BATT | real fill to 0.1% and the true charge state | health, capacity, recharges, charge plan, energy mode, Extreme Saver |
 | Power (3:01 LEFT / 5:02 TO FULL / MAC USES) | time left or to full, with battery watts in or out (the Mac's draw when the battery rests) | live flow diagram, power per app, idle-app suggestions |
-| SWITCH | how many of your Switches are on (n/total; glows red when one failed) | a row per group with its count; the switches that are on, with toggles; click a group for all |
-| FILES | how many files are on the Shelf | Latest File, the Shelf, the clipboard |
+| SWITCH | how many of your Switches are on (n/total; glows red when one failed); steps aside while none is on, changing or failed | a row per group with its count; the switches that are on, with toggles; click a group for all |
+| FILES | how many files are on the Shelf; steps aside while the Shelf is empty | Latest File, the Shelf, the clipboard |
+
+FILES and SWITCH come back by themselves when there is something to show. To keep them always, use Dashboard → **Menu
+Bar** → *Files: show even when the Shelf is empty* and *Switches: show even when none is on*. Figures move only on a
+real change (2 points, 2°, 2 W, 30% for network speed) or after 10 seconds, so the bar stays calm.
 
 ## Charge states, in plain words
 

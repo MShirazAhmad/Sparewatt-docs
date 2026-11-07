@@ -4,7 +4,7 @@
 
 <p align="center">
 <a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://badgen.net/github/assets-dl/MShirazAhmad/Sparewatt-docs?label=downloads&color=green&scale=1.4" alt="Total downloads"></a>
-<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/badge/latest-v1.4-blue" alt="Latest release"></a>
+<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/badge/latest-v1.8-blue" alt="Latest release"></a>
 <img src="https://img.shields.io/badge/macOS-14%2B-blue" alt="macOS 14 or later">
 <img src="https://img.shields.io/badge/price-free-brightgreen" alt="Free">
 </p>
@@ -64,17 +64,17 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 
 | Area | Page |
 |---|---|
-| Menu bar: readings, grouped item with outline, hover panels, colours, warnings | [Menu bar](features/01%20Menu%20bar.md) |
+| Menu bar: readings, grouped item with outline, hover panels, steadier figures, colours, warnings | [Menu bar](features/01%20Menu%20bar.md) |
 | Processor, graphics, memory | [Processor, graphics and memory](features/02%20Processor%2C%20graphics%20and%20memory.md) |
 | Temperature and fans, network, storage space | [Temperature, network and storage space](features/03%20Temperature%2C%20network%20and%20storage%20space.md) |
 | Named processes, quitting, background normals, Watchlist | [Who is using it](features/04%20Who%20is%20using%20it.md) |
 | Battery state, charge plan, wear, overnight drain | [Battery](features/05%20Battery.md) |
-| Power flow, USB power out, power per app, idle apps | [Power](features/06%20Power.md) |
+| Power flow, charger details and history, USB power out, power per app, idle apps | [Power](features/06%20Power.md) |
 | Energy modes, On Battery settings, Extreme Saver, profiles | [Power controls](features/07%20Power%20controls.md) |
-| Every notification | [Alerts and notifications](features/08%20Alerts%20and%20notifications.md) |
+| Every notification, and its Quit / Show buttons | [Alerts and notifications](features/08%20Alerts%20and%20notifications.md) |
 | Latest File, Shelf, caches, Downloads tidy-up, clipboard | [Files and storage](features/09%20Files%20and%20storage.md) |
 | Local services on/off | [Switches](features/10%20Switches.md) |
-| Dashboard, Mac health, history, Startup Items, This App | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
+| Dashboard, Mac health, history, "My Mac today" share card, Startup Items, This App, Report a problem | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
 | AI Assistant: an MCP server for Claude Code, Codex and other assistants | [AI Assistant](features/12%20AI%20Assistant.md) |
 
 ## Guide
@@ -94,6 +94,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 ## Reference
 
 - [Keyboard shortcuts](reference/Keyboard%20shortcuts.md)
+- [Links for Shortcuts and scripts](reference/Links%20for%20Shortcuts%20and%20scripts.md) — `sparewatt://` links for Extreme Saver, energy modes, panels, dashboard pages and Switches
 - [Where Sparewatt keeps its data](reference/Data%20files.md)
 - [Changelog](CHANGELOG.md)
 - [Research](research/README.md) — notes on similar Mac apps and what their users complain about, written while designing Sparewatt
@@ -112,7 +113,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 |---|---|
 | <img src="images/screenshots/dashboard-history.png" width="440"> | <img src="images/screenshots/dashboard-on-battery.png" width="440"> |
 
-Screenshots were taken before the rename; apart from the name, the app looks the same.
+Screenshots are made from a made-up demo dataset: no real names or folders.
 
 ## License
 
