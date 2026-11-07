@@ -27,6 +27,11 @@ Each row says **where it comes from**:
 Sparewatt knows plain-words names for about 90 macOS background processes; unknown ones are labelled "macOS background
 service (name)".
 
+Under each value, a small meter shows its share against the top row. Subtitles are short: ~ for the home folder,
+"WebContent" rather than "com.apple.WebKit.WebContent". A folder's growth since the last count leads its subtitle, in
+colour ("▲3.82 GB · ~/Projects"). The memory list counts each process's own footprint, as Activity Monitor does, and
+shows the iOS Simulator's processes as one *iOS Simulator* row. Sizes from 1000 MB show in GB (0.99 GB, not 1010 MB).
+
 **Use cases.** You see `WindowServer`, `mds_stores` or `kernel_task` high in Activity Monitor and don't know what they
 are — here they read "Draws everything on screen", "Spotlight search indexing".
 
@@ -34,7 +39,7 @@ are — here they read "Draws everything on screen", "Spotlight search indexing"
 - No guessing what a cryptic process is, or whether it is safe to stop.
 - One measurement is shared by every panel, the dashboard and the Watchlist, so opening several views costs no extra.
 
-**Where.** The last card of every panel and monitor page. Hover a row for the 🔔 (Watchlist) and ⋯ (Quit) buttons; click
+**Where.** Near the end of every panel and monitor page. Hover a row for the 🔔 (Watchlist) and ⋯ (Quit) buttons; click
 it to look closer.
 
 ---
@@ -73,6 +78,8 @@ tools**. Updated every 30 seconds (graphics and energy about every 5 minutes).
 
 **Benefits.** Tells you whether to wait it out (macOS housekeeping) or act (your app).
 
+**Where.** Dashboard → **Processor**, **Graphics**, **Memory** and **Power flow** (no longer in the menu bar panels).
+
 ---
 
 ## Background activity and what is normal
@@ -88,8 +95,10 @@ use, spread and peak. It then lists:
 - **Unusual** (in orange) — far above its own normal: at least 15% of a core, more than 4 spreads above its average and
   more than three times its usual level.
 
-The dashboard's Processor page has the full **Background processes** table, grouped by kind, with usual and peak on one
-scale and how often each runs (always on / often / sometimes / rarely). Quiet processes are folded away.
+In the Processor panel the card folds to one line with its status — "Nothing unusual" or "2 unusual" — and lists any
+unusual process under it; click the line for the rest. The dashboard's Processor page has the full **Background
+processes** table, grouped by kind, with usual and peak on one scale and how often each runs (always on / often /
+sometimes / rarely). Quiet processes are folded away.
 
 **Use cases.**
 - Something drains the battery overnight: find the process that is suddenly ten times its usual level.

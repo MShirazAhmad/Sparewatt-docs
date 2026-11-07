@@ -19,11 +19,13 @@ each time — Sparewatt never stores it.
 | Low Power | slower, the battery lasts longer |
 | High Power | fastest; uses more power and fan (Macs that support it) |
 
-The row for the power source you're on now is marked *now*.
+Two compact pickers, one for battery and one for charger; the one for the power source you're on now is marked green.
+What each mode means, and that a change asks for your password, are in the tooltips.
 
 **Use cases.** Low Power on battery all the time, High Power on the charger for renders and builds.
 
-**Where.** Battery panel → *Energy mode*. The gear opens the On Battery page.
+**Where.** Battery panel → *Energy mode* card, with Extreme Saver on one line and the profiles row below. The gear opens
+the On Battery page.
 
 ---
 
@@ -131,6 +133,7 @@ Names, icons (picked from a searchable grid) and choices are edited on Dashboard
 
 **Use cases.** Walking into a lecture, back to the lab bench, off to the airport.
 
-**Where.** The top of the Battery panel; edit names and choices on Dashboard → **Shelf, Profiles & Alerts**.
+**Where.** The bottom of the Battery panel's *Energy mode* card; edit names and choices on Dashboard → **Shelf, Profiles
+& Alerts**.
 
 **Limits.** Each change (energy mode or Extreme Saver) asks for the password.

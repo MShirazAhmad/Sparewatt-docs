@@ -9,15 +9,17 @@
 **Purpose.** Tell whether the processor is the reason the Mac feels slow or warm, and who is using it.
 
 **What it does.**
-- **Header:** processor load in % and, when the Mac has a sensor, its temperature.
-- **Load card:** a sparkline of the last 60 readings (two minutes at the default update speed) with *Now*, *2-min
-  average* and *2-min peak*.
-- **Cores:** each core's load — efficiency cores (teal) first, then performance cores (blue) — as live tiles, or as bars
-  when live diagrams are off.
-- **Chip card:** "10-core CPU · 8 performance + 2 efficiency".
-- **Background activity** (see [Who is using it](04%20Who%20is%20using%20it.md)) and *Who is using the processor*.
+- **Header:** processor load in %, with the chip's name ("Apple M1 Max") and, when the Mac has a sensor, its
+  temperature underneath.
+- **Load card:** a sparkline of the last 60 readings (two minutes at the default update speed) with *2-min average*,
+  *2-min peak* and *Cores* ("8P + 2E": performance and efficiency cores).
+- **Cores:** each core's load — efficiency cores (teal) first, then performance cores (blue) — as live tiles with the
+  load sized to fit and E or P underneath, or as bars when live diagrams are off.
 - **Using the processor most:** the apps and processes with the highest share, as a share of the **whole** processor.
-- **Dashboard only:** the processor's load over 24 hours and the full background-processes table.
+- **Background activity** (see [Who is using it](04%20Who%20is%20using%20it.md)): one line with its status ("Nothing
+  unusual" or "2 unusual"); click it for the rest.
+- **Dashboard only:** *Who is using the processor* (by kind), the processor's load over 24 hours and the full
+  background-processes table.
 
 **Use cases.**
 - The fan spins up during a quiet moment: open the panel and see which app is busy.
@@ -40,9 +42,9 @@
 
 **Purpose.** See how busy the graphics chip is and which app is drawing with it.
 
-**What it does.** The same layout as the processor: header, load card, chip card ("32-core GPU · macOS reports one load
-for all GPU cores together"), *Who is using the graphics* and *Using the graphics most* — measured from the graphics
-time each app used over one second.
+**What it does.** The same layout as the processor: a header with the chip's name, a load card with *GPU cores* (macOS
+reports one load for all GPU cores together; the graph's tooltip says so), and *Using the graphics most* — measured from
+the graphics time each app used over one second. *Who is using the graphics* (by kind) is on the dashboard.
 
 **Use cases.** A video, game, 3D view or a local AI model makes the Mac hot — check which one holds the graphics chip.
 
@@ -65,14 +67,16 @@ only.
 
 **What it does.**
 - **Header:** memory used, "X of Y used" (apps + system + compressed).
-- **Breakdown bar:** *Apps*, *System (locked)*, *Squeezed* (compressed), *Cached files* (macOS reuses these freely),
-  *Free*.
+- **Breakdown bar** with a two-column legend of short names: *Apps*, *System*, *Squeezed*, *Cached*, *Free*. The full
+  names are in the tooltips: *System (locked)*, *Squeezed (compressed)*, *Cached files* (macOS reuses these freely).
 - **Memory pressure:** normal ("plenty left"), medium ("apps may slow down") or high ("quit something") — macOS's own
   judgement, more useful than the percentage.
-- **Swap:** "Spilled to disk (swap): X", orange when over 1 GB under raised pressure.
+- **Swap:** the legend's *On disk* row (spilled to disk), orange when over 1 GB under raised pressure.
 - **Memory forecast:** when swap grew by more than 500 MB within the last hour, a card warns that memory will run short
   and names the app using the most.
-- **Using the most memory:** apps by memory held.
+- **Using the most memory:** apps by memory held, counted from each process's own footprint, as Activity Monitor does.
+  The iOS Simulator's processes show as one *iOS Simulator* row.
+- **Dashboard only:** *Who is using memory* (by kind).
 
 **Use cases.**
 - Many browser tabs and the Mac stutters: check pressure and swap, then close the biggest app.

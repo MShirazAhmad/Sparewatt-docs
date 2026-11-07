@@ -2,6 +2,50 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-06 — Sparewatt 1.7
+
+Released as [Sparewatt 1.7](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.7-2026-11-06).
+
+- **Shorter, clearer menu bar panels.** Each panel answers its question at a glance. Nothing was removed: details moved
+  behind disclosures that remember whether you opened them, into tooltips, or onto the dashboard. No number shows twice
+  in a panel, and the grey explanation paragraphs became tooltips. Heights in points, before → after, with the lists
+  loaded: Power 963 → 549, Processor 851 → 595, Storage 911 → 663, Memory 619 → 518, Network 603 → 562, Switches
+  593 → 220, Battery 578 → 413, Files 485 → 365, Temperature 586 → 359, Graphics 501 → 272.
+- **Power:** the live flow diagram comes first. Under it, one row: *Full in*, *If unplugged* and *In battery* on the
+  charger; *Left* and *In battery* on battery. The charger card shows its kind and port, and the volts × amps agreed and
+  coming in; the other voltage levels and the maker's details sit behind a chevron. A charger too small for the load is
+  a line inside the charger card. Power per app is a stacked bar with a row per app (the donut stays on the dashboard).
+  On battery it opens with a line like "Quit Xcode and Claude → +1h 05m of battery": the top two apps that can actually
+  be quit, worked out together. Idle-app suggestions have a plain **Quit** button.
+- **Battery:** the header says "Charging · full in 4h 09m" or "On battery · 4h 58m left", and the charge plan is one
+  line. A Health card shows health % with a bar marking 80%, recharges, temperature and capacity; the charge now and the
+  capacity when new are behind *Details*, with a small *Set a charge limit ↗* link. Energy modes are two compact pickers
+  (battery and charger), Extreme Saver is one line, and the profiles row sits inside the Energy mode card.
+- **Processor and Graphics:** the chip's name is in the header's subtitle, and the core count is a stat ("8P + 2E").
+  Core tiles show the load sized to fit, with E or P underneath, so the labels no longer run into each other. Background
+  activity folds to one line with its status ("Nothing unusual" or "2 unusual"). *Who is using … by kind* is on the
+  dashboard.
+- **Memory:** a two-column legend with short names (the full names are in tooltips); swap shows as an *On disk* row.
+- **Temperature:** a thin *Last 2 min* strip with its range sits in the fans card; the header says "Processor · Normal";
+  *All sensors* folds to one line that shows the hottest sensor.
+- **Network:** the live diagram is the main picture; the speed graph is a thin strip with the peak.
+- **Storage:** the header reads "146 GB free of 926 GB · 33 °C". One usage bar is split into biggest home folders
+  and macOS, apps & System Data, with "781 GB used" beside it; purgeable space shows lightly next to free, since the
+  free figure already counts it (before, it was counted as used too, so System Data read too small by that much). The read/write diagram is shorter. App caches
+  and Downloads tidy-up share one card, as two rows.
+- **Files:** Latest File and "N more recent files" share one card with "3 folders not searched" (a tooltip says which
+  and why). An empty Shelf is a one-line drop zone. The Shelf count shows once.
+- **Switches:** one card with a row per group and its count ("Servers 0/7"). A click opens a group, and it stays open.
+  Switches that are on, starting or failing always show.
+- **"Using the most" lists:** the share is a small meter under the value (the thin line under names read as an
+  underline). A folder's growth leads its subtitle, in colour ("▲3.82 GB · ~/Projects"), instead of being
+  cut off. Subtitles are short: ~ for the home folder, "WebContent" not "com.apple.WebKit.WebContent".
+- **The memory list counts each process's own footprint**, as Activity Monitor does. Adding up resident sizes counted
+  shared memory once per process, so the iOS Simulator showed 41.8 GB instead of about 4 GB. iOS Simulator processes
+  show as one "iOS Simulator" row with the Simulator's icon. Sizes from 1000 MB show in GB (0.99 GB, not 1010 MB).
+- Menu bar: a part keeps its widest width only for small digit changes, so a burst value (say during a big copy) no
+  longer leaves a wide gap.
+
 ## 2026-11-06 — Sparewatt 1.6
 
 Released as [Sparewatt 1.6](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.6-2026-11-06).

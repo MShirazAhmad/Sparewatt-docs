@@ -39,13 +39,15 @@ state, not a guess.
 
 ---
 
-## Battery card
+## Health card
 
-<p align="center"><img src="../images/features/panel-battery.png" width="320" alt="Battery card"><br><em>Battery panel: header · idle apps still costing battery · if you unplug now · readings · energy mode and Extreme Saver.</em></p>
+<p align="center"><img src="../images/features/panel-battery.png" width="320" alt="Health card"><br><em>Battery panel: header · idle apps still costing battery · if you unplug now · readings · energy mode and Extreme Saver.</em></p>
 
-**What it shows.** A battery picture (green while charging, teal while resting on the charger, red at 20% and below),
-the fill, macOS's time estimate, **health** (what it holds now vs when new — green from 80%), *Charge now*, *Holds at
-most*, *Held when new* (mAh), *Full recharges*, *Battery temp*, and *Health means* Good or Worn.
+**What it shows.** The panel's header gives the fill and the state with its one time figure: "Charging · full in 4h 09m"
+or "On battery · 4h 58m left". The **Health** card below it shows health % (what the battery holds now vs when new —
+green from 80%) with a bar marked at 80%, *Full recharges*, *Battery temp* and *Holds at most* (mAh). *Details* opens
+*Charge now* and *Held when new* (mAh), and the panel remembers whether you opened it; the dashboard always shows them.
+Good or Worn is in the health figure's tooltip.
 
 **Use cases.** Check whether a battery is worn enough to replace (Apple counts below 80% as worn); compare recharges
 with the age of the Mac.
@@ -76,10 +78,10 @@ draining on a too-small charger) are caught in a minute.
 
 **Purpose.** Plan the day: when will the battery reach 20%, and when will it run out?
 
-**What it does.** "You reach 20% around **4:40 PM** (2h 10m) and run out around 6:05 PM." On battery it uses the same
-[time left](06%20Power.md#time-left) as the menu bar and the panels, so the times always agree with them. Below 20%:
-"about 35 min left". On the charger, the card reads **If you unplug now** and uses your usual draw on battery (your last
-30 minutes on battery, or your last few battery stretches): "…, at your usual 14 W".
+**What it does.** One line of clock times: "20% around **4:40 PM** (2h 10m) · empty around 6:05 PM". On battery it uses
+the same [time left](06%20Power.md#time-left) as the menu bar and the panels, so the times always agree with them. Below
+20%: "Below 20% · empty around 6:05 PM". On the charger, the line starts **If unplugged now:** and uses your usual draw
+on battery (your last 30 minutes on battery, or your last few battery stretches): "…, at your usual 14 W".
 
 **Use cases.**
 - A long lab day: know whether you need the charger before the afternoon session.
@@ -93,8 +95,8 @@ draining on a too-small charger) are caught in a minute.
 
 ## Charge limit shortcut
 
-A button opens macOS's own **Charge Limit** (System Settings → Battery), which protects the battery without extra
-software. Sparewatt itself never sets a limit.
+A small *Set a charge limit ↗* link in the Health card opens macOS's own **Charge Limit** (System Settings → Battery),
+which protects the battery without extra software. Sparewatt itself never sets a limit.
 
 ---
 

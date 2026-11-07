@@ -10,12 +10,15 @@
 
 **What it does.**
 - **Header:** processor temperature with a plain verdict — *Cool* (under 45 °C), *Normal* (under 75), *Hot — fans
-  working harder* (under 90), *Very hot — the Mac may slow down to cool*.
-- **Readings:** processor, graphics, battery and storage temperatures.
-- **Fans:** each fan's speed in rpm against its maximum (up to four), or "No fans (this Mac is fanless)".
+  working harder* (under 90), *Very hot — the Mac may slow down to cool*. Under 75 °C it names the part: "Processor ·
+  Normal".
+- **Fans card:** a thin *Last 2 min* strip of the processor temperature with its range ("41–58 °C", or "steady"), then
+  each fan's speed in rpm against its maximum (up to four), or "No fans — this Mac is fanless". With live diagrams off,
+  the graphics, storage and battery temperatures are in this card too.
 - **Chip heat map:** processor, graphics, chip, storage and battery zones that glow as they heat up.
-- **All sensors:** every temperature sensor the Mac reports, grouped (Processor, Graphics, Chip, Chip area, Storage,
-  Battery, Other) with range and average; click a group to open it.
+- **All sensors:** folded to one line with the number of sensors and the hottest one. Click it for every temperature
+  sensor the Mac reports, grouped (Processor, Graphics, Chip, Chip area, Storage, Battery, Other) with range and
+  average; click a group to open it.
 - **Dashboard only:** processor temperature over 24 hours.
 
 **Use cases.**
@@ -39,8 +42,9 @@
 
 **Purpose.** See how much the Mac is downloading and uploading, and which app is doing it.
 
-**What it does.** Total download + upload speed, a moving diagram, a sparkline, the two-minute peak, and *Using the
-network most* (per app, measured over one second; this list includes traffic inside the Mac, between local apps).
+**What it does.** Total download + upload speed; the live diagram as the main picture, with a thin *Last 2 min* strip
+and the two-minute peak under it (with live diagrams off: a sparkline with download, upload and the peak); and *Using
+the network most* (per app, measured over one second; this list includes traffic inside the Mac, between local apps).
 
 **Use cases.**
 - A video call stutters: check whether something else (a sync, a backup, an update) is uploading.
@@ -59,13 +63,15 @@ bar*); Dashboard → **Network**.
 **Purpose.** Know how full the disk is and where the space went — including the parts Finder doesn't explain.
 
 **What it does.**
-- **Header:** % used, "X free of Y". Free counts space macOS can free on demand.
-- **Usage card:** used / free / total, read and write speed, storage temperature, and "Getting full — macOS slows down
-  below ~10% free".
-- **Where the used space is:** your biggest home folders; **purgeable** space (macOS frees it when needed); **macOS,
-  apps & System Data** (the rest); and how many local Time Machine snapshots exist.
-- **Biggest folders in your home:** the top 8, with growth ("▲ 2.1 GB") since an earlier count; click one to look
-  inside (up to 12 sub-folders at each level), *Back*, *Show in Finder*.
+- **Header:** % used, and "146 GB free of 926 GB · 33 °C" (the storage chip's temperature). Free counts space macOS
+  can free on demand.
+- **Usage card:** one bar of the used space, "781 GB used" beside it, split into your **biggest home folders** and
+  **macOS, apps & System Data** (the rest; its tooltip says how many local Time Machine snapshots are inside), with
+  **purgeable** space (macOS frees it when needed) drawn lightly next to free, because the free figure already counts it. Below 10% free: "Getting full — macOS slows down below ~10% free".
+- **Read and write:** a short live diagram of the storage traffic (read and write speed as figures with live diagrams
+  off).
+- **Biggest folders in your home:** the top 8, with growth since an earlier count leading each subtitle, in colour
+  ("▲2.1 GB · ~/Projects"); click one to look inside (up to 12 sub-folders at each level), *Back*, *Show in Finder*.
 
 **Use cases.**
 - macOS says the disk is almost full but Finder's folders don't add up: see purgeable space and System Data.
@@ -79,7 +85,7 @@ bar*); Dashboard → **Network**.
   permission prompts appear.
 
 **Where.** STORAGE part of the menu bar; Dashboard → **Storage**. The rest of the Storage panel — app caches and Downloads
-tidy-up — and the Files panel (Latest File, the Shelf, the clipboard) are described in
+tidy-up, two rows of one card — and the Files panel (Latest File, the Shelf, the clipboard) are described in
 [Files and storage](09%20Files%20and%20storage.md).
 
 **Settings.** Red above 90% used; *Storage: show free space instead of % used*; *show read/write speed during big

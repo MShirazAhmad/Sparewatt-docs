@@ -51,8 +51,8 @@ On battery, once a minute, for every app with a Dock icon (not Finder, not Spare
 
 - Safari's web pages run in a macOS process outside Safari's bundle, so their cost is counted under macOS, and Safari
   reads lower than it is.
-- Energy impact over a short stretch is noisy; the idle-app rule averages it, the pie shows the stretch since the
-  previous reading (a few seconds while a panel is open).
+- Energy impact over a short stretch is noisy; the idle-app rule averages it, the power-per-app chart shows the stretch
+  since the previous reading (a few seconds while a panel is open).
 - "Used" means "was the front app". An app you read on a second screen without clicking it counts as unused — add it to
   the never-suggest list.
 - The weekly per-app battery card splits the whole draw by energy impact without the floor, so its numbers are larger.

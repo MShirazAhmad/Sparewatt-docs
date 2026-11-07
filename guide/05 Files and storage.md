@@ -7,8 +7,8 @@ hide the FILES part and they move into the Storage panel. App caches and Downloa
 
 The newest file you saved or downloaded, ready to drag into a mail, a chat or an upload box, plus the next 4 newest.
 Sparewatt finds them through Spotlight. macOS leaves Desktop, Documents and Downloads out of those results, so new files
-there don't show, and the card says which of your folders it can't see. Downloads joins in once you have clicked *Look*
-in Downloads tidy-up and macOS has let Sparewatt read it.
+there don't show; the card says how many of your folders it can't see ("3 folders not searched" — hover for which).
+Downloads joins in once you have clicked *Look* in Downloads tidy-up and macOS has let Sparewatt read it.
 
 Narrow it down on Dashboard → Menu Bar → *Latest File — where to look*: pick folders (everything inside them counts)
 and file types (for example `pdf docx png`). With no folders chosen, the whole home folder is searched.
@@ -17,7 +17,8 @@ and file types (for example `pdf docx png`). With no folders chosen, the whole h
 
 A holding place for files on the way somewhere else.
 
-- **Drop files on the menu bar item** (or the Files panel's Shelf) to keep them there.
+- **Drop files on the menu bar item** (or the Files panel's Shelf, a one-line drop zone while it is empty) to keep them
+  there.
 - Drag them out again — all at once or one by one — into any app or folder.
 - From the Shelf: Move to, AirDrop, Zip, Copy path, Open with, Trash. Trash asks for a second click within 3 seconds,
   in the Shelf card and the floating Shelf alike (the files go to the Trash and can be put back).

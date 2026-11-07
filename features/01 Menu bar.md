@@ -33,7 +33,8 @@ The menu bar is where Sparewatt lives. Everything else — panels, dashboard, al
 **Benefits.**
 - One glance answers "is my Mac busy, and with what kind of work?".
 - Battery readings are the battery's own numbers (real fill to 0.1%, true charge state), not the rounded percentage macOS shows.
-- Items keep a steady width for 30 seconds, so neighbouring menu bar icons don't jump around.
+- Items keep a steady width while only a digit or so changes (for up to 30 seconds), so neighbouring menu bar icons
+  don't jump around; a short burst of a wide value (say during a big copy) doesn't leave a wide gap behind.
 
 **Where.** The menu bar. Choose which parts appear on Dashboard → **Menu Bar** → *Show in the menu bar*.
 

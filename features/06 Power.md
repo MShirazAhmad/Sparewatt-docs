@@ -20,7 +20,8 @@ drain over the last minute, counted only since the charger went in. macOS's own 
 **Use cases.** Decide whether to close the video call's camera, or the second monitor, to make it to the end of the
 session.
 
-**Where.** Power panel (top card); Dashboard → **Power flow**.
+**Where.** Power panel, the row under the flow diagram (*Left* and *In battery* on battery; *Full in*, *If unplugged*
+and *In battery* on the charger); the Battery panel's header; Dashboard → **Power flow**.
 
 ---
 
@@ -37,7 +38,7 @@ last minute or two.
 
 **Use cases.** Is the 30 W travel charger enough for this workload? Is the battery charging or just holding?
 
-**Where.** Power panel; Dashboard → **Power flow**.
+**Where.** Power panel, first under the header; Dashboard → **Power flow**.
 
 ---
 
@@ -70,13 +71,15 @@ then passes it on. On battery, it comes out of your battery.
 
 **Purpose.** Catch a charger that can't keep up.
 
-**What it does.** Plugged in and the battery still drains → red: "The 30 W charger isn't enough: the Mac uses 41 W, so the
-battery is draining 11 W even while plugged in. Use a bigger charger or a shorter, better cable." Close to the charger's
-limit → orange: charging will be slow while the Mac is busy.
+**What it does.** Plugged in and the battery still drains → a red line: "Can't keep up: the battery drains even while
+plugged in. Use a bigger charger or a shorter, better cable." Its tooltip has the watts: "The 30 W charger isn't enough:
+the Mac uses 41 W, so the battery is draining 11 W even while plugged in." Close to the charger's limit → orange:
+charging is slow while the Mac is busy.
 
 **Use cases.** A hotel USB-C port, a phone charger, or a long thin cable on a 16" MacBook Pro.
 
-**Where.** Power panel, only when there is something to say.
+**Where.** Power panel, only when there is something to say: a line inside the charger card (a card of its own when
+the charger's details can't be read).
 
 ---
 
@@ -84,16 +87,19 @@ limit → orange: charging will be slow while the Mac is busy.
 
 **Purpose.** Know exactly what is plugged in: how much it can give, how it talks to the Mac, and what it is giving now.
 
-**What it does.** While a charger is connected, the Power panel shows:
+**What it does.** While a charger is connected, the Power panel's charger card shows its kind and port, the level it
+agreed with the Mac and the volts and amps coming in now. The rating and the watts coming in are on the flow diagram
+and in the card's tooltips. A chevron opens the other voltage levels and the maker's details (always open on the
+dashboard). The panel remembers whether you opened it.
 
 | Row | Example | Where it comes from |
 |---|---|---|
-| Most it can give | 65 W max | the charger's rating, as macOS reads it |
+| Most it can give | 65 W max | the charger's rating, as macOS reads it (tooltip and flow diagram) |
 | Kind and port | USB Power Delivery 3.x · on the USB-C port 1 | macOS's charger family and the USB-C port's Power Delivery partner; also *USB-C, no Power Delivery*, *USB charging port*, *MagSafe 3*, *wireless* |
-| Agreed | 20 V × 3.25 A = 65 W | the voltage and current the charger and the Mac settled on |
-| Coming in now | 63.5 W at 20.1 V · 3.16 A | measured at the Mac's power input |
-| Voltage levels it offers | 5 V × 3 A, 9 V × 3 A, 12 V × 3 A, 15 V × 3 A, **20 V × 3.25 A** | every level a Power Delivery charger advertises; the one in use is highlighted |
-| Name, maker, serial, firmware | Apple 96W USB-C Power Adapter · serial … · firmware … | only Apple chargers report these; others show "not reported" |
+| Agreed | 20 V × 3.25 A | the voltage and current the charger and the Mac settled on (65 W in the tooltip) |
+| Coming in now | 20.1 V · 3.16 A | measured at the Mac's power input (63.5 W on the flow diagram and in the tooltip) |
+| Also offers (behind the chevron) | 5 V × 3 A, 9 V × 3 A, 12 V × 3 A, 15 V × 3 A | the other levels a Power Delivery charger advertises |
+| Name, maker, serial, firmware (behind the chevron) | Apple 96W USB-C Power Adapter · serial … · firmware … | only Apple chargers report these; for others the tooltip says "not reported" |
 
 **Use cases.** Check that a "100 W" charger really offers 20 V × 5 A; see that a hotel charger only gives 5 V (no Power
 Delivery); find which port the charger is on.
@@ -120,13 +126,17 @@ Power Delivery version shows as *3.x*: macOS reports revision 3 without telling 
 **Purpose.** Know which apps cost the most power right now — and how much battery time each takes.
 
 **What it does.** Every 10 seconds while the panel is open, the Mac's measured draw is split between apps by their
-share of *energy impact* over **every** process. A pie shows the top 6 and *Everything else*; a tip names the top two
-("“Safari” and “Zoom” use 53% of your battery drain right now").
-- **On the charger:** watts per app.
+share of *energy impact* over **every** process. In the panel, one stacked bar and a row per app show the top 6 and
+*Everything else*; the dashboard shows them as a donut.
+- **On the charger:** watts per app. On the dashboard a tip names the top two ("“Safari” and “Zoom” use 53% of the power
+  right now").
 - **On battery:** each app's share of the drain and **how much battery time it takes** (−42m) — the time you'd get back
-  by quitting it, counting only the draw above what the screen and macOS use anyway.
+  by quitting it, counting only the draw above what the screen and macOS use anyway. The card opens with a line like
+  "Quit Xcode and Claude → +1h 05m of battery": the two apps that can actually be quit (not parts of macOS) and cost
+  the most, with the time quitting both gives back, worked out for the two together.
 
-Click a slice or a name to see its processes and quit or force quit them (with confirmation).
+Click a part of the bar (a slice of the donut) or a name to see its processes and quit or force quit them (with
+confirmation).
 
 **Use cases.**
 - On battery and the time left keeps falling: find the app eating it.
@@ -154,8 +164,8 @@ them — only when it is worth it.
    stretch.
 
 The card **Not in use, still costing battery** lists each such app — "unused 34 min · 1.6 W", **+52 min** — with
-**Quit** (a normal quit; the app can ask to save), **Not now** (until you plug in) and **Never suggest**. With several
-apps, it adds "Quitting all 2 adds about 1 h 30 min."
+**Quit** (a normal quit; the app can ask to save) and, in its ⋯ menu, **Not now** (until you plug in) and **Never
+suggest**. With several apps, it adds "Quitting all 2 adds about 1 h 30 min."
 
 **Notification.** Once per app each time you unplug, only while you are at the Mac:
 *Quit Zotero? About +35 min of battery* — "Not used for 23 min, but it still takes about 1.4 W."
@@ -200,4 +210,4 @@ day (kept 14 days). The card shows the week's top 8 in watt-hours and as a share
 **Where.** Dashboard → **Power flow**.
 
 **Limits.** This card splits the whole draw (screen included) among the top apps, so its numbers are larger than the
-pie's battery-time figures.
+battery-time figures of *Power per app*.

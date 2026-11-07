@@ -16,8 +16,9 @@ without hunting for it in Finder.
 **What it does.** Finds, through Spotlight, the newest files you created or changed — in the last hour, else the last
 day, else the last 7 days — skipping `~/Library` and hidden folders. Downloads is read directly instead, once Downloads
 tidy-up has been allowed to read it (see Limits). Shows the newest one (name, when, folder) with
-**Put on the Shelf**, **Show in Finder** and **Open**; the whole row can be dragged. *N more recent files* lists the next
-four, each draggable.
+**Put on the Shelf**, **Show in Finder** and **Open**; the whole row can be dragged. Under it, in the same card, *N more
+recent files* opens the next four, each draggable, and "3 folders not searched" names how many of your chosen folders
+the search can't see (its tooltip says which, and why).
 
 **Use cases.**
 - Export a figure, then drag it straight into a chat or slide.
@@ -34,7 +35,8 @@ the types pdf, docx, xlsx, pptx, png, jpg, heic, md, csv and tex. With no folder
 **Limits.** Nothing older than 7 days; files Spotlight hasn't indexed are missed. **Desktop and Documents are not
 seen:** macOS leaves them out of Spotlight results for Sparewatt, and Sparewatt doesn't ask for them. Downloads is seen
 only after a *Look* in Downloads tidy-up has read it in this copy of the app (a newly built copy needs a new *Look*);
-allowing Downloads alone doesn't bring it back into Spotlight results. The card names the chosen folders it can't see.
+allowing Downloads alone doesn't bring it back into Spotlight results. The card shows how many chosen folders it can't
+see ("Downloads not searched" when it is one); the tooltip names them.
 
 ---
 
@@ -47,7 +49,9 @@ drag them together.
 
 **What it does.**
 - **Add files:** drop them on the menu bar item, on the Shelf card, or on the trailing drop zone (below); or use *Put on
-  the Shelf* from Latest File. Only references are kept — nothing is copied.
+  the Shelf* from Latest File. Only references are kept — nothing is copied. An empty Shelf is a one-line drop zone:
+  "Drop files here to hold them" (or "Drop files here, or shake while dragging" with shake to open on).
+- **The count** shows once: in the Files panel's header (and on the FILES part of the menu bar), not again in the card.
 - **Take them out:** drag all, or tick some and drag those, into any app. After a successful drop they come off the
   Shelf.
 - **Actions** (on ticked files, or all): **Move to…** (moves on the same disk, copies to another; name clashes become
@@ -64,7 +68,8 @@ drag them together.
 
 **Benefits.** No juggling of Finder windows; drag once instead of three times.
 
-**Limits.** The card lists up to 50 files; actions still cover all of them.
+**Limits.** In the panel the card shows 4 files, with the rest behind *N more* (up to 50). Actions still cover all of
+them.
 
 ---
 
@@ -119,7 +124,8 @@ rebuild their caches; quit an app before clearing its cache.
 
 **Benefits.** Only ever touches `~/Library/Caches`; manual clears are reversible (Trash).
 
-**Where.** Storage panel → *App caches* (collapsed in the menu bar panel, open on the dashboard).
+**Where.** Storage panel → *App caches*, a row of the card it shares with Downloads tidy-up (click it to open; open on
+the dashboard).
 
 **Limits.** A cache that takes over 15 seconds to count shows what was counted by then, marked ">" (or *too big to count
 in 15 s* if nothing finished); size limits act only on caches counted in full.

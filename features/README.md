@@ -83,4 +83,4 @@ answers three questions from the menu bar:
 
 **Asking an AI assistant instead of reading panels.** Turn on the [MCP server](12%20AI%20Assistant.md) and ask Claude Code, Codex or another assistant "what is draining my battery?" or "which app used the most memory today?". It reads the same lists and history you see. Turn on *Allow changes* only if you want it to switch services or quit apps for you.
 
-**A new or second-hand Mac.** Look at [battery health and wear](05%20Battery.md#battery-card), [Startup Items](11%20Dashboard%2C%20history%20and%20this%20app.md#startup-items) for what installs left behind, and [Mac health](11%20Dashboard%2C%20history%20and%20this%20app.md#overview-and-mac-health) for anything that needs action.
+**A new or second-hand Mac.** Look at [battery health and wear](05%20Battery.md#health-card), [Startup Items](11%20Dashboard%2C%20history%20and%20this%20app.md#startup-items) for what installs left behind, and [Mac health](11%20Dashboard%2C%20history%20and%20this%20app.md#overview-and-mac-health) for anything that needs action.

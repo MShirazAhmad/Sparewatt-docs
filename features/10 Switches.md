@@ -64,7 +64,9 @@ in it. A log that grows past 5 MB is set aside as `<name>.old.log` and a new one
 ## Where to use them
 
 - **Menu bar SWITCH part** — "2/5" (how many are on), "…" while one is changing, red when one failed. Hover or click for
-  a panel of toggles by group, with *On since 09:12*, an *open in browser* button, and *Add or edit switches…*.
+  a panel with one card: a row per group with its count ("Servers 0/7"). Switches that are on, starting or failing
+  always show under their group; click a group to see all its switches (it stays open until you click it again). A
+  switch that is on shows *since 09:12* and an *open in browser* button; *Add or edit switches…* is at the bottom.
 - **Right-click menu** — every switch with a tick when on; click to flip it.
 - **Dashboard → Switches** — the full list with errors, *Open its log*, *Edit*, *Add switch*, and the editor: *Test* tells
   you whether the running check sees it on right now.

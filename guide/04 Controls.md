@@ -4,8 +4,9 @@ All controls are pages under **Control** in the dashboard (⌥⌘R).
 
 ## Energy modes
 
-**Automatic**, **Low Power** or **High Power**, set separately for battery and charger, from the Battery panel's
-*Energy mode* card. Changing one uses macOS's own `pmset`, so macOS asks for your administrator password each time.
+**Automatic**, **Low Power** or **High Power**, set separately for battery and charger with two compact pickers in the
+Battery panel's *Energy mode* card. Changing one uses macOS's own `pmset`, so macOS asks for your administrator
+password each time.
 
 ## On Battery
 
@@ -33,9 +34,9 @@ nothing stays frozen once it is gone. ⌥⌘E toggles Extreme Saver from anywher
 ## Profiles
 
 **Lecture**, **Lab** and **Travel**: energy modes for battery and charger plus Extreme Saver, applied in one click from
-the top of the Battery panel. Each change asks for your password; a profile is marked as the current one only when every
-change went through. Edit their names, icons and choices on Dashboard → **Shelf, Profiles & Alerts** (click a
-profile's icon to pick another).
+the profiles row at the bottom of the Battery panel's *Energy mode* card. Each change asks for your password; a profile
+is marked as the current one only when every change went through. Edit their names, icons and choices on Dashboard →
+**Shelf, Profiles & Alerts** (click a profile's icon to pick another).
 
 ## Watchlist
 
