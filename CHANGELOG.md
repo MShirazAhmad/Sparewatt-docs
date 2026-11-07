@@ -2,6 +2,14 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-06 — Sparewatt 1.5.1
+
+Released as [Sparewatt 1.5.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.5.1-2026-11-06).
+
+- The battery and power text on the drain glow (green, lime, yellow…) is white on a dark menu bar, like the other
+  readings, instead of turning black on bright colours; a faint shadow keeps it readable. On a light menu bar it is
+  black, like the others.
+
 ## 2026-11-06 — Sparewatt 1.5
 
 Released as [Sparewatt 1.5](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.5-2026-11-06), with

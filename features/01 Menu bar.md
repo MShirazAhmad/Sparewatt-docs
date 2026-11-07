@@ -156,7 +156,7 @@ The text keeps the menu bar's own colour on the glow, so it stays readable; a wa
 **Purpose.** On battery, show how fast the battery is being used, in a way that means something: hours.
 
 **What it does.** Works out how long a **full** battery would last at the current drain and puts a soft glow of that
-colour behind the battery and power parts (the text turns white or black, whichever reads better): red under 1 h,
+colour behind the battery and power parts (the text stays in the menu bar's own colour, like the other parts): red under 1 h,
 orange under 2 h, yellow under 3.5 h, lime under 5 h, green from 5 h. Only on battery and only while draining at least
 0.5 W.
 
