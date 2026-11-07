@@ -13,6 +13,11 @@ normal. Every notification it sends is listed here.
 | **Storage almost full** — "Only 18 GB free (your limit is 20 GB)…" | free space below the limit | once, re-armed when space recovers | no | Dashboard → Shelf, Profiles & Alerts (20 GB) |
 | **On battery: *app*** — "*app* is using 45% processor (limit 30%)" | a Watchlist rule is exceeded | not repeated within the quiet period (10 min) | per rule | Dashboard → **Watchlist** |
 | **Caches cleared** — "Emptied over its limit: …" | an app cache passed its size limit and was emptied | each hourly check that emptied something | no | remove the limit in the Storage panel |
+| **Mac is slowing down to cool** — "macOS is slowing the processor to keep the Mac from overheating (70% speed)…" | macOS starts slowing the processor to cool the Mac | once per episode, until it is back to normal | no | always on |
+| ***Device* is at *N*%** — "Magic Mouse is at 12%" | a connected keyboard, mouse, trackpad or pair of headphones at 15% or less, not charging | once per discharge; again after it charged above 30% | no | Dashboard → On Battery → *Alert when a device's battery is low* (on) |
+| **Memory keeps growing** — "Safari's memory grew 3.10 GB in the last hour…" | an app's memory grew by more than 2 GB in an hour while it kept running | once per episode | no | Dashboard → Shelf, Profiles & Alerts → *More alerts* (**off**) |
+| **Data limit passed** — "3.2 GB of internet data used today, over your 3 GB a day. Most of it: …" | today's internet data passes your daily limit | once a day | no | Dashboard → Shelf, Profiles & Alerts → *More alerts* (**off**; 1–50 GB a day) |
+| **Your Mac last week** — "Last week: 18h on battery · top drain Xcode · 4.2 GB used" | Monday, the first time the Mac is awake after 9:00 | once a week | no | Dashboard → Shelf, Profiles & Alerts → *More alerts* (**off**) |
 
 ## Warnings without a notification
 
@@ -23,6 +28,8 @@ normal. Every notification it sends is listed here.
 | Charger too small / near its limit | Power panel |
 | Memory forecast (swap growing fast) | Memory panel |
 | *Needs action* / *Worth a look* | dashboard Overview ([Mac health](11%20Dashboard%2C%20history%20and%20this%20app.md#overview-and-mac-health)) |
+| Drive health failing, last Time Machine backup over 7 days old | Storage panel ([Storage space](03%20Temperature%2C%20network%20and%20storage%20space.md#storage-space)) and the Overview |
+| *Restarting would help* | dashboard Overview |
 
 ## Quiet hours
 
@@ -40,6 +47,8 @@ are on Dashboard → **Shelf, Profiles & Alerts**.
 | **Quit *app*? About +N of battery** (one app) | **Quit *app*** · **Not now** (not again until you plug in) | Battery panel |
 | **Busy in the background** | **Quit *app*** · **Not now** | Processor panel |
 | **On battery: *app*** (Watchlist) | **Show** | the panel for that resource |
+| **Memory keeps growing** | **Quit *app*** · **Not now** | Memory panel |
+| **Your Mac last week** | none | the dashboard's share sheet, on the "My Mac this week" card |
 | every other notification | none | the panel it is about |
 
 **Quit *app*** is the app's normal quit: it can ask to save first. It is never a force quit. When a menu bar part is

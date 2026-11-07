@@ -53,6 +53,29 @@ Dropping files on the menu bar, or ⌥⌘V, still opens the Files panel while FI
 
 ---
 
+## Presets and open at login
+
+**Purpose.** Set up the menu bar in one click, and have Sparewatt there after every restart.
+
+**What it does.** Dashboard → **Menu Bar** starts with **Open Sparewatt when you log in**. It uses macOS's own
+login-item service: Sparewatt is listed in System Settings → General → Login Items, and macOS may first ask for your
+OK there (the switch says so, with *Open Login Items…*). A login item from an older Sparewatt, or one you added
+yourself, stays as it is and the switch doesn't see it; remove it in Login Items if you no longer want it.
+
+Under *Show in the menu bar*, **Apply preset** sets the item switches:
+
+| Preset | Shows |
+|---|---|
+| Minimal | CPU, RAM, battery |
+| Battery | battery, power, temperature |
+| Everything | every item Sparewatt comes with (NET stays off until you switch it on; FILES and SWITCH show only while in use) |
+
+The preset that matches your switches is ticked. A preset changes only which items show; grouping, icons, colours and
+text size stay as they are. New installs choose one in the
+[welcome window](../guide/01%20Getting%20started.md#the-welcome-window), with a live preview.
+
+---
+
 ## Steadier figures
 
 **Purpose.** A menu bar that changes only when something really changes, and costs less to draw.

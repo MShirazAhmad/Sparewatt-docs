@@ -23,6 +23,19 @@ xattr -dr com.apple.quarantine /Applications/Sparewatt.app
 
 You only do this once.
 
+## The welcome window
+
+The first launch of a new install opens one small window (if you used Sparewatt before, you don't see it):
+
+- three lines on what Sparewatt does;
+- **In the menu bar:** *Minimal* (processor, memory, battery), *Battery* (battery, power, temperature) or *Everything*,
+  with a live preview. The menu bar changes as soon as you pick one;
+- **Open Sparewatt when you log in** (see [Start at login](#start-at-login));
+- a note that alerts arrive quietly in Notification Center, with a *Notifications…* button to turn on banners;
+- "Nothing leaves your Mac: no account, no tracking."
+
+Everything in it can be changed later in the dashboard. Dashboard → **This App** → *Show welcome again* opens it again.
+
 ## First look
 
 - The menu bar shows **one compact item** with live readings (processor, graphics, memory, storage, temperature, battery, power).
@@ -39,14 +52,29 @@ Notify and Quit as actions.
 
 ## Start at login
 
-Dashboard → **Menu Bar** → **Start Sparewatt when you log in**. macOS may ask once whether Sparewatt may control
-*System Events*; that is how the login item is added.
+Dashboard → **Menu Bar** → **Open Sparewatt when you log in** (also in the welcome window). It uses macOS's own
+login-item service, so Sparewatt shows up in System Settings → General → Login Items. If macOS wants your OK first, the
+switch says so; click *Open Login Items…* and switch Sparewatt on there.
+
+A login item from Sparewatt 1.8.1 or earlier, or one you added yourself, stays as it is: the switch doesn't see it.
+Remove it in Login Items if you no longer want it.
+
+## Menu bar presets
+
+Dashboard → **Menu Bar** → *Apply preset*: *Minimal*, *Battery* or *Everything* sets which items show in one click.
+See [Presets and open at login](../features/01%20Menu%20bar.md#presets-and-open-at-login).
+
+## Moving to another Mac
+
+Dashboard → **This App** → *Export settings…* saves your settings, switches and profiles in one file; *Import
+settings…* on the other Mac reads it. See
+[Your settings](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#your-settings-export-import-welcome-again).
 
 ## Updating from Sparewatt 1.4
 
 Later versions use the bundle ID `local.ahmad.Sparewatt` (1.4 used `app.sparewatt.Sparewatt`). The first launch
 copies your 1.4 settings once; history, switches and logs stay where they are, in folders named Sparewatt. macOS
-asks again, once each, for Downloads access and for control of *System Events* (the login item).
+asks again, once, for Downloads access.
 
 ## Updates
 

@@ -29,18 +29,24 @@ background-processes table, battery use per app this week.
 
 **Purpose.** One look to know whether anything needs your attention.
 
-**What it does.** The Overview starts with a health card — *All good*, or *1 needs action · 2 worth a look* — then eight
-tiles (Processor, Graphics, Memory, Storage, Battery, Power flow, Temperature, Network), each with *Open*.
+**What it does.** The Overview starts with a health card — *All good*, or *1 needs action · 2 worth a look*, after the
+time since the last restart ("Up 18 days") — then eight tiles (Processor, Graphics, Memory, Storage, Battery, Power
+flow, Temperature, Network), each with *Open*.
 
 | Finding | Level |
 |---|---|
 | Battery state doesn't add up | needs action |
 | A background process far above its normal | needs action |
 | Storage under 10% free | needs action |
-| Storage under 20% free | worth a look |
+| Storage under 15% free and under 50 GB | worth a look |
 | Memory pressure critical / raised | needs action / worth a look |
 | More than 4 GB spilled to disk (swap) | worth a look |
 | Processor above 95 °C / above 85 °C | needs action / worth a look |
+| macOS slowing the processor to cool the Mac / warm for 10 minutes | needs action / worth a look |
+| The drive's own health check (SMART) says *Failing* | needs action |
+| No Time Machine backup for more than 7 days | worth a look |
+| *Restarting would help*: up more than 14 days, and more than 4 GB in swap or memory pressure raised for 10 minutes of the last hour | worth a look |
+| An app's memory grew by more than 2 GB in the last hour | worth a look |
 | Battery health under 80% | worth a look |
 | On battery with under an hour left | needs action |
 
@@ -100,6 +106,30 @@ over the day; a Mac just set up has little to show.
 
 ---
 
+## "My Mac this week" card
+
+**What it does.** The weekly sister of the day card, the same size and made from the same kept figures, for the last 7
+days (today and the 6 days before):
+
+- **time on battery** over the week and about how much a day ("18h 20m on battery · about 2h 37m a day"), or
+  *Plugged in* when no battery was used;
+- a **bar for each day's time on battery**;
+- up to three tiles: the **three apps that used the most battery** (watt-hours), **battery health** with recharges,
+  and the **internet data used** with the app that used the most (or how much of a charge was used, when no data was
+  counted).
+
+The same rules as the day card: no file paths, user or folder names, Mac name or serial numbers.
+
+**Where.** The share sheet's *Day / Week* switch (*Share my day* on the Overview, or the icon on History). *Save…* names
+the PNG "My Mac this week" with the date. `sparewatt://share/week` opens it
+([Links for Shortcuts and scripts](../reference/Links%20for%20Shortcuts%20and%20scripts.md)).
+
+**Monday summary.** Optional, off by default: one notification on Monday, the first time the Mac is awake after 9:00,
+such as "Last week: 18h on battery · top drain Xcode · 4.2 GB used". Clicking it opens the share sheet on the week card.
+Turn it on in Dashboard → **Shelf, Profiles & Alerts** → *More alerts*.
+
+---
+
 ## Startup Items
 
 <p align="center"><img src="../images/features/dashboard-startup-items.png" width="800" alt="Startup Items"><br><em>Startup Items: everything set to start by itself and whether it runs now.</em></p>
@@ -120,7 +150,8 @@ Read-only; *Open Login Items settings* takes you to where macOS lets you turn th
 
 **Purpose.** A monitor should not itself cost much. This page shows exactly what Sparewatt uses.
 
-**What it does.** Two cards.
+**What it does.** Three cards: *Sparewatt itself*, *Your settings* (see
+[below](#your-settings-export-import-welcome-again)) and *By feature*.
 
 **Sparewatt itself**
 
@@ -149,10 +180,32 @@ and **when it runs**:
 | Switches | every 10 s while a panel or the dashboard is open, otherwise once a minute; only if you have switches |
 | Latest File | only while the Files panel is open |
 | Insights | once a minute (battery and per-app readings) |
+| Mac health | Time Machine every 30 minutes, the drive check every 6 hours; the speed limit only while macOS cools the Mac |
+| Device batteries | every minute; headphones every 5 minutes |
+| Data usage | one `nettop` that keeps running, read once a minute |
 
 The list is sorted by cost, so the top rows are what to change first. Features are turned off in **Menu Bar** settings.
 
 **Use cases.** Choose a slower update speed or turn off live diagrams if Sparewatt's own cost matters on battery.
+
+### Your settings: export, import, welcome again
+
+**Purpose.** Keep a copy of your settings, or move them to another Mac.
+
+**What it does.**
+- **Export settings…** saves one JSON file with your settings, your switches and your profiles. Only settings you
+  changed from their defaults are in it. Not included: open at login (a macOS registration, not a setting) and
+  Sparewatt's own state on this Mac, such as the files on the Shelf, pinned clipboard text, whether Extreme Saver is
+  on, and window positions.
+- **Import settings…** shows what the file holds first: "12 settings, 13 switches, 3 profiles — replace your current
+  ones?", the Sparewatt version and date it came from, and a warning when it holds switches (they run their own
+  commands, so import only a file you made or trust). *Replace* saves your current settings as
+  `settings-backup-<date>.json` in `~/Library/Application Support/Sparewatt`, then replaces them: a setting not in the
+  file goes back to its default. If the backup can't be written, nothing is changed. A file from a newer Sparewatt is
+  refused.
+- **Show welcome again** opens the [welcome window](../guide/01%20Getting%20started.md#the-welcome-window).
+
+**Use cases.** A new Mac: export on the old one, import on the new one. Before trying other settings, export a copy.
 
 ### Crash log and Report a problem
 

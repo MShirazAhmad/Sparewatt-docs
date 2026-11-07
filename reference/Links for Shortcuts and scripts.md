@@ -22,6 +22,7 @@ If Sparewatt isn't running, the link starts it and runs once the menu bar item i
 | `sparewatt://dashboard` | opens the dashboard |
 | `sparewatt://dashboard/<page>` | opens one page: `overview`, `cpu`, `gpu`, `memory`, `storage`, `temperature`, `network`, `battery`, `power`, `history`, `on-battery`, `extreme-saver`, `watchlist`, `profiles`, `menu-bar`, `this-app`, `startup-items`, `switches`, `assistant` |
 | `sparewatt://switch/<name>/on` · `/off` · `/toggle` | turns one of your [Switches](../features/10%20Switches.md) on or off by its name |
+| `sparewatt://share` · `/day` · `/week` | opens the dashboard's share sheet on the ["My Mac today"](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-today-share-card) card (`share` alone, or `/day`) or the ["My Mac this week"](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-this-week-card) card |
 
 ## Details
 
@@ -32,6 +33,6 @@ If Sparewatt isn't running, the link starts it and runs once the menu bar item i
   name as `%2F`. An exact match is tried first, then the same name in any case. `on` does nothing when the switch is
   already on, and `off` when it is off.
 - **Nothing happens** for a link Sparewatt doesn't understand, or for an energy mode that is already set.
-- Notifications use the same links to say which panel a click opens.
+- Notifications use the same links to say which panel a click opens; the Monday summary uses `sparewatt://share/week`.
 
 See also [Keyboard shortcuts](Keyboard%20shortcuts.md).

@@ -12,6 +12,12 @@
 - **Header:** processor temperature with a plain verdict — *Cool* (under 45 °C), *Normal* (under 75), *Hot — fans
   working harder* (under 90), *Very hot — the Mac may slow down to cool*. Under 75 °C it names the part: "Processor ·
   Normal".
+- **Slowing down to cool:** a line under the header, only while macOS is cooling the Mac: *Warm: macOS has started
+  cooling the Mac*, *macOS is slowing the processor to cool it — 70% speed*, or *…slowing the processor hard…* when
+  it is critical. The speed is macOS's own limit (from `pmset`), shown when it records one. When the slow-down starts,
+  one notification per episode (*Mac is slowing down to cool*) and a *Needs action* finding on the Overview's
+  [Mac health](11%20Dashboard%2C%20history%20and%20this%20app.md#overview-and-mac-health); warm for 10 minutes is
+  *worth a look*.
 - **Fans card:** a thin *Last 2 min* strip of the processor temperature with its range ("41–58 °C", or "steady"), then
   each fan's speed in rpm against its maximum (up to four), or "No fans — this Mac is fanless". With live diagrams off,
   the graphics, storage and battery temperatures are in this card too.
@@ -56,6 +62,35 @@ bar*); Dashboard → **Network**.
 
 ---
 
+## Data used per app
+
+**Purpose.** On a phone hotspot or a capped plan: how much internet data you used today and this week, and which app
+used it.
+
+**What it does.**
+- **Network panel:** a *Data used today* card with download and upload so far today, and the five apps that used the
+  most.
+- **Dashboard → Network:** today (down and up), the last 7 days and the daily average; each app's figure for today and
+  the last 7 days, split into download and upload; and a chart of each day's total for 14 days.
+
+Sparewatt runs one `nettop` for as long as it runs and reads it once a minute. A download that opens and closes between
+two readings still counts, which a short reading now and then would miss. Helpers count toward their app. Only internet
+traffic counts (Wi-Fi, Ethernet, hotspot), not apps talking to each other inside the Mac.
+
+**Use cases.**
+- Tethered to a phone: see that a cloud sync used 3 GB before the plan runs out.
+- Check what a video call or an update really cost.
+
+**Where.** Network panel; Dashboard → **Network**. Counting runs whether or not NET is shown in the menu bar.
+
+**Settings.** *Notify when today's internet data passes* — off, or 1, 2, 3, 5, 10, 20 or 50 GB a day (Dashboard →
+Shelf, Profiles & Alerts → *More alerts*). One notification the first time each day, naming the app that used the most.
+
+**Limits.** Counting starts when Sparewatt first runs and only while it runs. Kept 14 days, on this Mac only, in
+`data-usage.json` ([Where Sparewatt keeps its data](../reference/Data%20files.md)).
+
+---
+
 ## Storage space
 
 <p align="center"><img src="../images/features/storage-space.png" width="354" alt="Storage space"><br><em>Storage space: used, free and total, with the SSD temperature.</em></p>
@@ -68,6 +103,13 @@ bar*); Dashboard → **Network**.
 - **Usage card:** one bar of the used space, "781 GB used" beside it, split into your **biggest home folders** and
   **macOS, apps & System Data** (the rest; its tooltip says how many local Time Machine snapshots are inside), with
   **purgeable** space (macOS frees it when needed) drawn lightly next to free, because the free figure already counts it. Below 10% free: "Getting full — macOS slows down below ~10% free".
+- **Drive health and Time Machine:** two lines in the usage card.
+  - *Drive health* is the drive's own self-check (SMART), read every 6 hours: *Verified*, *Failing — back up now* (in
+    red, and a *Needs action* finding on the Overview), or *not reported* when the drive doesn't give one.
+  - *Last backup* reads "yesterday 22:10" (or *Backing up… 40%* while one runs), checked every 30 minutes and when the
+    panel opens. Orange, and *worth a look* on the Overview, after 7 days without a backup. With no backup disk set up:
+    *not set up*. macOS shows the backup dates only to apps with Full Disk Access, or through `tmutil` while the backup
+    disk is connected; with neither, it says *needs Full Disk Access*, with a button to that setting.
 - **Read and write:** a short live diagram of the storage traffic (read and write speed as figures with live diagrams
   off).
 - **Biggest folders in your home:** the top 8, with growth since an earlier count leading each subtitle, in colour

@@ -100,6 +100,36 @@ which protects the battery without extra software. Sparewatt itself never sets a
 
 ---
 
+## Device batteries
+
+**Purpose.** Know when the keyboard, mouse or AirPods are about to run out, before they do in the middle of a call.
+
+**What it does.** A **Devices** card lists each connected accessory that reports its battery:
+
+- **Magic Keyboard, Magic Mouse, Magic Trackpad** (and other devices that report a level the same way): one figure with
+  a small meter, and a bolt while it charges over its cable. Read from macOS's device registry every minute (about
+  1 ms).
+- **AirPods, Beats and other Bluetooth headphones:** left, right and case, as "L 64% · R 61% · Case 90%", or one
+  figure for headphones with one battery. macOS keeps these levels only in `system_profiler`, which starts a process, so
+  they are read every 5 minutes and when the Battery panel opens (at most every 30 seconds).
+
+A figure turns **orange at 20%** or less and **red at 10%** or less. A device found both ways is listed once.
+
+**Alert.** One notification per discharge when a device drops to **15%** or less and isn't charging: "Magic Mouse is at
+12%". Earbuds say which bud is low and to put them in their case. It comes again only after the device has charged
+above 30%. During quiet hours it waits, and comes afterwards if the device is still low. Clicking it opens the Battery
+panel.
+
+**Where.** Battery panel and Dashboard → **Battery**. The card is hidden when nothing reports a battery.
+
+**Settings.** *Alert when a device's battery is low* — Dashboard → **On Battery** → *Keyboards, mice and headphones*
+(on by default).
+
+**Limits.** Only connected devices that report a level are shown. Nothing is saved, so there is no history. Headphone
+levels can be up to 5 minutes old while the panel is closed.
+
+---
+
 ## Battery wear
 
 <p align="center"><img src="../images/features/battery-wear.png" width="354" alt="Battery wear"><br><em>Battery wear: health over months, loss per month, recharges per month, and when it reaches 80%. (Sample values.)</em></p>

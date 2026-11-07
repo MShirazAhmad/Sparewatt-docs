@@ -26,6 +26,9 @@ the old domain in place.)
 | `switches.json.bak` | `switches.json` as it was, kept when it could not be read in full | until you delete it |
 | `chargers.json` | every charger plugged in: rating, kind, Power Delivery version, levels, last port, best watts delivered, times connected, first and last seen, your nickname (name, maker and serial when the charger reports them) | until you delete it |
 | `chargers.json.bak` | `chargers.json` as it was, kept when it could not be read in full | until you delete it |
+| `data-usage.json` | internet data per app per day, download and upload in bytes (no addresses or sites), and when counting began | 14 days |
+| `data-usage.json.bak` | `data-usage.json` as it was, kept when it could not be read in full | until you delete it |
+| `settings-backup-<date>.json` | your settings, switches and profiles as they were just before an import replaced them (the same format as *Export settings…*) | until you delete it |
 
 Also in the settings: Watchlist rules, cache size limits, the Shelf's file **paths** (not copies — so the Shelf survives
 a restart), pinned clipboard entries (plain text), profiles, the idle-app never-suggest list, the AI Assistant's on/off, port and
@@ -39,6 +42,14 @@ Each switch's output when it runs, one file per switch, appended to (never trimm
 delete it, and sent nowhere unless you [report it](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#crash-log-and-report-a-problem)
 yourself.
 
+## Settings files you export
+
+*Export settings…* (Dashboard → This App) writes one JSON file wherever you choose, named "Sparewatt settings" with the
+date: the settings you changed from their defaults, your switches and your profiles. It leaves out open at login and
+Sparewatt's own state on this Mac (the Shelf's files, pinned clipboard text, window positions). See
+[Your settings](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#your-settings-export-import-welcome-again).
+
 ## Not stored
 
-The clipboard history and the AI Assistant's activity list (memory only).
+The clipboard history and the AI Assistant's activity list (memory only). Device battery levels, the drive's health
+check and Time Machine's last backup are read again each time and never saved.

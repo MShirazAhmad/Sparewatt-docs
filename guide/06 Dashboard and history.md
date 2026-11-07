@@ -30,13 +30,19 @@ and a log of **every stretch on battery**: how long, how much charge it used, an
 **Share my day** (top of the Overview, or the icon next to *Export CSV* on History) makes a "My Mac today" picture: time
 on battery and charge used today, today's charge curve, the app that used most battery, battery health and the charger.
 Share it, copy it or save it as a PNG. It holds no file paths, names or serial numbers
-([more](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-today-share-card)).
+([more](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-today-share-card)). The *Day / Week*
+switch makes "My Mac this week" instead: the last 7 days on battery, the top three battery apps, battery health and the
+internet data used ([more](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-this-week-card)).
 
 ## This App
 
 What Sparewatt itself uses — processor time and memory — split by feature (Switches and the once-a-minute insights
 included), with the settings that change it. Slower
 update speed (Dashboard → Menu Bar → *Look*) costs less.
+
+*Export settings…* and *Import settings…* move your settings, switches and profiles to another Mac, and *Show welcome
+again* opens the first-run window
+([more](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#your-settings-export-import-welcome-again)).
 
 The page also has **Report a problem…**, and after a crash a card with **Report…**, **Show log** and **Dismiss**; see
 [Troubleshooting](09%20Troubleshooting.md#sparewatt-crashed-or-something-is-wrong).

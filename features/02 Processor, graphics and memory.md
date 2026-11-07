@@ -74,6 +74,10 @@ only.
 - **Swap:** the legend's *On disk* row (spilled to disk), orange when over 1 GB under raised pressure.
 - **Memory forecast:** when swap grew by more than 500 MB within the last hour, a card warns that memory will run short
   and names the app using the most.
+- **Memory that keeps growing:** an app whose memory grew by more than 2 GB in the last hour, while it kept running, is
+  a *worth a look* finding on the Overview: "Safari's memory grew 3.10 GB in the last hour — quitting and reopening it
+  would free that." A notification with **Quit ‹app›** is optional, off by default
+  ([Alerts and notifications](08%20Alerts%20and%20notifications.md)).
 - **Using the most memory:** apps by memory held, counted from each process's own footprint, as Activity Monitor does.
   The iOS Simulator's processes show as one *iOS Simulator* row.
 - **Dashboard only:** *Who is using memory* (by kind).

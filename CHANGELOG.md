@@ -2,6 +2,69 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-07 — Sparewatt 1.9
+
+Released as [Sparewatt 1.9](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.9-2026-11-07).
+
+- **Device batteries.** A *Devices* card in the Battery panel shows each connected accessory that reports a battery.
+  Magic Keyboard, Magic Mouse and Magic Trackpad come from macOS's device registry, read every minute, with a bolt
+  while one charges over its cable. AirPods, Beats and other Bluetooth headphones show left, right and case
+  ("L 64% · R 61% · Case 90%"); macOS keeps those only in `system_profiler`, which starts a process, so they are read
+  every 5 minutes and when the panel opens. A level is orange at 20% or less and red at 10% or less. The card is hidden
+  when nothing reports a battery. One notification per discharge at 15% or less ("Magic Mouse is at 12%"), and again
+  only after the device has charged above 30%; *Alert when a device's battery is low* is on the **On Battery** page,
+  on by default. Nothing is saved.
+- **Mac health, beyond the live readings:**
+  - **Slowing down to cool.** While macOS slows the processor to keep the Mac from overheating, the Temperature panel
+    says so in one line, with macOS's speed limit when it records one: "macOS is slowing the processor to cool it —
+    70% speed". It is a *Needs action* finding on the Overview, and one notification per episode, *Mac is slowing down
+    to cool*. Warm for 10 minutes, before any slow-down, is *worth a look*.
+  - **Time since the last restart.** The Mac health card's header says "Up 18 days". *Restarting would help* is a
+    finding when the Mac has been up more than 14 days and either more than 4 GB of memory has moved to disk (swap) or
+    memory pressure was raised for 10 minutes of the last hour.
+  - **Drive health and Time Machine** in the Storage panel. *Drive health* is the drive's own check (SMART), read every
+    6 hours: *Verified*, or *Failing — back up now*, which needs action. *Last backup* reads "yesterday 22:10", or
+    *Backing up… 40%*, checked every 30 minutes and when the panel opens; over 7 days old is *worth a look*. With no
+    backup disk set up it says *not set up*. macOS shows the backup dates only to apps with Full Disk Access, or through
+    `tmutil` while the backup disk is connected; with neither, it says *needs Full Disk Access*, with a button to that
+    setting.
+  - **Memory that keeps growing.** An app whose memory grew by more than 2 GB in the last hour, while it kept running,
+    is *worth a look*: "Safari's memory grew 3.10 GB in the last hour — quitting and reopening it would free that."
+    A notification with **Quit ‹app›** is off by default (Dashboard → Shelf, Profiles & Alerts → *More alerts*).
+- **A welcome window for new installs.** Anyone who already used Sparewatt doesn't see it. It has three lines on what
+  Sparewatt does; the menu bar presets *Minimal* (processor, memory, battery), *Battery* (battery, power, temperature)
+  and *Everything*, with a live preview of the menu bar, applied at once; *Open Sparewatt when you log in*; a note that
+  notifications arrive quietly, with a button to their settings; and "Nothing leaves your Mac". *Show welcome again* is
+  on Dashboard → This App.
+- **Open at login** is a switch at the top of Dashboard → Menu Bar. It uses macOS's own login-item service, so
+  Sparewatt is listed in System Settings → General → Login Items, where macOS may first ask for your OK; the *System
+  Events* prompt is gone. A login item from an older Sparewatt, or one you added yourself, stays as it is and the switch
+  doesn't see it; remove it in Login Items if you no longer want it. The same page has *Apply preset: Minimal ·
+  Battery · Everything*, which sets the item switches and ticks the preset they match.
+- **Export and import settings** on Dashboard → This App: one JSON file with your settings (the ones you changed from
+  their defaults), your switches and your profiles, to keep a copy or move them to another Mac. Not included: open at
+  login (a macOS registration, not a setting) and Sparewatt's own state on this Mac, such as the files on the Shelf,
+  pinned clipboard text, whether Extreme Saver is on, and window positions. Import first asks "12 settings, 13 switches,
+  3 profiles — replace your current ones?", with a warning when the file holds switches (they run their own commands).
+  It then saves your current settings as `settings-backup-<date>.json` and replaces them; a setting not in the file goes
+  back to its default. A file from a newer Sparewatt is refused.
+- **Data used per app, today and this week.** A *Data used today* card in the Network panel: download and upload so
+  far today, and the five apps that used the most. The dashboard's Network page adds today, the last 7 days and the
+  daily average, each app's figure for today and the 7 days, and a chart of each day's total for 14 days. Counted once
+  a minute from one `nettop` that runs as long as Sparewatt does, so a download that starts and ends between two
+  readings still counts. Only internet traffic (Wi-Fi, Ethernet, hotspot) counts, not apps talking to each other inside
+  the Mac. An optional daily limit (1 to 50 GB a day, off by default) sends one notification the first time today's
+  data passes it. Kept 14 days on this Mac only, in `data-usage.json` (bytes per app per day; no addresses or sites).
+- **"My Mac this week" card.** The share sheet has a *Day / Week* switch. The week card shows the last 7 days: time on
+  battery and the daily average, a bar for each day, the three apps that used the most battery, battery health and
+  recharges, and the internet data used. Same rules as the day card: no file paths, names or serial numbers. An
+  optional **Monday summary** ("Last week: 18h on battery · top drain Xcode · 4.20 GB used") comes the first time the
+  Mac is awake after 9:00 on Monday; clicking it opens the share sheet on the week card. It is off by default
+  (Dashboard → Shelf, Profiles & Alerts → *More alerts*). New link: `sparewatt://share`, `/day` or `/week`.
+- **Fix:** the "using the network most" list's helper, `nettop`, spun on its empty input: 1.4 s of processor time per
+  run instead of 0.04 s, while the Network panel was open. It now gets an input that stays open and silent.
+- Builds with older Swift versions too (the automatic tests on GitHub use Swift 6.2).
+
 ## 2026-11-07 — Sparewatt 1.8.1
 
 Released as [Sparewatt 1.8.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.8.1-2026-11-07).

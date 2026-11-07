@@ -4,7 +4,7 @@
 
 <p align="center">
 <a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://badgen.net/github/assets-dl/MShirazAhmad/Sparewatt-docs?label=downloads&color=green&scale=1.4" alt="Total downloads"></a>
-<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/badge/latest-v1.8-blue" alt="Latest release"></a>
+<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/badge/latest-v1.9-blue" alt="Latest release"></a>
 <img src="https://img.shields.io/badge/macOS-14%2B-blue" alt="macOS 14 or later">
 <img src="https://img.shields.io/badge/price-free-brightgreen" alt="Free">
 </p>
@@ -66,22 +66,22 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 |---|---|
 | Menu bar: readings, grouped item with outline, hover panels, steadier figures, colours, warnings | [Menu bar](features/01%20Menu%20bar.md) |
 | Processor, graphics, memory | [Processor, graphics and memory](features/02%20Processor%2C%20graphics%20and%20memory.md) |
-| Temperature and fans, network, storage space | [Temperature, network and storage space](features/03%20Temperature%2C%20network%20and%20storage%20space.md) |
+| Temperature and fans, slowing down to cool, network, data used per app, storage space, drive health, Time Machine | [Temperature, network and storage space](features/03%20Temperature%2C%20network%20and%20storage%20space.md) |
 | Named processes, quitting, background normals, Watchlist | [Who is using it](features/04%20Who%20is%20using%20it.md) |
-| Battery state, charge plan, wear, overnight drain | [Battery](features/05%20Battery.md) |
+| Battery state, charge plan, wear, overnight drain, keyboard / mouse / AirPods batteries | [Battery](features/05%20Battery.md) |
 | Power flow, charger details and history, USB power out, power per app, idle apps | [Power](features/06%20Power.md) |
 | Energy modes, On Battery settings, Extreme Saver, profiles | [Power controls](features/07%20Power%20controls.md) |
 | Every notification, and its Quit / Show buttons | [Alerts and notifications](features/08%20Alerts%20and%20notifications.md) |
 | Latest File, Shelf, caches, Downloads tidy-up, clipboard | [Files and storage](features/09%20Files%20and%20storage.md) |
 | Local services on/off | [Switches](features/10%20Switches.md) |
-| Dashboard, Mac health, history, "My Mac today" share card, Startup Items, This App, Report a problem | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
+| Dashboard, Mac health, history, "My Mac today" and "My Mac this week" cards, Startup Items, This App, settings export, Report a problem | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
 | AI Assistant: an MCP server for Claude Code, Codex and other assistants | [AI Assistant](features/12%20AI%20Assistant.md) |
 
 ## Guide
 
 | Page | What it covers |
 |---|---|
-| [Getting started](guide/01%20Getting%20started.md) | install, first launch, the unsigned-app warning, updating from 1.4 |
+| [Getting started](guide/01%20Getting%20started.md) | install, the unsigned-app warning, the welcome window, open at login, presets, moving to another Mac, updating from 1.4 |
 | [Menu bar and panels](guide/02%20Menu%20bar%20and%20panels.md) | the menu bar item, hover panels, what each part shows |
 | [Battery and power](guide/03%20Battery%20and%20power.md) | power per app, idle-app suggestions, charge plan, wear, charger and sleep checks |
 | [Controls](guide/04%20Controls.md) | energy modes, On Battery settings, Extreme Saver, profiles, Watchlist, Switches, alerts |
