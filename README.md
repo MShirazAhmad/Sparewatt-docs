@@ -121,6 +121,12 @@ Screenshots are made from a made-up demo dataset: no real names or folders.
 
 ## License
 
-Sparewatt is **free to download and use**, and all rights are reserved.
-You may share the official download unchanged and free of charge; you may not sell it, distribute changed copies, or
-reverse engineer it. It comes as is, without warranty. These pages are © 2026 Shiraz Ahmad.
+Sparewatt is freeware: free to download and use, at home or at work. © 2026 Shiraz Ahmad. All rights reserved.
+
+You may share the official download unchanged and free of charge. You may not sell it, distribute changed copies, or
+reverse engineer it.
+
+It comes as is, without warranty of any kind. The author is not liable for any loss or damage from using it, including
+lost data.
+
+These pages are also © 2026 Shiraz Ahmad.
