@@ -22,7 +22,7 @@ answers three questions from the menu bar:
 | Live readings | see how hard the Mac works at a glance | one look, real numbers | [Menu bar](01%20Menu%20bar.md) |
 | One grouped item | save menu bar space | nothing hidden behind the notch | [Menu bar](01%20Menu%20bar.md#one-grouped-item) |
 | Hover panels | details without opening a window | "which app?" in one mouse move | [Menu bar](01%20Menu%20bar.md#hover-panels) |
-| Colours by value, red warnings, drain colours | spot trouble without reading numbers | calm until something is unusual | [Menu bar](01%20Menu%20bar.md#colours-by-value) |
+| Colours by value, red warnings, how hard the battery is working | spot trouble without reading numbers | calm until something is unusual | [Menu bar](01%20Menu%20bar.md#colours-by-value) |
 | Hidden-item check | know when macOS hides the menu bar item | no "the app vanished" | [Menu bar](01%20Menu%20bar.md#hidden-item-check) |
 | FILES and SWITCH step aside, steadier figures | no room spent on a 0, no redraw for a wobble | a calmer, cheaper menu bar | [Menu bar](01%20Menu%20bar.md#files-and-switch-step-aside) |
 | Presets, open at login | set up the menu bar in one click, start with the Mac | Minimal, Battery or Everything | [Menu bar](01%20Menu%20bar.md#presets-and-open-at-login) |

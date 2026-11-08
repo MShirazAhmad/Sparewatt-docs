@@ -200,13 +200,15 @@ Looking for one setting? Type a word or two into *Find a setting* at the top of 
 **Purpose.** See at a glance how heavy the load is, without reading numbers.
 
 **What it does.** Colours an item in five bands — green, lime, yellow, orange, red — by its value. Each item has its own
-four limits. Colours are adjusted so they stay readable on both light and dark menu bars.
+four limits (memory follows macOS's memory pressure instead, because how full memory is says little on macOS, which
+keeps it full on purpose). The colour goes by the same figure the item shows, and a figure sitting on a limit keeps its
+colour until it is clearly past it. Colours are adjusted so they stay readable on both light and dark menu bars.
 
 | Item | Default limits (green ends → red starts) |
 |---|---|
 | Processor | 30 / 50 / 70 / 85 % |
 | Graphics | 30 / 50 / 70 / 85 % |
-| Memory | 50 / 65 / 80 / 90 % |
+| Memory | follows macOS's memory pressure: green at ease, orange when it warns, red when critical |
 | Storage | 50 / 70 / 85 / 95 % |
 | Temperature | 50 / 65 / 80 / 90 °C |
 
@@ -238,19 +240,29 @@ The text keeps the menu bar's own colour on the glow, so it stays readable; a wa
 
 ---
 
-## Drain colours
+## How hard the battery is working
 
-**Purpose.** On battery, show how fast the battery is being used, in a way that means something: hours.
+<p align="center"><img src="../images/features/menubar-intensity.png" width="520" alt="Colours and glows in the menu bar"><br><em>Five colour bands by value, a red warning, then battery drain from heavy to light: the glow fades and the line shortens. (Sample values.)</em></p>
 
-**What it does.** Works out how long a **full** battery would last at the current drain and puts a soft glow of that
-colour behind the battery and power parts (the text stays in the menu bar's own colour, like the other parts): red under 1 h,
-orange under 2 h, yellow under 3.5 h, lime under 5 h, green from 5 h. Only on battery and only while draining at least
-0.5 W.
+**Purpose.** Show how fast the battery is being used, in a way that means something: hours.
+
+**What it does.** Works out how long a **full** battery would last at the last minute's drain and shows it on the
+battery and power parts, in two ways:
+
+- **A glow** in that band's colour: red under 1 h, orange under 2 h, yellow under 3.5 h, lime under 5 h. It is strongest
+  for heavy drain and fades as the drain gets lighter; from 5 h there is no glow at all, so a colour means something.
+  Even heavy drain stays quieter than a red warning.
+- **A thin line** along the bottom, as long as the watts: a drain that would empty a full battery within the heaviest
+  band fills it. You can read it by its length, without the colour.
+
+With the parts grouped, Battery and Power share one glow and one line. One spike doesn't change anything, and a figure
+sitting on a limit keeps its colour until it is clearly past it. The line works on the charger too: green, and as long
+as the charging is fast, with no glow. A charger too small for the Mac counts as draining and is at least orange.
 
 **Use cases.** You want to know whether what you are doing right now is "a 10-hour workload" or "a 2-hour workload".
 
-**Settings.** Dashboard → Menu Bar → *Colours*: *On battery, glow by drain rate* — **off** by default; the four limits
-are adjustable (0.1–24 h).
+**Settings.** Dashboard → Menu Bar → *Colours*: *Battery and power: a glow and a line* — **off** by default; the four
+limits are adjustable (0.1–24 h).
 
 ---
 

@@ -2,6 +2,24 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-08 — Sparewatt 1.12
+
+Released as [Sparewatt 1.12](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.12-2026-11-08).
+
+The menu bar's intensity colours, for *Battery and power: a glow and a line* (Dashboard → Menu Bar → *Colours*, which
+had the name *On battery, glow by drain rate*):
+
+- **The glow follows the drain.** It is strongest for heavy drain and fades as the drain gets lighter; from 5 hours of
+  battery there is no glow, so a colour means something. Even heavy drain stays quieter than a red warning.
+- **A thin level line** along the bottom of Battery and Power, as long as the watts, so you can read it without the colour.
+- **Steadier.** It is judged on the last minute's drain, so one spike doesn't change it, and a figure sitting on a limit
+  keeps its colour until it is clearly past it. Colours by value hold still the same way.
+- **One glow and one line** across Battery and Power when the items are grouped, instead of the same fact twice.
+- **On the charger too:** the line shows how fast it charges, in green with no glow. A charger too small for the Mac
+  counts as draining and is at least orange.
+- **Fixes to colours by value.** Graphics went by a different reading from the number beside it; now they agree.
+  Memory went by how full it was, so it could turn red while macOS was fine; now it follows macOS's memory pressure.
+
 ## 2026-11-08 — Sparewatt 1.11.1
 
 Released as [Sparewatt 1.11.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.11.1-2026-11-08).

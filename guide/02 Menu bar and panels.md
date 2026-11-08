@@ -45,8 +45,9 @@ Every list says what a row is: an app (with its icon), an Apple app, a part of m
   (Dashboard → Menu Bar → *Alerts*).
 - **Colours by value** — optional green → red bands per item, each with its own four limits (Dashboard → Menu Bar →
   *Colours*).
-- **On battery, glow by drain rate** — the battery and power parts glow in a colour from how many hours a full battery
-  would last at the current draw.
+- **Battery and power: a glow and a line** — a glow in a colour from how many hours a full battery would last at the
+  last minute's drain, fading out as the drain gets lighter, and a thin line as long as the watts. On the charger the
+  line shows how fast it charges.
 
 ## Look and speed
 
