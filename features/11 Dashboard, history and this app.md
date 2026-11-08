@@ -13,13 +13,30 @@
 - **Monitor:** Overview, Processor, Graphics, Memory, Storage, Temperature, Network, Battery, Power flow, History — each
   with its current value beside it.
 - **Control:** Switches, On Battery, Extreme Saver, Watchlist, Shelf, Profiles & Alerts, Menu Bar, Startup Items,
-  [AI Assistant](12%20AI%20Assistant.md), This App.
+  [AI Assistant](12%20AI%20Assistant.md), This App, [Privacy](#privacy-what-sparewatt-runs-and-reads).
 
-At the bottom: the Extreme Saver switch and, when there is one, *Version X is available*. While the window is open,
-Sparewatt appears in the Dock and ⌘-Tab.
+At the top: [*Find a setting*](#find-a-setting). At the bottom: the Extreme Saver switch and, when there is one,
+*Version X is available*. While the window is open, Sparewatt appears in the Dock and ⌘-Tab. On a Mac with no battery,
+Extreme Saver is left out ([Macs without a battery](05%20Battery.md#macs-without-a-battery)).
 
 Monitor pages show the same cards as the panels plus dashboard-only ones: 24-hour trends, battery wear, the wake log, the
 background-processes table, battery use per app this week.
+
+---
+
+## Find a setting
+
+<p align="center"><img src="../images/features/dashboard-search.png" width="800" alt="Find a setting"><br><em>Find a setting: "notify" lists each matching setting with its page and section. (Sample values.)</em></p>
+
+**Purpose.** Get to a setting without knowing which page it is on.
+
+**What it does.** A search field at the top of the dashboard sidebar. Type a word or two ("login", "clipboard",
+"airpods") and the sidebar lists every matching setting with where it is, such as *Menu Bar › General* or *On Battery ›
+Keyboards, mice and headphones*. Click one to open its page; the search clears. It finds a setting by its own words and
+by other words you might use for it, so "login" finds *Open Sparewatt when you log in*. With no match it says so.
+
+**Where.** Every page under **Control** is searched: Switches, On Battery, Extreme Saver, Watchlist, Shelf, Profiles &
+Alerts, Menu Bar, Startup Items, AI Assistant, This App and Privacy.
 
 ---
 
@@ -52,6 +69,8 @@ flow, Temperature, Network), each with *Open*.
 
 Click a finding to open its page.
 
+<p align="center"><img src="../images/features/mac-health-slowdown.png" width="800" alt="Mac health with findings"><br><em>Mac health while the Mac is hot: two findings that need action, each a click away from its page. (Sample values.)</em></p>
+
 **Use cases.** A morning check; or "the Mac feels off — is it anything?"
 
 **Benefits.** Only lists what is actually unusual; *All good* means you can stop looking.
@@ -83,6 +102,8 @@ with their top apps.
 
 ## "My Mac today" share card
 
+<p align="center"><img src="../images/features/day-card.jpg" width="700" alt="My Mac today"><br><em>"My Mac today": time on battery, today's charge, the app that used most battery, battery health and the charger. (Sample values.)</em></p>
+
 **Purpose.** Show someone how your Mac's day went in one picture, without giving away anything personal.
 
 **What it does.** Makes a 1200 × 630 picture (the shape social sites use for link cards), dark or light as your Mac is
@@ -107,6 +128,8 @@ over the day; a Mac just set up has little to show.
 ---
 
 ## "My Mac this week" card
+
+<p align="center"><img src="../images/features/week-card.jpg" width="700" alt="My Mac this week"><br><em>"My Mac this week": time on battery and a bar per day, the three apps that used most battery, battery health and internet data. (Sample values.)</em></p>
 
 **What it does.** The weekly sister of the day card, the same size and made from the same kept figures, for the last 7
 days (today and the 6 days before):
@@ -146,12 +169,14 @@ Read-only; *Open Login Items settings* takes you to where macOS lets you turn th
 
 ## This App
 
-<p align="center"><img src="../images/features/dashboard-this-app.png" width="800" alt="This App"><br><em>This App: Sparewatt's own processor and memory use, by feature.</em></p>
+<p align="center"><img src="../images/features/dashboard-this-app.png" width="800" alt="This App"><br><em>This App: Sparewatt's own processor and memory use · export, import and the welcome window · use by feature.</em></p>
 
 **Purpose.** A monitor should not itself cost much. This page shows exactly what Sparewatt uses.
 
-**What it does.** Three cards: *Sparewatt itself*, *Your settings* (see
-[below](#your-settings-export-import-welcome-again)) and *By feature*.
+**What it does.** *Sparewatt itself*, *Your settings* (see [below](#your-settings-export-import-welcome-again)),
+*By feature*, *Problems* (see [below](#crash-log-and-report-a-problem)) and *Trust*: *What Sparewatt runs and reads*
+opens the [Privacy](#privacy-what-sparewatt-runs-and-reads) page, and [*Uninstall Sparewatt…*](#uninstall-sparewatt)
+removes it.
 
 **Sparewatt itself**
 
@@ -171,8 +196,8 @@ and **when it runs**:
 | Temperature sensors | read in the background: every sensor at each update while a panel or the dashboard is open, otherwise the ~16 the menu bar uses, every third update |
 | Folder sizes | the Storage panel's folder list; results are cached between runs |
 | Processor & memory | every update |
-| Background watch | every 30 s; its alerts are set in Warnings |
-| Drawing the menu bar | only when a value changes |
+| Background watch | every 30 s; its alerts are set in Menu Bar → *Alerts* |
+| Drawing the menu bar | only when a value changes, at most every 4 s (at once when its state changes) |
 | Battery & power | every update |
 | Network & disk speed | every update |
 | Fans | every update — slow the update speed to cut it |
@@ -181,7 +206,7 @@ and **when it runs**:
 | Latest File | only while the Files panel is open |
 | Insights | once a minute (battery and per-app readings) |
 | Mac health | Time Machine every 30 minutes, the drive check every 6 hours; the speed limit only while macOS cools the Mac |
-| Device batteries | every minute; headphones every 5 minutes |
+| Device batteries | every minute (controllers also when one connects); headphones every 5 minutes |
 | Data usage | one `nettop` that keeps running, read once a minute |
 
 The list is sorted by cost, so the top rows are what to change first. Features are turned off in **Menu Bar** settings.
@@ -226,6 +251,53 @@ in, and you write the rest.
 
 **Where.** Dashboard → **This App**. The logs are in `~/Library/Logs/Sparewatt/` (see
 [Where Sparewatt keeps its data](../reference/Data%20files.md)).
+
+### Uninstall Sparewatt
+
+<p align="center"><img src="../images/features/uninstall-sheet.png" width="520" alt="Uninstall Sparewatt"><br><em>Uninstall Sparewatt: what it keeps on this Mac, with sizes; untick what you want to keep. (Sample values.)</em></p>
+
+**Purpose.** Remove Sparewatt and what it keeps on this Mac, without hunting through Library folders.
+
+**What it does.** *Uninstall Sparewatt…* (This App → *Trust*) opens a sheet listing what Sparewatt keeps here, with
+sizes. Everything starts ticked; untick what you want to keep:
+
+| Item | What removing it means |
+|---|---|
+| Saved data | every file in `~/Library/Application Support/Sparewatt`, listed by name: history, the charger list, data used per app, Switches, insights, device levels and settings backups |
+| Logs | `~/Library/Logs/Sparewatt`: crash logs and what each Switch printed |
+| Settings | every setting, the Shelf, Watchlist rules and profiles, cleared from macOS's settings store |
+| Notifications | clears Sparewatt's notifications (macOS keeps its line in System Settings → Notifications; no app can remove it) |
+| Open at login | takes Sparewatt off Login Items (only listed when it is on) |
+| Move Sparewatt.app to the Trash | the app itself |
+
+Files go to the Trash, so you can put them back until you empty it. Settings are cleared, not moved: use *Export
+settings…* first to keep a copy. Before anything is removed, apps Extreme Saver paused are resumed and the data-usage
+counter stops. Switches that are on keep running after Sparewatt quits; the sheet names them, so turn them off first if
+you want them stopped. *Uninstall and Quit* removes what is ticked and quits Sparewatt. If something can't be removed,
+it says what and why.
+
+**Limits.** A Login Items entry you added by hand, or one from Sparewatt 1.8.1 or earlier, stays; remove it in System
+Settings → General → Login Items.
+
+---
+
+## Privacy: what Sparewatt runs and reads
+
+<p align="center"><img src="../images/features/dashboard-privacy.png" width="800" alt="Privacy"><br><em>Dashboard → Privacy: its network use first, then each program it starts, when and why.</em></p>
+
+**Purpose.** See exactly what Sparewatt does on your Mac, from the app itself.
+
+**What it does.** Dashboard → **Privacy** (or This App → *What Sparewatt runs and reads* → *Show*) lists:
+
+- its **network** use: "Nothing is sent anywhere. The only network requests are the optional update check and
+  Switches' web-address checks.";
+- the **12 programs it starts**, all part of macOS, each with when and why (`ps`, `nettop`, `pmset`,
+  `system_profiler`, `du`, `tmutil`, `diskutil`, `launchctl`, `zsh`, `pkill`, `ditto`, `osascript`);
+- every **place it reads or writes**, and how;
+- the **permissions** it may ask for, when and why.
+
+The guide page [What Sparewatt runs and reads](../guide/10%20What%20Sparewatt%20runs%20and%20reads.md) is made from the
+same table, so the two agree, and the app's tests fail if the code starts a program the list doesn't name.
 
 ---
 

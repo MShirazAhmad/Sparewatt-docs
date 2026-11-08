@@ -5,7 +5,7 @@
 macOS can hide menu bar items: in System Settings → Menu Bar (newer macOS asks per app), or under the camera notch when
 the bar is full. Sparewatt notices once and tells you. Fixes: allow Sparewatt in System Settings → Menu Bar, keep
 **Group all items into one** on, choose **Compact** text or small icons, or hide parts you don't need (Dashboard → Menu
-Bar → *Show in the menu bar*). ⌥⌘R still opens the dashboard.
+Bar → *Items*). ⌥⌘R still opens the dashboard.
 
 ## A reading says n/a
 
@@ -74,6 +74,14 @@ built copy); from then on Latest File reads Downloads too.
 If `chargers.json` can't be read in full, the *Chargers* card (Dashboard → **Power flow**) says so, and the file as it
 was is kept beside it as `chargers.json.bak` before anything is saved over it. Two identical chargers that don't report
 a serial number show as one.
+
+## A file ending in `.bak` appeared in Sparewatt's folder
+
+If one of the files in `~/Library/Application Support/Sparewatt` can't be read in full (for example after a hand edit),
+Sparewatt copies it to `<name>.bak` beside it before anything is saved over it, or to `<name> <date>.json.bak` when a
+different `.bak` is already there. It carries on with what it could read, or starts that file afresh, so nothing in
+the old file is lost. If no copy can be made, the file is never written over. Delete the `.bak` once you no longer
+need it ([Data files](../reference/Data%20files.md)).
 
 ## Sparewatt crashed, or something is wrong
 

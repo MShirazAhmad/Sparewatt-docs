@@ -6,7 +6,7 @@ These work from any app.
 |---|---|
 | ⌥⌘R | open the dashboard |
 | ⌥⌘V | open the Files panel (Latest File, Shelf, clipboard) |
-| ⌥⌘E | turn Extreme Saver on or off |
+| ⌥⌘E | turn Extreme Saver on or off (not on a Mac with no battery) |
 
 The same list is on Dashboard → **Shelf, Profiles & Alerts**.
 

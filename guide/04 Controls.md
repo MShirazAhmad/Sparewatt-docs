@@ -31,6 +31,9 @@ One switch for the times battery matters most:
 Don't pause apps you are working in: they freeze until the switch is off. Quitting Sparewatt wakes them too, so
 nothing stays frozen once it is gone. ⌥⌘E toggles Extreme Saver from anywhere.
 
+On a Mac with no battery there is no Extreme Saver, the energy mode has one *Wall* row, and the On Battery page keeps
+only the low-battery alert for your devices.
+
 ## Profiles
 
 **Lecture**, **Lab** and **Travel**: energy modes for battery and charger plus Extreme Saver, applied in one click from
@@ -64,7 +67,7 @@ menu bar, its right-click menu, or the Switches page (with an editor and each sw
 
 **Quiet hours** (off by default, 22:00–07:00) silence every notification.
 
-The first and second alerts are set on Dashboard → Menu Bar → *Warnings*. The storage limit, quiet hours and the
+The first and second alerts are set on Dashboard → Menu Bar → *Alerts*. The storage limit, quiet hours and the
 "busy with no window" alert are on Dashboard → **Shelf, Profiles & Alerts**.
 
 ## Startup items

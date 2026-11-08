@@ -36,7 +36,11 @@ The menu bar is where Sparewatt lives. Everything else — panels, dashboard, al
 - Items keep a steady width while only a digit or so changes (for up to 30 seconds), so neighbouring menu bar icons
   don't jump around; a short burst of a wide value (say during a big copy) doesn't leave a wide gap behind.
 
-**Where.** The menu bar. Choose which parts appear on Dashboard → **Menu Bar** → *Show in the menu bar*.
+**Where.** The menu bar. Choose which parts appear on Dashboard → **Menu Bar** → *Items*.
+
+**On a Mac with no battery** (Mac mini, Mac Studio, iMac, Mac Pro) the battery part steps aside and the power part reads
+`MAC USES 22W`, the Mac's draw as its system management controller reports it; on a Mac that doesn't report it, the
+power part steps aside too. See [Macs without a battery](05%20Battery.md#macs-without-a-battery).
 
 ---
 
@@ -48,7 +52,7 @@ The menu bar is where Sparewatt lives. Everything else — panels, dashboard, al
 back by itself as soon as there is something to show: a file on the Shelf, a switch turned on, starting or failing.
 Dropping files on the menu bar, or ⌥⌘V, still opens the Files panel while FILES is hidden.
 
-**Settings.** Dashboard → **Menu Bar** → *Show in the menu bar*: *Files: show even when the Shelf is empty* and
+**Settings.** Dashboard → **Menu Bar** → *Items*: *Files: show even when the Shelf is empty* and
 *Switches: show even when none is on* (both off).
 
 ---
@@ -62,7 +66,7 @@ login-item service: Sparewatt is listed in System Settings → General → Login
 OK there (the switch says so, with *Open Login Items…*). A login item from an older Sparewatt, or one you added
 yourself, stays as it is and the switch doesn't see it; remove it in Login Items if you no longer want it.
 
-Under *Show in the menu bar*, **Apply preset** sets the item switches:
+Under *Items*, **Apply preset** sets the item switches:
 
 | Preset | Shows |
 |---|---|
@@ -93,7 +97,12 @@ Red warnings still look at the exact readings. The grouped item is drawn once pe
 While the screen is asleep or locked, readings drop to every 30 seconds and the menu bar isn't drawn at all; waking or
 unlocking refreshes it at once.
 
-**Benefits.** Fewer redraws mean less processor time: with no panel open, Sparewatt uses about 0.84% of one core.
+**At most every 4 seconds.** When only figures changed, a new reading redraws the menu bar at most every 4 seconds,
+whatever the update speed; the panels still follow the update speed. A change of state redraws it at once: the charger
+going in or out, charging, a warning, Extreme Saver. Changes to settings, the Shelf and Switches redraw it at once too.
+
+**Benefits.** Fewer redraws mean less processor time: with no panel open, Sparewatt uses about 0.77% of one core
+(measured with Instruments over 30 seconds).
 
 ---
 
@@ -144,13 +153,31 @@ sensor group, a folder) is remembered while Sparewatt runs. Each panel header ha
 
 ---
 
+## The Menu Bar settings page
+
+Dashboard → **Menu Bar** has six sections, each one kind of setting:
+
+| Section | Holds |
+|---|---|
+| General | *Open Sparewatt when you log in*, the daily update check, the ⌥⌘R shortcut, the version |
+| Items | *Apply preset*, which items show, and what each item shows (CPU average, graphics memory, free space, trend line…) |
+| Look | grouping, the outline, words or icons, text size, update speed |
+| Colours | drain colours, colours by value, and storage turning orange when memory spills to the SSD |
+| Alerts | the red glow and its limits, and the *Still high* and *Unusual background activity* notifications |
+| Panels | hover to open, live diagrams, the clipboard, Latest File and where it looks |
+
+Looking for one setting? Type a word or two into *Find a setting* at the top of the dashboard sidebar
+([more](11%20Dashboard%2C%20history%20and%20this%20app.md#find-a-setting)).
+
+---
+
 ## Words or icons, size and speed
 
 <p align="center"><img src="../images/features/dashboard-menu-bar.png" width="800" alt="Words or icons, size and speed"><br><em>Dashboard → Menu Bar. Which items show, words or icons, grouping, colours, warnings and refresh speed.</em></p>
 
 **Purpose.** Make the readings fit your menu bar and your battery.
 
-**Settings** (Dashboard → Menu Bar → *Look* and *Details*):
+**Settings** (Dashboard → Menu Bar → *Items* and *Look*):
 
 | Setting | Default | Options |
 |---|---|---|
@@ -185,7 +212,7 @@ four limits. Colours are adjusted so they stay readable on both light and dark m
 
 **Use cases.** You want a calm green bar most of the time and a colour change only when something is unusual.
 
-**Settings.** Dashboard → Menu Bar → *Colours by value*: one switch per item (off by default), its four limits, and
+**Settings.** Dashboard → Menu Bar → *Colours*: one switch per item (off by default), its four limits, and
 *Reset to defaults*.
 
 ---
@@ -207,7 +234,7 @@ four limits. Colours are adjusted so they stay readable on both light and dark m
 
 The text keeps the menu bar's own colour on the glow, so it stays readable; a warning wins over any colour band.
 
-**Settings.** Dashboard → Menu Bar → *Warnings*: *Glow red behind an item when it needs attention* (on), and each limit.
+**Settings.** Dashboard → Menu Bar → *Alerts*: *Glow red behind an item when it needs attention* (on), and each limit.
 
 ---
 
@@ -222,7 +249,8 @@ orange under 2 h, yellow under 3.5 h, lime under 5 h, green from 5 h. Only on ba
 
 **Use cases.** You want to know whether what you are doing right now is "a 10-hour workload" or "a 2-hour workload".
 
-**Settings.** *On battery, glow by drain rate* — **off** by default; the four limits are adjustable (0.1–24 h).
+**Settings.** Dashboard → Menu Bar → *Colours*: *On battery, glow by drain rate* — **off** by default; the four limits
+are adjustable (0.1–24 h).
 
 ---
 

@@ -2,6 +2,61 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-07 — Sparewatt 1.10
+
+Released as [Sparewatt 1.10](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.10-2026-11-07).
+
+- **Desktop Macs.** Macs with no battery are now supported: Mac mini, Mac Studio, iMac and Mac Pro. In the menu bar the
+  battery part steps aside and the power part reads `MAC USES 22W`, the Mac's draw as its system management controller
+  reports it (on a Mac that reports none, that part steps aside too, and the Power panel shows "—", not a made-up 0 W).
+  The Battery panel says *This Mac has no battery* and keeps what still applies: the energy mode, as one *Wall* row,
+  and the batteries in your keyboard, mouse and headphones. The Power panel has a *From the wall* card, with the draw
+  and its last 2 minutes, in place of the flow, battery time and charger cards. Extreme Saver is left out (sidebar,
+  right-click menu, ⌥⌘E and the AI Assistant), the On Battery page keeps only the device low-battery alert, and History
+  has no charge chart or stretches on battery. The "My Mac today" and "My Mac this week" cards lead with time awake,
+  the average draw and the processor, and the Monday summary counts hours awake.
+- **macOS 14 and Intel.** The app now declares macOS 14 (Sonoma) as its minimum, so an older macOS won't open it, and
+  every icon it uses is checked to exist on macOS 14. On Intel Macs: the battery percentage is worked out from the
+  charge in mAh where the battery reports it that way (it could read "4321%"); the system management controller's draw
+  stands in when the battery gives no power reading; an unexpected sensor value can no longer crash Sparewatt; and
+  processors whose cores are all one kind no longer get P/E letters.
+- **More in the *Devices* card** (Battery panel):
+  - **AirPods Max, Beats and other headphones with one battery** show one figure with the right picture. The row's
+    tooltip has the firmware (and the case's, for earbuds) and the signal: "Firmware 9A348 · case 9A348 · signal strong
+    (−54 dBm)".
+  - **Game controllers** (Xbox, PlayStation and others): the level, and *Charging* under the name while one charges.
+    Read when a controller connects or disconnects, every minute and when the panel opens.
+  - **Devices charging from the Mac's own ports**, such as an iPhone: a row with the watts the port measures, and
+    *Charging from the Mac · 5 V × 1.6 A* under the name (*Powered by the Mac* for a drive). The device doesn't share
+    its own battery level with the Mac, so none is shown.
+  - **Time left per device:** "about 9h left" on a small second line, from how fast the device has drained since its
+    last charge. It shows once a device has dropped at least 5 points over at least an hour, never while it charges,
+    and not beyond two weeks. For this, each device's level is kept 30 days in `devices.json`, on this Mac only.
+    VoiceOver reads "AirPods Max, 72 percent, about 9 hours left".
+- **Uninstall Sparewatt…** on Dashboard → This App, under *Trust*. A sheet lists what Sparewatt keeps on this Mac,
+  with sizes, all ticked: *Saved data* (each file in `~/Library/Application Support/Sparewatt`, by name), *Logs*,
+  *Settings*, *Notifications*, *Open at login* (when it is on) and *Move Sparewatt.app to the Trash*. Untick what you
+  want to keep. Files go to the Trash, so you can put them back until you empty it; settings are cleared from macOS's
+  settings store. Apps Extreme Saver paused are resumed first; Switches that are on keep running, and the sheet names
+  them. *Uninstall and Quit* then quits Sparewatt.
+- **A Privacy page** in the dashboard (Dashboard → **Privacy**, or This App → *What Sparewatt runs and reads*): the 12
+  macOS programs Sparewatt starts, when and why; every place it reads or writes; the permissions it may ask for; and
+  its network use ("Nothing is sent anywhere."). The guide page
+  [What Sparewatt runs and reads](guide/10%20What%20Sparewatt%20runs%20and%20reads.md) is made from the same table, and
+  the app's tests fail if the code starts a program the list doesn't name.
+- **Find a setting.** A search field at the top of the dashboard sidebar. Type a few words ("login", "clipboard") and
+  each matching setting is listed with where it is, such as *Menu Bar › General*; click one to open its page.
+- **Menu Bar settings in six sections** instead of eight: *General* · *Items* (which items show, and what each shows) ·
+  *Look* · *Colours* · *Alerts* · *Panels*. *Warnings* is now *Alerts*, *Colours by value* is *Colours*, and the old
+  *Details* is shared out among *Items*, *Colours* and *Panels*. No setting was removed, and yours stay as they were.
+- **A calmer, lighter menu bar.** A new reading redraws the menu bar at most every 4 seconds when only its figures
+  changed. A change of state redraws it at once: the charger going in or out, charging, a warning, Extreme Saver; so
+  do changes to settings, the Shelf and Switches. With no panel open, Sparewatt now uses about 0.77% of one core (1.8:
+  about 0.84%), measured with Instruments over 30 seconds.
+- **Saved data is safer.** Every file Sparewatt keeps now gets the care Switches, chargers and data usage already had:
+  if a file can't be read in full, it is copied to a `.bak` beside it before anything is saved over it. History,
+  insights, idle-app timings, folder sizes and usual levels used to be overwritten within a minute.
+
 ## 2026-11-07 — Sparewatt 1.9
 
 Released as [Sparewatt 1.9](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.9-2026-11-07).

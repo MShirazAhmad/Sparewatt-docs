@@ -64,6 +64,21 @@ Every charger you plug in is remembered ("Seen 4 times · best 63.5 W delivered"
 them all, with a nickname you can give each and a *slow* tag on one that charges slowly
 ([how it decides](../features/06%20Power.md#charger-history)).
 
+## Device batteries
+
+The Battery panel's *Devices* card shows the battery of each connected keyboard, mouse, trackpad, pair of headphones
+(AirPods left, right and case; one figure for AirPods Max and other one-battery headphones) and game controller, plus
+any device charging from the Mac's own ports, with its watts. Once a device has drained for a while since its last
+charge, its row says how long it has left: "about 9h left". You get one notification when a device drops to 15%
+([more](../features/05%20Battery.md#device-batteries)).
+
+## Macs without a battery
+
+On a Mac mini, Mac Studio, iMac or Mac Pro, the menu bar shows the Mac's draw, `MAC USES 22W`, instead of the battery
+(when the Mac reports it), the Battery panel says *This Mac has no battery* and keeps the energy mode and your devices'
+batteries, and the Power panel shows a *From the wall* card. Extreme Saver and the battery-only settings are left out
+([more](../features/05%20Battery.md#macs-without-a-battery)).
+
 ## While asleep
 
 What woke the Mac in the last 24 hours (lid, you, scheduled timers, Power Nap, network, USB), and how much charge the

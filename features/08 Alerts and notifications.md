@@ -6,15 +6,15 @@ normal. Every notification it sends is listed here.
 | Notification | When | How often | Battery only? | Turn off / change |
 |---|---|---|---|---|
 | **Quit *app*? About +N of battery** | an app unused for 10 min would give back ≥ 30 min | once per app per unplug, only while you're at the Mac | yes | Dashboard → On Battery → *Apps you aren't using* |
-| **Still high** — "Processor has been above 85% for 5 min (now 92%)." | processor, memory or temperature above its red limit for N minutes | once per episode | no | Dashboard → Menu Bar → *Warnings* (on, 5 min) |
-| **Unusual background activity** — "*name* (*kind*) is using 34% of the processor — usually 0.8%." | a background process far above its learned normal | once per episode | yes, by default | Dashboard → Menu Bar → *Warnings* (*…also when plugged in*) |
+| **Still high** — "Processor has been above 85% for 5 min (now 92%)." | processor, memory or temperature above its red limit for N minutes | once per episode | no | Dashboard → Menu Bar → *Alerts* (on, 5 min) |
+| **Unusual background activity** — "*name* (*kind*) is using 34% of the processor — usually 0.8%." | a background process far above its learned normal | once per episode | yes, by default | Dashboard → Menu Bar → *Alerts* (*…also when plugged in*) |
 | **Busy in the background** — "*app* has used about 18% of the processor for 10 minutes with no window on screen." | a hidden or windowless app busy for 10 minutes | once per episode | no | Dashboard → Shelf, Profiles & Alerts (on, 10%) |
 | **Battery state doesn't add up** | charge state and measured current disagree for a minute | once per episode | no | always on |
 | **Storage almost full** — "Only 18 GB free (your limit is 20 GB)…" | free space below the limit | once, re-armed when space recovers | no | Dashboard → Shelf, Profiles & Alerts (20 GB) |
 | **On battery: *app*** — "*app* is using 45% processor (limit 30%)" | a Watchlist rule is exceeded | not repeated within the quiet period (10 min) | per rule | Dashboard → **Watchlist** |
 | **Caches cleared** — "Emptied over its limit: …" | an app cache passed its size limit and was emptied | each hourly check that emptied something | no | remove the limit in the Storage panel |
 | **Mac is slowing down to cool** — "macOS is slowing the processor to keep the Mac from overheating (70% speed)…" | macOS starts slowing the processor to cool the Mac | once per episode, until it is back to normal | no | always on |
-| ***Device* is at *N*%** — "Magic Mouse is at 12%" | a connected keyboard, mouse, trackpad or pair of headphones at 15% or less, not charging | once per discharge; again after it charged above 30% | no | Dashboard → On Battery → *Alert when a device's battery is low* (on) |
+| ***Device* is at *N*%** — "Magic Mouse is at 12%" | a connected keyboard, mouse, trackpad, pair of headphones or game controller at 15% or less, not charging | once per discharge; again after it charged above 30% | no | Dashboard → On Battery → *Alert when a device's battery is low* (on) |
 | **Memory keeps growing** — "Safari's memory grew 3.10 GB in the last hour…" | an app's memory grew by more than 2 GB in an hour while it kept running | once per episode | no | Dashboard → Shelf, Profiles & Alerts → *More alerts* (**off**) |
 | **Data limit passed** — "3.2 GB of internet data used today, over your 3 GB a day. Most of it: …" | today's internet data passes your daily limit | once a day | no | Dashboard → Shelf, Profiles & Alerts → *More alerts* (**off**; 1–50 GB a day) |
 | **Your Mac last week** — "Last week: 18h on battery · top drain Xcode · 4.2 GB used" | Monday, the first time the Mac is awake after 9:00 | once a week | no | Dashboard → Shelf, Profiles & Alerts → *More alerts* (**off**) |

@@ -25,7 +25,7 @@ What each mode means, and that a change asks for your password, are in the toolt
 **Use cases.** Low Power on battery all the time, High Power on the charger for renders and builds.
 
 **Where.** Battery panel → *Energy mode* card, with Extreme Saver on one line and the profiles row below. The gear opens
-the On Battery page.
+the On Battery page. On a Mac with no battery the card has one row, *Wall*, and no Extreme Saver.
 
 ---
 
@@ -106,7 +106,9 @@ menu, and **⌥⌘E** from anywhere.
 | Turn off when plugged in | on |
 | This app checks only every 30 s | on |
 
-**Limits.** Don't pause apps you're working in — they freeze until Extreme Saver is off. Turning on by itself still asks
+**Limits.** Not on a Mac with no battery (Mac mini, Mac Studio, iMac, Mac Pro): there it is left out of the sidebar, the
+right-click menu, ⌥⌘E and the AI Assistant, and the **On Battery** page keeps only the device low-battery alert.
+Don't pause apps you're working in — they freeze until Extreme Saver is off. Turning on by itself still asks
 for your password once. If Sparewatt quits while Extreme Saver is on, it stays on at the next launch but the apps are no
 longer paused; turn it off and on to pause them again.
 

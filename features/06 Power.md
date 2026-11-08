@@ -40,6 +40,9 @@ last minute or two.
 
 **Where.** Power panel, first under the header; Dashboard → **Power flow**.
 
+**On a Mac with no battery** the Power panel has a *From the wall* card instead: the Mac's draw and its last 2 minutes,
+or a line saying the Mac doesn't report its draw. See [Macs without a battery](05%20Battery.md#macs-without-a-battery).
+
 ---
 
 ## Power going out to USB devices
@@ -62,6 +65,9 @@ reads *USB* or *2 USB devices*. Hover for each port's watts, volts and amps, and
 
 **Good to know.** This power is part of what the Mac uses ("uses 49 W" includes the iPhone's 5.6 W): the Mac draws it,
 then passes it on. On battery, it comes out of your battery.
+
+The Battery panel's [Devices card](05%20Battery.md#device-batteries) lists each of these devices too, with its watts and
+*Charging from the Mac* (or *Powered by the Mac*) under its name.
 
 ---
 
@@ -119,6 +125,8 @@ Power Delivery version shows as *3.x*: macOS reports revision 3 without telling 
 
 ### Charger history
 
+<p align="center"><img src="../images/features/chargers.png" width="800" alt="Charger history"><br><em>Dashboard → Power flow → Chargers: rating, Power Delivery version, the most each has delivered, how often it was seen, nicknames, and two tagged slow. (Sample values.)</em></p>
+
 **Purpose.** Know your chargers apart, and find the one that charges slowly.
 
 **What it does.** Every charger you plug in is remembered: its rating, kind and Power Delivery version, the port it was
@@ -147,7 +155,7 @@ another device shows as a second entry. Kept only on this Mac (`chargers.json`, 
 
 ## Power per app (share of battery drain)
 
-<p align="center"><img src="../images/features/power-per-app.png" width="354" alt="Power per app (share of battery drain)"><br><em>Share of power use: a pie of watts per app, the biggest users named in a tip; click a slice to see its processes.</em></p>
+<p align="center"><img src="../images/features/power-per-app.png" width="354" alt="Power per app (share of battery drain)"><br><em>On the charger: one bar and a row per app, in watts (a donut on the dashboard); click one to see its processes.</em></p>
 
 **Purpose.** Know which apps cost the most power right now — and how much battery time each takes.
 
@@ -160,6 +168,8 @@ share of *energy impact* over **every** process. In the panel, one stacked bar a
   by quitting it, counting only the draw above what the screen and macOS use anyway. The card opens with a line like
   "Quit Xcode and Claude → +1h 05m of battery": the two apps that can actually be quit (not parts of macOS) and cost
   the most, with the time quitting both gives back, worked out for the two together.
+
+<p align="center"><img src="../images/features/battery-time-per-app.png" width="354" alt="Battery time per app"><br><em>On battery: the share of the drain and the battery time each app takes, and what quitting the top two gives back. (Sample values.)</em></p>
 
 Click a part of the bar (a slice of the donut) or a name to see its processes and quit or force quit them (with
 confirmation).

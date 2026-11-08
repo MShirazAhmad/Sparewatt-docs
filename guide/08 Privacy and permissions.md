@@ -22,7 +22,11 @@ The **"My Mac today"** and **"My Mac this week"** pictures are made only when yo
 app names and the charger type: no file paths, user or folder names, or serial numbers. They go where you share or save
 them.
 
-The [charger history](../features/06%20Power.md#charger-history) is kept only on this Mac. So is
+Dashboard → **Privacy** lists every program Sparewatt starts, every place it reads or writes and every permission it
+may ask for; [What Sparewatt runs and reads](10%20What%20Sparewatt%20runs%20and%20reads.md) is the same list.
+
+The [charger history](../features/06%20Power.md#charger-history) is kept only on this Mac. So are your
+[devices' battery levels](../features/05%20Battery.md#device-batteries) (30 days, for their time left), and
 [data used per app](../features/03%20Temperature%2C%20network%20and%20storage%20space.md#data-used-per-app): macOS's own
 `nettop` counts bytes per app on this Mac, and Sparewatt keeps only each app's bytes per day, for 14 days, with no
 addresses or sites. An exported settings file goes only where you save it.
@@ -58,3 +62,5 @@ reads it too. Change that answer in System Settings → Privacy & Security → F
 - The one thing that deletes outright: a cache **size limit** you set empties that cache when it grows past the limit —
   only ever inside `~/Library/Caches`.
 - Quitting an app from Sparewatt is a normal quit (the app can ask to save). Force Quit asks you first.
+- *Uninstall Sparewatt…* (Dashboard → This App) moves the files you tick to the Trash; the settings, if ticked, are
+  cleared from macOS's settings store rather than moved, so export them first if you may want them again.

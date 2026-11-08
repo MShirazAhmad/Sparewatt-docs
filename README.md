@@ -4,18 +4,21 @@
 
 <p align="center">
 <a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://badgen.net/github/assets-dl/MShirazAhmad/Sparewatt-docs?label=downloads&color=green&scale=1.4" alt="Total downloads"></a>
-<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/badge/latest-v1.9-blue" alt="Latest release"></a>
+<a href="https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest"><img src="https://img.shields.io/badge/latest-v1.10-blue" alt="Latest release"></a>
 <img src="https://img.shields.io/badge/macOS-14%2B-blue" alt="macOS 14 or later">
 <img src="https://img.shields.io/badge/price-free-brightgreen" alt="Free">
 </p>
 
 <p align="center">How to use Sparewatt, the macOS menu bar app that shows what your Mac's processor, graphics, memory, storage, battery and power are doing — and helps you keep battery time for the things you actually use.</p>
 
-<p align="center"><img src="images/linkedin-cover.jpg" width="900" alt="Sparewatt: a free menu bar monitor and power saver for macOS"></p>
+<p align="center"><img src="images/linkedin-cover.jpg" width="900" alt="Sparewatt: a free macOS menu bar app that shows what is draining your battery — the dashboard and the Power panel on battery"></p>
 
-<p align="center"><img src="images/sparewatt-demo.gif" width="900" alt="Sparewatt in 30 seconds"></p>
+<p align="center"><img src="images/sparewatt-demo.gif" width="900" alt="Sparewatt in 15 seconds: the menu bar, the Power panel on battery, the Battery panel, the dashboard and the share card"></p>
 
 This repository holds **documentation only** — no app code. The app itself lives in its own repository.
+
+**Runs on** macOS 14 (Sonoma) or later, on Apple silicon and Intel Macs: MacBooks, and desktop Macs with no battery
+(Mac mini, Mac Studio, iMac, Mac Pro). See [Getting started](guide/01%20Getting%20started.md).
 
 ## Why I built Sparewatt
 
@@ -64,32 +67,33 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 
 | Area | Page |
 |---|---|
-| Menu bar: readings, grouped item with outline, hover panels, steadier figures, colours, warnings | [Menu bar](features/01%20Menu%20bar.md) |
+| Menu bar: readings, grouped item with outline, hover panels, steadier figures, colours, warnings, the Menu Bar settings page | [Menu bar](features/01%20Menu%20bar.md) |
 | Processor, graphics, memory | [Processor, graphics and memory](features/02%20Processor%2C%20graphics%20and%20memory.md) |
 | Temperature and fans, slowing down to cool, network, data used per app, storage space, drive health, Time Machine | [Temperature, network and storage space](features/03%20Temperature%2C%20network%20and%20storage%20space.md) |
 | Named processes, quitting, background normals, Watchlist | [Who is using it](features/04%20Who%20is%20using%20it.md) |
-| Battery state, charge plan, wear, overnight drain, keyboard / mouse / AirPods batteries | [Battery](features/05%20Battery.md) |
+| Battery state, charge plan, wear, overnight drain, keyboard / mouse / headphones / game controller batteries with time left, Macs without a battery | [Battery](features/05%20Battery.md) |
 | Power flow, charger details and history, USB power out, power per app, idle apps | [Power](features/06%20Power.md) |
 | Energy modes, On Battery settings, Extreme Saver, profiles | [Power controls](features/07%20Power%20controls.md) |
 | Every notification, and its Quit / Show buttons | [Alerts and notifications](features/08%20Alerts%20and%20notifications.md) |
 | Latest File, Shelf, caches, Downloads tidy-up, clipboard | [Files and storage](features/09%20Files%20and%20storage.md) |
 | Local services on/off | [Switches](features/10%20Switches.md) |
-| Dashboard, Mac health, history, "My Mac today" and "My Mac this week" cards, Startup Items, This App, settings export, Report a problem | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
+| Dashboard, Find a setting, Mac health, history, "My Mac today" and "My Mac this week" cards, Startup Items, This App, settings export, Report a problem, Uninstall, the Privacy page | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
 | AI Assistant: an MCP server for Claude Code, Codex and other assistants | [AI Assistant](features/12%20AI%20Assistant.md) |
 
 ## Guide
 
 | Page | What it covers |
 |---|---|
-| [Getting started](guide/01%20Getting%20started.md) | install, the unsigned-app warning, the welcome window, open at login, presets, moving to another Mac, updating from 1.4 |
+| [Getting started](guide/01%20Getting%20started.md) | what it runs on, install, the unsigned-app warning, the welcome window, open at login, presets, moving to another Mac, updating from 1.4, uninstalling |
 | [Menu bar and panels](guide/02%20Menu%20bar%20and%20panels.md) | the menu bar item, hover panels, what each part shows |
-| [Battery and power](guide/03%20Battery%20and%20power.md) | power per app, idle-app suggestions, charge plan, wear, charger and sleep checks |
+| [Battery and power](guide/03%20Battery%20and%20power.md) | power per app, idle-app suggestions, charge plan, wear, charger and sleep checks, device batteries, Macs without a battery |
 | [Controls](guide/04%20Controls.md) | energy modes, On Battery settings, Extreme Saver, profiles, Watchlist, Switches, alerts |
 | [Files and storage](guide/05%20Files%20and%20storage.md) | Latest File, the Shelf, Downloads tidy-up, caches, folder sizes, clipboard |
-| [Dashboard and history](guide/06%20Dashboard%20and%20history.md) | the dashboard window, history charts, battery stretches, CSV export, Mac health |
+| [Dashboard and history](guide/06%20Dashboard%20and%20history.md) | the dashboard window, Find a setting, history charts, battery stretches, CSV export, Mac health, the Privacy page |
 | [How the estimates work](guide/07%20How%20the%20estimates%20work.md) | energy impact, watts per app, battery time gained, the idle-app rule |
 | [Privacy and permissions](guide/08%20Privacy%20and%20permissions.md) | what stays on your Mac, which prompts appear and why |
 | [Troubleshooting](guide/09%20Troubleshooting.md) | hidden menu bar item, missing readings, password and permission prompts |
+| [What Sparewatt runs and reads](guide/10%20What%20Sparewatt%20runs%20and%20reads.md) | every program it starts, every file it reads or writes, every permission it may ask for, its network use |
 
 ## Reference
 

@@ -17,14 +17,15 @@ Prefer separate items you can ⌘-drag? Dashboard → **Menu Bar** → *Look* �
 | STORAGE | storage used (or free, or read/write speed during big copies) | where the space went, app caches with size limits, Downloads tidy-up, biggest folders |
 | TEMP | processor temperature | processor, graphics, battery and storage temperatures, fan speeds, every sensor |
 | NET (off by default) | download / upload speed | live diagram, a 2-minute strip with the peak, the apps using the network most |
-| BATT | real fill to 0.1% and the true charge state | health, capacity, recharges, charge plan, energy mode, Extreme Saver |
-| Power (3:01 LEFT / 5:02 TO FULL / MAC USES) | time left or to full, with battery watts in or out (the Mac's draw when the battery rests) | live flow diagram, power per app, idle-app suggestions |
+| BATT | real fill to 0.1% and the true charge state (steps aside on a Mac with no battery) | health, capacity, recharges, charge plan, devices' batteries, energy mode, Extreme Saver |
+| Power (3:01 LEFT / 5:02 TO FULL / MAC USES) | time left or to full, with battery watts in or out (the Mac's draw when the battery rests, and always on a Mac with no battery) | live flow diagram, power per app, idle-app suggestions |
 | SWITCH | how many of your Switches are on (n/total; glows red when one failed); steps aside while none is on, changing or failed | a row per group with its count; the switches that are on, with toggles; click a group for all |
 | FILES | how many files are on the Shelf; steps aside while the Shelf is empty | Latest File, the Shelf, the clipboard |
 
 FILES and SWITCH come back by themselves when there is something to show. To keep them always, use Dashboard → **Menu
-Bar** → *Files: show even when the Shelf is empty* and *Switches: show even when none is on*. Figures move only on a
-real change (2 points, 2°, 2 W, 30% for network speed) or after 10 seconds, so the bar stays calm.
+Bar** → *Items* → *Files: show even when the Shelf is empty* and *Switches: show even when none is on*. Figures move
+only on a real change (2 points, 2°, 2 W, 30% for network speed) or after 10 seconds, and the menu bar redraws them at
+most every 4 seconds (at once when the charger, charging, a warning or Extreme Saver changes), so the bar stays calm.
 
 ## Charge states, in plain words
 
@@ -41,8 +42,9 @@ Every list says what a row is: an app (with its icon), an Apple app, a part of m
 ## Colours and warnings
 
 - **Glow red behind an item when it needs attention** — processor, memory, storage, battery and temperature limits you choose
-  (Dashboard → Menu Bar → *Warnings*).
-- **Colours by value** — optional green → red bands per item, each with its own four limits.
+  (Dashboard → Menu Bar → *Alerts*).
+- **Colours by value** — optional green → red bands per item, each with its own four limits (Dashboard → Menu Bar →
+  *Colours*).
 - **On battery, glow by drain rate** — the battery and power parts glow in a colour from how many hours a full battery
   would last at the current draw.
 

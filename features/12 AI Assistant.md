@@ -57,8 +57,8 @@ If you changed the port, use your port in place of 7319. Each copy button on the
 |---|---|
 | `set_switch` | turns one of your Switches on or off |
 | `quit_app` | quits an app as if you chose Quit — it can still ask you to save; macOS parts and Sparewatt itself can't be quit |
-| `set_extreme_saver` | turns [Extreme Saver](07%20Power%20controls.md#extreme-saver) on or off — macOS asks you for your password |
-| `set_energy_mode` | sets the [energy mode](07%20Power%20controls.md) for battery or charger — macOS asks you for your password |
+| `set_extreme_saver` | turns [Extreme Saver](07%20Power%20controls.md#extreme-saver) on or off — macOS asks you for your password (not on a Mac with no battery) |
+| `set_energy_mode` | sets the [energy mode](07%20Power%20controls.md) for battery or charger (only the charger, wall power, on a Mac with no battery) — macOS asks you for your password |
 
 With *Allow changes* off, these tools answer that changes are off, and the assistant can tell you where to allow them.
 

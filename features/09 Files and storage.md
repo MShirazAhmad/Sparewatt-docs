@@ -29,8 +29,8 @@ the search can't see (its tooltip says which, and why).
 **Benefits.** No Finder window, no Downloads digging. It never makes macOS ask for a folder: it reads Downloads only
 after you have allowed that for Downloads tidy-up.
 
-**Settings** (Dashboard → Menu Bar): *Latest File* on/off (on); **where to look** — chosen folders (everything inside
-them counts) and file types (`pdf docx png`…); *Use suggested* fills in Desktop, Downloads, Documents and Vault, and
+**Settings** (Dashboard → Menu Bar → *Panels*): *Latest File* on/off (on); **where to look** — chosen folders
+(everything inside them counts) and file types (`pdf docx png`…); *Use suggested* fills in Desktop, Downloads, Documents and Vault, and
 the types pdf, docx, xlsx, pptx, png, jpg, heic, md, csv and tex. With no folders chosen, the whole home folder is searched.
 
 **Limits.** Nothing older than 7 days; files Spotlight hasn't indexed are missed. **Desktop and Documents are not
@@ -175,7 +175,7 @@ address all day.
 
 **Benefits.** History is kept in memory only and vanishes when Sparewatt quits; only what you pin is saved.
 
-**Settings.** Dashboard → Menu Bar → *Details*: *Clipboard: keep recent copies* (on) and how many.
+**Settings.** Dashboard → Menu Bar → *Panels*: *Clipboard: keep recent copies* (on) and how many.
 
 **Limits.** Text only — images aren't kept. Pinned entries are saved in Sparewatt's settings as plain text, so don't pin
 secrets.

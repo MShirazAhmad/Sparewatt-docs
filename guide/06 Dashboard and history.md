@@ -3,10 +3,16 @@
 **⌥⌘R** opens the dashboard from anywhere. While it is open, Sparewatt shows in the Dock and in ⌘-Tab.
 
 - **Monitor**: Overview, Processor, Graphics, Memory, Storage, Temperature, Network, Battery, Power flow, History.
-- **Control**: Switches, On Battery, Extreme Saver, Watchlist, Shelf, Profiles & Alerts, Menu Bar, Startup Items, This
-  App.
+- **Control**: Switches, On Battery, Extreme Saver, Watchlist, Shelf, Profiles & Alerts, Menu Bar, Startup Items, AI
+  Assistant, This App, Privacy.
 
 Monitor pages show the same cards as the menu bar panels, with more detail and 24-hour trends.
+
+## Find a setting
+
+The search field at the top of the sidebar finds any setting by its words: type "login" or "clipboard" and each match
+is listed with where it is (*Menu Bar › General*); click it to open the page
+([more](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#find-a-setting)).
 
 ## Overview and Mac health
 
@@ -46,3 +52,13 @@ again* opens the first-run window
 
 The page also has **Report a problem…**, and after a crash a card with **Report…**, **Show log** and **Dismiss**; see
 [Troubleshooting](09%20Troubleshooting.md#sparewatt-crashed-or-something-is-wrong).
+
+Under *Trust*: *What Sparewatt runs and reads* opens the **Privacy** page, and *Uninstall Sparewatt…* removes the app
+and what it keeps, with a list to untick first
+([more](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#uninstall-sparewatt)).
+
+## Privacy
+
+Every program Sparewatt starts, every place it reads or writes, the permissions it may ask for and its network use, in
+one list. The guide page [What Sparewatt runs and reads](10%20What%20Sparewatt%20runs%20and%20reads.md) has the same
+list.

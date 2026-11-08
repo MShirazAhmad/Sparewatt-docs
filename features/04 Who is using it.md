@@ -109,7 +109,7 @@ sometimes / rarely). Quiet processes are folded away.
 **Notification.** *Unusual background activity* — "photoanalysisd (Indexing, sync & backup) is using 34% of the
 processor — usually 0.8%." On battery only by default; once per episode.
 
-**Settings.** Dashboard → Menu Bar → *Warnings*: *Notify on battery when a background process uses far more than it
+**Settings.** Dashboard → Menu Bar → *Alerts*: *Notify on battery when a background process uses far more than it
 usually does* (on); *…also when plugged in* (off).
 
 ---

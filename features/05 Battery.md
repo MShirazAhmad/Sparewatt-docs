@@ -41,7 +41,7 @@ state, not a guess.
 
 ## Health card
 
-<p align="center"><img src="../images/features/panel-battery.png" width="320" alt="Health card"><br><em>Battery panel: header · idle apps still costing battery · if you unplug now · readings · energy mode and Extreme Saver.</em></p>
+<p align="center"><img src="../images/features/panel-battery.png" width="320" alt="Health card"><br><em>Battery panel: header · if you unplug now · Health card · Devices (keyboard, mouse, AirPods) · energy mode, Extreme Saver and profiles.</em></p>
 
 **What it shows.** The panel's header gives the fill and the state with its one time figure: "Charging · full in 4h 09m"
 or "On battery · 4h 58m left". The **Health** card below it shows health % (what the battery holds now vs when new —
@@ -102,31 +102,77 @@ which protects the battery without extra software. Sparewatt itself never sets a
 
 ## Device batteries
 
-**Purpose.** Know when the keyboard, mouse or AirPods are about to run out, before they do in the middle of a call.
+<p align="center"><img src="../images/features/devices.png" width="354" alt="Device batteries"><br><em>Devices card: a keyboard, a mouse at 12% (orange from 20%) and AirPods with left, right and case.</em></p>
+
+**Purpose.** Know when the keyboard, mouse, headphones or game controller are about to run out, before they do in the
+middle of a call.
 
 **What it does.** A **Devices** card lists each connected accessory that reports its battery:
 
 - **Magic Keyboard, Magic Mouse, Magic Trackpad** (and other devices that report a level the same way): one figure with
-  a small meter, and a bolt while it charges over its cable. Read from macOS's device registry every minute (about
-  1 ms).
+  a small meter, and *Charging* under the name while it charges over its cable. Read from macOS's device registry every
+  minute (about 1 ms).
 - **AirPods, Beats and other Bluetooth headphones:** left, right and case, as "L 64% · R 61% · Case 90%", or one
-  figure for headphones with one battery. macOS keeps these levels only in `system_profiler`, which starts a process, so
-  they are read every 5 minutes and when the Battery panel opens (at most every 30 seconds).
+  figure with the right picture for headphones with one battery, such as AirPods Max. macOS keeps these levels only in
+  `system_profiler`, which starts a process, so they are read every 5 minutes and when the Battery panel opens (at
+  most every 30 seconds). The row's tooltip has the firmware (and the case's, for earbuds) and the signal: "Firmware
+  9A348 · case 9A348 · signal strong (−54 dBm)". macOS doesn't say whether they are charging, so no charging state is
+  shown for them.
+- **Game controllers** (Xbox, PlayStation and others): the level, and *Charging* while one charges. Read when a
+  controller connects or disconnects, every minute and when the panel opens.
+- **Devices getting power from the Mac's own ports** (0.3 W or more), such as an iPhone charging: the watts the port
+  measures, with *Charging from the Mac · 5 V × 1.6 A* under the name, or *Powered by the Mac* for a drive. The device
+  is named when that is certain, otherwise it is a *USB device*. Its own battery level isn't shared with the Mac, so
+  none is shown (the tooltip says so). The same power is on the [power flow](06%20Power.md#power-going-out-to-usb-devices).
 
 A figure turns **orange at 20%** or less and **red at 10%** or less. A device found both ways is listed once.
+
+**Time left.** A device's row can show how long it has left on a small second line: "about 9h left" (or "under 1h
+left", or "about 3 days left"). It is a straight line through how fast the device has drained since its last charge,
+so a device used harder today shows today's pace. It shows once the device has dropped at least 5 points over at least
+an hour since it last charged, never while it charges, and not when it is more than two weeks away. VoiceOver reads
+the row as "AirPods Max, 72 percent, about 9 hours left".
 
 **Alert.** One notification per discharge when a device drops to **15%** or less and isn't charging: "Magic Mouse is at
 12%". Earbuds say which bud is low and to put them in their case. It comes again only after the device has charged
 above 30%. During quiet hours it waits, and comes afterwards if the device is still low. Clicking it opens the Battery
 panel.
 
-**Where.** Battery panel and Dashboard → **Battery**. The card is hidden when nothing reports a battery.
+**Where.** Battery panel and Dashboard → **Battery**. The card is hidden when there is nothing to show.
 
 **Settings.** *Alert when a device's battery is low* — Dashboard → **On Battery** → *Keyboards, mice and headphones*
 (on by default).
 
-**Limits.** Only connected devices that report a level are shown. Nothing is saved, so there is no history. Headphone
-levels can be up to 5 minutes old while the panel is closed.
+**Kept.** For the time left, each device's level is noted when it changes (and every 30 minutes while it doesn't) and
+kept for 30 days in `devices.json`, on this Mac only ([Data files](../reference/Data%20files.md)).
+
+**Limits.** Only connected devices that report a level are shown. Headphone levels can be up to 5 minutes old while the
+panel is closed. A device that has just been charged, or drains very slowly, shows no time left yet.
+
+---
+
+## Macs without a battery
+
+**Purpose.** Use Sparewatt on a Mac mini, Mac Studio, iMac or Mac Pro, which run straight from the wall.
+
+**What it does.** Sparewatt sees that the Mac has no battery and leaves out what doesn't apply:
+
+- **Menu bar:** the battery part steps aside; the power part reads `MAC USES 22W`, the Mac's draw as its system
+  management controller reports it. On a Mac that doesn't report it, the power part steps aside too and the Power panel
+  shows "—", not a made-up 0 W.
+- **Battery panel:** *This Mac has no battery*, with what still applies: the batteries in your keyboard, mouse and
+  headphones (the Devices card), the energy mode as one *Wall* row, and *Mac is using* when the Mac reports its draw.
+- **Power panel:** a *From the wall* card with the draw and its last 2 minutes, in place of the flow, battery time and
+  charger cards.
+- **No Extreme Saver** (it changes battery settings): not in the sidebar, the right-click menu, ⌥⌘E or the AI
+  Assistant. The **On Battery** page keeps only the device low-battery alert.
+- **History** has no charge chart and no stretches on battery; *Mac power use* shows when the Mac reports its draw.
+- **Share cards:** "My Mac today" leads with time awake today; its curve is the day's draw (or the processor's load
+  when the Mac reports no draw), and its tiles show the average power use, the processor's average load and the hottest
+  it got. "My Mac this week" shows time awake and a bar for each day awake,
+  and the Monday summary counts hours awake.
+- *Unusual background activity* notifications are set for "on battery" by default, which a desktop Mac never is: turn
+  on *…also when plugged in* (Dashboard → Menu Bar → *Alerts*) to get them.
 
 ---
 

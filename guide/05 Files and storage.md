@@ -11,7 +11,7 @@ Sparewatt finds them through Spotlight. macOS leaves Desktop, Documents and Down
 there don't show; the card says how many of your folders it can't see ("3 folders not searched" — hover for which).
 Downloads joins in once you have clicked *Look* in Downloads tidy-up and macOS has let Sparewatt read it.
 
-Narrow it down on Dashboard → Menu Bar → *Latest File — where to look*: pick folders (everything inside them counts)
+Narrow it down on Dashboard → Menu Bar → *Panels*, under *Latest File*: pick folders (everything inside them counts)
 and file types (for example `pdf docx png`). With no folders chosen, the whole home folder is searched.
 
 ## The Shelf
@@ -57,7 +57,7 @@ move them to the Trash — Sparewatt asks first.
 ## Clipboard
 
 Recent copied text, kept **in memory only** (passwords are skipped). Click an entry to copy it back as plain text, drag
-it anywhere, or pin the ones you reuse. How many to keep: Dashboard → Menu Bar → *Details*.
+it anywhere, or pin the ones you reuse. How many to keep: Dashboard → Menu Bar → *Panels*.
 
 ## Storage alerts
 

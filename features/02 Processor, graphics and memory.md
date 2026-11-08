@@ -94,4 +94,4 @@ only.
 **Where.** RAM part of the menu bar; Dashboard → **Memory**.
 
 **Settings.** *Storage turns orange when memory spills to the SSD above N GB* (off, 1 GB) — Dashboard → Menu Bar →
-*Details*.
+*Colours*.

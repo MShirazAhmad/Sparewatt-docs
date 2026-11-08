@@ -27,6 +27,8 @@
   average; click a group to open it.
 - **Dashboard only:** processor temperature over 24 hours.
 
+<p align="center"><img src="../images/features/slowing-down.png" width="354" alt="Slowing down to cool"><br><em>Slowing down to cool: one line under the header while macOS slows the processor, with its speed limit. (Sample values.)</em></p>
+
 **Use cases.**
 - The Mac feels hot on your lap: check whether it is the processor, graphics or battery.
 - A long render slows down: see whether the chip is near the point where macOS slows it to cool.
@@ -38,13 +40,13 @@
 
 **Where.** TEMP part of the menu bar; Dashboard → **Temperature**.
 
-**Settings.** Red above 90 °C by default (Dashboard → Menu Bar → *Warnings*); optional colour bands.
+**Settings.** Red above 90 °C by default (Dashboard → Menu Bar → *Alerts*); optional colour bands.
 
 ---
 
 ## Network
 
-<p align="center"><img src="../images/features/panel-network.png" width="320" alt="Network"><br><em>Network panel: total speed · download and upload flow · 2-minute peak · apps using the network most.</em></p>
+<p align="center"><img src="../images/features/panel-network.png" width="320" alt="Network"><br><em>Network panel: total speed · download and upload flow · 2-minute peak · apps using the network most · data used today.</em></p>
 
 **Purpose.** See how much the Mac is downloading and uploading, and which app is doing it.
 
@@ -57,12 +59,14 @@ the network most* (per app, measured over one second; this list includes traffic
 - Check that a large upload is actually moving.
 - On a metered hotspot, catch an app downloading in the background.
 
-**Where.** NET part of the menu bar (hidden by default — switch it on under Dashboard → Menu Bar → *Show in the menu
-bar*); Dashboard → **Network**.
+**Where.** NET part of the menu bar (hidden by default — switch it on under Dashboard → Menu Bar →
+*Items*); Dashboard → **Network**.
 
 ---
 
 ## Data used per app
+
+<p align="center"><img src="../images/features/data-used-today.png" width="354" alt="Data used today"><br><em>Data used today: download and upload so far today, and the five apps that used the most.</em></p>
 
 **Purpose.** On a phone hotspot or a capped plan: how much internet data you used today and this week, and which app
 used it.
@@ -72,6 +76,8 @@ used it.
   most.
 - **Dashboard → Network:** today (down and up), the last 7 days and the daily average; each app's figure for today and
   the last 7 days, split into download and upload; and a chart of each day's total for 14 days.
+
+<p align="center"><img src="../images/features/dashboard-network.png" width="800" alt="Dashboard → Network"><br><em>Dashboard → Network: today, the last 7 days and the daily average, each day's total for 14 days, and each app's figures.</em></p>
 
 Sparewatt runs one `nettop` for as long as it runs and reads it once a minute. A download that opens and closes between
 two readings still counts, which a short reading now and then would miss. Helpers count toward their app. Only internet
@@ -93,7 +99,7 @@ Shelf, Profiles & Alerts → *More alerts*). One notification the first time eac
 
 ## Storage space
 
-<p align="center"><img src="../images/features/storage-space.png" width="354" alt="Storage space"><br><em>Storage space: used, free and total, with the SSD temperature.</em></p>
+<p align="center"><img src="../images/features/storage-space.png" width="354" alt="Storage space"><br><em>Storage: free of total and the SSD temperature · the used space by home folders, macOS &amp; System Data and purgeable · drive health and the last backup.</em></p>
 
 **Purpose.** Know how full the disk is and where the space went — including the parts Finder doesn't explain.
 
@@ -130,8 +136,8 @@ Shelf, Profiles & Alerts → *More alerts*). One notification the first time eac
 tidy-up, two rows of one card — and the Files panel (Latest File, the Shelf, the clipboard) are described in
 [Files and storage](09%20Files%20and%20storage.md).
 
-**Settings.** Red above 90% used; *Storage: show free space instead of % used*; *show read/write speed during big
-copies* (Dashboard → Menu Bar).
+**Settings.** Red above 90% used (Dashboard → Menu Bar → *Alerts*); *Storage: show free space instead of % used*;
+*show read/write speed during big copies* (Dashboard → Menu Bar → *Items*).
 
 **Limits.** A folder that takes more than 15 seconds to count is shown with "> " — the size is at least that much. The
 list refreshes at most every 10 minutes.

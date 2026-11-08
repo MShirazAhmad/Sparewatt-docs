@@ -8,7 +8,9 @@
 
 A `.zip` of the app is in each release too, if you prefer.
 
-**Needs** macOS 14 (Sonoma) or later, on Apple silicon or Intel.
+**Needs** macOS 14 (Sonoma) or later, on Apple silicon or Intel. It works on MacBooks and on desktop Macs with no
+battery (Mac mini, Mac Studio, iMac, Mac Pro); on those, the battery readings and Extreme Saver are left out (see
+[Macs without a battery](../features/05%20Battery.md#macs-without-a-battery)).
 
 ## "macOS cannot verify the developer"
 
@@ -27,6 +29,8 @@ You only do this once.
 
 The first launch of a new install opens one small window (if you used Sparewatt before, you don't see it):
 
+<p align="center"><img src="../images/features/welcome.png" width="480" alt="Welcome window"><br><em>The welcome window: what Sparewatt does, a menu bar preset with a live preview, open at login, notifications.</em></p>
+
 - three lines on what Sparewatt does;
 - **In the menu bar:** *Minimal* (processor, memory, battery), *Battery* (battery, power, temperature) or *Everything*,
   with a live preview. The menu bar changes as soon as you pick one;
@@ -41,6 +45,7 @@ Everything in it can be changed later in the dashboard. Dashboard → **This App
 - The menu bar shows **one compact item** with live readings (processor, graphics, memory, storage, temperature, battery, power).
 - **Hover** over any part of it to open that part's panel. Click to keep it open.
 - **⌥⌘R** opens the dashboard window from anywhere: every monitor on the left under *Monitor*, every setting under *Control*.
+  Type a word or two into *Find a setting* at the top of its sidebar to jump to any setting.
 - Right-click the menu bar item for the dashboard, settings, Extreme Saver and Quit.
 
 ## VoiceOver
@@ -80,3 +85,11 @@ asks again, once, for Downloads access.
 
 The update check is **off** by default. Turn it on in Dashboard → Menu Bar → General → *Check GitHub once a day for a
 newer version*.
+
+## Uninstalling
+
+Dashboard → **This App** → *Uninstall Sparewatt…* lists what Sparewatt keeps on this Mac (saved data, logs, settings,
+notifications, the login item and the app itself), with sizes. Untick what you want to keep, then *Uninstall and
+Quit*. Files go to the Trash, so you can put them back until you empty it; settings are cleared, so export them first
+if you may want them again. See
+[Uninstall Sparewatt](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#uninstall-sparewatt).
