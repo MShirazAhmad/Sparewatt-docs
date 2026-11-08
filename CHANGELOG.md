@@ -1,6 +1,6 @@
 # Changelog
 
-What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
+What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
 ## 2026-11-08 — Sparewatt 1.13
 

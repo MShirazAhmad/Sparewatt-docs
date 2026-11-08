@@ -15,8 +15,6 @@
 
 <p align="center"><img src="images/sparewatt-demo.gif" width="900" alt="Sparewatt in 15 seconds: the menu bar, the Power panel on battery, the Battery panel, the dashboard and the share card"></p>
 
-This repository holds **documentation only** — no app code. The app itself lives in its own repository.
-
 **Runs on** macOS 14 (Sonoma) or later, on Apple silicon and Intel Macs: MacBooks, and desktop Macs with no battery
 (Mac mini, Mac Studio, iMac, Mac Pro). See [Getting started](guide/01%20Getting%20started.md).
 
@@ -123,6 +121,6 @@ Screenshots are made from a made-up demo dataset: no real names or folders.
 
 ## License
 
-Sparewatt is **free to download and use**. It is not open source: its code is private, and all rights are reserved.
+Sparewatt is **free to download and use**, and all rights are reserved.
 You may share the official download unchanged and free of charge; you may not sell it, distribute changed copies, or
 reverse engineer it. It comes as is, without warranty. These pages are © 2026 Shiraz Ahmad.
