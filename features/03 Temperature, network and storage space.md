@@ -19,7 +19,8 @@
   [Mac health](11%20Dashboard%2C%20history%20and%20this%20app.md#overview-and-mac-health); warm for 10 minutes is
   *worth a look*.
 - **Fans card:** a thin *Last 2 min* strip of the processor temperature with its range ("41–58 °C", or "steady"), then
-  each fan's speed in rpm against its maximum (up to four), or "No fans — this Mac is fanless". With live diagrams off,
+  each fan's speed in rpm against its maximum (up to four), or "No fans — this Mac is fanless". Each fan's icon spins in
+  proportion to its real speed (a real fan turns far too fast to draw) and stands still when the fan stops. With live diagrams off,
   the graphics, storage and battery temperatures are in this card too.
 - **Chip heat map:** processor, graphics, chip, storage and battery zones that glow as they heat up.
 - **All sensors:** folded to one line with the number of sensors and the hottest one. Click it for every temperature

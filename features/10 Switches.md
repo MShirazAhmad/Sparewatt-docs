@@ -96,6 +96,8 @@ Sparewatt keeps checking, so a switch that gets there later turns on (or off) an
 
 ## Good to know
 
+- A ring leaves a switch's icon each time its health check runs and finds it on: every 10 seconds while a panel or the
+  dashboard is open. A switch set to *Started by this app* has no check to run, so it has no ring.
 - Commands run as you, exactly as typed.
 - *Delete* in the editor removes the switch at once (no confirmation).
 - Switches are saved in `~/Library/Application Support/Sparewatt/switches.json`; you can edit it by hand and use

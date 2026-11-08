@@ -2,6 +2,37 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-08 — Sparewatt 1.11
+
+Released as [Sparewatt 1.11](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.11-2026-11-08).
+
+Live simulations across the app, in the spirit of the Power flow. Every motion follows a real reading; where macOS gives
+no number, nothing moves.
+
+- **The battery, to scale** (Battery panel). The whole cell is what it held when new, the hatched part is lost to wear
+  ("9% lost to wear"), and dots run toward the edge of the charge while it charges and away while it drains, faster the
+  more watts flow. Resting, they stop. A line marks where macOS is holding the charge.
+- **A memory map** (Memory panel): 100 blocks, one per 1% of memory, in place of the bar. Blocks fly between *Apps* and
+  *Squeezed* while macOS squeezes and unsqueezes memory, and to or from the drive while it swaps, from macOS's own
+  counters.
+- **Fans that spin in proportion to their rpm** (Temperature panel), and stand still when the fan stops. Before, the
+  speed was set once and never followed the fan.
+- **Replay my day** (Dashboard → History): a day played back in 30 seconds from the saved minute readings, with a strip
+  to drag to any moment and any of the last days to pick. Gaps say the Mac was asleep or Sparewatt wasn't running.
+- **Power per app as a flow** (Power panel and dashboard): from the battery or charger to each app, each band as thick
+  as its share, still marked as an estimate. A click opens the app's processes, as before.
+- **Graphics as a flow** (Graphics panel): each app's part of the chip's work flowing into it, the same figures as the
+  list under it.
+- **A pulse on each Switch** each time its health check runs and finds it on. A switch with no check to run has none.
+- **Extreme Saver's moment:** when it turns on, the apps it pauses dim one by one while the battery time that gives back
+  counts up ("Paused 3 apps · about +48m", an estimate). The row stays while it is on.
+- **Reduce Motion.** With macOS's Reduce Motion on, every diagram is a still picture, and Replay my day keeps its strip
+  to drag through instead of **Play**.
+- **What it costs.** Each new diagram takes about a third of the drawing time of the Power flow, only while it is on
+  screen, and none at all while nothing in it is moving. With no panel open nothing is drawn.
+- **Smoother dots.** A new reading changes how fast the dots carry on, instead of making them jump.
+- **Fix:** opening a panel from a link or a shortcut while another panel was open could leave nothing open.
+
 ## 2026-11-07 — Sparewatt 1.10
 
 Released as [Sparewatt 1.10](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.10-2026-11-07).

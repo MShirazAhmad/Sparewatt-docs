@@ -26,6 +26,8 @@ ones, and highlights one using far more than usual.
 
 ## History
 
+**Replay my day**, at the top of the page, plays a day back in 30 seconds from the saved readings; drag its strip to any moment.
+
 Battery charge, power use, processor load and temperature over 1 hour to 30 days (one sample a minute, kept 30 days),
 and a log of **every stretch on battery**: how long, how much charge it used, and which apps used the most power.
 

@@ -114,6 +114,14 @@ longer paused; turn it off and on to pause them again.
 
 ---
 
+### The moment it turns on
+
+<p align="center"><img src="../images/features/saver-moment.png" width="354" alt="What Extreme Saver paused"><br><em>What Extreme Saver paused, and about how much battery time that gives back. (Sample values.)</em></p>
+
+When Extreme Saver turns on, the apps it pauses dim one by one under its switch while the battery time pausing them
+gives back counts up ("Paused 3 apps · about +48m"). The time is an estimate from their share of the power, the same
+sum as *Power per app*, and is left out on the charger. The row stays while Extreme Saver is on.
+
 ## Profiles
 
 <p align="center"><img src="../images/features/profiles.png" width="480" alt="Profiles"><br><em>Profiles: Lecture, Lab, Travel — energy mode on battery and on charger, and Extreme Saver, per profile.</em></p>

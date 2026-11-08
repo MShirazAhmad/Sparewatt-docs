@@ -39,6 +39,19 @@ state, not a guess.
 
 ---
 
+## The battery, to scale
+
+<p align="center"><img src="../images/features/battery-cell.png" width="354" alt="The battery cell"><br><em>The battery cell: the charge, the part lost to wear, and which way the energy is going. (Sample values.)</em></p>
+
+**Purpose.** See at a glance how full the battery is, how much of it is gone for good, and whether it is filling or
+draining.
+
+**What it does.** The first card of the Battery panel draws the battery to scale. The whole cell is what it held when
+new; the hatched part at the far end is lost to wear ("9% lost to wear"). The charge fills from the left. Dots run
+toward its edge while it charges and away from it while it drains, faster the more watts flow, on the same scale as the
+Power flow, with the figure under it ("+32 W going in", "−11 W going out"). Resting, the dots stop. While macOS holds
+the charge (a charge limit, Optimized Charging) a line marks where.
+
 ## Health card
 
 <p align="center"><img src="../images/features/panel-battery.png" width="320" alt="Health card"><br><em>Battery panel: header · if you unplug now · Health card · Devices (keyboard, mouse, AirPods) · energy mode, Extreme Saver and profiles.</em></p>

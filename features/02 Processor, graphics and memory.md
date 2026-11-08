@@ -50,6 +50,10 @@ the graphics time each app used over one second. *Who is using the graphics* (by
 
 **Benefits.** Activity Monitor doesn't show graphics per app by default; this does.
 
+**Who is using it, as a picture.** With live diagrams on, a flow from the top apps into the graphics chip: each band is
+as thick as that app's part of the chip's work, the same figures as the list under it, and its dots go faster the more
+it uses. macOS doesn't say which graphics core an app is on, so there are no per-core tiles here.
+
 **Where.** GPU part of the menu bar; Dashboard → **Graphics**.
 
 **Settings.** *GPU: memory it holds (shared with RAM)* adds the graphics chip's memory to the menu bar (off by default).
@@ -90,6 +94,11 @@ only.
 - "Used memory" alone is misleading on a Mac (cached files count as used). Pressure and swap tell you whether it
   matters.
 - The forecast warns before the Mac slows down, not after.
+
+**The memory map.** With live diagrams on, the bar becomes 100 blocks, one per 1% of memory, in the legend's colours.
+Blocks fly between *Apps* and *Squeezed* while macOS squeezes and unsqueezes memory, and to or from the drive while it
+writes memory out or reads it back, as many and as fast as macOS's own counters say, on a log scale from 10 KB/s to
+1 GB/s. With nothing moving, the map is still.
 
 **Where.** RAM part of the menu bar; Dashboard → **Memory**.
 

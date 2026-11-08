@@ -155,13 +155,14 @@ another device shows as a second entry. Kept only on this Mac (`chargers.json`, 
 
 ## Power per app (share of battery drain)
 
-<p align="center"><img src="../images/features/power-per-app.png" width="354" alt="Power per app (share of battery drain)"><br><em>On the charger: one bar and a row per app, in watts (a donut on the dashboard); click one to see its processes.</em></p>
+<p align="center"><img src="../images/features/power-per-app.png" width="354" alt="Power per app (share of battery drain)"><br><em>On the charger: a live flow to each app and a row per app, in watts; click one to see its processes. (Sample values.)</em></p>
 
 **Purpose.** Know which apps cost the most power right now — and how much battery time each takes.
 
 **What it does.** Every 10 seconds while the panel is open, the Mac's measured draw is split between apps by their
-share of *energy impact* over **every** process. In the panel, one stacked bar and a row per app show the top 6 and
-*Everything else*; the dashboard shows them as a donut.
+share of *energy impact* over **every** process. A live flow runs from the battery or charger to each app, each band
+as thick as its share and its dots faster the more watts it takes, above a row per app for the top 6 and *Everything
+else*. With live diagrams off it is one stacked bar, and a donut on the dashboard.
 - **On the charger:** watts per app. On the dashboard a tip names the top two ("“Safari” and “Zoom” use 53% of the power
   right now").
 - **On battery:** each app's share of the drain and **how much battery time it takes** (−42m) — the time you'd get back
@@ -171,7 +172,7 @@ share of *energy impact* over **every** process. In the panel, one stacked bar a
 
 <p align="center"><img src="../images/features/battery-time-per-app.png" width="354" alt="Battery time per app"><br><em>On battery: the share of the drain and the battery time each app takes, and what quitting the top two gives back. (Sample values.)</em></p>
 
-Click a part of the bar (a slice of the donut) or a name to see its processes and quit or force quit them (with
+Click a band of the flow (a part of the bar, a slice of the donut) or a name to see its processes and quit or force quit them (with
 confirmation).
 
 **Use cases.**

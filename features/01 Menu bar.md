@@ -164,7 +164,7 @@ Dashboard → **Menu Bar** has six sections, each one kind of setting:
 | Look | grouping, the outline, words or icons, text size, update speed |
 | Colours | drain colours, colours by value, and storage turning orange when memory spills to the SSD |
 | Alerts | the red glow and its limits, and the *Still high* and *Unusual background activity* notifications |
-| Panels | hover to open, live diagrams, the clipboard, Latest File and where it looks |
+| Panels | hover to open, live diagrams (still pictures when macOS's Reduce Motion is on), the clipboard, Latest File and where it looks |
 
 Looking for one setting? Type a word or two into *Find a setting* at the top of the dashboard sidebar
 ([more](11%20Dashboard%2C%20history%20and%20this%20app.md#find-a-setting)).

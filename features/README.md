@@ -66,7 +66,7 @@ answers three questions from the menu bar:
 | Switches | local services on/off | see and stop background servers | [Switches](10%20Switches.md) |
 | Dashboard, Overview, Mac health | everything in one window | "All good" or exactly what to look at, slow-downs to cool and restarts included | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md) |
 | Find a setting | search every setting from the dashboard sidebar | no hunting through pages | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#find-a-setting) |
-| History and CSV export | look back 30 days | every battery stretch with its top apps | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#history) |
+| History, Replay my day and CSV export | look back 30 days, watch a day again | every battery stretch with its top apps | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#history) |
 | "My Mac today" share card | share your Mac's day as one picture | nothing personal on it | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-today-share-card) |
 | "My Mac this week", Monday summary | the week in one picture, or one note on Monday | battery time, top drain, data used | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-this-week-card) |
 | Startup Items | what starts on its own | spot background helpers | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#startup-items) |

@@ -88,6 +88,15 @@ Click a finding to open its page.
 period, and **Times on battery**: each stretch with start, length, from–to %, average watts and the apps that used the
 most power.
 
+### Replay my day
+
+<p align="center"><img src="../images/features/day-replay.png" width="800" alt="Replay my day"><br><em>Replay my day: the saved readings played back through the power flow, with the whole day as a strip to drag through. (Sample values.)</em></p>
+
+The card at the top of History plays a day back in 30 seconds: plugged in or not, the charge, what the Mac drew, the
+processor and its temperature, minute by minute, from the readings Sparewatt saved. **Play** runs it; drag the strip
+to any moment. Stretches on battery are shaded. Pick another day from the menu. Where there is no reading it says so:
+the Mac was asleep or Sparewatt wasn't running. A charge lane is drawn when the saved percentage was climbing.
+
 **Export CSV…** saves everything stored (not just the chosen range): the minute readings, then the stretches on battery
 with their top apps.
 
