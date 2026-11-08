@@ -25,7 +25,7 @@ Charge limiting is now split. Apple ships a basic 80–100% limit. Third-party l
 - Features: an upper limit (minimum 50%) and a lower resume limit (minimum 20%), turning the power adapter off without unplugging, and manual menu bar commands (full charge, stop charging).
 - Limitations: it cannot control charging while the Mac is shut down (a shut-down Mac charges to 100%). The lower limit is not honored on cold boot. Sleep is disabled while charging. Turning off the adapter exits clamshell mode. Optimized Charging must be turned off.
 - The app is not notarized, so on macOS 15+ the user must click "Open Anyway". It uses a privileged XPC daemon.
-- **The repository was archived on 2026-03-21.** — [GitHub mhaeuser/Battery-Toolkit](https://github.com/mhaeuser/Battery-Toolkit)
+- **The project was archived on 2026-03-21.** — [GitHub mhaeuser/Battery-Toolkit](https://github.com/mhaeuser/Battery-Toolkit)
 - A community fork targets macOS 27, but only on the forker's own tested Mac. — [macos-tahoe.com](https://macos-tahoe.com/blog/macos-27-battery-charge-limit-apps-broken-aldente-batt-charging-to-100-fix-2026/)
 
 **coconutBattery**
