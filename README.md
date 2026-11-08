@@ -22,6 +22,8 @@ This repository holds **documentation only** — no app code. The app itself liv
 
 ## Why I built Sparewatt
 
+I am a physicist. Programming and tech are my hobby, and Sparewatt is my hobby project.
+
 I used to pay for several small Mac apps, each for a feature or two: one for clipboard history, one for drag and
 drop, another for power management. My 16-inch MacBook Pro (2021) has an M1 Max chip and 64 GB of memory, and I work it hard.
 As soon as I unplugged it, the battery ran out in about an hour — even though its battery health was above 90%.
