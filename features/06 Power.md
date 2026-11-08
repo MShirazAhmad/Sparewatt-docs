@@ -162,7 +162,8 @@ another device shows as a second entry. Kept only on this Mac (`chargers.json`, 
 **What it does.** Every 10 seconds while the panel is open, the Mac's measured draw is split between apps by their
 share of *energy impact* over **every** process. A live flow runs from the battery or charger to each app, each band
 as thick as its share and its dots faster the more watts it takes, above a row per app for the top 6 and *Everything
-else*. With live diagrams off it is one stacked bar, and a donut on the dashboard.
+else*. On the dashboard each band lands on its app's row, and the figures end at the card's edge. With live diagrams
+off it is one stacked bar, and a donut on the dashboard.
 - **On the charger:** watts per app. On the dashboard a tip names the top two ("“Safari” and “Zoom” use 53% of the power
   right now").
 - **On battery:** each app's share of the drain and **how much battery time it takes** (−42m) — the time you'd get back

@@ -2,6 +2,15 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-08 — Sparewatt 1.11.1
+
+Released as [Sparewatt 1.11.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.11.1-2026-11-08).
+
+- **Power per app lines up with the rest of the dashboard.** The flow takes the left half of the card, each band lands
+  on its app's row, the rows start at the page's middle column and their figures end at the card's edge, like the cards
+  around it. Click a band or a row to see the app's processes.
+- **Replay my day** spans the full width of its card, like the Power flow.
+
 ## 2026-11-08 — Sparewatt 1.11
 
 Released as [Sparewatt 1.11](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.11-2026-11-08).
