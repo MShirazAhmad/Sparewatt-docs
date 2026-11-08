@@ -2,6 +2,42 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change landed in the app's repository.
 
+## 2026-11-08 — Sparewatt 1.13
+
+Released as [Sparewatt 1.13](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.13-2026-11-08).
+
+**Last until.** A new card at the top of the Battery panel: pick the time you need the battery to reach, and Sparewatt
+keeps watch until then.
+
+- **A set point on a battery bar.** The fill is how far the battery reaches at this rate, the marker is your time, and
+  what it won't reach is hatched. Drag the marker or type a time.
+- **In the menu bar too:** the battery item shows the time and how much is to spare (`→3:00`, `+38m`), green, orange or
+  red, with the level line showing how much of the wait the battery covers.
+- **Apps coloured by what they cost against that time,** each with its watts and the minutes it's worth. Mark an app to
+  keep it running or to pause it; *Pause these* does what's suggested. Pausing closes nothing, and what you're using is
+  the last thing suggested.
+- **It says when pausing can't get there,** and how far short it would still be.
+- **By itself** pauses what it has to when the time starts slipping; never what you're using or what you said to keep.
+  A notification says so once if it starts to fall short.
+- Everything paused for it wakes when the time comes, when you end it, or when the charger goes in.
+- Also from a link: `sparewatt://last-until/15:00`, `sparewatt://last-until/off`.
+
+**Live diagrams cost a fraction of what they did.** Their motion now runs in macOS's own animation system, so between
+readings the app does nothing. Measured on one Mac, a panel with a diagram open: Network 26.5% of one core before, 2.5%
+after. They are also smoother, at up to 30 frames a second instead of 15.
+
+**Keys inside a panel.** With a panel opened by a click or a shortcut: ← → move to the neighbouring panel, Esc closes
+it, D opens its dashboard page, ⌘, opens Settings, and Tab reaches the rows you can click, with Return or Space to press
+them.
+
+**macOS's display settings.** *Increase contrast* gives the cards edges and the diagrams stronger lines. *Differentiate
+without colour* adds a shape wherever colour was doing the talking: status dots, the memory map's key, a mark after a
+figure in the menu bar, side-by-side bars for download and upload. *Reduce transparency* makes the floating shelf and
+the menu bar's glow solid.
+
+**Fixes.** A process number of 0 or 1 can no longer be offered for quitting, and Sparewatt never offers to quit itself.
+A rate just under 1 MB/s no longer reads "1024 KB/s".
+
 ## 2026-11-08 — Sparewatt 1.12
 
 Released as [Sparewatt 1.12](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.12-2026-11-08).

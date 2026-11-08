@@ -41,6 +41,7 @@ answers three questions from the menu bar:
 | Watchlist | be told when a chosen app overuses | precise, quiet, battery-aware | [Who is using it](04%20Who%20is%20using%20it.md#watchlist) |
 | Battery readings and charge state | the true state, not a guess | real fill to 0.1%, measured current | [Battery](05%20Battery.md) |
 | "Battery state doesn't add up" | catch failing limiters and weak chargers | found in a minute, not weeks | [Battery](05%20Battery.md#battery-state-doesnt-add-up) |
+| Last until | make it last to a set time | a set point in the menu bar, apps coloured by what they cost against it | [Battery](05%20Battery.md#last-until) |
 | Charge plan | when will I reach 20%? | based on your usual use | [Battery](05%20Battery.md#charge-plan) |
 | Device batteries | keyboard, mouse, trackpad, headphones, game controller levels, time left each, devices charging from the Mac | warned once before they run out | [Battery](05%20Battery.md#device-batteries) |
 | Macs without a battery | Mac mini, Mac Studio, iMac, Mac Pro | the Mac's draw from the wall; nothing that doesn't apply | [Battery](05%20Battery.md#macs-without-a-battery) |

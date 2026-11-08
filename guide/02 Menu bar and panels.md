@@ -49,6 +49,29 @@ Every list says what a row is: an app (with its icon), an Apple app, a part of m
   last minute's drain, fading out as the drain gets lighter, and a thin line as long as the watts. On the charger the
   line shows how fast it charges.
 
+## Keys inside a panel
+
+A panel you opened by clicking its item or with a shortcut takes the keyboard. (One that opened because the pointer
+passed over the item doesn't: it never takes the keyboard from the app you're typing in.)
+
+| Key | What it does |
+|---|---|
+| ← → | the panel to the left or right, going round at the ends |
+| Esc | closes the panel |
+| D | this panel's page in the dashboard |
+| ⌘, | Settings |
+| Tab | moves through the rows you can click |
+| Return or Space | presses the row you're on |
+
+Buttons and switches join the Tab order when *Keyboard navigation* is on in System Settings → Keyboard.
+
+## Display settings in macOS
+
+Sparewatt follows System Settings → Accessibility → Display. *Increase contrast* gives cards edges and diagrams stronger
+lines. *Differentiate without colour* adds a shape wherever colour was doing the talking, including a `▲` or `!` after a
+figure in the menu bar. *Reduce transparency* makes the floating shelf and the menu bar's glow solid. *Reduce motion*
+makes the live diagrams still pictures.
+
 ## Look and speed
 
 Dashboard → Menu Bar → *Look*: words or small icons, text size, update speed (every 1, 2, 5 or 10 seconds — slower uses

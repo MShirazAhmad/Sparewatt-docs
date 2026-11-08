@@ -39,6 +39,42 @@ state, not a guess.
 
 ---
 
+## Last until
+
+For when you know how long it has to last: it's noon, the appointment is at 3:00, and you'd like not to be sitting there
+with a dead Mac.
+
+<p align="center"><img src="../images/features/battery-goal.png" width="354" alt="The Last until card: a set point on a battery bar, what it can afford, and which apps to pause"><br><em>Last until, falling short: the set point, the part the battery won't reach, and what to pause</em></p>
+
+Set the time in the card at the top of the Battery panel and press **Start**.
+
+- **The bar** runs from now to a little past your time. The fill is how far the battery reaches at the current rate, the
+  marker is your time, and anything it won't reach is hatched. Drag the marker to change the time.
+- **The line under it** says *On track*, *Tight* or *Short by…*, what the Mac is drawing, and the most it can draw
+  on average and still get there.
+- **The menu bar** shows the set point and what's to spare (`→3:00`, `+38m`), in green, orange or red.
+
+  <p align="center"><img src="../images/features/menubar-goal.png" width="728" alt="The menu bar with the set point and the time short"></p>
+
+- **Each app** shows what it draws and how many minutes that's worth. Orange means *pause this*: the smallest set that
+  gets you there, heaviest first, and whatever you're actually using last.
+- **✓ keeps an app running** and it is never touched. **⏸ pauses it** now and in every later goal. Your choices are
+  remembered.
+- ***Pause these*** does what's suggested. Pausing freezes an app without closing it, so nothing is lost; it can't redraw
+  or do anything until it wakes.
+- ***By itself*** pauses what it has to when the time starts slipping, but never what you're using or what you marked ✓.
+- ***Low Power*** appears when it's tight or short. It asks for your Mac password, as macOS requires.
+
+If pausing everything still wouldn't get there, the card says so and how far short it would be.
+
+Everything paused for this wakes when your time comes, when you press *End*, or when the charger goes in. If you unplug
+again before the time, it carries on.
+
+All of it is an estimate from the Mac's measured draw over about the last two minutes and each app's share of it. The
+last 3% of the charge isn't counted, because macOS puts the Mac to sleep before it reaches nothing.
+
+From a script or Shortcuts: `sparewatt://last-until/15:00` (24-hour clock), `sparewatt://last-until/off`.
+
 ## The battery, to scale
 
 <p align="center"><img src="../images/features/battery-cell.png" width="354" alt="The battery cell"><br><em>The battery cell: the charge, the part lost to wear, and which way the energy is going. (Sample values.)</em></p>
