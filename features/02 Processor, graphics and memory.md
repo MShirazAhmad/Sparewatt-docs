@@ -46,6 +46,11 @@
 reports one load for all GPU cores together; the graph's tooltip says so), and *Using the graphics most* — measured from
 the graphics time each app used over one second. *Who is using the graphics* (by kind) is on the dashboard.
 
+**Graphics power** (since 1.14): what the graphics chip uses, in watts, as a 2-minute graph with *Now*, *2-min average*
+and *2-min peak*, read from macOS's own graphics energy counter every 2 seconds. Busy % and watts differ: light work can
+keep the chip busy at a low clock for a couple of watts, while games, video and AI models push the watts up. It needs no administrator password, and on one Mac it agreed
+with Apple's `powermetrics` tool to within a few tenths of a watt. A Mac without the counter doesn't show it.
+
 **Use cases.** A video, game, 3D view or a local AI model makes the Mac hot — check which one holds the graphics chip.
 
 **Benefits.** Activity Monitor doesn't show graphics per app by default; this does.

@@ -153,6 +153,36 @@ another device shows as a second entry. Kept only on this Mac (`chargers.json`, 
 
 ---
 
+## Power by part (experimental)
+
+**Off by default.** Turn it on in Settings → Menu Bar → **Experimental** → *Power by part*.
+
+**Purpose.** See which part of the Mac uses the power: one block for each part that has a reading, shaded by its
+watts, and one for everything else.
+
+**What it shows.**
+- **Graphics:** live, from macOS's graphics energy counter (the same figure as the Graphics panel's *Power now*).
+- **Display, keyboard light:** from the Mac's own power sensors. Apple doesn't document which sensor is which part, so
+  these are labelled by sensor name until you calibrate.
+- **USB-C ports:** what the ports give to connected devices, measured by the port controller (0 W with nothing plugged in).
+- **Everything else:** the Mac's total minus the parts above.
+- **Processor, Neural Engine, memory and SSD** have no block: macOS gives an app no live figure for them, so they are
+  counted in *Everything else*, and a line under the blocks names what has no reading. (Writing to the SSD keeps the
+  processor busy too, and on Apple silicon its controller is inside the chip, so no sensor follows the SSD alone.)
+- **Wi-Fi** has a block once a calibration with *Wi-Fi too* ticked has found its sensor; until then the line says so.
+
+**Calibrate…** finds which sensor belongs to which part. It changes the screen brightness and the keyboard light one at a
+time, high and low three times each, and sees which sensor follows. A part takes only sensors it could plausibly be
+(a keyboard light never more than 0.6 W), at most two for the display and one for the others. Tick *Wi-Fi too* to include Wi-Fi: it turns Wi-Fi off and on, so the network drops for about 30
+seconds in all. Everything is put back afterwards, also if you press *Stop*. It takes about a minute and a half; results are
+kept in `power-sensors.json` (see [Where Sparewatt keeps its data](../reference/Data%20files.md)).
+
+**Limits.** Experimental because the sensors are undocumented: on a busy Mac, work that comes and goes can make
+Calibrate pick a wrong sensor, so calibrate with the Mac otherwise quiet. Sensor names differ between Mac models, so a
+part can have no reading on one Mac and a figure on another.
+
+---
+
 ## Power per app (share of battery drain)
 
 <p align="center"><img src="../images/features/power-per-app.png" width="354" alt="Power per app (share of battery drain)"><br><em>On the charger: a live flow to each app and a row per app, in watts; click one to see its processes. (Sample values.)</em></p>

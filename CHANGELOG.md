@@ -2,6 +2,61 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-11 — Sparewatt 1.14.1
+
+Released as [Sparewatt 1.14.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.14.1-2026-11-11).
+
+**Scripts are named by what they run.** A row that used to read *Python* (or *node*, *ruby*, *perl*) now carries the
+name of the program on its command line: `python -m mineru…` is *mineru*, `python manage.py` in a folder called
+`shop` is *shop*. Helper processes a program starts take its name too. This holds in every list:
+graphics, processor, memory, energy and data use.
+
+**Power by part shows only what it can measure.** The drawing of the chip is gone: most of its blocks could only ever
+say *No reading*. The card now has a block for each part with a figure (graphics, display, keyboard light, USB-C
+ports, Wi-Fi once calibrated), *Everything else* for the remainder, and one line naming what has no reading. See
+[Power by part](features/06%20Power.md#power-by-part-experimental).
+
+**Fixes.**
+
+- Network, disk and per-app graphics figures no longer jump to an impossible number when a counter falls (a VPN
+  disconnecting, a disk ejected, an app closing a window).
+- Charging on hold: macOS is asked which feature holds the charge once, not at every update.
+- Extreme Saver: cancelling the password prompt when it turns off no longer loses the settings to go back to; a
+  setting unticked while it was on is still put back; nothing is paused after it was turned off again.
+- Watchlist: a memory limit now fires (it compared two different units).
+- History: a time on battery ends when Sparewatt stopped, not when it next started; the history file is written every
+  five minutes and at quit instead of every minute.
+- Caches: an automatic limit only ever empties a folder directly inside Caches.
+- Shelf: zipping files of the same name keeps both; *Move to Trash* says what couldn't be moved; files on a disk that
+  isn't connected stay on the Shelf.
+- Clipboard: *Make plain* leaves a password manager's copy alone.
+- Menu bar: *Compact* text size, and showing or hiding an item while items are grouped, apply at once.
+- Startup Items: system-wide items show whether they are loaded.
+- Downloads tidy-up: of numbered copies with no original, one is kept out of the duplicates list.
+- Storage: opening a second folder while the first is still being measured no longer shows the first one's contents.
+- Power: an unknown figure shows a dash, and a battery figure never reads "-0 W". Battery health is rounded the same
+  way everywhere. Macs with more than two fans number them.
+- Latest file: says when nothing new was found in the last week.
+- AI Assistant server: malformed requests are refused instead of stopping the app.
+
+## 2026-11-10 — Sparewatt 1.14
+
+First released in [Sparewatt 1.14.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.14.1-2026-11-11).
+
+**Graphics watts.** The Graphics panel has a *Graphics power* card: a 2-minute graph of what the graphics chip uses,
+with now, average and peak, from macOS's own energy counter. No administrator password needed; on one Mac it matched
+Apple's `powermetrics` to within a few tenths of a watt.
+
+**Every menu bar item can glow.** *Every item glows by how busy it is* (Settings → Menu Bar → Colours, on by default)
+gives processor, graphics, memory, storage and temperature the glow battery and power have, by each item's
+colour-by-value limits. See [Colours and glows](features/01%20Menu%20bar.md).
+
+**Power by part (experimental, off by default).** Turn it on in Settings → Menu Bar → Experimental. The Power panel
+then shows the chip as blocks shaded by watts, with the display, keyboard light, USB-C ports and everything else
+around it. *Calibrate…* finds which of the Mac's undocumented power sensors belongs to which part by changing one part
+at a time, and puts everything back. Processor, Neural Engine, memory and SSD show *No reading*: macOS gives an app no
+live figure for them. See [Power by part](features/06%20Power.md#power-by-part-experimental).
+
 ## 2026-11-08 — Sparewatt 1.13
 
 Released as [Sparewatt 1.13](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.13-2026-11-08).

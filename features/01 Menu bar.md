@@ -264,6 +264,11 @@ as the charging is fast, with no glow. A charger too small for the Mac counts as
 **Settings.** Dashboard → Menu Bar → *Colours*: *Battery and power: a glow and a line* — **off** by default; the four
 limits are adjustable (0.1–24 h).
 
+**Every item can glow too** (since 1.14). *Every item glows by how busy it is* gives processor, graphics, memory,
+storage and temperature the same kind of glow, using each item's colour-by-value limits: no glow when lightly used,
+the strongest when heaviest (memory follows macOS's memory pressure). The glow replaces that item's coloured text, and
+the text keeps the menu bar's own colour. Network has no limits, so it doesn't glow. **On** by default; turn it off in the same *Colours* section.
+
 ---
 
 ## Busy-app name

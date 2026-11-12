@@ -51,6 +51,7 @@ answers three questions from the menu bar:
 | Power going out to USB devices | what charging a phone or powering a drive costs | measured per port, not the allowance | [Power](06%20Power.md#power-going-out-to-usb-devices) |
 | Charger check | catch a charger that can't keep up | explains a draining "plugged-in" Mac | [Power](06%20Power.md#charger-check) |
 | Charger history | every charger you plug in, remembered | find the slow one, nickname each | [Power](06%20Power.md#charger-history) |
+| Power by part (experimental) | which part of the Mac uses the power | graphics, display, keyboard light, USB-C ports, the rest; Calibrate | [Power](06%20Power.md#power-by-part-experimental) |
 | Power per app | which app costs battery time | watts and minutes per app | [Power](06%20Power.md#power-per-app-share-of-battery-drain) |
 | Idle apps on battery | quit forgotten apps that cost real time | speaks only when worth it | [Power](06%20Power.md#idle-apps-on-battery) |
 | Battery used per app, 7 days | the week's biggest battery users | decisions from real use | [Power](06%20Power.md#battery-used-per-app-last-7-days) |
