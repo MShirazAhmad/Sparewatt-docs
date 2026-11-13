@@ -2,6 +2,24 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-12 — Sparewatt 1.15.1
+
+Released as [Sparewatt 1.15.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.15.1-2026-11-12).
+
+- **Hover and click land on the right part** of the grouped menu bar item when the menu bar is short of room. macOS
+  then gives the item less width and it is drawn smaller; the parts were still looked up at full size, so pointing at
+  one could open its neighbour's panel.
+- **A force-quit can't leave apps frozen either.** While Extreme Saver or *Last until* has apps paused, a small
+  stand-by waits and wakes them if Sparewatt is force-quit. It is listed under Settings → Privacy with everything else
+  the app starts.
+- **Time left says where it comes from.** When the figure is the battery's charge ÷ the present draw, not macOS's own
+  estimate (just unplugged, or the load changed a lot), the Power panel labels it *Left, at this draw*.
+- **Network panel:** *Data used today* folds under one line with today's totals.
+- A settings file can no longer set values the app itself would never write (an update speed of a fraction of a
+  second, a cache limit on a folder outside Caches).
+- Sparewatt's own once-an-hour read of the wake log no longer shows as a row in *Power per app*.
+- A list row's fill fades at its end instead of stopping in the middle of a word.
+
 ## 2026-11-12 — Sparewatt 1.15
 
 Released as [Sparewatt 1.15](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.15-2026-11-12).
