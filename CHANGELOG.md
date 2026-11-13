@@ -2,6 +2,52 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-12 — Sparewatt 1.15
+
+Released as [Sparewatt 1.15](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.15-2026-11-12).
+
+**A cleaner look, and graphs you can read.**
+
+- **Graphs answer the pointer.** Move over a graph and it reads that moment: `46% · 40 s ago`. The peak is marked, and
+  the ends say how far back the graph goes. *Average* and *peak* are named for the time they really cover: `2-min` at
+  the usual update speed, `10-min` at one reading every 10 seconds.
+- **Overview:** each monitor is one flat tile, its parts separated by thin lines instead of boxes inside a box. Click
+  a tile's header to open that monitor. Tiles stack in columns, so a short one no longer leaves a gap beside a tall one.
+- **Lists:** how much a row uses, against the top row, is a soft fill behind the whole row. macOS's own parts get an
+  icon for what they do (search, screen, iCloud, security, network) instead of one grey Apple logo each.
+- **Processor cores** fill from the bottom as they get busier, with the number always on top.
+- **Settings → Menu Bar:** a live picture of your menu bar, and one chip per item to show or hide it, in place of ten
+  switches.
+- **Panels** sit on macOS's own panel material; with *Reduce transparency* or *Increase contrast* on they stay solid.
+- The second Extreme Saver switch at the bottom of the dashboard's list is gone: Extreme Saver has its own page there.
+- **Battery panel:** health and devices fold under one line (`88% · 164 recharges`), so the panel leads with how
+  full, how long, and what to do about it. The dashboard page still shows everything.
+- **Order of the grouped item:** drag a chip onto another in Settings → Menu Bar (or right-click → Move Left / Right).
+
+**Safer.**
+
+- **Links ask first.** A `sparewatt://` link that would flip a switch, change a power setting or start *Last until*
+  now asks before it acts, since a link can come from any web page or app. Turn the question off in Settings → Menu
+  Bar → General if your own shortcuts use such links. Links that only open a panel or a page never ask.
+- **A crash can't leave apps frozen.** If Sparewatt stops unexpectedly while it has apps paused (Extreme Saver, Last
+  until), they are woken on the way out.
+- Importing a settings file warns when the file turns on the AI Assistant server.
+
+**Fixes.**
+
+- **Time left** no longer shows a stale figure right after unplugging (it could read `1:56 left` beside a draw that
+  empties the battery in 36 minutes): when macOS's estimate is more than twice off what the charge and the draw say,
+  the draw's answer is shown.
+- **A charger a little short** of a busy Mac, with hours in the battery, is said plainly in orange (`2 W short … the
+  battery covers the rest, about 13h at this rate`). The red warning and glow are kept for when it matters: under three
+  hours left, or a low battery.
+- The menu bar follows every reading while a panel is open, so the two never show different figures.
+- A panel you opened with a click stays open when the pointer passes over other items.
+- *Still high* notifications also come while the screen is off.
+- Storage's *memory spilled to the SSD* colour shows again with glows on.
+- The Monday summary covers last week (Monday to Sunday). *Replay my day* keeps up while the page is open.
+- The last menu bar item can't be hidden.
+
 ## 2026-11-11 — Sparewatt 1.14.1
 
 Released as [Sparewatt 1.14.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.14.1-2026-11-11).
