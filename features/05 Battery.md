@@ -164,9 +164,10 @@ middle of a call.
 - **AirPods, Beats and other Bluetooth headphones:** left, right and case, as "L 64% · R 61% · Case 90%", or one
   figure with the right picture for headphones with one battery, such as AirPods Max. macOS keeps these levels only in
   `system_profiler`, which starts a process, so they are read every 5 minutes and when the Battery panel opens (at
-  most every 30 seconds). The row's tooltip has the firmware (and the case's, for earbuds) and the signal: "Firmware
-  9A348 · case 9A348 · signal strong (−54 dBm)". macOS doesn't say whether they are charging, so no charging state is
-  shown for them.
+  most every 30 seconds). Headphones that `system_profiler` gives no level for (the AirPods Max 2) are read from
+  macOS's `pmset` accessory list in the same run, with their charging state. The row's tooltip has the firmware (and the case's, for earbuds) and the signal: "Firmware
+  9A348 · case 9A348 · signal strong (−54 dBm)". `system_profiler` doesn't say whether they are charging, so no charging state is
+  shown for headphones read from it.
 - **Game controllers** (Xbox, PlayStation and others): the level, and *Charging* while one charges. Read when a
   controller connects or disconnects, every minute and when the panel opens.
 - **Devices getting power from the Mac's own ports** (0.3 W or more), such as an iPhone charging: the watts the port

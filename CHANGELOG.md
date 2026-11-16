@@ -2,6 +2,37 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-16 — Sparewatt 1.15.3
+
+Released as [Sparewatt 1.15.3](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.15.3-2026-11-16). It
+also carries everything listed under 1.15.2 below, which was not published on its own.
+
+- **AirPods Max 2 battery:** the level now shows in Devices. macOS gives these headphones no level in the Bluetooth
+  listing Sparewatt read, so it now also reads macOS's accessory list (`pmset`) for connected headphones that have none,
+  with their charging state.
+
+## 2026-11-12 — Sparewatt 1.15.2
+
+Released as [Sparewatt 1.15.2](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.15.2-2026-11-13).
+
+Fixes from a second read-through of this week's changes.
+
+- **Extreme Saver after a crash or force-quit:** its apps are paused again when Sparewatt comes back (they were woken
+  as it went, and the saver still read *on* with nothing paused).
+- **A link's question** is asked once at a time (a page opening ten links gets one question), and readings, history
+  and alerts carry on while it waits for an answer.
+- **A script runner inside an app** (an app's own `node` or `python`) counts towards that app again, as before 1.14.1.
+- **Graphs under Extreme Saver:** with checks slowed to every 30 seconds, a graph's ages and its *average* and *peak*
+  labels now say the time they really cover.
+- **Extreme Saver's "go back to" values:** if you set your battery settings by hand after cancelling its password
+  prompt, those are what it returns to.
+- **Calibrate:** quitting Sparewatt in the middle of a calibration puts the screen brightness, keyboard light and
+  Wi-Fi back.
+- **Downloads tidy-up:** a single old installer with a number in its name (`Xcode (1).dmg`) is listed again.
+- *Replay my day* keeps up once the history is a month deep. Chips in Settings → Menu Bar drag reliably.
+- **Power by part:** the colour key, the "no reading" line and *Calibrate…* fold under *Details* in the panel.
+- Internet data per day is kept correctly whatever calendar the Mac is set to (Hebrew, Buddhist and others lost days).
+
 ## 2026-11-12 — Sparewatt 1.15.1
 
 Released as [Sparewatt 1.15.1](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.15.1-2026-11-12).
