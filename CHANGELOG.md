@@ -13,7 +13,7 @@ also carries everything listed under 1.15.2 below, which was not published on it
 
 ## 2026-11-12 — Sparewatt 1.15.2
 
-Released as [Sparewatt 1.15.2](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.15.2-2026-11-13).
+Published as part of [Sparewatt 1.15.3](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.15.3-2026-11-16).
 
 Fixes from a second read-through of this week's changes.
 
