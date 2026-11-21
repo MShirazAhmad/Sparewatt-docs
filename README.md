@@ -69,7 +69,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 |---|---|
 | Menu bar: readings, grouped item with outline, hover panels, steadier figures, colours, warnings, the Menu Bar settings page | [Menu bar](features/01%20Menu%20bar.md) |
 | Processor, graphics, memory | [Processor, graphics and memory](features/02%20Processor%2C%20graphics%20and%20memory.md) |
-| Temperature and fans, slowing down to cool, network, the connection and internet check, data used per app, storage space, drive health, Time Machine | [Temperature, network and storage space](features/03%20Temperature%2C%20network%20and%20storage%20space.md) |
+| Temperature and fans, slowing down to cool, network, the connection and internet check, data used per app, storage space, drive health, Time Machine, other disks | [Temperature, network and storage space](features/03%20Temperature%2C%20network%20and%20storage%20space.md) |
 | Named processes, quitting, background normals, Watchlist | [Who is using it](features/04%20Who%20is%20using%20it.md) |
 | Battery state, charge plan, wear, what keeps the Mac awake, overnight drain, keyboard / mouse / headphones / game controller batteries with time left, Macs without a battery | [Battery](features/05%20Battery.md) |
 | Power flow, charger details and history, USB power out, power per app, idle apps | [Power](features/06%20Power.md) |
@@ -88,7 +88,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | [Menu bar and panels](guide/02%20Menu%20bar%20and%20panels.md) | the menu bar item, hover panels, what each part shows |
 | [Battery and power](guide/03%20Battery%20and%20power.md) | power per app, idle-app suggestions, charge plan, wear, charger and sleep checks, device batteries, Macs without a battery |
 | [Controls](guide/04%20Controls.md) | energy modes, On Battery settings, Extreme Saver, profiles, Watchlist, Switches, alerts |
-| [Files and storage](guide/05%20Files%20and%20storage.md) | Latest File, the Shelf, Downloads tidy-up, caches, folder sizes, clipboard |
+| [Files and storage](guide/05%20Files%20and%20storage.md) | Latest File, the Shelf, Downloads tidy-up, caches, folder sizes, other disks, clipboard |
 | [Dashboard and history](guide/06%20Dashboard%20and%20history.md) | the dashboard window, Find a setting, history charts, battery stretches, CSV export, Mac health, the Privacy page |
 | [How the estimates work](guide/07%20How%20the%20estimates%20work.md) | energy impact, watts per app, battery time gained, the idle-app rule |
 | [Privacy and permissions](guide/08%20Privacy%20and%20permissions.md) | what stays on your Mac, which prompts appear and why |

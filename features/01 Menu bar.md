@@ -309,6 +309,8 @@ screen, or not shown by macOS) and a button that opens System Settings → Menu 
 - *Turn Extreme Saver On / Off*
 - *Keep Awake*: for a length, *Until* a time, *While an App Runs*, *Until I Turn It Off*, and *Keep the Screen On Too*;
   ticked and named with its end while on ([Keep awake](07%20Power%20controls.md#keep-awake))
+- *Eject "Backup"* for one disk, or *Eject* with each disk and *Eject All*, while a disk other than the startup disk
+  is connected ([Other disks](03%20Temperature%2C%20network%20and%20storage%20space.md#other-disks))
 - your **Switches** with a tick when on, and *Manage switches…*
 - *Quit Sparewatt*
 

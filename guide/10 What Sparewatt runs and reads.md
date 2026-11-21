@@ -34,7 +34,7 @@ All are part of macOS. None runs with more rights than you have, except `pmset` 
 | `ditto` | As you click Zip on the Shelf. | Makes the zip file. |
 | `osascript` | Only when macOS's notification center can't be used by Sparewatt. | Shows a plain notification banner instead. |
 
-Processor, memory, graphics, temperatures, fans, battery, charger, disk speed, what keeps the Mac awake and the network connection (Wi-Fi signal, addresses, router, VPN) are read straight from macOS (IOKit, the SMC sensors and system calls); no tool is started for them. The graphics chip's watts come from macOS's energy counters (IOReport), read only while a panel that shows them is open.
+Processor, memory, graphics, temperatures, fans, battery, charger, disk speed, what keeps the Mac awake, the network connection (Wi-Fi signal, addresses, router, VPN) and other disks (size, free space, how they connect) are read straight from macOS (IOKit, the SMC sensors and system calls); no tool is started for them. The graphics chip's watts come from macOS's energy counters (IOReport), read only while a panel that shows them is open.
 
 The experimental Power by part card's *Calibrate* changes the screen brightness and the keyboard light and, only if you
 tick *Wi-Fi too*, turns Wi-Fi off and on. It puts everything back afterwards.
@@ -50,6 +50,7 @@ tick *Wi-Fi too*, turns Wi-Fi off and on. It puts everything back afterwards.
 | ~/Downloads | reads; moves to the Trash | Read when you click Look in Downloads tidy-up (macOS asks first), and by Latest File after that. What you choose to tidy goes to the Trash. |
 | Your home folder, through Spotlight | reads | Latest File asks Spotlight for the newest file in the folders you chose; it opens no folder itself. |
 | LaunchAgents and LaunchDaemons folders | reads | Startup Items: what is set to start by itself (yours, all users', system-wide). |
+| Other disks | reads; ejects when you ask | Each connected disk's name, format, size and free space, and how it is connected, from macOS; no file on it is opened or listed. Eject is macOS's own. When a disk won't eject, the programs with files open on it are named. |
 | Time Machine's settings file | reads | The last backup's date, only if you gave Sparewatt Full Disk Access. |
 | The clipboard | reads | Clipboard history: recent copies, in memory only, passwords skipped. |
 | Files you hand it | reads and writes | Files on the Shelf (moved, copied or zipped where you drop them), and settings, history or pictures you export — only where you save them. |

@@ -187,3 +187,44 @@ tidy-up, two rows of one card — and the Files panel (Latest File, the Shelf, t
 
 **Limits.** A folder that takes more than 15 seconds to count is shown with "> " — the size is at least that much. The
 list refreshes at most every 10 minutes.
+
+---
+
+## Other disks
+
+<p align="center"><img src="../images/features/other-disks.png" width="354" alt="Other disks"><br><em>Other disks: a USB backup drive and a camera's SD card, each with its free space and an Eject button. (Sample values.)</em></p>
+
+**Purpose.** See how much room is left on an external drive, SD card or network share, and eject it without opening
+Finder.
+
+**What it does.** While any disk other than the startup disk is connected, an *Other disks* card in the Storage panel
+lists each one:
+- its name, how it is connected (*USB*, *Thunderbolt*, *SD card*, *Disk image*, *Network*, *Internal* for a second
+  internal disk), its format (APFS, ExFAT…) and its size, with *read-only* when it is;
+- its **free space**, with a bar of the used part (red, and the figure orange, below 10% free);
+- an **Eject** button (*Disconnect* for a network share). Eject takes the whole drive, every volume on it, as Finder
+  does. **Eject All** appears when more than one disk can be ejected.
+
+Click a disk to open it in Finder. The dashboard's **Storage** page also shows where each disk is mounted.
+
+**When a disk won't eject,** the card says which programs have files open on it, for example *"Preview has files open
+on it. Quit or close it, then eject again."* If nothing of yours is holding it (macOS's Spotlight indexing or a Time
+Machine backup can), it says to try again in a moment. Ejecting from the right-click menu or a link sends the same
+reason as a notification, since no panel is open to show it.
+
+**Also from.** The right-click menu has *Eject "Backup"* for one disk, or an *Eject* submenu with each disk and *Eject
+All*. Links: `sparewatt://eject/all` and `sparewatt://eject/<name>` (see
+[Links](../reference/Links%20for%20Shortcuts%20and%20scripts.md)), for example in a Shortcut that ejects your backup
+drive before you leave.
+
+**Use cases.**
+- Before unplugging: eject every drive from the right-click menu in one click.
+- Check that a backup drive or SD card has room before a big copy.
+- Find out which app is stopping a drive from ejecting, instead of guessing.
+
+**Limits.** The card reads the disks when one is connected or ejected, and every 5 seconds while a Sparewatt panel or
+the dashboard is open; nothing on the disks is opened or listed. Programs run by other users or by macOS itself can't
+be named without an administrator. Disk images that hide themselves from Finder aren't listed.
+
+**Where.** Storage panel (*Other disks* card, only while a disk is connected) and Dashboard → **Storage**; right-click
+menu.

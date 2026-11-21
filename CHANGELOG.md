@@ -2,6 +2,20 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-21 — Sparewatt 1.19
+
+Released as [Sparewatt 1.19](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.19-2026-11-21).
+
+- **Other disks:** a new card in the Storage panel, shown while an external drive, SD card, disk image or network share
+  is connected. Each disk has its free space with a bar, how it is connected, its format and size, and an **Eject**
+  button; **Eject All** for several. Click a disk to open it in Finder
+  ([more](features/03%20Temperature%2C%20network%20and%20storage%20space.md#other-disks)).
+- **When a disk won't eject,** Sparewatt names the programs with files open on it ("Preview has files open on it").
+- **Eject** in the right-click menu, and `sparewatt://eject/all` or `sparewatt://eject/<name>` links (asked first,
+  like every link that changes something).
+- The **Privacy** page lists what is read about other disks: name, format, size and free space; no file on them is
+  opened.
+
 ## 2026-11-21 — Sparewatt 1.18
 
 Released as [Sparewatt 1.18](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.18-2026-11-21).

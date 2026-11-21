@@ -41,6 +41,13 @@ The biggest folders in your home folder, with sizes kept between counts and grow
 to look inside it. Folders macOS protects (Desktop, Documents, Downloads, Library, Pictures, Movies, Music) are skipped
 so no "access blocked" warning appears.
 
+## Other disks
+
+While an external drive, SD card, disk image or network share is connected, the Storage panel lists each one with its
+free space and an **Eject** button (**Eject All** for several); the right-click menu has *Eject* too. If a disk won't
+eject, Sparewatt names the programs with files open on it
+([more](../features/03%20Temperature%2C%20network%20and%20storage%20space.md#other-disks)).
+
 ## App caches
 
 Each app's cache with its size, a button to clear it (files go to the Trash), and optional size limits that clear

@@ -24,6 +24,8 @@ If Sparewatt isn't running, the link starts it and runs once the menu bar item i
 | `sparewatt://switch/<name>/on` · `/off` · `/toggle` | turns one of your [Switches](../features/10%20Switches.md) on or off by its name |
 | `sparewatt://keep-awake/on` · `/off` · `/toggle` | [Keep awake](../features/07%20Power%20controls.md#keep-awake) until you turn it off, off, or the switch (`toggle` uses the last length chosen) |
 | `sparewatt://keep-awake/<minutes>` · `/until/15:30` | keep awake for that many minutes (1–1440), or until that time (24-hour clock; tomorrow if it has passed today) |
+| `sparewatt://eject/all` | ejects every disk other than the startup disk ([Other disks](../features/03%20Temperature%2C%20network%20and%20storage%20space.md#other-disks)) |
+| `sparewatt://eject/<name>` | ejects one disk by its name, as Finder shows it |
 | `sparewatt://share` · `/day` · `/week` | opens the dashboard's share sheet on the ["My Mac today"](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-today-share-card) card (`share` alone, or `/day`) or the ["My Mac this week"](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-this-week-card) card |
 
 ## Details
@@ -34,6 +36,8 @@ If Sparewatt isn't running, the link starts it and runs once the menu bar item i
 - **Switch names** keep their spelling; write a space as `%20` (`sparewatt://switch/My%20Server/on`) and a slash in a
   name as `%2F`. An exact match is tried first, then the same name in any case. `on` does nothing when the switch is
   already on, and `off` when it is off.
+- **Disk names** work the same way (`sparewatt://eject/My%20Backup`). `all` means every disk. A disk that won't eject,
+  or a name that matches no disk, gets a notification saying why.
 - **Nothing happens** for a link Sparewatt doesn't understand, or for an energy mode that is already set.
 - Notifications use the same links to say which panel a click opens; the Monday summary uses `sparewatt://share/week`.
 
