@@ -4,8 +4,10 @@ Everything Sparewatt starts, opens or asks for, in one list. The app shows the s
 
 ## The network
 
-**Nothing is sent anywhere. The only network requests are the optional update check and Switches' web-address checks.**
+**Nothing is sent anywhere. The only network requests are the optional update check, the optional internet check and Switches' web-address checks.**
 
+- **Internet check.** Off unless you turn it on (Shelf, Profiles & Alerts → Internet check). A ping (one small ICMP packet, sent by Sparewatt itself) to the address you set, 1.1.1.1 unless you change it, every 30 seconds, every 5 while a Sparewatt panel or the dashboard is open. Nothing else is in it.
+- **Router ping.** While a Sparewatt panel or the dashboard is open, a ping to your router every 5 seconds, for the Network panel's round trip. It stays on your own network.
 - **Update check.** Off unless you turn it on (Menu Bar → General). Once a day it asks GitHub for the latest version number.
 - **Switches' web-address checks.** Only for a Switch whose check is “a web address answers”: it asks that address — usually a server on your own Mac — every 10 seconds with a panel open, otherwise every minute.
 - **Switches' port checks.** A Switch checked by its port connects to that port on this Mac (127.0.0.1); nothing leaves the Mac.
@@ -32,7 +34,7 @@ All are part of macOS. None runs with more rights than you have, except `pmset` 
 | `ditto` | As you click Zip on the Shelf. | Makes the zip file. |
 | `osascript` | Only when macOS's notification center can't be used by Sparewatt. | Shows a plain notification banner instead. |
 
-Processor, memory, graphics, temperatures, fans, battery, charger, disk speed and what keeps the Mac awake are read straight from macOS (IOKit, the SMC sensors and system calls); no tool is started for them. The graphics chip's watts come from macOS's energy counters (IOReport), read only while a panel that shows them is open.
+Processor, memory, graphics, temperatures, fans, battery, charger, disk speed, what keeps the Mac awake and the network connection (Wi-Fi signal, addresses, router, VPN) are read straight from macOS (IOKit, the SMC sensors and system calls); no tool is started for them. The graphics chip's watts come from macOS's energy counters (IOReport), read only while a panel that shows them is open.
 
 The experimental Power by part card's *Calibrate* changes the screen brightness and the keyboard light and, only if you
 tick *Wi-Fi too*, turns Wi-Fi off and on. It puts everything back afterwards.

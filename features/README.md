@@ -31,6 +31,7 @@ answers three questions from the menu bar:
 | Memory panel and forecast | know whether memory is the bottleneck | pressure and swap, warned before slowdowns | [Processor, graphics and memory](02%20Processor%2C%20graphics%20and%20memory.md#memory-panel) |
 | Temperature and fans | how hot each part is | plain verdicts, no made-up zeros | [Temperature, network and storage space](03%20Temperature%2C%20network%20and%20storage%20space.md) |
 | Network | who downloads and uploads | catches background transfers | [Temperature, network and storage space](03%20Temperature%2C%20network%20and%20storage%20space.md#network) |
+| Connection and internet check | Wi-Fi signal, router and internet round trips, IP, VPN; told when the internet drops | weak Wi-Fi, slow router or outage, told apart | [Temperature, network and storage space](03%20Temperature%2C%20network%20and%20storage%20space.md#connection-and-internet-check) |
 | Data used per app | internet data today and this week, per app | a hotspot or capped plan under control | [Temperature, network and storage space](03%20Temperature%2C%20network%20and%20storage%20space.md#data-used-per-app) |
 | Storage space, drive health, Time Machine | where the space went, and whether it is safe | purgeable space explained; a failing drive or old backup flagged | [Temperature, network and storage space](03%20Temperature%2C%20network%20and%20storage%20space.md#storage-space) |
 | "Using the most" lists | name the apps behind every number | plain words for cryptic processes | [Who is using it](04%20Who%20is%20using%20it.md) |

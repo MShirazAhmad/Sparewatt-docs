@@ -47,7 +47,7 @@
 
 ## Network
 
-<p align="center"><img src="../images/features/panel-network.png" width="320" alt="Network"><br><em>Network panel: total speed · download and upload flow · 2-minute peak · apps using the network most · data used today.</em></p>
+<p align="center"><img src="../images/features/panel-network.png" width="320" alt="Network"><br><em>Network panel: total speed · download and upload flow · 2-minute peak · the connection · apps using the network most · data used today.</em></p>
 
 **Purpose.** See how much the Mac is downloading and uploading, and which app is doing it.
 
@@ -62,6 +62,51 @@ the network most* (per app, measured over one second; this list includes traffic
 
 **Where.** NET part of the menu bar (hidden by default — switch it on under Dashboard → Menu Bar →
 *Items*); Dashboard → **Network**.
+
+---
+
+## Connection and internet check
+
+<p align="center"><img src="../images/features/connection.png" width="354" alt="Connection"><br><em>The connection: Wi-Fi band, standard and link speed, signal, router and internet round trips, the address and the router. (Sample values.)</em></p>
+
+**Purpose.** Tell a weak Wi-Fi signal from a slow router from an internet outage, without opening Terminal.
+
+**What it does.** A *Connection* card in the Network panel shows:
+- what the Mac is connected through, named as System Settings names it: *Wi-Fi*, *iPhone USB*, a USB Ethernet
+  adapter, *Thunderbolt Bridge*, or *Not connected*;
+- for Wi-Fi: the signal in words with bars (excellent, good, fair, weak), the band (2.4, 5 or 6 GHz), the standard
+  (Wi-Fi 5, 6, 6E, 7) and the link speed the Mac and the router agreed on (this is not your internet speed);
+- the round trip to your **router** (a ping that stays on your own network);
+- the round trip to the **internet**, when the internet check is on;
+- the Mac's IP address and the router's;
+- a VPN that is connected, by its name;
+- a note when the network is a phone hotspot or metered, or when Low Data Mode is on.
+
+The dashboard's **Network** page adds the signal and noise in dBm, the channel and its width, the security, the
+interface name, IPv6 addresses, the DNS servers, and every VPN with whether it is connected.
+
+**Internet check** (off by default). Sparewatt sends one small ping to an address you choose (1.1.1.1 unless you change
+it) every 30 seconds, and every 5 seconds while a Sparewatt panel or the dashboard is open. If three checks in a row go
+unanswered while the Mac is connected to a network, you get **"The internet is down"**, dated from the first missed
+check. When it answers again you get **"The internet is back"**, with how long it was down. Checks made while the Mac
+has no network at all don't count, since macOS already shows that. The panel shows *down since 10:41* in red meanwhile.
+Turn it on, set the address and switch the notifications off in Dashboard → **Shelf, Profiles & Alerts** →
+*Internet check*.
+
+**Use cases.**
+- A video call breaks up: if the signal is *weak* or the router round trip is high, move closer or change band. If
+  the router is quick but the internet is slow or down, the problem is beyond your router.
+- At home, be told when the connection drops and how long the outage lasted.
+- Check that the VPN is actually connected before opening work systems.
+
+**Limits.** The Wi-Fi network's name isn't shown: macOS gives it only to apps allowed to use Location, and Sparewatt
+doesn't ask. Some routers don't answer pings; the router figure then reads *no answer* while everything else works.
+The internet check pings an IPv4 address only, so a name like `one.one.one.one` falls back to 1.1.1.1. The router ping
+and the connection reading happen only while a Sparewatt panel or the dashboard is open; with the internet check off,
+nothing is sent off your Mac.
+
+**Where.** Network panel (*Connection* card) and Dashboard → **Network**; settings in Dashboard → **Shelf, Profiles &
+Alerts** → *Internet check*.
 
 ---
 

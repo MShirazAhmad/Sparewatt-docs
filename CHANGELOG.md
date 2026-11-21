@@ -2,6 +2,21 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-21 — Sparewatt 1.18
+
+Released as [Sparewatt 1.18](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.18-2026-11-21).
+
+- **Connection:** a new card in the Network panel. It shows what the Mac is connected through (Wi-Fi, iPhone USB, an
+  Ethernet adapter), the Wi-Fi signal in words with bars, the band, standard and link speed, the round trip to your
+  router, the IP address and router, a connected VPN by name, and a note on hotspots and Low Data Mode. The Network page
+  adds the signal and noise in dBm, the channel, security, IPv6, DNS servers and every VPN
+  ([more](features/03%20Temperature%2C%20network%20and%20storage%20space.md#connection-and-internet-check)).
+- **Internet check** (off by default): a ping to an address you choose (1.1.1.1) every 30 seconds, with the round trip
+  in the panel, **"The internet is down"** after three missed checks while a network is connected, and **"The internet
+  is back"** with how long it lasted. Dashboard → Shelf, Profiles & Alerts → *Internet check*.
+- The **Privacy** page lists both pings: the internet check (off unless you turn it on) and the router ping, which
+  stays on your own network.
+
 ## 2026-11-21 — Sparewatt 1.17
 
 Released as [Sparewatt 1.17](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.17-2026-11-21).

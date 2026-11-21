@@ -69,7 +69,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 |---|---|
 | Menu bar: readings, grouped item with outline, hover panels, steadier figures, colours, warnings, the Menu Bar settings page | [Menu bar](features/01%20Menu%20bar.md) |
 | Processor, graphics, memory | [Processor, graphics and memory](features/02%20Processor%2C%20graphics%20and%20memory.md) |
-| Temperature and fans, slowing down to cool, network, data used per app, storage space, drive health, Time Machine | [Temperature, network and storage space](features/03%20Temperature%2C%20network%20and%20storage%20space.md) |
+| Temperature and fans, slowing down to cool, network, the connection and internet check, data used per app, storage space, drive health, Time Machine | [Temperature, network and storage space](features/03%20Temperature%2C%20network%20and%20storage%20space.md) |
 | Named processes, quitting, background normals, Watchlist | [Who is using it](features/04%20Who%20is%20using%20it.md) |
 | Battery state, charge plan, wear, what keeps the Mac awake, overnight drain, keyboard / mouse / headphones / game controller batteries with time left, Macs without a battery | [Battery](features/05%20Battery.md) |
 | Power flow, charger details and history, USB power out, power per app, idle apps | [Power](features/06%20Power.md) |

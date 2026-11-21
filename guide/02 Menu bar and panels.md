@@ -16,7 +16,7 @@ Prefer separate items you can ⌘-drag? Dashboard → **Menu Bar** → *Look* �
 | RAM | memory used | apps / system / compressed / cached / free, swap, memory pressure, the apps using the most memory |
 | STORAGE | storage used (or free, or read/write speed during big copies) | where the space went, app caches with size limits, Downloads tidy-up, biggest folders |
 | TEMP | processor temperature | processor, graphics, battery and storage temperatures, fan speeds, every sensor |
-| NET (off by default) | download / upload speed | live diagram, a 2-minute strip with the peak, the apps using the network most |
+| NET (off by default) | download / upload speed | live diagram, a 2-minute strip with the peak, the connection (Wi-Fi signal, router and internet round trips, IP, VPN), the apps using the network most |
 | BATT | real fill to 0.1% and the true charge state (steps aside on a Mac with no battery) | health, capacity, recharges, charge plan, devices' batteries, energy mode, Extreme Saver |
 | Power (3:01 LEFT / 5:02 TO FULL / MAC USES) | time left or to full, with battery watts in or out (the Mac's draw when the battery rests, and always on a Mac with no battery) | live flow diagram, power per app, idle-app suggestions |
 | SWITCH | how many of your Switches are on (n/total; glows red when one failed); steps aside while none is on, changing or failed | a row per group with its count; the switches that are on, with toggles; click a group for all |
