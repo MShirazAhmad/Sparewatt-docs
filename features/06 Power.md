@@ -277,6 +277,9 @@ day (kept 14 days). The card shows the week's top 8 in watt-hours and as a share
 
 **Use cases.** Decide which app to replace, or which to quit before unplugging, based on a week of real use.
 
+The same split is kept for time on the charger too (since 1.20): History's
+[Energy used per app](11%20Dashboard%2C%20history%20and%20this%20app.md#energy-used-per-app) shows both.
+
 **Where.** Dashboard → **Power flow**.
 
 **Limits.** This card splits the whole draw (screen included) among the top apps, so its numbers are larger than the

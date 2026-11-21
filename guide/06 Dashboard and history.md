@@ -29,9 +29,11 @@ ones, and highlights one using far more than usual.
 **Replay my day**, at the top of the page, plays a day back in 30 seconds from the saved readings; drag its strip to any moment.
 
 Battery charge, power use, processor load and temperature over 1 hour to 30 days (one sample a minute, kept 30 days),
-and a log of **every stretch on battery**: how long, how much charge it used, and which apps used the most power.
+then memory used, swap, graphics, network and disk (kept since 1.20), and a log of **every stretch on battery**: how
+long, how much charge it used, and which apps used the most power. **Energy used per app** shows today, 7 or 14 days
+in watt-hours, split into time on battery and on the charger.
 
-**Export CSV** saves both: the minute samples and the battery stretches.
+**Export CSV** saves all of it: the minute samples, the battery stretches and each day's energy per app.
 
 ## Share my day
 

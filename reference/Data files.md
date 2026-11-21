@@ -20,8 +20,8 @@ the old domain in place.)
 | File | Holds | Kept |
 |---|---|---|
 | `power-sensors.json` | which power sensor belongs to which part, found by *Calibrate* in the experimental Power by part card, and when | until you calibrate again |
-| `history.json` | one reading a minute (charge, Mac's draw, on battery or not, processor load, temperature, health) and every stretch on battery | 30 days |
-| `insights.json` | battery health and recharges, one reading a day; battery watt-hours per app per day | a year; 14 days |
+| `history.json` | one reading a minute (charge, Mac's draw, on battery or not, processor load, temperature, health; since 1.20 also memory used, swap, graphics, and the minute's average network and disk traffic) and every stretch on battery | 30 days |
+| `insights.json` | battery health and recharges, one reading a day; watt-hours per app per day, on battery (`appWh`) and on the charger (`chargerWh`, since 1.20) | a year; 14 days |
 | `idle-apps.json` | the floor calibration (Mac's draw and total energy impact, one pair a minute on battery) and when each open app was last in front | last 3,000 minutes; while the app runs |
 | `process-baseline.json` | each background process's usual level, for "far more than usual" | grows; never trimmed |
 | `folder-sizes.json` | the last count of each home folder's size | until the folder changes |

@@ -2,6 +2,19 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-21 — Sparewatt 1.20
+
+Released as [Sparewatt 1.20](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.20-2026-11-21).
+
+- **More history:** History now keeps **memory used**, **swap**, **graphics**, **network** (download and upload) and
+  **disk** (read and write), one reading a minute for 30 days, each with its own chart. Graphics, network and disk are
+  the minute's average, so bursts aren't missed. The charts begin where you update; older readings have none of these
+  ([more](features/11%20Dashboard%2C%20history%20and%20this%20app.md#history)).
+- **Energy used per app** on the History page: the apps that used the most energy today, over 7 or 14 days, split into
+  time on battery and on the charger. Until now only time on battery was counted
+  ([more](features/11%20Dashboard%2C%20history%20and%20this%20app.md#energy-used-per-app)).
+- **Export CSV** adds the new readings as columns, and each day's energy per app.
+
 ## 2026-11-21 — Sparewatt 1.19
 
 Released as [Sparewatt 1.19](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.19-2026-11-21).

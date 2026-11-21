@@ -79,7 +79,7 @@ Click a finding to open its page.
 
 ## History
 
-<p align="center"><img src="../images/features/dashboard-history.png" width="800" alt="History"><br><em>History: charge, power, processor and temperature over an hour to a month, every stretch on battery, Export CSV.</em></p>
+<p align="center"><img src="../images/features/dashboard-history.png" width="800" alt="History"><br><em>History: charge, power, processor and temperature over an hour to a month (memory, swap, graphics, network and disk below them), every stretch on battery, Export CSV.</em></p>
 
 **Purpose.** See how the Mac behaved over hours and days.
 
@@ -87,6 +87,26 @@ Click a finding to open its page.
 **processor temperature** over 1 hour, 24 hours, 7 days or 30 days (lines break across sleep), battery health over the
 period, and **Times on battery**: each stretch with start, length, from–to %, average watts and the apps that used the
 most power.
+
+<p align="center"><img src="../images/features/history-more.png" width="800" alt="Memory, swap, graphics, network and disk history"><br><em>Memory used, swap, graphics, network and disk over 24 hours, with the night's sleep as a gap. (Sample values.)</em></p>
+
+Since 1.20 History also keeps:
+- **Memory used** (%) and **swap**, memory macOS wrote to disk (GB; this chart appears once swap has been used);
+- **Graphics** (% busy; once the graphics chip has been busy);
+- **Network**: download and upload, and **Disk**: read and write, in KB/s or MB/s.
+
+Graphics, network and disk are the average over each minute, since traffic comes in bursts that a single reading would
+miss. Readings from before 1.20 have none of these, so the charts begin where you updated. Over 7 and 30 days each
+chart averages its readings into at most 600 points, so the page stays quick.
+
+### Energy used per app
+
+<p align="center"><img src="../images/features/energy-per-app.png" width="800" alt="Energy used per app"><br><em>Energy used per app over 7 days, split into time on battery (orange) and on the charger (teal). (Sample values.)</em></p>
+
+The apps that used the most energy **today**, over **7 days** or **14 days**, in watt-hours, with each bar split into
+time on battery and time on the charger. Each minute, the Mac's measured draw is split among the apps by their energy
+impact, as for [Battery used per app](06%20Power.md#battery-used-per-app-last-7-days); before 1.20 only time on battery
+was counted. Kept 14 days. A Mac that doesn't report its draw has nothing to split, so the card stays empty.
 
 ### Replay my day
 
@@ -97,13 +117,16 @@ processor and its temperature, minute by minute, from the readings Sparewatt sav
 to any moment. Stretches on battery are shaded. Pick another day from the menu. Where there is no reading it says so:
 the Mac was asleep or Sparewatt wasn't running. A charge lane is drawn when the saved percentage was climbing.
 
-**Export CSV…** saves everything stored (not just the chosen range): the minute readings, then the stretches on battery
-with their top apps.
+**Export CSV…** saves everything stored (not just the chosen range): the minute readings (with memory, swap, graphics,
+network and disk since 1.20), then the stretches on battery with their top apps, then each day's energy per app on
+battery and on the charger.
 
 **Use cases.**
 - "Why did the battery last only 3 hours yesterday?" — find the stretch and its top apps.
 - Compare power use before and after a macOS update or a new app.
 - Keep data for a battery-life comparison, or a support request.
+- See whether memory or swap has been creeping up over the week, or when a big download or backup ran.
+- Find the app that used the most energy this week, whether you were on battery or plugged in.
 
 **Where.** Dashboard → **History**; shorter trends on the Battery and Power flow pages.
 
