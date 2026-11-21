@@ -2,6 +2,17 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-21 — Sparewatt 1.17
+
+Released as [Sparewatt 1.17](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.17-2026-11-21).
+
+- **Keep awake:** keep the screen on, or only the Mac, for 15 minutes to 8 hours, until a clock time, while an app
+  runs, or until you turn it off. Use the switch in the *Energy mode* card (its chevron has every choice), *Keep Awake*
+  in the right-click menu, or `sparewatt://keep-awake/…` links. While it is on, the battery part of the menu bar
+  starts with ☕︎ and *Keeping your Mac awake* lists Sparewatt with a **Turn off** button. It ends by itself at its
+  time, when its app quits, when Sparewatt quits, and below 10% battery. No password, and no tool is started
+  ([more](features/07%20Power%20controls.md#keep-awake)).
+
 ## 2026-11-21 — Sparewatt 1.16
 
 Released as [Sparewatt 1.16](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.16-2026-11-21).

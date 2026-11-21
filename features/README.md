@@ -59,6 +59,7 @@ answers three questions from the menu bar:
 | Energy mode | Low Power / High Power per power source | no System Settings digging | [Power controls](07%20Power%20controls.md) |
 | On Battery settings | what the Mac may do unplugged | overnight drain fixed in one page | [Power controls](07%20Power%20controls.md#on-battery-settings) |
 | Extreme Saver | every saving in one switch | freezes apps without losing work | [Power controls](07%20Power%20controls.md#extreme-saver) |
+| Keep awake | stop the Mac or screen sleeping for a while | for a time, until a time, or while an app runs; ends by itself | [Power controls](07%20Power%20controls.md#keep-awake) |
 | Profiles | situation presets | one click per situation | [Power controls](07%20Power%20controls.md#profiles) |
 | Alerts and notifications | told once, when it matters | no repeated nagging; Quit and Show buttons | [Alerts and notifications](08%20Alerts%20and%20notifications.md) |
 | Latest File | the newest file, ready to drag | no Finder hunting | [Files and storage](09%20Files%20and%20storage.md) |

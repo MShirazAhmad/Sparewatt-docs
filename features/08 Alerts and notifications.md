@@ -10,6 +10,7 @@ normal. Every notification it sends is listed here.
 | **Still high** — "Processor has been above 85% for 5 min (now 92%)." | processor, memory or temperature above its red limit for N minutes | once per episode | no | Dashboard → Menu Bar → *Alerts* (on, 5 min) |
 | **Unusual background activity** — "*name* (*kind*) is using 34% of the processor — usually 0.8%." | a background process far above its learned normal | once per episode | yes, by default | Dashboard → Menu Bar → *Alerts* (*…also when plugged in*) |
 | **Busy in the background** — "*app* has used about 18% of the processor for 10 minutes with no window on screen." | a hidden or windowless app busy for 10 minutes | once per episode | no | Dashboard → Shelf, Profiles & Alerts (on, 10%) |
+| **Keep awake is off** — "The battery is down to 9%, so your Mac can sleep again as usual." | [Keep awake](07%20Power%20controls.md#keep-awake) was on and the charge fell below 10% on battery | once each time it happens | yes | always on while Keep awake is on |
 | **Battery state doesn't add up** | charge state and measured current disagree for a minute | once per episode | no | always on |
 | **Storage almost full** — "Only 18 GB free (your limit is 20 GB)…" | free space below the limit | once, re-armed when space recovers | no | Dashboard → Shelf, Profiles & Alerts (20 GB) |
 | **On battery: *app*** — "*app* is using 45% processor (limit 30%)" | a Watchlist rule is exceeded | not repeated within the quiet period (10 min) | per rule | Dashboard → **Watchlist** |

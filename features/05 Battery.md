@@ -267,7 +267,8 @@ records it. Each row says:
   `caffeinate` command *until it is stopped*, *set for 1h 00m*);
 - how long it has kept the Mac awake.
 
-When a part of macOS keeps the Mac awake for an app, the row is the app's. From its row you can **Quit** an app (a
+When a part of macOS keeps the Mac awake for an app, the row is the app's. Sparewatt's own
+[Keep awake](07%20Power%20controls.md#keep-awake) shows here too while it is on, with a **Turn off** button. From its row you can **Quit** an app (a
 normal quit, so it can still ask to save) or **Stop** a command such as `caffeinate`. Parts of macOS are listed but
 can't be quit.
 

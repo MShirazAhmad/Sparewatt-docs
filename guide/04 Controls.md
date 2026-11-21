@@ -34,6 +34,14 @@ nothing stays frozen once it is gone. ⌥⌘E toggles Extreme Saver from anywher
 On a Mac with no battery there is no Extreme Saver, the energy mode has one *Wall* row, and the On Battery page keeps
 only the low-battery alert for your devices.
 
+## Keep awake
+
+Keeps the screen on (or only the Mac) for 15 minutes to 8 hours, until a clock time, while an app runs, or until you
+turn it off: the switch and chevron in the *Energy mode* card, *Keep Awake* in the right-click menu, or
+`sparewatt://keep-awake/…` links. While it is on the battery part of the menu bar starts with ☕︎. It ends by itself at
+its time, when its app quits, when Sparewatt quits, and below 10% battery. No password
+([more](../features/07%20Power%20controls.md#keep-awake)).
+
 ## Profiles
 
 **Lecture**, **Lab** and **Travel**: energy modes for battery and charger plus Extreme Saver, applied in one click from

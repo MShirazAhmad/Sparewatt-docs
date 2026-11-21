@@ -22,6 +22,8 @@ If Sparewatt isn't running, the link starts it and runs once the menu bar item i
 | `sparewatt://dashboard` | opens the dashboard |
 | `sparewatt://dashboard/<page>` | opens one page: `overview`, `cpu`, `gpu`, `memory`, `storage`, `temperature`, `network`, `battery`, `power`, `history`, `on-battery`, `extreme-saver`, `watchlist`, `profiles`, `menu-bar`, `this-app`, `startup-items`, `switches`, `assistant` |
 | `sparewatt://switch/<name>/on` · `/off` · `/toggle` | turns one of your [Switches](../features/10%20Switches.md) on or off by its name |
+| `sparewatt://keep-awake/on` · `/off` · `/toggle` | [Keep awake](../features/07%20Power%20controls.md#keep-awake) until you turn it off, off, or the switch (`toggle` uses the last length chosen) |
+| `sparewatt://keep-awake/<minutes>` · `/until/15:30` | keep awake for that many minutes (1–1440), or until that time (24-hour clock; tomorrow if it has passed today) |
 | `sparewatt://share` · `/day` · `/week` | opens the dashboard's share sheet on the ["My Mac today"](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-today-share-card) card (`share` alone, or `/day`) or the ["My Mac this week"](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#my-mac-this-week-card) card |
 
 ## Details

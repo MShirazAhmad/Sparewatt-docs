@@ -73,7 +73,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | Named processes, quitting, background normals, Watchlist | [Who is using it](features/04%20Who%20is%20using%20it.md) |
 | Battery state, charge plan, wear, what keeps the Mac awake, overnight drain, keyboard / mouse / headphones / game controller batteries with time left, Macs without a battery | [Battery](features/05%20Battery.md) |
 | Power flow, charger details and history, USB power out, power per app, idle apps | [Power](features/06%20Power.md) |
-| Energy modes, On Battery settings, Extreme Saver, profiles | [Power controls](features/07%20Power%20controls.md) |
+| Energy modes, On Battery settings, Extreme Saver, keep awake, profiles | [Power controls](features/07%20Power%20controls.md) |
 | Every notification, and its Quit / Show buttons | [Alerts and notifications](features/08%20Alerts%20and%20notifications.md) |
 | Latest File, Shelf, caches, Downloads tidy-up, clipboard | [Files and storage](features/09%20Files%20and%20storage.md) |
 | Local services on/off | [Switches](features/10%20Switches.md) |

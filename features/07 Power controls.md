@@ -123,6 +123,41 @@ When Extreme Saver turns on, the apps it pauses dim one by one under its switch 
 gives back counts up ("Paused 3 apps · about +48m"). The time is an estimate from their share of the power, the same
 sum as *Power per app*, and is left out on the charger. The row stays while Extreme Saver is on.
 
+---
+
+## Keep awake
+
+**Purpose.** Stop the Mac going to sleep, or the screen turning off, while you need it: a download, a long build, a
+presentation, a video call on a stand.
+
+**What it does.** Keeps the screen on, or with *Keep the screen on too* unticked only the Mac, for as long as you choose:
+- **for** 15 minutes, 30 minutes, 1, 2, 4 or 8 hours;
+- **until** a clock time (the next six whole hours are offered; a link can set any time);
+- **while an app runs** (it ends when that app quits);
+- **until you turn it off**.
+
+The switch in the *Energy mode* card starts it with the last length you chose (1 hour at first); the chevron beside it
+has every choice. While it is on, the card says until when and how long is left, the battery part of the menu bar
+starts with **☕︎** (or the power part, on a Mac with no battery), and *Keeping your Mac awake* lists Sparewatt with a
+**Turn off** button.
+
+It uses the same macOS mechanism as the `caffeinate` command. No password, and no tool is started.
+
+**It ends by itself** at its time, when its app quits, when Sparewatt quits, and on battery when the charge falls below
+10% (with a notification, "Keep awake is off"). If you started it below 10%, it waits until the charge falls further.
+
+**Use cases.**
+- A large download or upload: *While an app runs* → your browser, then walk away.
+- A presentation on battery: *For 1 hour*, screen on.
+- A render overnight on the charger: *Until I turn it off*, screen off.
+
+**Where.** Battery panel and page (*Energy mode* card), the right-click menu (*Keep Awake*), and links
+(`sparewatt://keep-awake/…`, see [Links](../reference/Links%20for%20Shortcuts%20and%20scripts.md)).
+
+**Limits.** Like `caffeinate`, it only stops the Mac going to sleep by itself: closing the lid or choosing Sleep still
+puts it to sleep. It is not kept across a restart of Sparewatt. The "away" notification under
+[Keeping your Mac awake](05%20Battery.md#keeping-your-mac-awake) leaves it out, since you asked for it.
+
 ## Profiles
 
 <p align="center"><img src="../images/features/profiles.png" width="480" alt="Profiles"><br><em>Profiles: Lecture, Lab, Travel — energy mode on battery and on charger, and Extreme Saver, per profile.</em></p>
