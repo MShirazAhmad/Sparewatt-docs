@@ -79,6 +79,15 @@ On a Mac mini, Mac Studio, iMac or Mac Pro, the menu bar shows the Mac's draw, `
 batteries, and the Power panel shows a *From the wall* card. Extreme Saver and the battery-only settings are left out
 ([more](../features/05%20Battery.md#macs-without-a-battery)).
 
+## Keeping your Mac awake
+
+What is keeping the screen on or the Mac from sleeping right now: each app, tool or part of macOS, why it says it
+needs to, and for how long. The Battery panel shows it as one folded line only while an app or tool does it. The
+dashboard's Battery page always lists everything. **Quit** an app or **Stop** a command such as `caffeinate` from its
+row. On battery, if an app kept the Mac awake past its sleep time while you were away, you are told as you come back
+(once per app each time you unplug; Dashboard → On Battery → *What keeps your Mac awake*)
+([more](../features/05%20Battery.md#keeping-your-mac-awake)).
+
 ## While asleep
 
 What woke the Mac in the last 24 hours (lid, you, scheduled timers, Power Nap, network, USB), and how much charge the

@@ -6,6 +6,7 @@ normal. Every notification it sends is listed here.
 | Notification | When | How often | Battery only? | Turn off / change |
 |---|---|---|---|---|
 | **Quit *app*? About +N of battery** | an app unused for 10 min would give back ≥ 30 min | once per app per unplug, only while you're at the Mac | yes | Dashboard → On Battery → *Apps you aren't using* |
+| ***App* kept your Mac awake while you were away** — "…On battery your Mac sleeps after 10m, but Xcode kept it awake (running tests)." | on battery, the Mac would have gone to sleep or turned its screen off while you were away, but an app kept it awake (sound and video, and parts of macOS, left out) | once per app per unplug, as you come back | yes | Dashboard → On Battery → *What keeps your Mac awake* (on) |
 | **Still high** — "Processor has been above 85% for 5 min (now 92%)." | processor, memory or temperature above its red limit for N minutes | once per episode | no | Dashboard → Menu Bar → *Alerts* (on, 5 min) |
 | **Unusual background activity** — "*name* (*kind*) is using 34% of the processor — usually 0.8%." | a background process far above its learned normal | once per episode | yes, by default | Dashboard → Menu Bar → *Alerts* (*…also when plugged in*) |
 | **Busy in the background** — "*app* has used about 18% of the processor for 10 minutes with no window on screen." | a hidden or windowless app busy for 10 minutes | once per episode | no | Dashboard → Shelf, Profiles & Alerts (on, 10%) |

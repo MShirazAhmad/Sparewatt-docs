@@ -21,7 +21,7 @@ All are part of macOS. None runs with more rights than you have, except `pmset` 
 | `ps` | Every update while a list of apps is showing; every 30 seconds for the background watch; once a minute for Insights; when Extreme Saver pauses or resumes apps. | Lists running programs with their processor and memory use: the “using the most” lists, power per app, alerts, and which apps to pause. |
 | `nettop` | One copy runs as long as Sparewatt does, read once a minute; another for one second while the Network panel's app list is open. | macOS's own counter of the internet data each app moves, for “data used per app”. Only bytes per app per day are kept — no addresses or sites. (A second macOS tool, script, gives nettop the kind of input it needs.) |
 | `pmset` | As a battery or energy page opens; at most every 30 seconds while the Mac is hot; on battery, for the unused-app suggestions; once an hour for the wake list. | macOS's own power tool: reads the energy settings, why charging is on hold, the speed limit when hot, which apps play sound or video, when the Mac woke, and the battery level of headphones such as the AirPods Max 2 that the Bluetooth listing gives none for. Changing an energy setting runs it with your password, through macOS's own password dialog. |
-| `sh` | Only while Extreme Saver or Last until has apps paused. | A stand-by that wakes the paused apps if Sparewatt is force-quit: it waits for Sparewatt to go, then sends them the wake signal. It reads nothing. |
+| `sh` | Only while Extreme Saver or Last until has apps paused. | A stand-by that wakes the paused apps if Sparewatt is force-quit: it waits for Sparewatt to go, then sends them the wake signal. It reads nothing and ends as soon as the apps are resumed. |
 | `system_profiler` | Every 5 minutes. | Reads the battery level of Bluetooth headphones such as AirPods. |
 | `du` | While the Storage folder list or the caches card is shown, at most every 10 minutes (sizes are remembered between runs). | Adds up the size of the folders in your home folder, and of each app's cache. Folders macOS protects (Desktop, Documents, Downloads, Pictures, Movies, Music) are skipped. |
 | `tmutil` | Every 30 minutes, and when the Storage page opens. | Time Machine: whether a backup disk is set up, when the last backup was, and how many local snapshots there are. |
@@ -32,7 +32,7 @@ All are part of macOS. None runs with more rights than you have, except `pmset` 
 | `ditto` | As you click Zip on the Shelf. | Makes the zip file. |
 | `osascript` | Only when macOS's notification center can't be used by Sparewatt. | Shows a plain notification banner instead. |
 
-Processor, memory, graphics, temperatures, fans, battery, charger and disk speed are read straight from macOS (IOKit, the SMC sensors and system calls); no tool is started for them. The graphics chip's watts come from macOS's energy counters (IOReport), read only while a panel that shows them is open.
+Processor, memory, graphics, temperatures, fans, battery, charger, disk speed and what keeps the Mac awake are read straight from macOS (IOKit, the SMC sensors and system calls); no tool is started for them. The graphics chip's watts come from macOS's energy counters (IOReport), read only while a panel that shows them is open.
 
 The experimental Power by part card's *Calibrate* changes the screen brightness and the keyboard light and, only if you
 tick *Wi-Fi too*, turns Wi-Fi off and on. It puts everything back afterwards.

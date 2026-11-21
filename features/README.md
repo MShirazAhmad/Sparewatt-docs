@@ -46,6 +46,7 @@ answers three questions from the menu bar:
 | Device batteries | keyboard, mouse, trackpad, headphones, game controller levels, time left each, devices charging from the Mac | warned once before they run out | [Battery](05%20Battery.md#device-batteries) |
 | Macs without a battery | Mac mini, Mac Studio, iMac, Mac Pro | the Mac's draw from the wall; nothing that doesn't apply | [Battery](05%20Battery.md#macs-without-a-battery) |
 | Battery wear | how fast the battery ages | an honest trend and when it reaches 80% | [Battery](05%20Battery.md#battery-wear) |
+| Keeping your Mac awake | why the Mac didn't sleep or the screen stayed on | names the app, says how long, quits it from the row | [Battery](05%20Battery.md#keeping-your-mac-awake) |
 | While asleep | why the battery dropped overnight | names the wake reasons | [Battery](05%20Battery.md#while-asleep-last-24-hours) |
 | Time left, power flow | where the energy goes now | one time-left figure everywhere | [Power](06%20Power.md) |
 | Power going out to USB devices | what charging a phone or powering a drive costs | measured per port, not the allowance | [Power](06%20Power.md#power-going-out-to-usb-devices) |
@@ -87,6 +88,8 @@ answers three questions from the menu bar:
 **"My battery drains fast and I don't know why."** Open [power per app](06%20Power.md#power-per-app-share-of-battery-drain) and the [time left](06%20Power.md#time-left). Check [background activity](04%20Who%20is%20using%20it.md#background-activity-and-what-is-normal) for anything unusual and [busy with no window](04%20Who%20is%20using%20it.md#busy-with-no-window-on-screen) for hidden apps. Then add a [Watchlist](04%20Who%20is%20using%20it.md#watchlist) rule for the offender.
 
 **The battery drops overnight.** [While asleep](05%20Battery.md#while-asleep-last-24-hours) names the wake reasons. Turn off Power Nap and network wakes in [On Battery settings](07%20Power%20controls.md#on-battery-settings).
+
+**The Mac didn't sleep while I was away.** [Keeping your Mac awake](05%20Battery.md#keeping-your-mac-awake) lists what kept it awake and for how long; quit it from its row.
 
 **Running local AI models or dev servers.** Put Ollama, LM Studio, databases and web servers on [Switches](10%20Switches.md) with *Stop on battery*. Watch the [graphics panel](02%20Processor%2C%20graphics%20and%20memory.md#graphics-panel) and [memory pressure](02%20Processor%2C%20graphics%20and%20memory.md#memory-panel) while a model runs.
 

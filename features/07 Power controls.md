@@ -60,7 +60,8 @@ If the Mac would sleep before its screen turns off, the page warns you.
 
 **Benefits.** These settings are spread across several places in System Settings — or only available in Terminal.
 
-**Where.** Dashboard → **On Battery**. (The same page also holds the idle-app suggestion settings.)
+**Where.** Dashboard → **On Battery**. (The same page also holds the idle-app suggestion settings and the
+[*What keeps your Mac awake*](05%20Battery.md#keeping-your-mac-awake) notification.)
 
 **Limits.** Locked while Extreme Saver is on.
 

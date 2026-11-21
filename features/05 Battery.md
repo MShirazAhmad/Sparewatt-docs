@@ -254,6 +254,47 @@ tenths of a point a month, so two readings close together say nothing. Sparewatt
 
 ---
 
+## Keeping your Mac awake
+
+<p align="center"><img src="../images/features/keeping-awake.png" width="354" alt="Keeping your Mac awake"><br><em>Keeping your Mac awake: what stops the screen turning off or the Mac falling asleep, why, and for how long. (Sample values.)</em></p>
+
+**Purpose.** Find out why the Mac didn't go to sleep, or why the screen stayed on.
+
+**What it does.** Lists every app, tool and part of macOS that is keeping the Mac awake right now, as macOS itself
+records it. Each row says:
+- what it stops: *keeps the screen on*, *keeps the Mac from sleeping*, or *stops all sleep on the charger*;
+- why, when the app says (*running tests*, *playing video*, *finishing a task in the background*, or for the
+  `caffeinate` command *until it is stopped*, *set for 1h 00m*);
+- how long it has kept the Mac awake.
+
+When a part of macOS keeps the Mac awake for an app, the row is the app's. From its row you can **Quit** an app (a
+normal quit, so it can still ask to save) or **Stop** a command such as `caffeinate`. Parts of macOS are listed but
+can't be quit.
+
+In the **Battery panel** this is one folded line, shown only while an app or tool keeps the Mac awake ("Keeping your
+Mac awake · Xcode, caffeinate"). Click it to see the rows. The dashboard's **Battery** page always shows the whole
+list, including parts of macOS.
+
+**Notification.** On battery, if your Mac would have gone to sleep (or turned its screen off) while you were away but an
+app kept it awake, Sparewatt tells you as you come back: "Xcode kept your Mac awake while you were away". You get it
+once per app each time you unplug. It needs *Mac sleeps after* or *Screen turns off after* to be set to something
+other than never. Apps playing sound or video, and parts of macOS, are left out. Turn it off in Dashboard →
+**On Battery** → *What keeps your Mac awake*.
+
+**Use cases.** You come back to a warm MacBook that should have been asleep. The list shows that a `caffeinate` started
+by a script has kept it awake for three hours, and you stop it. Or an app that keeps the Mac from sleeping all day
+shows how long it has done so.
+
+**Limits.** These only stop the Mac going to sleep by itself: closing the lid or choosing Sleep still puts it to sleep.
+*Stops all sleep on the charger* only applies while the Mac is plugged in. The reason shown is whatever the app told
+macOS. Many apps give none, or only a code name, and then the row says just what it stops. Sparewatt reads the list
+straight from macOS without starting any tool: every 10 seconds while a Sparewatt panel or the dashboard is open, and
+on battery once a minute while you are away (for the notification).
+
+**Where.** Battery panel (one folded line) and Dashboard → **Battery**.
+
+---
+
 ## While asleep (last 24 hours)
 
 <p align="center"><img src="../images/features/while-asleep.png" width="354" alt="While asleep (last 24 hours)"><br><em>While asleep: the longest sleep and what it lost, and why the Mac woke. (Sample values.)</em></p>

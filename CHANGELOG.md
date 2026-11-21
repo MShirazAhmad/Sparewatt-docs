@@ -2,6 +2,19 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-21 — Sparewatt 1.16
+
+Released as [Sparewatt 1.16](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.16-2026-11-21).
+
+- **Keeping your Mac awake:** a new list of every app, tool and part of macOS that is keeping the screen on or stopping
+  the Mac from sleeping. Each row says why (when the app gives a reason) and for how long. **Quit** an app or **Stop**
+  a command such as `caffeinate` from its row. In the Battery panel it is one folded line, shown only while an app or
+  tool keeps the Mac awake; the dashboard's Battery page always lists everything. Read straight from macOS, with no
+  tool started ([more](features/05%20Battery.md#keeping-your-mac-awake)).
+- **"*App* kept your Mac awake while you were away":** on battery, if your Mac would have gone to sleep or turned its
+  screen off while you were away but an app kept it awake, you are told as you come back, once per app each time you
+  unplug. On by default; Dashboard → On Battery → *What keeps your Mac awake*.
+
 ## 2026-11-16 — Sparewatt 1.15.3
 
 Released as [Sparewatt 1.15.3](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.15.3-2026-11-16). It
