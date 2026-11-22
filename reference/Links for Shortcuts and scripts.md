@@ -11,6 +11,10 @@ what the matching button does, with the same password prompts, panels and dashbo
 
 If Sparewatt isn't running, the link starts it and runs once the menu bar item is drawn (about 3 seconds).
 
+Links send commands; they don't bring a value back. To read battery %, time left or another figure into a shortcut, use
+[Reading values in Shortcuts](../features/12%20AI%20Assistant.md#reading-values-in-shortcuts) (a local address for
+**Get Contents of URL**).
+
 ## Every link
 
 | Link | Does |

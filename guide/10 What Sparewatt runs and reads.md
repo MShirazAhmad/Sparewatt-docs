@@ -12,6 +12,7 @@ Everything Sparewatt starts, opens or asks for, in one list. The app shows the s
 - **Switches' web-address checks.** Only for a Switch whose check is “a web address answers”: it asks that address — usually a server on your own Mac — every 10 seconds with a panel open, otherwise every minute.
 - **Switches' port checks.** A Switch checked by its port connects to that port on this Mac (127.0.0.1); nothing leaves the Mac.
 - **AI Assistant.** Off unless you turn it on. It listens on 127.0.0.1 only, so only programs on this Mac can reach it, and refuses requests from web pages. It answers; it never sends anything by itself.
+- **Let Shortcuts read values.** Off unless you turn it on. The same listener on 127.0.0.1 answers Shortcuts' Get Contents of URL with the current readings; reading only, never from web pages, and it never sends anything by itself.
 - **Links you click.** Report a problem, Download and release notes open in your browser; Sparewatt itself sends nothing.
 
 ## Programs it starts

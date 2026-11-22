@@ -2,6 +2,15 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-22 — Sparewatt 1.25
+
+Released as [Sparewatt 1.25](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.25-2026-11-22).
+
+- **Reading values in Shortcuts:** turn on *Let Shortcuts read values* (Dashboard → AI Assistant → Shortcuts) and
+  Shortcuts' **Get Contents of URL** can read battery %, time left, processor use, memory, temperature, the energy
+  mode and more from `http://127.0.0.1:7319/now`, all at once as a dictionary or one value at a time
+  ([more](features/12%20AI%20Assistant.md#reading-values-in-shortcuts)). Off by default, reading only, this Mac only.
+
 ## 2026-11-21 — Sparewatt 1.24
 
 Released as [Sparewatt 1.24](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.24-2026-11-21).

@@ -84,6 +84,7 @@ answers three questions from the menu bar:
 | Privacy page | every program, file and permission Sparewatt uses | the same list as the guide, checked against the code | [Dashboard, history and this app](11%20Dashboard%2C%20history%20and%20this%20app.md#privacy-what-sparewatt-runs-and-reads) |
 | `sparewatt://` links | drive Sparewatt from Shortcuts and scripts | Extreme Saver, energy modes, panels, Switches in one step | [Links for Shortcuts and scripts](../reference/Links%20for%20Shortcuts%20and%20scripts.md) |
 | AI Assistant (MCP server) | let Claude Code, Codex, Cursor or any MCP app read the readings | ask "why?" in plain words, answered from live data | [AI Assistant](12%20AI%20Assistant.md) |
+| Reading values in Shortcuts | a local address that Shortcuts' Get Contents of URL reads: battery %, time left, load and more | automations of your own that act on a reading | [AI Assistant](12%20AI%20Assistant.md#reading-values-in-shortcuts) |
 
 ## Use cases: which features help when
 
