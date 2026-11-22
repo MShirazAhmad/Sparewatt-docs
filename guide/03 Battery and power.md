@@ -79,6 +79,12 @@ On a Mac mini, Mac Studio, iMac or Mac Pro, the menu bar shows the Mac's draw, `
 batteries, and the Power panel shows a *From the wall* card. Extreme Saver and the battery-only settings are left out
 ([more](../features/05%20Battery.md#macs-without-a-battery)).
 
+## Battery level alerts
+
+Turn on **"Charged to 80%"** to be told when to unplug, or **"Battery at 20%"** to be told when to plug in, each at a
+level you choose (Dashboard → On Battery → *Battery level alerts*). Each comes once as the level is passed
+([more](../features/05%20Battery.md#battery-level-alerts)).
+
 ## Keeping your Mac awake
 
 What is keeping the screen on or the Mac from sleeping right now: each app, tool or part of macOS, why it says it

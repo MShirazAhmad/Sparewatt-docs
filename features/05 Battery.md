@@ -149,6 +149,31 @@ which protects the battery without extra software. Sparewatt itself never sets a
 
 ---
 
+## Battery level alerts
+
+<p align="center"><img src="../images/features/battery-alerts.png" width="800" alt="Battery level alerts"><br><em>Dashboard → On Battery → Battery level alerts: charged to 80%, drops to 20%.</em></p>
+
+**Purpose.** Be told when to unplug, or when to plug in, before macOS's own warning at 10%.
+
+**What it does.** Two notifications for the Mac's own battery, each off until you turn it on:
+- **"Charged to 80%"**, while plugged in, as the battery charges up to the level you pick (70 to 95%, or *100%
+  (full)*, which says **"Fully charged"**). "Unplug now to keep the battery at about 80%."
+- **"Battery at 20%"**, on battery, as it runs down to the level you pick (50 to 15%), with the time left at this rate
+  when there is a figure: "About 1h 10m left at this rate. Plug in soon."
+
+Each is told once, as the level is passed. The charged alert can come again after you unplug (or the charge falls 5
+points below the level while plugged in); the low alert after you plug in (or it charges 5 points back above). A level
+already passed when you turn the alert on is not announced. Quiet hours apply, as for every notification.
+
+**Use cases.**
+- You keep the battery between 20 and 80% by hand and want to know when to unplug.
+- A warning at 20% or 30% leaves time to find a charger; macOS's own comes at 10%.
+
+**Where.** Dashboard → **On Battery** → *Battery level alerts* (Macs with a battery). For a level macOS holds the
+battery at by itself, use its **Charge Limit** (above).
+
+---
+
 ## Device batteries
 
 <p align="center"><img src="../images/features/devices.png" width="354" alt="Device batteries"><br><em>Devices card: a keyboard, a mouse at 12% (orange from 20%) and AirPods with left, right and case.</em></p>

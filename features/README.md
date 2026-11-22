@@ -45,6 +45,7 @@ answers three questions from the menu bar:
 | "Battery state doesn't add up" | catch failing limiters and weak chargers | found in a minute, not weeks | [Battery](05%20Battery.md#battery-state-doesnt-add-up) |
 | Last until | make it last to a set time | a set point in the menu bar, apps coloured by what they cost against it | [Battery](05%20Battery.md#last-until) |
 | Charge plan | when will I reach 20%? | based on your usual use | [Battery](05%20Battery.md#charge-plan) |
+| Battery level alerts | told when the battery has charged to 80% or dropped to 20% (levels you pick) | unplug or plug in at the right moment | [Battery](05%20Battery.md#battery-level-alerts) |
 | Device batteries | keyboard, mouse, trackpad, headphones, game controller levels, time left each, devices charging from the Mac | warned once before they run out | [Battery](05%20Battery.md#device-batteries) |
 | Macs without a battery | Mac mini, Mac Studio, iMac, Mac Pro | the Mac's draw from the wall; nothing that doesn't apply | [Battery](05%20Battery.md#macs-without-a-battery) |
 | Battery wear | how fast the battery ages | an honest trend and when it reaches 80% | [Battery](05%20Battery.md#battery-wear) |

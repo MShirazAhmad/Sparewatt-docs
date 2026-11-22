@@ -2,6 +2,15 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-21 — Sparewatt 1.21
+
+Released as [Sparewatt 1.21](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.21-2026-11-21).
+
+- **Battery level alerts** for the Mac's own battery, each off until you turn it on (Dashboard → On Battery → *Battery
+  level alerts*): **"Charged to 80%"** while plugged in, to unplug there (70% to full), and **"Battery at 20%"** on
+  battery, with the time left (50% to 15%). Each is told once as the level is passed, and again after you unplug or
+  plug in ([more](features/05%20Battery.md#battery-level-alerts)).
+
 ## 2026-11-21 — Sparewatt 1.20
 
 Released as [Sparewatt 1.20](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.20-2026-11-21).
