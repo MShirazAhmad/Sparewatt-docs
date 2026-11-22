@@ -86,6 +86,7 @@ answers three questions from the menu bar:
 | `sparewatt://` links | drive Sparewatt from Shortcuts and scripts | Extreme Saver, energy modes, panels, Switches in one step | [Links for Shortcuts and scripts](../reference/Links%20for%20Shortcuts%20and%20scripts.md) |
 | AI Assistant (MCP server) | let Claude Code, Codex, Cursor or any MCP app read the readings | ask "why?" in plain words, answered from live data | [AI Assistant](12%20AI%20Assistant.md) |
 | Reading values in Shortcuts | a local address that Shortcuts' Get Contents of URL reads: battery %, time left, load and more | automations of your own that act on a reading | [AI Assistant](12%20AI%20Assistant.md#reading-values-in-shortcuts) |
+| Keyboard shortcuts | open the dashboard, open the Files panel, Extreme Saver on/off, from any app | keys of your choice, or none if they clash with another app | [Keyboard shortcuts](../reference/Keyboard%20shortcuts.md) |
 
 ## Use cases: which features help when
 

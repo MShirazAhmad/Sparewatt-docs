@@ -159,7 +159,7 @@ Dashboard → **Menu Bar** has six sections, each one kind of setting:
 
 | Section | Holds |
 |---|---|
-| General | *Open Sparewatt when you log in*, the daily update check, the ⌥⌘R shortcut, the version |
+| General | *Open Sparewatt when you log in*, the daily update check, the dashboard's [shortcut](../reference/Keyboard%20shortcuts.md) (⌥⌘R unless you change it), the version |
 | Items | *Apply preset*, which items show, and what each item shows (CPU average, graphics memory, free space, trend line…) |
 | Look | grouping, the outline, words or icons, text size, update speed |
 | Colours | drain colours, colours by value, and storage turning orange when memory spills to the SSD |
@@ -305,7 +305,7 @@ screen, or not shown by macOS) and a button that opens System Settings → Menu 
 
 **What it has.**
 - *Update available…* (only when an update was found)
-- *Open Dashboard (⌥⌘R)*
+- *Open Dashboard (⌥⌘R)*: it shows your shortcut if you changed it, and none if you turned it off
 - *Settings…* (opens the dashboard on **On Battery**)
 - *Turn Extreme Saver On / Off*
 - *Keep Awake*: for a length, *Until* a time, *While an App Runs*, *Until I Turn It Off*, and *Keep the Screen On Too*;

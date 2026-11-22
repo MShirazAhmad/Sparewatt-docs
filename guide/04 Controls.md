@@ -60,7 +60,8 @@ energy — by default only on battery.
 ## Shelf, Profiles & Alerts
 
 One page for the profiles' names, icons and choices, the Shelf's options, quiet hours, the low-storage and "busy with no
-window" alerts, and the list of keyboard shortcuts.
+window" alerts, and the keyboard shortcuts, each of which you can change or turn off
+([how](../reference/Keyboard%20shortcuts.md#changing-them)).
 
 ## Switches
 

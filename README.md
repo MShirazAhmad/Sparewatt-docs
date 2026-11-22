@@ -81,6 +81,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | Widgets for the desktop and Notification Center: Battery, and Mac at a glance | [Widgets](features/11%20Dashboard%2C%20history%20and%20this%20app.md#widgets) |
 | AI Assistant: an MCP server for Claude Code, Codex and other assistants | [AI Assistant](features/12%20AI%20Assistant.md) |
 | Reading values in Shortcuts: battery %, time left and more for your own automations | [AI Assistant](features/12%20AI%20Assistant.md#reading-values-in-shortcuts) |
+| Keyboard shortcuts that work from any app, each one changeable or off | [Keyboard shortcuts](reference/Keyboard%20shortcuts.md) |
 
 ## Guide
 

@@ -2,6 +2,13 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-22 — Sparewatt 1.27
+
+- **Keyboard shortcuts you can change:** ⌥⌘R (dashboard), ⌥⌘V (Files panel) and ⌥⌘E (Extreme Saver) can each be set
+  to other keys or turned off, on Dashboard → Shelf, Profiles & Alerts → *Keyboard shortcuts*: click one and press the
+  new keys ([more](reference/Keyboard%20shortcuts.md#changing-them)). Keys macOS uses, or that another of Sparewatt's
+  shortcuts has, are refused with the reason; the right-click menu and the welcome window show your shortcut.
+
 ## 2026-11-22 — Sparewatt 1.26
 
 Released as [Sparewatt 1.26](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.26-2026-11-22).
