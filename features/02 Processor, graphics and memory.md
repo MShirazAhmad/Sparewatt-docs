@@ -4,7 +4,7 @@
 
 ## Processor panel
 
-<p align="center"><img src="../images/features/panel-processor.png" width="320" alt="Processor panel"><br><em>Processor panel, top to bottom: load, chip and temperature · 2-minute graph (average, peak, cores) · one tile per core (E efficiency, P performance) · apps using the processor most · background activity (folded to one line).</em></p>
+<p align="center"><img src="../images/features/panel-processor.png" width="320" alt="Processor panel"><br><em>Processor panel, top to bottom: load, chip and temperature · 2-minute graph (average, peak, cores) · speed of each kind of core · one tile per core (E efficiency, P performance) · apps using the processor most · background activity (folded to one line).</em></p>
 
 **Purpose.** Tell whether the processor is the reason the Mac feels slow or warm, and who is using it.
 
@@ -13,6 +13,10 @@
   temperature underneath.
 - **Load card:** a sparkline of the last 60 readings (two minutes at the default update speed) with *2-min average*,
   *2-min peak* and *Cores* ("8P + 2E": performance and efficiency cores).
+- **Speed** (Apple silicon): how fast the performance cores and the efficiency cores run while they work, in GHz,
+  against each kind's top speed ("3.02 GHz of 3.23"), with a bar. It reads *resting* when those cores did nothing.
+  Where macOS reports the processor's watts, they show beside the title; on many Macs (an M1 Max, for one) macOS keeps
+  that counter at zero for apps, and then no figure is shown rather than a made-up one.
 - **Cores:** each core's load — efficiency cores (teal) first, then performance cores (blue) — as live tiles with the
   load sized to fit and E or P underneath, or as bars when live diagrams are off.
 - **Using the processor most:** the apps and processes with the highest share, as a share of the **whole** processor.
@@ -25,6 +29,10 @@
 - The fan spins up during a quiet moment: open the panel and see which app is busy.
 - Check whether a long export or compile is using every core or just one.
 - See whether slowness is the processor at all — if it is low, look at memory or storage instead.
+- See whether the processor is running at full speed during a long job, or held back (for example by the heat or Low
+  Power Mode).
+
+<p align="center"><img src="../images/features/processor-speed.png" width="354" alt="Speed"><br><em>Speed: performance and efficiency cores while they work, against their top speeds. (Sample values.)</em></p>
 
 **Benefits.**
 - Load is averaged over 10 seconds by default, so you see real work, not every spike.
@@ -32,7 +40,9 @@
 
 **Where.** CPU part of the menu bar; Dashboard → **Processor**.
 
-**Limits.** Performance/efficiency split is Apple silicon only.
+**Limits.** Performance/efficiency split and the speed are Apple silicon only. The speed is the time-weighted average
+of the speed states each core reported over the last 2 seconds (from macOS's own counters and its frequency table),
+read only while a Sparewatt panel or the dashboard is open.
 
 ---
 

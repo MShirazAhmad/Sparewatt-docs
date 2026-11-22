@@ -34,7 +34,7 @@ All are part of macOS. None runs with more rights than you have, except `pmset` 
 | `ditto` | As you click Zip on the Shelf. | Makes the zip file. |
 | `osascript` | Only when macOS's notification center can't be used by Sparewatt. | Shows a plain notification banner instead. |
 
-Processor, memory, graphics, temperatures, fans, battery, charger, disk speed, what keeps the Mac awake, the network connection (Wi-Fi signal, addresses, router, VPN) and other disks (size, free space, how they connect) are read straight from macOS (IOKit, the SMC sensors and system calls); no tool is started for them. The graphics chip's watts come from macOS's energy counters (IOReport), read only while a panel that shows them is open.
+Processor, memory, graphics, temperatures, fans, battery, charger, disk speed, what keeps the Mac awake, the network connection (Wi-Fi signal, addresses, router, VPN), other disks (size, free space, how they connect) and the processor's speed (its speed-state counters, while a Sparewatt panel or the dashboard is open) are read straight from macOS (IOKit, IOReport, the SMC sensors and system calls); no tool is started for them. The graphics chip's watts come from macOS's energy counters (IOReport), read only while a panel that shows them is open.
 
 The experimental Power by part card's *Calibrate* changes the screen brightness and the keyboard light and, only if you
 tick *Wi-Fi too*, turns Wi-Fi off and on. It puts everything back afterwards.

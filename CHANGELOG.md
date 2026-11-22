@@ -2,6 +2,17 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-21 — Sparewatt 1.23
+
+Released as [Sparewatt 1.23](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.23-2026-11-21).
+
+- **Processor speed:** a *Speed* card in the Processor panel shows how fast the performance cores and the efficiency
+  cores run while they work, in GHz, against each kind's top speed. It comes from macOS's own counters, with no tool
+  started, and is read only while a Sparewatt panel or the dashboard is open
+  ([more](features/02%20Processor%2C%20graphics%20and%20memory.md#processor-panel)).
+- **Processor watts** show beside it on Macs where macOS reports them. On many Macs (an M1 Max, for one) macOS keeps
+  that counter at zero for apps, so nothing is shown there rather than a guess.
+
 ## 2026-11-21 — Sparewatt 1.22
 
 Released as [Sparewatt 1.22](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.22-2026-11-21).
