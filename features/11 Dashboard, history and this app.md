@@ -185,6 +185,34 @@ Turn it on in Dashboard → **Shelf, Profiles & Alerts** → *More alerts*.
 
 ---
 
+## Widgets
+
+<p align="center"><img src="../images/features/widgets.png" width="610" alt="Sparewatt widgets"><br><em>Battery (small) and Mac at a glance (medium), on the desktop or in Notification Center.</em></p>
+
+**Purpose.** See the charge and how hard the Mac is working without opening anything.
+
+**What it does.** Two widgets, added the way macOS adds any widget: right-click the desktop → **Edit Widgets…** (or
+**Edit Widgets** at the bottom of Notification Center), search **Sparewatt**, and drag one where you want it.
+
+- **Battery** (small): the charge in a ring (orange at 20% or less, red at 10% or less, a bolt while plugged in), the
+  state in the menu bar's words, and the time left or to full. On a Mac with no battery it shows the Mac's power draw.
+- **Mac at a glance** (medium): the battery on the left; processor, graphics and memory use (memory coloured by its
+  pressure) and the Mac's draw on the right, with the time of the reading.
+
+macOS decides when a widget redraws, so a widget is a glance, not a live meter: it shows a reading from the last few
+minutes. Sparewatt asks for a redraw at once when you plug in or unplug, change Extreme Saver or the energy mode, or the
+charge moves 5 points, and otherwise every 15 minutes at most. When Sparewatt isn't running, a widget says so and shows
+the time of its last reading.
+
+**How it gets the numbers.** While at least one Sparewatt widget is placed, Sparewatt writes the current readings to
+`~/Library/Application Support/Sparewatt/Widget/now.json` once a minute; with none placed it writes nothing. The
+widgets run in macOS's sandbox, may read that folder and nothing else, and have no network access.
+
+**Use cases.** Keep the charge and time left in sight on a second display; glance at the Mac's load before starting a
+long export.
+
+---
+
 ## Startup Items
 
 <p align="center"><img src="../images/features/dashboard-startup-items.png" width="800" alt="Startup Items"><br><em>Startup Items: everything set to start by itself and whether it runs now.</em></p>

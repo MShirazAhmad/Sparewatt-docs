@@ -45,6 +45,7 @@ tick *Wi-Fi too*, turns Wi-Fi off and on. It puts everything back afterwards.
 | Where | Access | What |
 |---|---|---|
 | ~/Library/Application Support/Sparewatt | reads and writes | Its own data: history, chargers, data used per app, Switches, insights, unused-app timings, folder sizes, settings backups. |
+| ~/Library/Application Support/Sparewatt/Widget | writes; its widgets read | Only while one of Sparewatt's widgets is placed: the current readings, once a minute, for the widgets to show. The widgets run in macOS's sandbox and may read this folder and nothing else. |
 | ~/Library/Logs/Sparewatt | reads and writes | Crash logs, and what each Switch prints. |
 | Its settings, in macOS's settings store | reads and writes | Every setting, the Shelf list, Watchlist rules, profiles and pinned clipboard entries. |
 | ~/Library/Caches | reads; moves to the Trash | Each app's cache size. A cache you clear goes to the Trash; a size limit you set empties that cache when it grows past it. |

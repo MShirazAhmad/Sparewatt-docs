@@ -30,6 +30,7 @@ the old domain in place.)
 | `data-usage.json` | internet data per app per day, download and upload in bytes (no addresses or sites), and when counting began | 14 days |
 | `devices.json` | each accessory's battery level (keyboard, mouse, headphones, game controller) with the time and whether it was charging, noted when it changes and every 30 minutes while it doesn't, for the [time left](../features/05%20Battery.md#device-batteries); written at most every 10 minutes and when Sparewatt quits | 30 days |
 | `settings-backup-<date>.json` | your settings, switches and profiles as they were just before an import replaced them (the same format as *Export settings…*) | until you delete it |
+| `Widget/now.json` | the current readings for the [widgets](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#widgets) (the same values as [Reading values in Shortcuts](../features/12%20AI%20Assistant.md#reading-values-in-shortcuts)); written once a minute, only while a Sparewatt widget is placed | replaced each minute |
 | `<name>.bak` | one of the files above (not a settings backup) as it was, kept when it could not be read in full (see below) | until you delete it |
 
 Also in the settings: Watchlist rules, cache size limits, the Shelf's file **paths** (not copies — so the Shelf survives

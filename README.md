@@ -78,6 +78,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | Latest File, Shelf, caches, Downloads tidy-up, clipboard | [Files and storage](features/09%20Files%20and%20storage.md) |
 | Local services on/off | [Switches](features/10%20Switches.md) |
 | Dashboard, Find a setting, Mac health, history, "My Mac today" and "My Mac this week" cards, Startup Items, This App, settings export, Report a problem, Uninstall, the Privacy page | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
+| Widgets for the desktop and Notification Center: Battery, and Mac at a glance | [Widgets](features/11%20Dashboard%2C%20history%20and%20this%20app.md#widgets) |
 | AI Assistant: an MCP server for Claude Code, Codex and other assistants | [AI Assistant](features/12%20AI%20Assistant.md) |
 | Reading values in Shortcuts: battery %, time left and more for your own automations | [AI Assistant](features/12%20AI%20Assistant.md#reading-values-in-shortcuts) |
 

@@ -2,6 +2,16 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-22 — Sparewatt 1.26
+
+Released as [Sparewatt 1.26](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.26-2026-11-22).
+
+- **Widgets:** *Battery* (small: the charge in a ring, the state, the time left or to full) and *Mac at a glance*
+  (medium: the battery plus processor, graphics and memory use and the Mac's draw), for the desktop or Notification
+  Center. Right-click the desktop → Edit Widgets… and search Sparewatt
+  ([more](features/11%20Dashboard%2C%20history%20and%20this%20app.md#widgets)). Sparewatt writes the readings for them
+  once a minute, only while one is placed; the widgets are sandboxed and read nothing else.
+
 ## 2026-11-22 — Sparewatt 1.25
 
 Released as [Sparewatt 1.25](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.25-2026-11-22).
