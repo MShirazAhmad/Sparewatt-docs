@@ -228,6 +228,7 @@ colour until it is clearly past it. Colours are adjusted so they stay readable o
 | Item | Glows red when | Default |
 |---|---|---|
 | Processor | above a limit | 85% |
+| Graphics | above a limit | 85% |
 | Memory | above a limit | 85% |
 | Storage | above a limit | 90% used |
 | Temperature | above a limit | 90 °C |

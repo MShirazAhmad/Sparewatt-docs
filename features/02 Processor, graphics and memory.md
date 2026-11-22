@@ -62,6 +62,9 @@ it uses. macOS doesn't say which graphics core an app is on, so there are no per
 **Where.** GPU part of the menu bar; Dashboard → **Graphics**.
 
 **Settings.** *GPU: memory it holds (shared with RAM)* adds the graphics chip's memory to the menu bar (off by default).
+*Graphics above* (85%, Dashboard → Menu Bar → *Alerts*) makes the GPU part glow red, and **Still high** tells you when
+the graphics chip stays above it for 5 minutes (a 10-second average, so one quiet frame doesn't end it), as for the
+processor.
 
 **Limits.** Only apps actually drawing with the graphics chip are listed; the core count is reported on Apple silicon
 only.

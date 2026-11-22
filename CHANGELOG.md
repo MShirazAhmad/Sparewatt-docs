@@ -2,6 +2,15 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-21 — Sparewatt 1.22
+
+Released as [Sparewatt 1.22](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.22-2026-11-21).
+
+- **Graphics in "Still high":** a notification when the graphics chip stays above its limit for 5 minutes (the time you
+  set), as for the processor, memory and temperature. A click opens the Graphics panel.
+- **Graphics above** (85% unless you change it) in Dashboard → Menu Bar → *Alerts*: the GPU part of the menu bar
+  glows red above it, like the other parts. It travels with exported settings.
+
 ## 2026-11-21 — Sparewatt 1.21
 
 Released as [Sparewatt 1.21](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.21-2026-11-21).

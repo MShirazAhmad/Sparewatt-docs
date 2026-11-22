@@ -41,7 +41,7 @@ Every list says what a row is: an app (with its icon), an Apple app, a part of m
 
 ## Colours and warnings
 
-- **Glow red behind an item when it needs attention** — processor, memory, storage, battery and temperature limits you choose
+- **Glow red behind an item when it needs attention** — processor, graphics, memory, storage, battery and temperature limits you choose
   (Dashboard → Menu Bar → *Alerts*).
 - **Colours by value** — optional green → red bands per item, each with its own four limits (Dashboard → Menu Bar →
   *Colours*).
