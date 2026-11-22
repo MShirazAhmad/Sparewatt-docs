@@ -47,7 +47,10 @@ its time, when its app quits, when Sparewatt quits, and below 10% battery. No pa
 **Lecture**, **Lab** and **Travel**: energy modes for battery and charger plus Extreme Saver, applied in one click from
 the profiles row at the bottom of the Battery panel's *Energy mode* card. Each change asks for your password; a profile
 is marked as the current one only when every change went through. Edit their names, icons and choices on Dashboard →
-**Shelf, Profiles & Alerts** (click a profile's icon to pick another).
+**Shelf, Profiles & Alerts** (click a profile's icon to pick another). There, each profile can also be offered at a time
+on chosen days or when an external display connects: a notification asks "Switch to Lecture?", and it switches only
+when you click **Switch**. For a Wi-Fi network or a Focus, a Shortcuts automation can open `sparewatt://profile/Lecture`
+([more](../features/07%20Power%20controls.md#profiles)).
 
 ## Watchlist
 

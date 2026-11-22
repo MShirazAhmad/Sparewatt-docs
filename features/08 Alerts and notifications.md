@@ -7,6 +7,7 @@ normal. Every notification it sends is listed here.
 |---|---|---|---|---|
 | **Quit *app*? About +N of battery** | an app unused for 10 min would give back ≥ 30 min | once per app per unplug, only while you're at the Mac | yes | Dashboard → On Battery → *Apps you aren't using* |
 | ***App* kept your Mac awake while you were away** — "…On battery your Mac sleeps after 10m, but Xcode kept it awake (running tests)." | on battery, the Mac would have gone to sleep or turned its screen off while you were away, but an app kept it awake (sound and video, and parts of macOS, left out) | once per app per unplug, as you come back | yes | Dashboard → On Battery → *What keeps your Mac awake* (on) |
+| **Switch to *Lecture*?** — "Set for 9:00 on weekdays. Click Switch to apply it; macOS asks for your password." | a profile's time came, or an external display connected, and it isn't the current profile | each time | no | Dashboard → Shelf, Profiles & Alerts (off until you set a time or a display for a profile) |
 | **Charged to 80%** — "Unplug now to keep the battery at about 80%." (**Fully charged** at 100%) | plugged in, the battery charges up to the level you set | once per charge; again after unplugging | no | Dashboard → On Battery → *Battery level alerts* (off) |
 | **Battery at 20%** — "About 1h 10m left at this rate. Plug in soon." | on battery, the battery runs down to the level you set | once per unplug; again after plugging in | yes | Dashboard → On Battery → *Battery level alerts* (off) |
 | **"*Backup*" wasn't ejected** — "Preview has files open on it. Quit or close it, then eject again." | you ejected a disk from the right-click menu or a link and macOS refused (a link naming no connected disk gets **No disk named "*name*"**) | each time | no | always on; the Storage panel shows the same reason |
@@ -54,6 +55,7 @@ are on Dashboard → **Shelf, Profiles & Alerts**.
 | **Quit *app*? About +N of battery** (one app) | **Quit *app*** · **Not now** (not again until you plug in) | Battery panel |
 | **Busy in the background** | **Quit *app*** · **Not now** | Processor panel |
 | **On battery: *app*** (Watchlist) | **Show** | the panel for that resource |
+| **Switch to *profile*?** | **Switch** (then macOS asks for your password) | applies the profile too |
 | **Memory keeps growing** | **Quit *app*** · **Not now** | Memory panel |
 | **Your Mac last week** | none | the dashboard's share sheet, on the "My Mac this week" card |
 | every other notification | none | the panel it is about |

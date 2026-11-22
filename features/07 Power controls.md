@@ -160,7 +160,7 @@ puts it to sleep. It is not kept across a restart of Sparewatt. The "away" notif
 
 ## Profiles
 
-<p align="center"><img src="../images/features/profiles.png" width="480" alt="Profiles"><br><em>Profiles: Lecture, Lab, Travel — energy mode on battery and on charger, and Extreme Saver, per profile.</em></p>
+<p align="center"><img src="../images/features/profiles.png" width="760" alt="Profiles"><br><em>Profiles: Lecture, Lab, Travel — energy mode on battery and on charger, Extreme Saver, and when each is offered by itself (Lecture at 9:00 on weekdays, Lab when a display connects).</em></p>
 
 **Purpose.** Set the energy modes and Extreme Saver for a situation in one click.
 
@@ -177,9 +177,26 @@ where needed. The current profile is highlighted — only once every change went
 stops there, and if something had already changed, no profile is highlighted. Hovering a button shows what it sets.
 Names, icons (picked from a searchable grid) and choices are edited on Dashboard → Shelf, Profiles & Alerts.
 
+**Switching by itself.** Each profile can also be offered:
+- **at a time** you set, on the days you pick (none picked: every day), for example Lecture at 9:00 on weekdays;
+- **when an external display connects**, for example Lab when you dock at your desk.
+
+At that moment a notification asks **"Switch to Lecture?"**, with a **Switch** button. Click it, and macOS asks for your
+password as usual; ignore it, and nothing changes. A profile that is already the current one isn't offered again. Set
+both on Dashboard → **Shelf, Profiles & Alerts**, on the row under each profile.
+
+**Wi-Fi networks and Focus.** Sparewatt doesn't read the Wi-Fi network's name (macOS gives it only to apps allowed to
+use Location) or which Focus is on. Instead, make a Shortcuts automation (*When I join a Wi-Fi network*, *When a Focus
+turns on*) that opens `sparewatt://profile/Lecture`; see [Links](../reference/Links%20for%20Shortcuts%20and%20scripts.md).
+Turn on *Links (sparewatt://) may change things without asking* (Dashboard → Menu Bar → *General*) so the automation doesn't wait for
+Sparewatt's own question first.
+
 **Use cases.** Walking into a lecture, back to the lab bench, off to the airport.
 
-**Where.** The bottom of the Battery panel's *Energy mode* card; edit names and choices on Dashboard → **Shelf, Profiles
-& Alerts**.
+**Where.** The bottom of the Battery panel's *Energy mode* card; edit names, choices and when each is offered on
+Dashboard → **Shelf, Profiles & Alerts**.
 
-**Limits.** Each change (energy mode or Extreme Saver) asks for the password.
+**Limits.** Each change (energy mode or Extreme Saver) asks for the password, so nothing switches without you. A time
+is offered only if the Mac is awake in that minute, and an offer needs Sparewatt's notifications on (quiet hours skip
+it). Where macOS doesn't take Sparewatt's notifications, the offer comes as a plain banner with no button, and it says
+to click the profile in the Battery panel's *Energy mode* card instead.

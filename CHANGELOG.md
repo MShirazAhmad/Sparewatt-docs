@@ -2,6 +2,17 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-21 — Sparewatt 1.24
+
+Released as [Sparewatt 1.24](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.24-2026-11-21).
+
+- **Profiles offered by themselves:** each profile can be offered at a time on the days you pick, or when an external
+  display connects (Dashboard → Shelf, Profiles & Alerts). A notification asks **"Switch to Lecture?"**; it switches
+  only when you click **Switch**, since changing energy modes asks for your password
+  ([more](features/07%20Power%20controls.md#profiles)).
+- **`sparewatt://profile/<name>`** applies a profile, for Shortcuts automations on joining a Wi-Fi network or a Focus
+  turning on. Sparewatt doesn't ask for Location to read the Wi-Fi name.
+
 ## 2026-11-21 — Sparewatt 1.23
 
 Released as [Sparewatt 1.23](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.23-2026-11-21).
