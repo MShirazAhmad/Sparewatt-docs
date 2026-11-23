@@ -1,0 +1,120 @@
+[Home](index.md) · [Getting started](Getting-started.md) · [Features](Features.md) · [Switches](Switches.md) · [Developer guide](Developer-guide.md) · [Troubleshooting](Troubleshooting.md) · [Changelog](Changelog.md) · [Download](https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest)
+
+---
+
+# Battery and power
+
+## Power per app
+
+The Power panel's stacked bar (a donut on the dashboard) splits the Mac's **measured** draw between apps by their
+*energy impact* (the score Activity Monitor shows), with a row per app under it.
+
+- **On the charger** it shows watts per app.
+- **On battery** it shows each app's share of the drain and, beside it, **how much battery time that app takes** — the
+  time you would get back by quitting it. The card opens with the best move, for example
+  "Quit Xcode and Claude → +1h 05m of battery": the two apps you can quit that cost the most, worked out together.
+
+Click a part of the bar or a name to see that app's processes (energy, processor, memory, owner) and **Quit** or
+**Force Quit** the ones you own. Force Quit asks first, because unsaved work is lost.
+
+These are estimates; macOS does not measure power per app. [How the estimates work](How-the-estimates-work.md)
+explains the method.
+
+## Idle apps on battery
+
+Apps you left open hours ago can keep costing battery. On battery, Sparewatt suggests quitting an app when **both** are
+true:
+
+1. you have not brought it to the front for a while — **10 minutes** by default, and
+2. quitting it would add at least a set amount of battery time — **30 minutes** by default.
+
+The suggestion appears as a card, *Not in use, still costing battery*, in the Battery and Power panels:
+
+- **Quit** — a normal quit, so the app can still ask to save.
+- **Not now** (in the ⋯ menu) — not again until you plug in.
+- **Never suggest** this app (in the ⋯ menu).
+
+You also get **one notification per app each time you unplug**, only while you are at the Mac and outside quiet hours.
+It has **Quit ‹app›** (a normal quit) and **Not now** buttons; clicking it opens the Battery panel.
+
+Never suggested: apps playing sound or video, Finder, and Sparewatt itself.
+
+**Settings:** Dashboard → **On Battery** → *Apps you aren't using* — the switch, both limits, the notification, and the
+never-suggest list. The slider icon on the card opens the same page.
+
+If you rarely see a suggestion, that is usually right: at a high draw (say 25 W), an idle app has to use several watts
+before quitting it adds 30 minutes.
+
+## Charge plan
+
+One line in the Battery panel: "20% around 10:44 PM (2h 10m) · empty around 12:05 AM". On the charger it starts *If
+unplugged now:* and ends "at your usual 14 W". *Usual* is your last 30 minutes on battery, or your recent stretches on
+battery when you have just unplugged.
+
+## Battery wear
+
+One reading a day, kept a year: health (how much the battery holds now compared with new), recharges per month, health
+lost per month, and when it would reach 80% at that rate ("80% around mid-2028"). Above 80% health is good. Health
+wobbles by about a point from day to day, so the trend waits for at least 14 daily readings over three weeks ("Needs
+about N more days of readings") and says *steady* when the change is within that wobble.
+
+## Charger check
+
+Plugged in, but the battery still draining? A line in the Power panel's charger card says the charger can't keep up
+with what the Mac is using (or the cable is poor), and warns when a small charger is close to its limit. Hover it for
+the watts.
+
+Every charger you plug in is remembered ("Seen 4 times · best 63.5 W delivered"); Dashboard → **Power flow** lists
+them all, with a nickname you can give each and a *slow* tag on one that charges slowly
+([how it decides](Power.md#charger-history)).
+
+## Device batteries
+
+The Battery panel's *Devices* card shows the battery of each connected keyboard, mouse, trackpad, pair of headphones
+(AirPods left, right and case; one figure for AirPods Max and other one-battery headphones) and game controller, plus
+any device charging from the Mac's own ports, with its watts. Once a device has drained for a while since its last
+charge, its row says how long it has left: "about 9h left". You get one notification when a device drops to 15%
+([more](Battery.md#device-batteries)).
+
+## Macs without a battery
+
+On a Mac mini, Mac Studio, iMac or Mac Pro, the menu bar shows the Mac's draw, `MAC USES 22W`, instead of the battery
+(when the Mac reports it), the Battery panel says *This Mac has no battery* and keeps the energy mode and your devices'
+batteries, and the Power panel shows a *From the wall* card. Extreme Saver and the battery-only settings are left out
+([more](Battery.md#macs-without-a-battery)).
+
+## Battery level alerts
+
+Turn on **"Charged to 80%"** to be told when to unplug, or **"Battery at 20%"** to be told when to plug in, each at a
+level you choose (Dashboard → On Battery → *Battery level alerts*). Each comes once as the level is passed
+([more](Battery.md#battery-level-alerts)).
+
+## Keeping your Mac awake
+
+What is keeping the screen on or the Mac from sleeping right now: each app, tool or part of macOS, why it says it
+needs to, and for how long. The Battery panel shows it as one folded line only while an app or tool does it. The
+dashboard's Battery page always lists everything. **Quit** an app or **Stop** a command such as `caffeinate` from its
+row. On battery, if an app kept the Mac awake past its sleep time while you were away, you are told as you come back
+(once per app each time you unplug; Dashboard → On Battery → *What keeps your Mac awake*)
+([more](Battery.md#keeping-your-mac-awake)).
+
+## While asleep
+
+What woke the Mac in the last 24 hours (lid, you, scheduled timers, Power Nap, network, USB), and how much charge the
+longest sleep cost — flagged when it lost more than a sleeping Mac should.
+
+## Battery used per app, last 7 days
+
+The measured draw split by energy impact, added up a minute at a time while on battery, shown in watt-hours and as a
+share of a full charge.
+
+## Busy with no window on screen
+
+Apps that are hidden or have no window on screen but keep the processor busy (10% by default) are listed, with a
+notification after 10 minutes.
+
+---
+
+[Home](index.md) · [Getting started](Getting-started.md) · [Features](Features.md) · [Switches](Switches.md) · [Developer guide](Developer-guide.md) · [Troubleshooting](Troubleshooting.md) · [Changelog](Changelog.md) · [Download](https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest)
+
+Sparewatt is free. © 2026 Shiraz Ahmad. [These pages on GitHub](https://github.com/MShirazAhmad/Sparewatt-docs)

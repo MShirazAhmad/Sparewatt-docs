@@ -1,0 +1,82 @@
+[Home](index.md) · [Getting started](Getting-started.md) · [Features](Features.md) · [Switches](Switches.md) · [Developer guide](Developer-guide.md) · [Troubleshooting](Troubleshooting.md) · [Changelog](Changelog.md) · [Download](https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest)
+
+---
+
+# Files and storage
+
+Latest File, the Shelf and the clipboard are in the **Files** panel (hover the FILES part, or press ⌥⌘V from anywhere);
+hide the FILES part and they move into the Storage panel. FILES steps aside while the Shelf is empty; ⌥⌘V or dropping
+files on the menu bar still opens the Files panel. App caches and Downloads tidy-up are in the **Storage** panel.
+
+## Latest File
+
+The newest file you saved or downloaded, ready to drag into a mail, a chat or an upload box, plus the next 4 newest.
+Sparewatt finds them through Spotlight. macOS leaves Desktop, Documents and Downloads out of those results, so new files
+there don't show; the card says how many of your folders it can't see ("3 folders not searched" — hover for which).
+Downloads joins in once you have clicked *Look* in Downloads tidy-up and macOS has let Sparewatt read it.
+
+Narrow it down on Dashboard → Menu Bar → *Panels*, under *Latest File*: pick folders (everything inside them counts)
+and file types (for example `pdf docx png`). With no folders chosen, the whole home folder is searched.
+
+## The Shelf
+
+A holding place for files on the way somewhere else.
+
+- **Drop files on the menu bar item** (or the Files panel's Shelf, a one-line drop zone while it is empty) to keep them
+  there.
+- Drag them out again — all at once or one by one — into any app or folder.
+- From the Shelf: Move to, AirDrop, Zip, Copy path, Open with, Trash. Trash asks for a second click within 3 seconds,
+  in the Shelf card and the floating Shelf alike (the files go to the Trash and can be put back).
+- **Folder chips**: drop on one to move files there. Moves stay moves on the same disk, become copies to another disk;
+  hold ⌥ while dropping to copy.
+- While you drag files anywhere, a **drop zone follows a little behind the pointer**; optionally, **shaking** the pointer
+  opens a floating Shelf.
+- Files leave the Shelf once dragged out.
+
+The Shelf's options (the trailing drop zone, shake to open, taking files off once dragged out, the folder chips) are on
+Dashboard → **Shelf, Profiles & Alerts** (by default: trailing zone on, shake off, take off after dragging on, folder
+chips for Downloads and Desktop).
+
+The Shelf holds references to your files, not copies, and remembers them across restarts.
+
+## Where the space went
+
+The biggest folders in your home folder, with sizes kept between counts and growth since the last count. Click a folder
+to look inside it. Folders macOS protects (Desktop, Documents, Downloads, Library, Pictures, Movies, Music) are skipped
+so no "access blocked" warning appears.
+
+## Other disks
+
+While an external drive, SD card, disk image or network share is connected, the Storage panel lists each one with its
+free space and an **Eject** button (**Eject All** for several); the right-click menu has *Eject* too. If a disk won't
+eject, Sparewatt names the programs with files open on it
+([more](Temperature-network-and-storage-space.md#other-disks)).
+
+## App caches
+
+Each app's cache with its size, a button to clear it (files go to the Trash), and optional size limits that clear
+automatically — only ever inside `~/Library/Caches`. A cache that takes over 15 seconds to count shows what was counted
+by then ("> 2.1 GB").
+
+## Downloads tidy-up
+
+**Look** finds old installers (`.dmg`, `.pkg`, `.iso` over a week old) and duplicate downloads ("report (2).pdf" next to
+"report.pdf" of the same size). The first time, macOS asks whether Sparewatt may see your Downloads folder. The 30
+largest are listed; tick the ones to remove (*Select all* ticks only those) and
+move them to the Trash — Sparewatt asks first.
+
+## Clipboard
+
+Recent copied text, kept **in memory only** (passwords are skipped). Click an entry to copy it back as plain text, drag
+it anywhere, or pin the ones you reuse. How many to keep: Dashboard → Menu Bar → *Panels*.
+
+## Storage alerts
+
+Optional: the storage part turns orange when memory spills to the disk (swap) above a size you choose, and shows
+read/write speed during big copies.
+
+---
+
+[Home](index.md) · [Getting started](Getting-started.md) · [Features](Features.md) · [Switches](Switches.md) · [Developer guide](Developer-guide.md) · [Troubleshooting](Troubleshooting.md) · [Changelog](Changelog.md) · [Download](https://github.com/MShirazAhmad/Sparewatt-docs/releases/latest)
+
+Sparewatt is free. © 2026 Shiraz Ahmad. [These pages on GitHub](https://github.com/MShirazAhmad/Sparewatt-docs)
