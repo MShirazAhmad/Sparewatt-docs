@@ -15,6 +15,8 @@
 
 <p align="center"><img src="images/sparewatt-demo.gif" width="900" alt="Sparewatt in 15 seconds: the menu bar, the Power panel on battery, the Battery panel, the dashboard and the share card"></p>
 
+These pages are also a website: **[mshirazahmad.github.io/Sparewatt-docs](https://mshirazahmad.github.io/Sparewatt-docs/)**.
+
 **Runs on** macOS 14 (Sonoma) or later, on Apple silicon and Intel Macs: MacBooks, and desktop Macs with no battery
 (Mac mini, Mac Studio, iMac, Mac Pro). See [Getting started](guide/01%20Getting%20started.md).
 
@@ -76,7 +78,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | Energy modes, On Battery settings, Extreme Saver, keep awake, profiles | [Power controls](features/07%20Power%20controls.md) |
 | Every notification, and its Quit / Show buttons | [Alerts and notifications](features/08%20Alerts%20and%20notifications.md) |
 | Latest File, Shelf, caches, Downloads tidy-up, clipboard | [Files and storage](features/09%20Files%20and%20storage.md) |
-| Local services on/off | [Switches](features/10%20Switches.md) |
+| Local services on/off, with a progress line and bar for long jobs | [Switches](features/10%20Switches.md) |
 | Dashboard, Find a setting, Mac health, history, "My Mac today" and "My Mac this week" cards, Startup Items, This App, settings export, Report a problem, Uninstall, the Privacy page | [Dashboard, history and this app](features/11%20Dashboard%2C%20history%20and%20this%20app.md) |
 | Widgets for the desktop and Notification Center: Battery, and Mac at a glance | [Widgets](features/11%20Dashboard%2C%20history%20and%20this%20app.md#widgets) |
 | AI Assistant: an MCP server for Claude Code, Codex and other assistants | [AI Assistant](features/12%20AI%20Assistant.md) |
@@ -98,6 +100,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | [Privacy and permissions](guide/08%20Privacy%20and%20permissions.md) | what stays on your Mac, which prompts appear and why |
 | [Troubleshooting](guide/09%20Troubleshooting.md) | hidden menu bar item, missing readings, password and permission prompts |
 | [What Sparewatt runs and reads](guide/10%20What%20Sparewatt%20runs%20and%20reads.md) | every program it starts, every file it reads or writes, every permission it may ask for, its network use |
+| [Developer guide](guide/11%20Developer%20guide.md) | setting up switches for your own servers and jobs, showing a job's progress and log (worked example: a nightly cloud backup), `switches.json` by hand, driving Sparewatt from scripts |
 
 ## Reference
 

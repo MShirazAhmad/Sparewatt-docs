@@ -19,6 +19,8 @@ Each switch has:
 | Run in folder | where the commands run (home if empty) |
 | Running when | how Sparewatt knows it is on (below) |
 | Open in browser | optional address, e.g. `http://127.0.0.1:8000/` |
+| Status command | optional; its last line of output is shown under the switch's name while it is on ([Progress and logs](#progress-and-logs)) |
+| Log file | optional; the log the service writes itself, opened by the row's log button |
 | Stop on battery | stopped when you unplug, started again on the charger |
 | Start when Sparewatt starts | turned on at launch |
 
@@ -35,6 +37,43 @@ Switches panel checks at once):
 
 Output of every start and stop is added to a log, `~/Library/Logs/Sparewatt/<name>.log`; earlier starts and stops stay
 in it. A log that grows past 5 MB is set aside as `<name>.old.log` and a new one begins.
+
+---
+
+## Progress and logs
+
+*From Sparewatt 1.30.*
+
+A switch says on or off. For a job that takes a while (a backup, a download, a queue being worked through) you can
+also have it say how far it has got.
+
+**Status command.** In the editor's *Progress* section, type a command that prints one line about the job. While the
+switch is on, Sparewatt runs it at every check (every 10 seconds while a panel or the dashboard is open, otherwise once
+a minute) and shows the last line it printed under the switch's name, in the dashboard and in the menu bar panel:
+
+| The command prints | The row shows |
+|---|---|
+| `412 MB / 2.1 GB, 19%, ETA 6m` | that line, and a bar at 19% |
+| `37 of 120 files` | that line, no bar |
+| nothing | *On since 09:12*, as before |
+
+- A bar is drawn when the line has a percentage from 0 to 100 (`19%`, `19.5 %`); with several, the last one counts.
+- The command has 4 seconds, runs in your login shell in the switch's folder, and only while the switch is on.
+- Only the last line that has text is used, up to 160 characters; hover the line to read all of it.
+- **Test** runs the command once and shows what it printed.
+
+Most services already write progress to a log, so the usual status command reads the end of that log:
+
+```
+tail -n 1 ~/Library/Logs/my-backup.log
+```
+
+**Log file.** A switch's own log (`~/Library/Logs/Sparewatt/<name>.log`) holds only what its start and stop commands
+print. A service started through `launchctl`, `brew services` or Docker writes its log somewhere else: name that file
+under *Log file*, and the row's log button opens it instead.
+
+The [developer guide](../guide/11%20Developer%20guide.md#show-progress-for-a-long-job) has worked examples: an rclone
+backup run by launchd, rsync, a download, a queue.
 
 ---
 
@@ -69,8 +108,8 @@ in it. A log that grows past 5 MB is set aside as `<name>.old.log` and a new one
   always show under their group; click a group to see all its switches (it stays open until you click it again). A
   switch that is on shows *since 09:12* and an *open in browser* button; *Add or edit switches…* is at the bottom.
 - **Right-click menu** — every switch with a tick when on; click to flip it.
-- **Dashboard → Switches** — the full list with errors, *Open its log*, *Edit*, *Add switch*, and the editor: *Test* tells
-  you whether the running check sees it on right now.
+- **Dashboard → Switches** — the full list with errors, each switch's status line and bar, *Open its log*, *Edit*,
+  *Add switch*, and the editor: *Test* tells you whether the running check sees it on right now.
 
 When a switch doesn't come up within 30 seconds: "Didn't come up — see its log" (a start command that is still running,
 such as a slow server loading, gets 60 seconds). When it doesn't stop: "Still running — check the stop command".

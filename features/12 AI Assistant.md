@@ -49,7 +49,7 @@ If you changed the port, use your port in place of 7319. Each copy button on the
 | `get_battery` | battery now, plus [wear](05%20Battery.md#battery-wear) per day, each stretch on battery and the [battery used per app](06%20Power.md#battery-used-per-app-last-7-days), for up to 30 days |
 | `get_history` | the per-minute [History](11%20Dashboard%2C%20history%20and%20this%20app.md#history) (charge, watts, processor, temperature), up to 30 days |
 | `get_insights` | unusual background processes, apps busy with no window, swap growth, what woke the Mac, [idle apps](06%20Power.md#idle-apps-on-battery) worth quitting, and your [Watchlist](04%20Who%20is%20using%20it.md#watchlist) with its recent alerts |
-| `list_switches` | your [Switches](10%20Switches.md) and whether each is on |
+| `list_switches` | your [Switches](10%20Switches.md) and whether each is on, with its status line, progress in percent and log file when it has them |
 | `open_dashboard` | opens a dashboard page on your screen, to show you something |
 
 **Only with *Allow changes* on** (off until you turn it on):

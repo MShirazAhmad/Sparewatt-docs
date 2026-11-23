@@ -50,7 +50,9 @@ their data. An older Sparewatt ignores it, and a file without it reads as before
 
 ## `~/Library/Logs/Sparewatt/`
 
-Each switch's output when it runs, one file per switch, appended to (never trimmed).
+What each switch's start and stop commands print, one file per switch, appended to; past 5 MB it is set aside as
+`<name>.old.log` and begun again. A switch can also name the log its service writes itself
+([Progress and logs](../features/10%20Switches.md#progress-and-logs)); Sparewatt opens that file and never writes to it.
 
 `crash-<date>.log`: if Sparewatt crashes, the app and macOS version, what went wrong and the call stack. Kept until you
 delete it, and sent nowhere unless you [report it](../features/11%20Dashboard%2C%20history%20and%20this%20app.md#crash-log-and-report-a-problem)
