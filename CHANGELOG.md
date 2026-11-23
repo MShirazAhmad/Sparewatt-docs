@@ -2,6 +2,20 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-23 — Sparewatt 1.30
+
+Released as [Sparewatt 1.30](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.30-2026-11-23).
+
+- **Switches show progress:** give a switch a *status command* and, while it is on, the last line that command prints
+  is shown under the switch's name in the dashboard and the menu bar panel, such as
+  `1.2 GiB / 4 GiB, 30%, ETA 22m` for a backup. A percentage in the line also draws a bar
+  ([more](features/10%20Switches.md#progress-and-logs)).
+- **The log button can open the service's own log:** name a *log file* for a switch whose service writes its log
+  elsewhere (launchd jobs, Homebrew services, rclone), and the row's log button opens that file.
+- **Developer guide:** a new page on setting up switches for your own servers and jobs, with a worked nightly cloud
+  backup ([Developer guide](guide/11%20Developer%20guide.md)). These pages are now also a website:
+  [mshirazahmad.github.io/Sparewatt-docs](https://mshirazahmad.github.io/Sparewatt-docs/).
+
 ## 2026-11-23 — Sparewatt 1.29
 
 Released as [Sparewatt 1.29](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.29-2026-11-23).
