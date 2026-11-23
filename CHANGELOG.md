@@ -2,6 +2,16 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-23 — Sparewatt 1.29
+
+Released as [Sparewatt 1.29](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.29-2026-11-23).
+
+- **Updates install from inside the app:** when the update check (off unless you turn it on) finds a newer version,
+  click **Install and relaunch** in the dashboard's sidebar or the right-click menu. Sparewatt downloads the release's
+  `Sparewatt.zip`, checks it against the release's SHA-256, puts it in place of your copy and reopens, with your
+  settings kept and no right-click → *Open* ([more](guide/01%20Getting%20started.md#updates)). Only when you click.
+  Builds are still not signed with an Apple Developer ID. It works from 1.29 on: install 1.29 itself the usual way.
+
 ## 2026-11-22 — Sparewatt 1.28
 
 Released as [Sparewatt 1.28](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.28-2026-11-22).

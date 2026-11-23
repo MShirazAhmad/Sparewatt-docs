@@ -98,6 +98,21 @@ asks again, once, for Downloads access.
 The update check is **off** by default. Turn it on in Dashboard → Menu Bar → General → *Check GitHub once a day for a
 newer version*.
 
+When it finds one, the dashboard's sidebar says *Version X is available*, and the right-click menu has *Install Version
+X and Relaunch*. Click **Install and relaunch**:
+
+1. Sparewatt downloads that release's `Sparewatt.zip` from GitHub;
+2. checks it against the SHA-256 that GitHub and the release notes give for it (they must agree);
+3. checks that the app inside is Sparewatt, the version the release names, newer than yours, and undamaged;
+4. puts it in place of the copy you are running, and reopens.
+
+Your settings and history stay as they are, and there is no right-click → *Open* this time (macOS asks that only for
+apps a browser downloaded). Nothing is downloaded until you click. Sparewatt has to be in a folder you can write to
+(*Applications* usually is); if it isn't, or if anything doesn't match, nothing is changed and the sidebar says why,
+with a link to the release page. (This needs Sparewatt 1.29 or later; an older copy only links to the release page.)
+
+<p align="center"><img src="../images/features/update.png" width="300" alt="Version 1.29 is available, Install and relaunch"><br><em>The sidebar when a newer version is out</em></p>
+
 ## Uninstalling
 
 Dashboard → **This App** → *Uninstall Sparewatt…* lists what Sparewatt keeps on this Mac (saved data, logs, settings,

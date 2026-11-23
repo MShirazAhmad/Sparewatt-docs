@@ -16,7 +16,7 @@
   [AI Assistant](12%20AI%20Assistant.md), This App, [Privacy](#privacy-what-sparewatt-runs-and-reads).
 
 At the top: [*Find a setting*](#find-a-setting). At the bottom: the Extreme Saver switch and, when there is one,
-*Version X is available*. While the window is open, Sparewatt appears in the Dock and ⌘-Tab. On a Mac with no battery,
+*Version X is available* with *Install and relaunch* ([how updates install](../guide/01%20Getting%20started.md#updates)). While the window is open, Sparewatt appears in the Dock and ⌘-Tab. On a Mac with no battery,
 Extreme Saver is left out ([Macs without a battery](05%20Battery.md#macs-without-a-battery)).
 
 Monitor pages show the same cards as the panels plus dashboard-only ones: 24-hour trends, battery wear, the wake log, the

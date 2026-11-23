@@ -5,7 +5,8 @@
 Everything. Sparewatt collects nothing and sends nothing about you. It makes only two kinds of network request, both
 your choice:
 
-- the once-a-day update check against GitHub, **off** by default;
+- the once-a-day update check against GitHub, **off** by default, and, only when you click *Install and relaunch*, the
+  download of that release's `Sparewatt.zip` from GitHub ([Updates](01%20Getting%20started.md#updates));
 - a [Switch](../features/10%20Switches.md) whose running check is *a web address answers* asks that address (usually a
   server on your own Mac) every 10 seconds while a panel or the dashboard is open, otherwise once a minute.
 
