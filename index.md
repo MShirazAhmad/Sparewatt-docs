@@ -89,6 +89,7 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | Reading values in Shortcuts: battery %, time left and more for your own automations | [AI Assistant](AI-Assistant.md#reading-values-in-shortcuts) |
 | Keyboard shortcuts that work from any app, each one changeable or off | [Keyboard shortcuts](Keyboard-shortcuts.md) |
 | In English, German and Spanish, following your Mac's language | [Language](Getting-started.md#language) |
+| Updates that install with one click, checked against the release's SHA-256 | [Updates](Getting-started.md#updates) |
 
 ## Guide
 

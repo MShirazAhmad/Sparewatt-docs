@@ -6,6 +6,30 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-23 — Sparewatt 1.30
+
+Released as [Sparewatt 1.30](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.30-2026-11-23).
+
+- **Switches show progress:** give a switch a *status command* and, while it is on, the last line that command prints
+  is shown under the switch's name in the dashboard and the menu bar panel, such as
+  `1.2 GiB / 4 GiB, 30%, ETA 22m` for a backup. A percentage in the line also draws a bar
+  ([more](Switches.md#progress-and-logs)).
+- **The log button can open the service's own log:** name a *log file* for a switch whose service writes its log
+  elsewhere (launchd jobs, Homebrew services, rclone), and the row's log button opens that file.
+- **Developer guide:** a new page on setting up switches for your own servers and jobs, with a worked nightly cloud
+  backup ([Developer guide](Developer-guide.md)). These pages are now also a website:
+  [mshirazahmad.github.io/Sparewatt-docs](https://mshirazahmad.github.io/Sparewatt-docs/).
+
+## 2026-11-23 — Sparewatt 1.29
+
+Released as [Sparewatt 1.29](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.29-2026-11-23).
+
+- **Updates install from inside the app:** when the update check (off unless you turn it on) finds a newer version,
+  click **Install and relaunch** in the dashboard's sidebar or the right-click menu. Sparewatt downloads the release's
+  `Sparewatt.zip`, checks it against the release's SHA-256, puts it in place of your copy and reopens, with your
+  settings kept and no right-click → *Open* ([more](Getting-started.md#updates)). Only when you click.
+  Builds are still not signed with an Apple Developer ID. It works from 1.29 on: install 1.29 itself the usual way.
+
 ## 2026-11-22 — Sparewatt 1.28
 
 Released as [Sparewatt 1.28](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.28-2026-11-22).
