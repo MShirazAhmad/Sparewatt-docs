@@ -111,8 +111,6 @@ apps a browser downloaded). Nothing is downloaded until you click. Sparewatt has
 (*Applications* usually is); if it isn't, or if anything doesn't match, nothing is changed and the sidebar says why,
 with a link to the release page. (This needs Sparewatt 1.29 or later; an older copy only links to the release page.)
 
-<p align="center"><img src="../images/features/update.png" width="300" alt="Version 1.29 is available, Install and relaunch"><br><em>The sidebar when a newer version is out</em></p>
-
 ## Uninstalling
 
 Dashboard → **This App** → *Uninstall Sparewatt…* lists what Sparewatt keeps on this Mac (saved data, logs, settings,
