@@ -2,7 +2,20 @@
 
 What changed in Sparewatt, newest first, in plain words. Dates are when the change was made.
 
+## 2026-11-22 — Sparewatt 1.28
+
+Released as [Sparewatt 1.28](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.28-2026-11-22).
+
+- **German and Spanish:** Sparewatt's menus, panels, dashboard, settings, notifications and widgets are now in German
+  and Spanish as well as English. It follows your Mac's preferred language; to choose a language for Sparewatt alone,
+  add it in System Settings → General → Language & Region → *Applications*
+  ([more](guide/01%20Getting%20started.md#language)). The values Shortcuts reads and the AI Assistant's answers stay in
+  English, so automations keep working. The translations haven't been checked by a native speaker yet: corrections are
+  welcome as issues.
+
 ## 2026-11-22 — Sparewatt 1.27
+
+Released as [Sparewatt 1.27](https://github.com/MShirazAhmad/Sparewatt-docs/releases/tag/v1.27-2026-11-22).
 
 - **Keyboard shortcuts you can change:** ⌥⌘R (dashboard), ⌥⌘V (Files panel) and ⌥⌘E (Extreme Saver) can each be set
   to other keys or turned off, on Dashboard → Shelf, Profiles & Alerts → *Keyboard shortcuts*: click one and press the

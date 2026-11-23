@@ -55,6 +55,18 @@ sentence ("cpu 12%, ram 54%…"); the power flow says "the 65-watt charger gives
 battery"; a graph says its latest reading, average and peak; list rows read like "Xcode, App, 4.2%, button", with
 Notify and Quit as actions.
 
+## Language
+
+Sparewatt is in English, German and Spanish: menus, panels, the dashboard, settings, notifications and the widgets.
+It uses the first of these in your Mac's preferred languages (System Settings → General → Language & Region). To give
+Sparewatt alone another language, add it under *Applications* on that page. Quit and reopen Sparewatt after a change.
+
+These stay in English whatever the language, so nothing that depends on them breaks: the values
+[Shortcuts reads](../features/12%20AI%20Assistant.md#reading-values-in-shortcuts) and their names, what the AI
+Assistant's tools answer, file names, and the text *Report a problem* sends. The German and Spanish texts haven't been
+checked by a native speaker yet: if a phrase reads oddly, [open an issue](https://github.com/MShirazAhmad/Sparewatt-docs/issues)
+with where you saw it and a better wording. This guide is in English.
+
 ## Start at login
 
 Dashboard → **Menu Bar** → **Open Sparewatt when you log in** (also in the welcome window). It uses macOS's own

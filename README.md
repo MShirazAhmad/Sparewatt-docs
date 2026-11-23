@@ -82,12 +82,13 @@ catalogue and everyday scenarios ("a full day on battery", "the battery drops ov
 | AI Assistant: an MCP server for Claude Code, Codex and other assistants | [AI Assistant](features/12%20AI%20Assistant.md) |
 | Reading values in Shortcuts: battery %, time left and more for your own automations | [AI Assistant](features/12%20AI%20Assistant.md#reading-values-in-shortcuts) |
 | Keyboard shortcuts that work from any app, each one changeable or off | [Keyboard shortcuts](reference/Keyboard%20shortcuts.md) |
+| In English, German and Spanish, following your Mac's language | [Language](guide/01%20Getting%20started.md#language) |
 
 ## Guide
 
 | Page | What it covers |
 |---|---|
-| [Getting started](guide/01%20Getting%20started.md) | what it runs on, install, the unsigned-app warning, the welcome window, open at login, presets, moving to another Mac, updating from 1.4, uninstalling |
+| [Getting started](guide/01%20Getting%20started.md) | what it runs on, install, the unsigned-app warning, the welcome window, language, open at login, presets, moving to another Mac, updating from 1.4, uninstalling |
 | [Menu bar and panels](guide/02%20Menu%20bar%20and%20panels.md) | the menu bar item, hover panels, what each part shows |
 | [Battery and power](guide/03%20Battery%20and%20power.md) | power per app, idle-app suggestions, charge plan, wear, charger and sleep checks, device batteries, Macs without a battery |
 | [Controls](guide/04%20Controls.md) | energy modes, On Battery settings, Extreme Saver, profiles, Watchlist, Switches, alerts |
